@@ -1,0 +1,67 @@
+name: Daily Gemini Research
+
+on:
+  # 매일 04:00 KST 실행 (= UTC 19:00 전날)
+  schedule:
+    - cron: "0 19 * * *"
+  # Actions 탭에서 수동 실행 가능
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "특정 날짜로 저장 (예: 2026-05-14). 비워두면 KST 오늘"
+        required: false
+        type: string
+
+# 데이터 자동 커밋을 위해 쓰기 권한 필요
+permissions:
+  contents: write
+
+# 동시 실행 방지 (긴 작업이라 겹치면 안 됨)
+concurrency:
+  group: daily-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    # 평균 20~25분, 안전 마진 포함
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Gemini research
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-pro
+          GEMINI_CONCURRENCY: "6"
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            node scripts/daily-research.mjs --date "${{ inputs.date }}"
+          else
+            node scripts/daily-research.mjs
+          fi
+
+      - name: Commit and push data updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          if git diff --staged --quiet; then
+            echo "ℹ️  No new data to commit"
+            exit 0
+          fi
+          DATE_KST=$(TZ='Asia/Seoul' date '+%Y-%m-%d')
+          git commit -m "data: daily research ${DATE_KST} [skip ci]"
+          git push
+          echo "✅ Pushed daily snapshot for ${DATE_KST}"
