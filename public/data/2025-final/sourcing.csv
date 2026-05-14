@@ -1,0 +1,201 @@
+cat_slug,rank,name,url,rely,fit,slug,initials
+k-beauty,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+k-beauty,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+k-beauty,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+k-beauty,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+k-beauty,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+k-beauty,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+k-beauty,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+k-beauty,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+k-beauty,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+k-beauty,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+k-pop-merch,1,위버스 머치,wholesale.weverse.io,5,5,wholesale-weverse-io,위버
+k-pop-merch,2,케이팝타운 B2B,b2b.kpoptown.com,4,5,b2b-kpoptown-com,케이
+k-pop-merch,3,케이타운포유,ktown4u-b2b.com,4,5,ktown4u-b2b-com,케이
+k-pop-merch,4,뮤직플랜트,musicplant.kr,4,4,musicplant-kr,뮤직
+k-pop-merch,5,케이팝셀러,kpopseller.kr,3,4,kpopseller-kr,케이
+k-pop-merch,6,민트뮤직 도매,mintmusic.b2b.kr,3,3,mintmusic-b2b-kr,민트
+k-pop-merch,7,엠더블유 도매,mw-wholesale.kr,4,4,mw-wholesale-kr,엠더
+k-pop-merch,8,애플뮤직 K,applemusic-kr.com,3,3,applemusic-kr-com,애플
+k-pop-merch,9,서울콜렉션,seoulkpop.kr,3,4,seoulkpop-kr,서울
+k-pop-merch,10,스타셀러,starseller.kr,4,4,starseller-kr,스타
+character-goods,1,1000ZA 도매,1000za.kr,5,5,1000za-kr,ZA
+character-goods,2,산리오 코리아 B2B,b2b.sanrio.kr,5,5,b2b-sanrio-kr,산리
+character-goods,3,라인프렌즈 도매,linefriends-b2b.com,5,5,linefriends-b2b-com,라인
+character-goods,4,케릭터마켓,charmarket.kr,4,4,charmarket-kr,케릭
+character-goods,5,굿즈팩토리,goodsfactory.kr,4,4,goodsfactory-kr,굿즈
+character-goods,6,피규어월드,figureworld.kr,4,3,figureworld-kr,피규
+character-goods,7,더캐릭터,thecharacter.kr,3,4,thecharacter-kr,더캐
+character-goods,8,벨리굿즈,bellygoods.kr,3,4,bellygoods-kr,벨리
+character-goods,9,K굿즈마켓,kgoodsmarket.com,4,4,kgoodsmarket-com,K굿
+character-goods,10,스마일캐릭,smilechar.kr,3,3,smilechar-kr,스마
+k-fashion,1,남대문 패션도매,ndm-fashion.kr,5,5,ndm-fashion-kr,남대
+k-fashion,2,동대문스타일,ddm-style.kr,5,5,ddm-style-kr,동대
+k-fashion,3,스파오 B2B,b2b.spao.com,4,4,b2b-spao-com,스파
+k-fashion,4,무신사 도매,wholesale.musinsa.kr,4,5,wholesale-musinsa-kr,무신
+k-fashion,5,룩핀도매,lookpin-b2b.kr,4,4,lookpin-b2b-kr,룩핀
+k-fashion,6,스타일딜,styledeal.kr,3,4,styledeal-kr,스타
+k-fashion,7,서울패션,seoulfashion.kr,4,4,seoulfashion-kr,서울
+k-fashion,8,젝시믹스 B2B,b2b.xexymix.com,4,4,b2b-xexymix-com,젝시
+k-fashion,9,코드샵,codeshop.kr,3,3,codeshop-kr,코드
+k-fashion,10,스트릿K,streetk.kr,3,4,streetk-kr,스트
+skincare-tools,1,메디큐브 디바이스,b2b.medicube.kr,5,5,b2b-medicube-kr,메디
+skincare-tools,2,뷰티디바이스랩,beautydevice.kr,4,5,beautydevice-kr,뷰티
+skincare-tools,3,글로벌뷰티텍,globalbeautytech.com,4,4,globalbeautytech-com,글로
+skincare-tools,4,스킨테크코리아,skintech.kr,4,4,skintech-kr,스킨
+skincare-tools,5,디바이스마켓,devicemarket.kr,3,4,devicemarket-kr,디바
+skincare-tools,6,뷰티엔지니어,beautyeng.kr,3,3,beautyeng-kr,뷰티
+skincare-tools,7,K-DeviceHub,kdevicehub.com,4,4,kdevicehub-com,KD
+skincare-tools,8,프리미엄코스,premium-cos.kr,3,3,premium-cos-kr,프리
+skincare-tools,9,디바이스랩K,devicelab-k.kr,4,4,devicelab-k-kr,디바
+skincare-tools,10,뷰티앤테크,beautyntech.kr,3,3,beautyntech-kr,뷰티
+k-stationery,1,1000ZA 도매몰,1000za.kr,5,5,1000za-kr,ZA
+k-stationery,2,아이코닉 B2B,b2b.iconic.kr,5,5,b2b-iconic-kr,아이
+k-stationery,3,모트모트 도매,wholesale.motemote.kr,5,5,wholesale-motemote-kr,모트
+k-stationery,4,포인트오브뷰 B2B,b2b.pointofview.kr,4,5,b2b-pointofview-kr,포인
+k-stationery,5,문구마켓,stationerymarket.kr,4,4,stationerymarket-kr,문구
+k-stationery,6,페이퍼월드,paperworld.kr,3,4,paperworld-kr,페이
+k-stationery,7,K-Stationery Hub,kstationeryhub.com,4,5,kstationeryhub-com,KS
+k-stationery,8,데스크K,deskk.kr,3,3,deskk-kr,데스
+k-stationery,9,오피스데일리,officedaily.kr,3,4,officedaily-kr,오피
+k-stationery,10,문구굿즈,munguogoods.kr,3,3,munguogoods-kr,문구
+korean-snacks,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+korean-snacks,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+korean-snacks,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+korean-snacks,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+korean-snacks,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+korean-snacks,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+korean-snacks,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+korean-snacks,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+korean-snacks,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+korean-snacks,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+herbal-supplements,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+herbal-supplements,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+herbal-supplements,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+herbal-supplements,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+herbal-supplements,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+herbal-supplements,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+herbal-supplements,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+herbal-supplements,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+herbal-supplements,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+herbal-supplements,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+korean-kitchenware,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+korean-kitchenware,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+korean-kitchenware,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+korean-kitchenware,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+korean-kitchenware,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+korean-kitchenware,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+korean-kitchenware,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+korean-kitchenware,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+korean-kitchenware,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+korean-kitchenware,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+tea-ceremony,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+tea-ceremony,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+tea-ceremony,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+tea-ceremony,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+tea-ceremony,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+tea-ceremony,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+tea-ceremony,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+tea-ceremony,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+tea-ceremony,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+tea-ceremony,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+k-hair-care,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+k-hair-care,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+k-hair-care,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+k-hair-care,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+k-hair-care,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+k-hair-care,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+k-hair-care,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+k-hair-care,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+k-hair-care,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+k-hair-care,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+k-drama-goods,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+k-drama-goods,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+k-drama-goods,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+k-drama-goods,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+k-drama-goods,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+k-drama-goods,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+k-drama-goods,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+k-drama-goods,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+k-drama-goods,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+k-drama-goods,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+adult-toys,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+adult-toys,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+adult-toys,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+adult-toys,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+adult-toys,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+adult-toys,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+adult-toys,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+adult-toys,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+adult-toys,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+adult-toys,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+korean-home-decor,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+korean-home-decor,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+korean-home-decor,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+korean-home-decor,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+korean-home-decor,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+korean-home-decor,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+korean-home-decor,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+korean-home-decor,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+korean-home-decor,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+korean-home-decor,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+baby-goods,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+baby-goods,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+baby-goods,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+baby-goods,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+baby-goods,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+baby-goods,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+baby-goods,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+baby-goods,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+baby-goods,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+baby-goods,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+traditional-craft,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+traditional-craft,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+traditional-craft,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+traditional-craft,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+traditional-craft,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+traditional-craft,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+traditional-craft,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+traditional-craft,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+traditional-craft,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+traditional-craft,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+tech-accessories,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+tech-accessories,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+tech-accessories,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+tech-accessories,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+tech-accessories,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+tech-accessories,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+tech-accessories,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+tech-accessories,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+tech-accessories,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+tech-accessories,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+k-fancy-apparel,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+k-fancy-apparel,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+k-fancy-apparel,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+k-fancy-apparel,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+k-fancy-apparel,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+k-fancy-apparel,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+k-fancy-apparel,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+k-fancy-apparel,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+k-fancy-apparel,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+k-fancy-apparel,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+premium-tea,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+premium-tea,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+premium-tea,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+premium-tea,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+premium-tea,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+premium-tea,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+premium-tea,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+premium-tea,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+premium-tea,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+premium-tea,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티
+modern-hanbok,1,스타일난다 도매,wholesale.stylenanda.kr,5,5,wholesale-stylenanda-kr,스타
+modern-hanbok,2,코스맥스 B2B,b2b.cosmax.com,5,5,b2b-cosmax-com,코스
+modern-hanbok,3,뷰티콜리,beauty.colee.kr,4,5,beauty-colee-kr,뷰티
+modern-hanbok,4,미앤모이스처,mnm-wholesale.com,4,4,mnm-wholesale-com,미앤
+modern-hanbok,5,서울코스메틱,seoulcosmetic.kr,4,4,seoulcosmetic-kr,서울
+modern-hanbok,6,글로비뷰티,globe-beauty.kr,3,4,globe-beauty-kr,글로
+modern-hanbok,7,K뷰티헙,kbeautyhub.com,4,5,kbeautyhub-com,K뷰
+modern-hanbok,8,오아시스,oasis-cos.kr,3,3,oasis-cos-kr,오아
+modern-hanbok,9,로컬코스,localcos.kr,3,3,localcos-kr,로컬
+modern-hanbok,10,뷰티마스터,beautymaster.kr,4,4,beautymaster-kr,뷰티

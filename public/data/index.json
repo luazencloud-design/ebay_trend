@@ -1,0 +1,22 @@
+{
+  "latest": "2026-05-14",
+  "updated_at": "2026-05-14T01:35:46.143Z",
+  "snapshots": [
+    {
+      "key": "2026-05-14",
+      "type": "daily"
+    },
+    {
+      "key": "2026-05-13",
+      "type": "daily"
+    },
+    {
+      "key": "2026-05-12",
+      "type": "daily"
+    },
+    {
+      "key": "2025-final",
+      "type": "yearly"
+    }
+  ]
+}

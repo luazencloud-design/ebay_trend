@@ -1,0 +1,30 @@
+{
+  "name": "k-trend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "K-Trend — eBay 셀러 리서치 워크벤치",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "gen:mock": "node scripts/generate-mock-data.mjs",
+    "compact": "node scripts/compact-snapshots.mjs",
+    "research": "node --env-file=.env scripts/daily-research.mjs",
+    "research:pro-only": "node --env-file=.env scripts/daily-research.mjs --pro-only",
+    "research:flash-only": "node --env-file=.env scripts/daily-research.mjs --flash-only"
+  },
+  "dependencies": {
+    "@google/genai": "^2.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

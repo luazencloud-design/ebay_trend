@@ -1,0 +1,76 @@
+# ── Dependencies ──────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.yarn/cache/
+.yarn/install-state.gz
+
+# ── Build output ─────────────────────────────────────────
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# ── Vite / dev caches ────────────────────────────────────
+.vite/
+.cache/
+.parcel-cache/
+
+# ── Environment / secrets ────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+# but commit the template
+!.env.example
+
+# ── Logs ─────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── OS noise ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ── IDE / editor ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+*.code-workspace
+
+# ── Deployment platform caches ───────────────────────────
+.vercel/
+.netlify/
+.firebase/
+
+# ── Coverage / test artifacts ────────────────────────────
+coverage/
+.nyc_output/
+
+# ── Project-specific ─────────────────────────────────────
+# Original Claude design handoff bundle (HTML/JSX prototypes)
+_prototype_backup/
+
+# Temp/scratch
+.tmp/
+tmp/
+*.bak
+*.tmp
+
+# Local Claude session data
+.claude/
+
+# Optional: snapshots are tracked by default so Vercel deploys
+# the latest data. If snapshots get too large, uncomment to
+# keep only yearly and let GitHub Actions regenerate dailies:
+# public/data/2*-[0-1][0-9]-[0-3][0-9]/
