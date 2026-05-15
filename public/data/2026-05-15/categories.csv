@@ -1,0 +1,21 @@
+rank,slug,name_kr,name_en,zone,change,comp,margin,summary
+1,k-beauty,K-뷰티,K-Beauty,red,2,5,35,리들샷·PDRN 등 성분 중심 K-뷰티가 시장 견인. 신제품 사이클이 빨라 경쟁이 치열함.
+2,k-pop-albums-photocards,K팝 앨범/포토카드,K-pop Albums/Photocards,red,0,5,25,글로벌 팬덤 기반의 안정적 수요. 한정판 앨범 및 미공개 포토카드 확보가 핵심 경쟁력.
+3,korean-instant-noodles,한국 인스턴트 라면,Korean Instant Noodles,red,-1,5,20,불닭볶음면 등 매운맛 챌린지 열풍 지속. 낮은 마진율을 물량으로 극복해야 하는 시장.
+4,k-fashion-apparel,K-패션 의류,K-Fashion Apparel,red,1,4,40,"빠른 트렌드 반영이 중요. 동대문 사입 경쟁이 치열하며, 사이즈 이슈에 대한 CS 대비 필요."
+5,k-pop-official-merchandise,K팝 공식 굿즈,K-pop Official Merchandise,red,-1,5,30,"응원봉, 시즌그리팅 등 공식 MD 수요 폭발적. 아티스트 컴백 및 투어 일정에 따른 판매 변동성 큼."
+6,k-stationery,K-문구/다꾸,K-Stationery,blue,3,3,50,"'다꾸(다이어리 꾸미기)' 문화 확산으로 스티커, 마스킹테이프 등 디자인 문구류 인기 상승 중."
+7,korean-health-supplements,한국 건강기능식품,Korean Health Supplements,blue,2,3,45,"홍삼, 콜라겐, 유산균 제품의 신뢰도 높음. 국가별 통관 기준 및 성분 규제 확인 필수."
+8,korean-snacks-confectionery,한국 과자/스낵,Korean Snacks & Confectionery,blue,0,4,30,"약과, 꼬북칩 등 전통과 트렌드를 결합한 스낵 인기. 유통기한 관리 및 번들 판매 전략 유효."
+9,k-drama-webtoon-goods,K-드라마/웹툰 굿즈,K-Drama/Webtoon Goods,blue,5,3,55,인기 작품의 방영 시기에 맞춰 수요 급증. IP 라이선스 확보가 어렵지만 마진율이 높음.
+10,korean-skincare-devices,한국 스킨케어 디바이스,Korean Skincare Devices,blue,-2,2,40,"LED 마스크, 갈바닉 등 홈케어 기기 수요 꾸준. 고가 상품으로 초기 투자 비용 및 A/S 정책 고려 필요."
+11,korean-traditional-crafts,한국 전통 공예품,Korean Traditional Crafts,blue,1,2,65,"자개(나전칠기), 보자기 등 독창성으로 어필. 소량 생산으로 재고 부담 적고 마진율이 매우 높음."
+12,k-pop-fan-made-goods,K팝 팬메이드 굿즈,K-pop Fan-Made Goods,blue,4,3,60,"비공식 굿즈 시장의 성장세. 저작권 이슈에 유의해야 하나, 독창적인 디자인으로 높은 수익 기대."
+13,korean-kitchenware,한국 주방용품,Korean Kitchenware,blue,-1,2,50,"쿡방 인기로 뚝배기, 돌솥, 수저 세트 등 판매 증가. 파손 위험 높아 포장에 각별한 주의 요구."
+14,korean-baby-products,한국 유아용품,Korean Baby Products,blue,0,3,45,안전성과 디자인을 중시하는 부모들에게 인기. KC인증 등 안전 관련 서류 구비가 중요.
+15,korean-socks-accessories,한국 양말/잡화,Korean Socks & Accessories,blue,2,4,35,저렴한 가격과 독특한 디자인으로 다량 구매 유도. 합배송 상품으로 객단가 높이는 전략 추천.
+16,korean-teas-beverages,한국 전통차/음료,Korean Teas & Beverages,blue,1,2,55,"유자차, 매실차 등 웰빙 트렌드에 부합하는 상품. 분말, 티백 형태가 배송 및 보관에 용이."
+17,k-indie-music-goods,K-인디음악 굿즈,K-Indie Music Goods,blue,6,1,70,"소수 팬덤을 타겟으로 하는 초블루오션 시장. LP, 한정판 굿즈 등 소장가치 높은 상품이 인기."
+18,korean-pet-supplies,한국 반려동물 용품,Korean Pet Supplies,blue,-3,2,50,"펫셔니스타를 위한 의류, 하네스 등 디자인 상품 강세. 사이즈 표기 및 소재 정보 상세 제공 필수."
+19,korean-character-goods,한국 캐릭터 굿즈,Korean Character Goods,blue,1,3,40,"카카오프렌즈, 라인프렌즈 등 글로벌 인지도 높은 캐릭터 상품. 신규 캐릭터 런칭 시 선점 중요."
+20,korean-manhwa-books,한국 만화책/서적,Korean Manhwa/Books,blue,3,2,48,웹툰 원작의 단행본 영문판 수요 증가. 언어 장벽이 낮아지며 새로운 블루오션으로 부상 중.
