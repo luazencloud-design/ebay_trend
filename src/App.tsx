@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Topbar } from "./components/Topbar";
 import { TweaksPanel } from "./components/TweaksPanel";
 import { Stage1Dashboard } from "./views/Stage1Dashboard";
@@ -6,12 +6,13 @@ import { Stage2Category } from "./views/Stage2Category";
 import { Stage3Sourcing } from "./views/Stage3Sourcing";
 import { useTweaks } from "./hooks/useTweaks";
 import { useAsync } from "./hooks/useAsync";
+import { useHistoryRoute } from "./hooks/useHistoryRoute";
 import { loadManifest } from "./lib/data-loader";
-import type { DateKey, Route } from "./types";
+import type { DateKey } from "./types";
 
 export function App() {
   const [tweaks, setTweak] = useTweaks();
-  const [route, setRoute] = useState<Route>({ stage: 1 });
+  const [route, nav] = useHistoryRoute();
   const [dateKey, setDateKey] = useState<DateKey | null>(null);
 
   // Load manifest once on mount. Once available, default dateKey = latest.
@@ -22,24 +23,16 @@ export function App() {
     }
   }, [manifestState.data, dateKey]);
 
-  const nav = useCallback((r: Route) => {
-    setRoute(r);
-    window.scrollTo({ top: 0, behavior: "instant" });
-  }, []);
-
+  // ESC pops up one stage. Uses nav() so the URL + history stay in sync.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setRoute((r) => {
-          if (r.stage === 3) return { stage: 2, cat: r.cat };
-          if (r.stage === 2) return { stage: 1 };
-          return r;
-        });
-      }
+      if (e.key !== "Escape") return;
+      if (route.stage === 3) nav({ stage: 2, cat: route.cat });
+      else if (route.stage === 2) nav({ stage: 1 });
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [route, nav]);
 
   return (
     <>
