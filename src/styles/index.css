@@ -1166,14 +1166,15 @@ body[data-typo="mono"] .cat-name-en, body[data-typo="mono"] .p-name-en { display
  * inner background drift — color gently breathes within the card. */
 .ai-insights {
   position: relative;
-  /* Hue range strictly blue ↔ purple (200 ~ 285).
-   * No magenta/pink (>300) — those reddish tones are harsh on long reads. */
+  /* Hue range: cyan ↔ soft magenta (200 ~ 310).
+   * Stops short of hue 320+ which reads as harsh red. */
   background: linear-gradient(
     135deg,
-    oklch(0.985 0.025 200) 0%,
-    oklch(0.98 0.035 230) 35%,
-    oklch(0.975 0.04 260) 65%,
-    oklch(0.98 0.035 285) 100%
+    oklch(0.985 0.03 200) 0%,
+    oklch(0.98 0.04 240) 30%,
+    oklch(0.975 0.045 275) 60%,
+    oklch(0.98 0.04 305) 85%,
+    oklch(0.985 0.035 320) 100%
   );
   background-size: 220% 220%;
   border: 1px solid var(--blue-bd);
