@@ -666,7 +666,7 @@ body[data-density="spacious"] .cat-name { font-size: 21px; }
 }
 .product-row {
   display: grid;
-  grid-template-columns: 32px minmax(0, 1fr) auto auto auto 24px;
+  grid-template-columns: 32px minmax(0, 1fr) auto auto auto;
   align-items: center;
   gap: 16px;
   padding: 12px 16px;

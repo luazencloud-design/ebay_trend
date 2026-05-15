@@ -9,7 +9,7 @@ import {
   ToolbarGroup,
   ToolbarSpacer,
 } from "../components/Toolbar";
-import { IconExternal, IconSearch } from "../components/icons";
+import { IconSearch } from "../components/icons";
 import { loadDataset } from "../lib/data-loader";
 import { useAsync } from "../hooks/useAsync";
 
@@ -95,9 +95,14 @@ export function Stage3Sourcing({ dateKey, catSlug, srcSlug, nav }: Stage3Props) 
       <div className="ai-disclaimer">
         <span className="dot" />
         <span>
-          이 페이지의 상품 정보는 <b>AI 분석 기반 추정치</b>입니다. 가격·재고는 도매처 사이트에서 직접 확인해 주세요.
-          <a href={`https://${src.url}`} target="_blank" rel="noopener noreferrer" className="link">
-            {src.url} 바로가기 →
+          이 페이지의 상품 정보는 <b>AI 분석 기반 추정치</b>입니다. 가격·재고는 도매처에서 직접 확인해 주세요.
+          <a
+            href={`https://www.google.com/search?q=${encodeURIComponent(src.name + " 도매")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            🔍 "{src.name}" 구글에서 검색
           </a>
         </span>
       </div>
@@ -105,9 +110,6 @@ export function Stage3Sourcing({ dateKey, catSlug, srcSlug, nav }: Stage3Props) 
       <div className="src-hero">
         <div className="meta">
           <h1>{src.name}</h1>
-          <div className="url">
-            <IconExternal /> &nbsp;{src.url}
-          </div>
           <div
             style={{
               display: "flex",

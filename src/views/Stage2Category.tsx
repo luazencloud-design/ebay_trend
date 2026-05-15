@@ -184,7 +184,6 @@ export function Stage2Category({ dateKey, catSlug, nav }: Stage2Props) {
               clickTarget
               onClick={() => nav({ stage: 3, cat: cat.slug, src: s.slug })}
               name={s.name}
-              sub={s.url}
               side={
                 <div
                   style={{

@@ -1,6 +1,5 @@
 import type { Product } from "../types";
 import { fmtKRW, fmtUSD } from "../lib/format";
-import { IconExternal } from "./icons";
 
 interface ProductCardProps {
   p: Product;
@@ -44,15 +43,6 @@ export function ProductCard({ p, rank }: ProductCardProps) {
       <div className={"pr-margin" + (p.margin >= 45 ? " hi" : "")}>
         {p.margin}%
       </div>
-
-      <a
-        className="pr-link"
-        href="#"
-        onClick={(e) => e.preventDefault()}
-        title="원본 사이트"
-      >
-        <IconExternal />
-      </a>
     </article>
   );
 }
