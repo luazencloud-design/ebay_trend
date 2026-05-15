@@ -1162,86 +1162,29 @@ body[data-typo="mono"] .cat-name-en, body[data-typo="mono"] .p-name-en { display
 }
 
 /* ── AI Insights ────────────────────────────────────────── */
-/* Card uses dual-background gradient border trick:
- *   - inner padding-box = soft pastel surface (also gently shifts)
- *   - outer border-box  = vivid moving gradient
- * Different background-sizes per layer let us animate only the border. */
+/* Static border, contained interior. The only animation is a slow
+ * inner background drift — color gently breathes within the card. */
 .ai-insights {
   position: relative;
-  border: 1px solid transparent;
+  background: linear-gradient(
+    135deg,
+    oklch(0.985 0.02 270) 0%,
+    oklch(0.975 0.04 248) 35%,
+    oklch(0.975 0.04 320) 65%,
+    oklch(0.985 0.02 200) 100%
+  );
+  background-size: 220% 220%;
+  border: 1px solid var(--blue-bd);
   border-radius: 12px;
   padding: 14px 18px 16px;
   margin-bottom: 16px;
-  isolation: isolate;
-  background:
-    linear-gradient(
-      135deg,
-      oklch(0.985 0.02 270) 0%,
-      oklch(0.975 0.04 248) 35%,
-      oklch(0.975 0.04 320) 65%,
-      oklch(0.985 0.02 200) 100%
-    ) padding-box,
-    linear-gradient(
-      120deg,
-      oklch(0.72 0.18 248) 0%,
-      oklch(0.68 0.22 290) 22%,
-      oklch(0.78 0.15 200) 44%,
-      oklch(0.68 0.22 320) 66%,
-      oklch(0.78 0.18 170) 88%,
-      oklch(0.72 0.18 248) 100%
-    ) border-box;
-  background-size: 240% 240%, 320% 100%;
-  animation:
-    ai-bg-flow 14s ease-in-out infinite,
-    ai-border-flow 6s linear infinite;
-}
-
-/* Soft outer glow halo — adds depth without being loud */
-.ai-insights::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: 13px;
-  background: linear-gradient(
-    120deg,
-    oklch(0.7 0.2 248 / 0.35) 0%,
-    oklch(0.7 0.2 320 / 0.3) 50%,
-    oklch(0.7 0.2 200 / 0.35) 100%
-  );
-  background-size: 200% 100%;
-  z-index: -1;
-  filter: blur(14px);
-  opacity: 0.55;
-  animation: ai-border-flow 6s linear infinite;
-  pointer-events: none;
-}
-
-/* Tiny sparkle accent at top-right corner */
-.ai-insights::after {
-  content: "✦";
-  position: absolute;
-  top: -6px;
-  right: 22px;
-  font-size: 11px;
-  color: oklch(0.65 0.2 290);
-  text-shadow: 0 0 6px oklch(0.7 0.18 290 / 0.7);
-  animation: ai-sparkle 3.2s ease-in-out infinite;
-  pointer-events: none;
+  overflow: hidden;
+  animation: ai-bg-flow 14s ease-in-out infinite;
 }
 
 @keyframes ai-bg-flow {
-  0%, 100% { background-position: 0% 50%, 0% 50%; }
-  50%      { background-position: 100% 50%, 0% 50%; }
-}
-
-@keyframes ai-border-flow {
-  0%   { background-position: 0% 50%, 0% 50%; }
-  100% { background-position: 0% 50%, 320% 50%; }
-}
-
-@keyframes ai-sparkle {
-  0%, 100% { opacity: 0; transform: translateY(0) scale(0.7); }
-  50%      { opacity: 0.9; transform: translateY(-3px) scale(1.1); }
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
 }
 .ai-head {
   display: flex; align-items: center; gap: 12px;
@@ -1259,21 +1202,18 @@ body[data-typo="mono"] .cat-name-en, body[data-typo="mono"] .p-name-en { display
   display: inline-block;
   font-size: 14px; line-height: 1;
   color: oklch(0.55 0.2 248);
-  text-shadow: 0 0 6px oklch(0.7 0.18 248 / 0.5);
-  animation: ai-twinkle 2.8s ease-in-out infinite;
-  transform-origin: center;
+  text-shadow: 0 0 6px oklch(0.7 0.18 248 / 0.45);
+  animation: ai-twinkle 3s ease-in-out infinite;
 }
 
 @keyframes ai-twinkle {
   0%, 100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-    text-shadow: 0 0 6px oklch(0.7 0.18 248 / 0.5);
+    opacity: 0.85;
+    text-shadow: 0 0 4px oklch(0.7 0.18 248 / 0.35);
   }
   50% {
-    opacity: 0.6;
-    transform: scale(1.2) rotate(180deg);
-    text-shadow: 0 0 14px oklch(0.65 0.22 290 / 0.85);
+    opacity: 1;
+    text-shadow: 0 0 10px oklch(0.65 0.2 248 / 0.7);
   }
 }
 
