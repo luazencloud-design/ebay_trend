@@ -103,7 +103,6 @@ export function Stage3Sourcing({ dateKey, catSlug, srcSlug, nav }: Stage3Props) 
       </div>
 
       <div className="src-hero">
-        <div className="icon">{src.initials}</div>
         <div className="meta">
           <h1>{src.name}</h1>
           <div className="url">

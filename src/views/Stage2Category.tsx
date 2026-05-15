@@ -125,8 +125,6 @@ export function Stage2Category({ dateKey, catSlug, nav }: Stage2Props) {
               <RankRow
                 key={b.rank}
                 rank={b.rank}
-                thumb={b.initials}
-                brandThumb
                 active={brandFilter === b.name}
                 onClick={() => setBrandFilter(b.name === brandFilter ? null : b.name)}
                 name={
@@ -154,7 +152,6 @@ export function Stage2Category({ dateKey, catSlug, nav }: Stage2Props) {
               <RankRow
                 key={p.rank}
                 rank={p.rank}
-                thumb={p.brand.slice(0, 2)}
                 name={
                   <>
                     {p.name}
@@ -184,7 +181,6 @@ export function Stage2Category({ dateKey, catSlug, nav }: Stage2Props) {
             <RankRow
               key={s.rank}
               rank={s.rank}
-              thumb={s.initials}
               clickTarget
               onClick={() => nav({ stage: 3, cat: cat.slug, src: s.slug })}
               name={s.name}

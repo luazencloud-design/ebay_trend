@@ -2,8 +2,6 @@ import { cx } from "../lib/format";
 
 interface RankRowProps {
   rank: number;
-  thumb: string;
-  brandThumb?: boolean;
   name: React.ReactNode;
   sub?: React.ReactNode;
   side?: React.ReactNode;
@@ -14,8 +12,6 @@ interface RankRowProps {
 
 export function RankRow({
   rank,
-  thumb,
-  brandThumb,
   name,
   sub,
   side,
@@ -35,7 +31,6 @@ export function RankRow({
       onClick={onClick}
     >
       <span className="r-rank">{String(rank).padStart(2, "0")}</span>
-      <div className={cx("r-thumb", brandThumb && "brand")}>{thumb}</div>
       <div className="r-main">
         <span className="r-name">{name}</span>
         {sub && <span className="r-sub">{sub}</span>}
