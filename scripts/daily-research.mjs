@@ -78,6 +78,19 @@ async function writeText(filePath, text) {
   await fs.writeFile(filePath, text, "utf8");
 }
 
+// Hard JSON-only suffix appended to every grounded prompt. Grounded calls
+// cannot use responseMimeType: "application/json", so the model occasionally
+// returns markdown tables. Recency bias = the strongest instruction goes last.
+const JSON_ONLY_SUFFIX = `
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ 출력 형식 (반드시 준수)
+- 응답 전체가 하나의 JSON 객체여야 합니다.
+- 첫 문자는 '{', 마지막 문자는 '}'.
+- 마크다운 헤더(##), 표(|), 코드 펜스(\`\`\`), 자연어 설명문 절대 금지.
+- 이 응답은 JSON.parse()로 직접 파싱됩니다. 한 글자라도 다른 내용이 섞이면 에러.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
+
 // ─── Prompts ──────────────────────────────────────────────────────────
 
 const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 오늘은 ${DATE}이고, eBay에서 한국 상품이 가장 잘 팔리는 카테고리 TOP 20을 조사합니다.
@@ -153,7 +166,7 @@ ${catList}
 - change: 어제 대비 순위 변동 -10~+10 정수 (추정 OK)
 - initials: 이름 한글/영문 2글자 (예: "메디", "JY")
 - rank: 카테고리 내 인기 순위 1부터
-- 카테고리당 최대 20개, 검증 불가하면 더 적게`;
+- 카테고리당 최대 20개, 검증 불가하면 더 적게${JSON_ONLY_SUFFIX}`;
 }
 
 function promptSourcing(categories) {
@@ -213,7 +226,46 @@ ${catList}
 - fit: 해당 카테고리 상품 적합도 1~5 정수
 - slug: url의 . 과 / 를 - 로 (예: "domeggook-com", "naver-com-smartstore")
 - initials: 이름 영문 2글자 대문자 (예: "DM" for 도매꾹)
-- 각 카테고리당 최대 10개, 검증 가능한 사이트가 부족하면 더 적게 OK`;
+- 각 카테고리당 최대 10개, 검증 가능한 사이트가 부족하면 더 적게 OK${JSON_ONLY_SUFFIX}`;
+}
+
+function promptInsights(categories) {
+  const compact = categories
+    .map((c) => `${c.rank}. ${c.name_kr} (${c.slug}) zone=${c.zone} change=${c.change} comp=${c.comp} margin=${c.margin}% — ${c.summary}`)
+    .join("\n");
+
+  return `당신은 eBay 한국 상품 셀러를 위한 트렌드 분석가입니다. 아래 카테고리 데이터를 보고 세 가지 시간 단위로 AI 인사이트를 작성해주세요.
+
+오늘 카테고리 TOP 20 (rank/zone/change/comp/margin/summary):
+${compact}
+
+각 인사이트는 셀러가 **무엇을 해야 하는지** 행동 지침을 포함해야 합니다.
+
+응답은 다음 JSON 스키마로만 (마크다운 펜스, 다른 텍스트 금지):
+
+{
+  "daily": {
+    "headline": "오늘 한 줄 (15자 내외)",
+    "body": "오늘 가장 큰 변화 + 셀러 행동 추천. 2~3 문장. (예: 한방 영양제 ▲5 급상승. 홍삼/콜라겐 외 신규 진입 카테고리. 오너클랜·도매토피아 둘러볼 타이밍.)",
+    "focus_categories": ["slug1", "slug2"]
+  },
+  "weekly": {
+    "headline": "이번 주 한 줄 (20자 내외)",
+    "body": "지난 일주일 트렌드 흐름 + 다음 주 전략. 3~5 문장. (예: 키덜트 토이가 일주일째 상승세. 프라모델·블라인드박스 글로벌 컬렉터 수요 가속. 마진 45%로 매력적이라 신규 셀러 진입 권장.)",
+    "focus_categories": ["slug1", "slug2", "slug3"]
+  },
+  "yearly": {
+    "headline": "2026 시장 한 줄 (25자 내외)",
+    "body": "올해 K-상품 시장의 큰 그림 + 장기 포트폴리오 조언. 4~6 문장. 어떤 카테고리가 장기적으로 유망한지, 어떤 게 포화되고 있는지, 셀러는 어떤 믹스로 가야 하는지 등.",
+    "focus_categories": ["slug1", "slug2", "slug3", "slug4"]
+  }
+}
+
+조건:
+- focus_categories는 반드시 위 카테고리 slug 목록에서 선택
+- 톤: 데이터 기반의 자신감 있는 어드바이저. 마케팅 카피 NO, 분석가 톤 YES
+- 한국어 자연스럽게, 과장 금지
+- "AI가 추천하는데..." 같은 자기언급 금지`;
 }
 
 function promptProducts(categories, brandsByCat, sourcingByCat) {
@@ -288,7 +340,7 @@ ${catList}
 - ebay_cat_id: 5자리 숫자 문자열 (모르면 합리적 추측)
 - seo_tags: 영문 검색어 3개 배열
 - change: 7일 전 대비 -10~+10 정수
-- source_slugs: 위 sources 목록에서 **3~5개 선택** (이 카테고리 상품을 합리적으로 다룰만한 도매처들)`;
+- source_slugs: 위 sources 목록에서 **3~5개 선택** (이 카테고리 상품을 합리적으로 다룰만한 도매처들)${JSON_ONLY_SUFFIX}`;
 }
 
 // ─── Pipeline ─────────────────────────────────────────────────────────
@@ -426,6 +478,32 @@ async function step4Products(categories, brands, sourcing) {
   return allProducts;
 }
 
+async function step4bInsights(categories) {
+  // Lightweight Pro call (no grounding, minimal thinking). Generates daily,
+  // weekly, and yearly seller-actionable insights in one shot.
+  const model = PRO;
+  console.log(`④b AI insights (${model}, no grounding, thinking=128)…`);
+  const res = await generateJson(promptInsights(categories), {
+    label: "insights",
+    model,
+    maxOutputTokens: 65535,
+    thinkingBudget: 128,
+  });
+  const bundle = {
+    generated_at: new Date().toISOString(),
+    source_model: model,
+    daily: res.daily,
+    weekly: res.weekly,
+    yearly: res.yearly,
+  };
+  await writeText(
+    path.join(OUT_DIR, "insights.json"),
+    JSON.stringify(bundle, null, 2) + "\n"
+  );
+  console.log(`   ✓ insights saved (daily / weekly / yearly)\n`);
+  return bundle;
+}
+
 async function step5MetaAndLatest() {
   // Reflect actual models used per step. brands/sourcing/products all use
   // Pro + Google Search grounding regardless of MODEL_TABLES (which only
@@ -493,6 +571,7 @@ async function main() {
   const brands = await step2Brands(categories);
   const sourcing = await step3Sourcing(categories);
   await step4Products(categories, brands, sourcing);
+  await step4bInsights(categories);
   await step5MetaAndLatest();
   step6Compact();
 

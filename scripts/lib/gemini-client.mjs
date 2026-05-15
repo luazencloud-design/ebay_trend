@@ -135,13 +135,18 @@ export async function generateJson(
     } catch (err) {
       lastErr = err;
       const status = err?.status || err?.code;
+      const msg = String(err?.message || "");
+      // Non-JSON output (Gemini returned markdown/prose) is also retriable —
+      // the next sample is probabilistic and often produces valid JSON.
+      const isParseError = msg.startsWith("Gemini returned non-JSON output");
       const retriable =
         status === 429 ||
         status === 500 ||
         status === 502 ||
         status === 503 ||
         status === 504 ||
-        /timeout|temporar|rate/i.test(String(err?.message));
+        isParseError ||
+        /timeout|temporar|rate/i.test(msg);
       if (!retriable || attempt === maxAttempts) break;
       const wait = 800 * Math.pow(2, attempt - 1);
       process.stdout.write(
