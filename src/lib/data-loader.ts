@@ -5,6 +5,7 @@ import type {
   Dataset,
   DatasetMeta,
   DateKey,
+  InsightsBundle,
   Manifest,
   Product,
   SourcingSite,
@@ -45,12 +46,18 @@ export function loadDataset(key: DateKey): Promise<Dataset> {
 
   const p = (async () => {
     const base = `${BASE}/${key}`;
-    const [catText, brText, prText, srText, meta] = await Promise.all([
+    // Insights are optional — old snapshots may not have one. Swallow 404.
+    const insightsP: Promise<InsightsBundle | undefined> = fetchJson<InsightsBundle>(
+      `${base}/insights.json`
+    ).catch(() => undefined);
+
+    const [catText, brText, prText, srText, meta, insights] = await Promise.all([
       fetchText(`${base}/categories.csv`),
       fetchText(`${base}/brands.csv`),
       fetchText(`${base}/products.csv`),
       fetchText(`${base}/sourcing.csv`),
       fetchJson<DatasetMeta>(`${base}/meta.json`),
+      insightsP,
     ]);
 
     const categories = parseCsv<Category>(
@@ -65,7 +72,7 @@ export function loadDataset(key: DateKey): Promise<Dataset> {
     );
     const sourcing = parseCsv<SourcingSite>(srText, ["rank", "rely", "fit"]);
 
-    return { ...meta, categories, brands, products, sourcing };
+    return { ...meta, categories, brands, products, sourcing, insights };
   })();
 
   datasetCache.set(key, p);

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-13T19:00:00.000Z",
+  "source_model": "sample-backfill",
+  "daily": {
+    "headline": "한방 영양제 ▲5 급상승",
+    "body": "어제 대비 한방 영양제가 5계단 상승하며 8위로 진입. 콜라겐 젤리·홍삼 외 신규 카테고리 진입 중. 오너클랜·도매토피아에 새 상품 진열 확인 권장. 마진율 52%로 진입 매력 ↑.",
+    "focus_categories": [
+      "herbal-supplements",
+      "k-beauty"
+    ]
+  },
+  "weekly": {
+    "headline": "키덜트 토이 일주일째 상승세",
+    "body": "프라모델·피규어·블라인드박스 카테고리가 지난 주 내내 상승. 글로벌 컬렉터 수요가 가속되고 있어 마진 45%에도 회전 빠름. 다음 주 신상 입고 일정 미리 확인하고 SEO 키워드 (gunpla, kpop figure, blind box) 강화 추천. K-팝 굿즈와 묶음 판매도 효과적.",
+    "focus_categories": [
+      "adult-toys",
+      "k-pop-merch",
+      "character-goods"
+    ]
+  },
+  "yearly": {
+    "headline": "2026 K-상품: 콘텐츠 IP × 헬스의 해",
+    "body": "올해 K-시장의 큰 줄기는 두 가지. 첫째, 콘텐츠 IP 굿즈(K-팝·캐릭터·드라마)가 단가 ↓ 마진 ↓ 회전 ↑로 박리다매 전략. 둘째, 한방 영양제·이너뷰티가 단가 ↑ 마진 ↑ 충성도 ↑로 자리잡음. 셀러는 두 축을 7:3 또는 5:5로 믹스해 운영 위험 분산 권장. 레드존 K-뷰티는 신규 진입 자제, 진입한다면 PDRN 같은 신성분으로 세분화.",
+    "focus_categories": [
+      "herbal-supplements",
+      "k-pop-merch",
+      "k-beauty",
+      "modern-hanbok"
+    ]
+  }
+}

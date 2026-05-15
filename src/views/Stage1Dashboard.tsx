@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import type { Category, DateKey, Manifest, Route, Zone } from "../types";
+import { AIInsights } from "../components/AIInsights";
 import { CategoryCard } from "../components/CategoryCard";
 import { DateSelector } from "../components/DateSelector";
 import { HintBanner } from "../components/HintBanner";
@@ -73,15 +74,23 @@ export function Stage1Dashboard({ dateKey, setDateKey, manifest, nav }: Stage1Pr
         </div>
       </div>
 
-      <HintBanner open={hintOpen} onClose={() => setHintOpen(false)}>
-        <b>어제 대비 변동</b>
-        {surgers.length > 0 && (
-          <>
-            {" "}· {surgers.map((s) => `${s.name_kr} ▲${s.change}`).join(", ")}.
-          </>
-        )}{" "}
-        변동(▲▼)은 어제 스냅샷 기준이에요.
-      </HintBanner>
+      {ds.data?.insights ? (
+        <AIInsights
+          bundle={ds.data.insights}
+          categories={all}
+          onCategoryClick={(slug) => nav({ stage: 2, cat: slug })}
+        />
+      ) : (
+        <HintBanner open={hintOpen} onClose={() => setHintOpen(false)}>
+          <b>어제 대비 변동</b>
+          {surgers.length > 0 && (
+            <>
+              {" "}· {surgers.map((s) => `${s.name_kr} ▲${s.change}`).join(", ")}.
+            </>
+          )}{" "}
+          변동(▲▼)은 어제 스냅샷 기준이에요.
+        </HintBanner>
+      )}
 
       <Toolbar>
         <div className="zone-tabs" role="tablist">

@@ -73,11 +73,28 @@ export interface DatasetMeta {
   };
 }
 
+export type InsightPeriod = "daily" | "weekly" | "yearly";
+
+export interface Insight {
+  headline: string;          // 한 줄 요약 (10~20자)
+  body: string;              // 본문 2~5문장
+  focus_categories: string[]; // 관련 카테고리 slug (클릭 가능)
+}
+
+export interface InsightsBundle {
+  generated_at: string;
+  source_model: string;
+  daily: Insight;
+  weekly: Insight;
+  yearly: Insight;
+}
+
 export interface Dataset extends DatasetMeta {
   categories: Category[];
   brands: Brand[];
   products: Product[];
   sourcing: SourcingSite[];
+  insights?: InsightsBundle;
 }
 
 export interface LatestPointer {
