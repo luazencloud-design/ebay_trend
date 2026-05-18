@@ -33,11 +33,11 @@ export function Topbar({ route, nav, updatedAt = "오늘 04:00" }: TopbarProps) 
         <div className="topbar-meta">
           <span
             style={{ display: "inline-flex", alignItems: "center", gap: 6 }}
-            title="최근 30일은 매일 단위 보관, 30~180일은 주 단위, 180일~1년은 월 단위로 자동 압축됩니다."
+            title="주 1회 (월요일 새벽) 갱신. 30일 이상 지난 스냅샷은 자동 압축됩니다."
           >
             <span className="dot" />
             <span className="mono">{updatedAt}</span>
-            <span>업데이트 · 어제 대비</span>
+            <span>업데이트 · 지난 주 대비</span>
           </span>
           <span style={{ width: 1, height: 18, background: "var(--border)" }} />
           <span>

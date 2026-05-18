@@ -10,17 +10,57 @@ interface DateSelectorProps {
   onChange: (key: DateKey) => void;
 }
 
+function pad2(n: number): string {
+  return String(n).padStart(2, "0");
+}
+
+/** Compute "M월 N주차" label for a date key. */
+function weekLabel(key: string): { main: string; sub: string } | null {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(key);
+  if (!m) return null;
+  const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+
+  // Find Monday of this week
+  const monday = new Date(d);
+  const dow = monday.getDay();
+  const offset = dow === 0 ? -6 : 1 - dow;
+  monday.setDate(monday.getDate() + offset);
+
+  // Position-of-Monday within the month
+  let firstMonday = new Date(monday.getFullYear(), monday.getMonth(), 1);
+  while (firstMonday.getDay() !== 1) {
+    firstMonday.setDate(firstMonday.getDate() + 1);
+  }
+  const weekN =
+    Math.floor((monday.getDate() - firstMonday.getDate()) / 7) + 1;
+
+  return {
+    main: `${monday.getMonth() + 1}월 ${weekN}주차`,
+    sub: `${monday.getMonth() + 1}/${monday.getDate()} ~ ${d.getMonth() + 1}/${d.getDate()} 데이터`,
+  };
+}
+
 function dailyRelativeLabel(key: string, latest: DateKey | null): string {
   if (!latest || !/^\d{4}-\d{2}-\d{2}$/.test(latest)) return "";
-  if (key === latest) return "오늘 · 매일 갱신";
-  const latestDate = new Date(latest);
-  const entryDate = new Date(key);
-  const days = Math.round(
-    (latestDate.getTime() - entryDate.getTime()) / (1000 * 60 * 60 * 24)
+  // Same week as latest?
+  const a = new Date(key);
+  const b = new Date(latest);
+  const offsetA = a.getDay() === 0 ? -6 : 1 - a.getDay();
+  const offsetB = b.getDay() === 0 ? -6 : 1 - b.getDay();
+  const mondayA = new Date(a); mondayA.setDate(a.getDate() + offsetA);
+  const mondayB = new Date(b); mondayB.setDate(b.getDate() + offsetB);
+  if (
+    mondayA.getFullYear() === mondayB.getFullYear() &&
+    mondayA.getMonth() === mondayB.getMonth() &&
+    mondayA.getDate() === mondayB.getDate()
+  ) {
+    return "이번 주 · 최신";
+  }
+  const weeksDiff = Math.round(
+    (mondayB.getTime() - mondayA.getTime()) / (1000 * 60 * 60 * 24 * 7)
   );
-  if (days === 1) return "어제";
-  if (days > 1 && days < 7) return `${days}일 전`;
-  if (days >= 7 && days < 14) return "지난 주";
+  if (weeksDiff === 1) return "지난 주";
+  if (weeksDiff > 1) return `${weeksDiff}주 전`;
   return "";
 }
 
@@ -56,12 +96,18 @@ export function DateSelector({
   const isDaily = /^\d{4}-\d{2}-\d{2}$/.test(value);
   const isYearly = /-final$/.test(value);
 
-  const triggerMain = isYearly ? value.replace("-final", " 결산") : value;
-  const triggerSub = isDaily
-    ? dailyRelativeLabel(value, latest)
-    : isYearly
-      ? "고정 데이터"
-      : "";
+  let triggerMain = value;
+  let triggerSub = "";
+  if (isYearly) {
+    triggerMain = value.replace("-final", " 결산");
+    triggerSub = "고정 데이터";
+  } else if (isDaily) {
+    const wl = weekLabel(value);
+    if (wl) {
+      triggerMain = wl.main;
+      triggerSub = dailyRelativeLabel(value, latest) || wl.sub;
+    }
+  }
 
   return (
     <div className="date-selector" ref={ref}>

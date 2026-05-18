@@ -6,22 +6,22 @@ interface CalendarPickerProps {
   value: DateKey | null;
   /** All available daily snapshot keys. */
   availableDaily: Set<string>;
-  /** Today's date in KST, used to highlight today. */
+  /** Today's date in KST, used to highlight current week. */
   todayKey?: string;
   onSelect: (key: DateKey) => void;
 }
 
-const WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"];
 const MONTH_NAMES = [
   "1월", "2월", "3월", "4월", "5월", "6월",
   "7월", "8월", "9월", "10월", "11월", "12월",
 ];
 
+function pad2(n: number): string {
+  return String(n).padStart(2, "0");
+}
+
 function toKey(d: Date): string {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`;
 }
 
 function parseKey(k: string): Date | null {
@@ -30,42 +30,64 @@ function parseKey(k: string): Date | null {
   return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
 }
 
-interface Cell {
-  date: Date;
-  key: string;
-  muted: boolean;
+function addDays(d: Date, n: number): Date {
+  const x = new Date(d);
+  x.setDate(x.getDate() + n);
+  return x;
 }
 
-function buildMonthCells(year: number, month: number): Cell[] {
-  const first = new Date(year, month, 1);
-  const startWeekday = first.getDay(); // 0=Sun
-  const daysInMonth = new Date(year, month + 1, 0).getDate();
-  const cells: Cell[] = [];
+/** Return the Monday of the week containing this date. */
+function getMonday(d: Date): Date {
+  const x = new Date(d);
+  const dow = x.getDay(); // 0=Sun, 1=Mon, ...
+  const offset = dow === 0 ? -6 : 1 - dow;
+  x.setDate(x.getDate() + offset);
+  x.setHours(0, 0, 0, 0);
+  return x;
+}
 
-  // Previous month tail
-  if (startWeekday > 0) {
-    const prevLastDate = new Date(year, month, 0).getDate();
-    for (let i = startWeekday - 1; i >= 0; i--) {
-      const d = new Date(year, month - 1, prevLastDate - i);
-      cells.push({ date: d, key: toKey(d), muted: true });
+interface WeekRow {
+  monday: Date;
+  sunday: Date;
+  weekN: number;
+  available: string | null; // latest daily key in this week's range
+}
+
+/** Build all weeks whose Monday falls inside the given month. */
+function buildWeeksForMonth(
+  year: number,
+  month: number,
+  availableDaily: Set<string>
+): WeekRow[] {
+  // Find first Monday in the month
+  let monday = new Date(year, month, 1);
+  while (monday.getDay() !== 1) {
+    monday.setDate(monday.getDate() + 1);
+  }
+
+  const weeks: WeekRow[] = [];
+  let weekN = 1;
+  while (monday.getMonth() === month) {
+    const sunday = addDays(monday, 6);
+
+    // Find latest daily snapshot in [monday, sunday]
+    let latest: string | null = null;
+    for (let i = 0; i < 7; i++) {
+      const key: string = toKey(addDays(monday, i));
+      if (availableDaily.has(key)) {
+        if (latest === null || key > latest) latest = key;
+      }
     }
+
+    weeks.push({ monday: new Date(monday), sunday, weekN, available: latest });
+    monday = addDays(monday, 7);
+    weekN++;
   }
 
-  // Current month
-  for (let d = 1; d <= daysInMonth; d++) {
-    const date = new Date(year, month, d);
-    cells.push({ date, key: toKey(date), muted: false });
-  }
-
-  // Next month head — fill to 6 rows (42 cells)
-  const remaining = 42 - cells.length;
-  for (let d = 1; d <= remaining; d++) {
-    const date = new Date(year, month + 1, d);
-    cells.push({ date, key: toKey(date), muted: true });
-  }
-
-  return cells;
+  return weeks;
 }
+
+const fmtMD = (d: Date): string => `${d.getMonth() + 1}/${d.getDate()}`;
 
 export function CalendarPicker({
   value,
@@ -73,10 +95,9 @@ export function CalendarPicker({
   todayKey,
   onSelect,
 }: CalendarPickerProps) {
-  // Initial month: from selected value, else today, else latest available
   const initial = useMemo(() => {
-    const fromSelected = value ? parseKey(value) : null;
-    if (fromSelected) return fromSelected;
+    const fromValue = value ? parseKey(value) : null;
+    if (fromValue) return fromValue;
     const fromToday = todayKey ? parseKey(todayKey) : null;
     if (fromToday) return fromToday;
     const latest = [...availableDaily].sort().reverse()[0];
@@ -87,9 +108,9 @@ export function CalendarPicker({
   const [viewYear, setViewYear] = useState(initial.getFullYear());
   const [viewMonth, setViewMonth] = useState(initial.getMonth());
 
-  const cells = useMemo(
-    () => buildMonthCells(viewYear, viewMonth),
-    [viewYear, viewMonth]
+  const weeks = useMemo(
+    () => buildWeeksForMonth(viewYear, viewMonth, availableDaily),
+    [viewYear, viewMonth, availableDaily]
   );
 
   const goPrev = () => {
@@ -109,6 +130,14 @@ export function CalendarPicker({
     }
   };
 
+  // Which week (Monday key) is the selected snapshot in?
+  const selectedDate = value ? parseKey(value) : null;
+  const selectedMondayKey = selectedDate ? toKey(getMonday(selectedDate)) : null;
+
+  // Which week is "this week" (per todayKey)?
+  const todayDate = todayKey ? parseKey(todayKey) : null;
+  const thisWeekMondayKey = todayDate ? toKey(getMonday(todayDate)) : null;
+
   return (
     <div className="cal">
       <div className="cal-head">
@@ -123,40 +152,42 @@ export function CalendarPicker({
         </button>
       </div>
 
-      <div className="cal-weekdays">
-        {WEEKDAYS.map((w, i) => (
-          <span
-            key={w}
-            className={"cal-weekday" + (i === 0 ? " sun" : i === 6 ? " sat" : "")}
-          >
-            {w}
-          </span>
-        ))}
-      </div>
+      <div className="cal-weeks">
+        {weeks.map((w) => {
+          const mKey = toKey(w.monday);
+          const isSelected = selectedMondayKey === mKey;
+          const isThisWeek = thisWeekMondayKey === mKey;
+          const isAvail = w.available !== null;
 
-      <div className="cal-grid">
-        {cells.map((c, i) => {
-          const available = availableDaily.has(c.key);
-          const selected = c.key === value;
-          const today = c.key === todayKey;
-          const dow = c.date.getDay();
           return (
             <button
-              key={i}
+              key={mKey}
               className={
-                "cal-cell" +
-                (c.muted ? " muted" : "") +
-                (available ? " avail" : " unavail") +
-                (selected ? " selected" : "") +
-                (today ? " today" : "") +
-                (dow === 0 ? " sun" : dow === 6 ? " sat" : "")
+                "cal-week-row" +
+                (isAvail ? " avail" : " unavail") +
+                (isSelected ? " selected" : "") +
+                (isThisWeek ? " this-week" : "")
               }
-              disabled={!available}
-              onClick={() => available && onSelect(c.key)}
-              title={available ? c.key : "데이터 없음"}
+              disabled={!isAvail}
+              onClick={() => isAvail && w.available && onSelect(w.available)}
+              title={isAvail ? `최신 데이터: ${w.available}` : "데이터 없음"}
             >
-              <span className="cal-day mono">{c.date.getDate()}</span>
-              {available && <span className="cal-dot" />}
+              <span className="cal-week-num mono">
+                {viewMonth + 1}월 {w.weekN}주차
+              </span>
+              <span className="cal-week-range mono">
+                {fmtMD(w.monday)} ~ {fmtMD(w.sunday)}
+              </span>
+              <span className="cal-week-status mono">
+                {isAvail ? (
+                  <>
+                    {isThisWeek ? "이번 주 " : ""}
+                    {w.available!.slice(5).replace("-", "/")}
+                  </>
+                ) : (
+                  <span className="dim">—</span>
+                )}
+              </span>
             </button>
           );
         })}

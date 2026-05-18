@@ -54,7 +54,7 @@ export function Stage1Dashboard({ dateKey, setDateKey, manifest, nav }: Stage1Pr
         <div>
           <h1 className="page-title">eBay에서 잘 팔리는 한국 상품 카테고리</h1>
           <p className="page-sub">
-            매일 새벽 4시 Gemini 리서치 결과를 기반으로 카테고리 → 브랜드 → 상품 → 소싱처를 한 흐름으로 보여줍니다.
+            매주 월요일 새벽 Gemini 리서치 결과를 기반으로 카테고리 → 브랜드 → 상품 → 소싱처를 한 흐름으로 보여줍니다.
             <span style={{ color: "var(--red)" }}> 레드존(1–5)</span>은 레드오션,{" "}
             <span style={{ color: "var(--blue)" }}>블루존(6–20)</span>은 진입 기회.
           </p>
@@ -82,13 +82,13 @@ export function Stage1Dashboard({ dateKey, setDateKey, manifest, nav }: Stage1Pr
         />
       ) : (
         <HintBanner open={hintOpen} onClose={() => setHintOpen(false)}>
-          <b>어제 대비 변동</b>
+          <b>지난 주 대비 변동</b>
           {surgers.length > 0 && (
             <>
               {" "}· {surgers.map((s) => `${s.name_kr} ▲${s.change}`).join(", ")}.
             </>
           )}{" "}
-          변동(▲▼)은 어제 스냅샷 기준이에요.
+          변동(▲▼)은 지난 주 스냅샷 기준이에요.
         </HintBanner>
       )}
 

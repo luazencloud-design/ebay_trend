@@ -1058,81 +1058,72 @@ body[data-typo="mono"] .cat-name-en, body[data-typo="mono"] .p-name-en { display
 }
 .cal-nav:hover { background: var(--hover); color: var(--text); }
 
-.cal-weekdays {
-  display: grid; grid-template-columns: repeat(7, 1fr);
-  gap: 2px; margin-bottom: 2px;
-}
-.cal-weekday {
-  font-size: 10px; font-weight: 600;
-  color: var(--text-3);
-  text-align: center;
-  padding: 4px 0;
-  letter-spacing: 0.02em;
-}
-.cal-weekday.sun { color: var(--red); }
-.cal-weekday.sat { color: var(--blue); }
-
-.cal-grid {
-  display: grid; grid-template-columns: repeat(7, 1fr);
-  gap: 2px;
-}
-.cal-cell {
-  position: relative;
-  appearance: none; background: transparent; border: 0;
-  aspect-ratio: 1; border-radius: 6px;
-  cursor: pointer; font: inherit;
+/* Week-list view — one row per week of the displayed month */
+.cal-weeks {
   display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  padding: 0;
-  transition: background 100ms, color 100ms;
+  gap: 4px;
 }
-.cal-day {
-  font-size: 11.5px;
+.cal-week-row {
+  display: grid;
+  grid-template-columns: 84px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition: background 100ms, border-color 100ms;
+}
+.cal-week-num {
+  font-size: 12.5px; font-weight: 600;
   color: var(--text);
+  white-space: nowrap;
+}
+.cal-week-range {
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+.cal-week-status {
+  font-size: 10.5px;
+  color: var(--blue);
+  white-space: nowrap;
+}
+.cal-week-status .dim {
+  color: var(--text-muted);
 }
 
-/* Muted (other month) */
-.cal-cell.muted .cal-day { color: var(--text-muted); opacity: 0.55; }
-
-/* Weekday tinting */
-.cal-cell.sun .cal-day { color: var(--red); }
-.cal-cell.sat .cal-day { color: var(--blue); }
-.cal-cell.muted.sun .cal-day,
-.cal-cell.muted.sat .cal-day { opacity: 0.4; }
-
-/* Unavailable — disabled */
-.cal-cell.unavail {
-  cursor: not-allowed;
+/* Available — hover and click */
+.cal-week-row.avail:hover {
+  background: var(--hover);
 }
-.cal-cell.unavail .cal-day { opacity: 0.35; }
-.cal-cell.unavail:hover { background: transparent; }
 
-/* Available — hoverable */
-.cal-cell.avail:hover { background: var(--hover); }
-
-/* Dot indicator for available */
-.cal-dot {
-  position: absolute; bottom: 4px; left: 50%;
-  transform: translateX(-50%);
-  width: 4px; height: 4px; border-radius: 50%;
-  background: var(--blue);
-}
-.cal-cell.muted .cal-dot { background: var(--text-muted); opacity: 0.5; }
-
-/* Today */
-.cal-cell.today {
+/* This week (current real-world week) */
+.cal-week-row.this-week {
   background: var(--blue-soft);
 }
-.cal-cell.today .cal-day { font-weight: 700; }
 
-/* Selected */
-.cal-cell.selected {
+/* Selected (clicked) */
+.cal-week-row.selected {
   background: var(--text);
+  border-color: var(--text);
 }
-.cal-cell.selected .cal-day { color: var(--bg); font-weight: 700; }
-.cal-cell.selected.sun .cal-day,
-.cal-cell.selected.sat .cal-day { color: var(--bg); }
-.cal-cell.selected .cal-dot { background: var(--bg); }
+.cal-week-row.selected .cal-week-num,
+.cal-week-row.selected .cal-week-range,
+.cal-week-row.selected .cal-week-status {
+  color: var(--bg);
+}
+
+/* Unavailable */
+.cal-week-row.unavail {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.cal-week-row.unavail:hover {
+  background: transparent;
+}
 
 /* ── Yearly snapshot chips below calendar ─────────────────── */
 .cal-yearly {

@@ -9,9 +9,11 @@ interface AIInsightsProps {
   onCategoryClick?: (catSlug: string) => void;
 }
 
+// JSON keys stay daily/weekly/yearly for backward compat with existing
+// snapshots; semantics have shifted up one tier since the cron is now weekly.
 const PERIODS: Array<{ key: InsightPeriod; label: string; sublabel: string }> = [
-  { key: "daily", label: "오늘", sublabel: "어제 대비" },
-  { key: "weekly", label: "이번 주", sublabel: "7일 트렌드" },
+  { key: "daily", label: "이번 주", sublabel: "지난 주 대비" },
+  { key: "weekly", label: "이번 달", sublabel: "4주 누적 트렌드" },
   { key: "yearly", label: "올해", sublabel: "장기 포트폴리오" },
 ];
 

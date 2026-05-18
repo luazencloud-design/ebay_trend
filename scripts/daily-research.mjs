@@ -117,7 +117,7 @@ const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 
 - 정확히 20개
 - rank 1~5는 zone="red" (레드오션), rank 6~20은 zone="blue" (블루오션)
 - slug: lowercase hyphenated (예: "k-beauty", "k-stationery")
-- change: 어제 대비 정수 (-10~+10)
+- change: **지난 주 대비** 순위 변동 -10~+10 정수
 - comp: 경쟁강도 1(쉬움)~5(매우 치열)
 - margin: 예상 평균 마진율 15~70 정수
 - summary: 1~2문장, 셀러 의사결정에 도움되는 인사이트 (한국어)
@@ -163,7 +163,7 @@ ${catList}
 필드 규칙:
 - name: 검색으로 확인된 실재 한국 브랜드 정식 명칭
 - country: "KR" 기본, 글로벌 진출 브랜드는 "KR/US", "KR/JP" 가능
-- change: 어제 대비 순위 변동 -10~+10 정수 (추정 OK)
+- change: 지난 주 대비 순위 변동 -10~+10 정수 (추정 OK)
 - initials: 이름 한글/영문 2글자 (예: "메디", "JY")
 - rank: 카테고리 내 인기 순위 1부터
 - 카테고리당 최대 20개, 검증 불가하면 더 적게${JSON_ONLY_SUFFIX}`;
@@ -234,9 +234,9 @@ function promptInsights(categories) {
     .map((c) => `${c.rank}. ${c.name_kr} (${c.slug}) zone=${c.zone} change=${c.change} comp=${c.comp} margin=${c.margin}% — ${c.summary}`)
     .join("\n");
 
-  return `당신은 eBay 한국 상품 셀러를 위한 트렌드 분석가입니다. 아래 카테고리 데이터를 보고 세 가지 시간 단위로 AI 인사이트를 작성해주세요.
+  return `당신은 eBay 한국 상품 셀러를 위한 트렌드 분석가입니다. 데이터는 **주 1회 (월요일 새벽)** 수집됩니다. 아래 카테고리 데이터를 보고 세 가지 시간 단위로 AI 인사이트를 작성해주세요.
 
-오늘 카테고리 TOP 20 (rank/zone/change/comp/margin/summary):
+이번 주 카테고리 TOP 20 (rank/zone/change/comp/margin/summary):
 ${compact}
 
 각 인사이트는 셀러가 **무엇을 해야 하는지** 행동 지침을 포함해야 합니다.
@@ -245,13 +245,13 @@ ${compact}
 
 {
   "daily": {
-    "headline": "오늘 한 줄 (15자 내외)",
-    "body": "오늘 가장 큰 변화 + 셀러 행동 추천. 2~3 문장. (예: 한방 영양제 ▲5 급상승. 홍삼/콜라겐 외 신규 진입 카테고리. 오너클랜·도매토피아 둘러볼 타이밍.)",
+    "headline": "이번 주 한 줄 (15자 내외)",
+    "body": "지난 주 대비 가장 큰 변화 + 이번 주 셀러 행동 추천. 2~3 문장. (예: 한방 영양제 ▲5 급상승. 홍삼/콜라겐 외 신규 진입 카테고리. 오너클랜·도매토피아 이번 주 안에 둘러볼 타이밍.)",
     "focus_categories": ["slug1", "slug2"]
   },
   "weekly": {
-    "headline": "이번 주 한 줄 (20자 내외)",
-    "body": "지난 일주일 트렌드 흐름 + 다음 주 전략. 3~5 문장. (예: 키덜트 토이가 일주일째 상승세. 프라모델·블라인드박스 글로벌 컬렉터 수요 가속. 마진 45%로 매력적이라 신규 셀러 진입 권장.)",
+    "headline": "이번 달 한 줄 (20자 내외)",
+    "body": "지난 4주 누적 트렌드 + 이번 달 전략 추천. 3~5 문장. (예: 키덜트 토이가 4주 연속 상승세. 프라모델·블라인드박스 글로벌 컬렉터 수요가 분기 트렌드로 자리잡음. 마진 45%로 매력적이라 이번 달 안에 진입 추천.)",
     "focus_categories": ["slug1", "slug2", "slug3"]
   },
   "yearly": {
@@ -260,6 +260,11 @@ ${compact}
     "focus_categories": ["slug1", "slug2", "slug3", "slug4"]
   }
 }
+
+JSON 키 이름(daily/weekly/yearly)은 그대로 유지하지만 의미는 위로 한 칸씩 이동했습니다:
+- "daily" = 이번 주 인사이트 (지난 주 대비)
+- "weekly" = 이번 달 인사이트 (지난 4주 누적)
+- "yearly" = 연간 인사이트
 
 조건:
 - focus_categories는 반드시 위 카테고리 slug 목록에서 선택
@@ -339,7 +344,7 @@ ${catList}
 - krw: 1000~50000 정수
 - ebay_cat_id: 5자리 숫자 문자열 (모르면 합리적 추측)
 - seo_tags: 영문 검색어 3개 배열
-- change: 7일 전 대비 -10~+10 정수
+- change: 지난 주 대비 -10~+10 정수
 - source_slugs: 위 sources 목록에서 **3~5개 선택** (이 카테고리 상품을 합리적으로 다룰만한 도매처들)${JSON_ONLY_SUFFIX}`;
 }
 

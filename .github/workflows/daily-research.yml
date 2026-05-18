@@ -1,9 +1,10 @@
-name: Daily Gemini Research
+name: Weekly Gemini Research
 
 on:
-  # 매일 04:00 KST 실행 (= UTC 19:00 전날)
+  # 매주 월요일 01:00 KST 실행 (= 일요일 16:00 UTC)
+  # 일요일 자정이 지나면 새 주의 데이터를 한 번 수집.
   schedule:
-    - cron: "0 19 * * *"
+    - cron: "0 16 * * 0"
   # Actions 탭에서 수동 실행 가능
   workflow_dispatch:
     inputs:
@@ -18,7 +19,7 @@ permissions:
 
 # 동시 실행 방지 (긴 작업이라 겹치면 안 됨)
 concurrency:
-  group: daily-research
+  group: weekly-research
   cancel-in-progress: false
 
 jobs:
@@ -62,6 +63,6 @@ jobs:
             exit 0
           fi
           DATE_KST=$(TZ='Asia/Seoul' date '+%Y-%m-%d')
-          git commit -m "data: daily research ${DATE_KST} [skip ci]"
+          git commit -m "data: weekly research ${DATE_KST} [skip ci]"
           git push
-          echo "✅ Pushed daily snapshot for ${DATE_KST}"
+          echo "✅ Pushed weekly snapshot for ${DATE_KST}"
