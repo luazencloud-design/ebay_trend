@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Topbar } from "./components/Topbar";
 import { TweaksPanel } from "./components/TweaksPanel";
+import { OnboardingPage } from "./views/OnboardingPage";
 import { Stage1Dashboard } from "./views/Stage1Dashboard";
 import { Stage2Category } from "./views/Stage2Category";
 import { Stage3Sourcing } from "./views/Stage3Sourcing";
@@ -29,6 +30,7 @@ export function App() {
       if (e.key !== "Escape") return;
       if (route.stage === 3) nav({ stage: 2, cat: route.cat });
       else if (route.stage === 2) nav({ stage: 1 });
+      else if (route.stage === "onboarding") nav({ stage: 1 });
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -38,7 +40,9 @@ export function App() {
     <>
       <Topbar route={route} nav={nav} />
       <main className="page">
-        {manifestState.loading || !dateKey || !manifestState.data ? (
+        {route.stage === "onboarding" ? (
+          <OnboardingPage />
+        ) : manifestState.loading || !dateKey || !manifestState.data ? (
           <div className="empty-state">로딩 중…</div>
         ) : manifestState.error ? (
           <div className="empty-state">

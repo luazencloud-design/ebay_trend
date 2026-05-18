@@ -23,11 +23,21 @@ export function Topbar({ route, nav, updatedAt = "오늘 04:00" }: TopbarProps) 
         </div>
         <nav style={{ display: "flex", gap: 4, marginLeft: 12 }}>
           <a
-            className={cx("tb-btn", route.stage === 1 && "active")}
+            className={cx(
+              "tb-btn",
+              (route.stage === 1 || route.stage === 2 || route.stage === 3) && "active"
+            )}
             style={{ padding: "6px 10px" }}
             onClick={() => nav({ stage: 1 })}
           >
             대시보드
+          </a>
+          <a
+            className={cx("tb-btn", route.stage === "onboarding" && "active")}
+            style={{ padding: "6px 10px" }}
+            onClick={() => nav({ stage: "onboarding" })}
+          >
+            시작 가이드
           </a>
         </nav>
         <div className="topbar-meta">

@@ -107,4 +107,5 @@ export type Typo = "default" | "display" | "editorial" | "mono";
 export type Route =
   | { stage: 1 }
   | { stage: 2; cat: string }
-  | { stage: 3; cat: string; src: string };
+  | { stage: 3; cat: string; src: string }
+  | { stage: "onboarding" };
