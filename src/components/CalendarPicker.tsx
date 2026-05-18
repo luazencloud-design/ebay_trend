@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import type { DateKey } from "../types";
+import { cx } from "../lib/format";
 
 interface CalendarPickerProps {
   /** Selected daily key (YYYY-MM-DD) or null if a yearly snapshot is active. */
@@ -36,10 +37,9 @@ function addDays(d: Date, n: number): Date {
   return x;
 }
 
-/** Return the Monday of the week containing this date. */
 function getMonday(d: Date): Date {
   const x = new Date(d);
-  const dow = x.getDay(); // 0=Sun, 1=Mon, ...
+  const dow = x.getDay();
   const offset = dow === 0 ? -6 : 1 - dow;
   x.setDate(x.getDate() + offset);
   x.setHours(0, 0, 0, 0);
@@ -50,16 +50,14 @@ interface WeekRow {
   monday: Date;
   sunday: Date;
   weekN: number;
-  available: string | null; // latest daily key in this week's range
+  available: string | null;
 }
 
-/** Build all weeks whose Monday falls inside the given month. */
 function buildWeeksForMonth(
   year: number,
   month: number,
   availableDaily: Set<string>
 ): WeekRow[] {
-  // Find first Monday in the month
   let monday = new Date(year, month, 1);
   while (monday.getDay() !== 1) {
     monday.setDate(monday.getDate() + 1);
@@ -70,7 +68,6 @@ function buildWeeksForMonth(
   while (monday.getMonth() === month) {
     const sunday = addDays(monday, 6);
 
-    // Find latest daily snapshot in [monday, sunday]
     let latest: string | null = null;
     for (let i = 0; i < 7; i++) {
       const key: string = toKey(addDays(monday, i));
@@ -88,6 +85,8 @@ function buildWeeksForMonth(
 }
 
 const fmtMD = (d: Date): string => `${d.getMonth() + 1}/${d.getDate()}`;
+
+type Dir = "up" | "down";
 
 export function CalendarPicker({
   value,
@@ -107,52 +106,61 @@ export function CalendarPicker({
 
   const [viewYear, setViewYear] = useState(initial.getFullYear());
   const [viewMonth, setViewMonth] = useState(initial.getMonth());
+  // Animation direction: "up" = newer (rows enter from below),
+  //                     "down" = older (rows enter from above).
+  const [dir, setDir] = useState<Dir>("up");
 
   const weeks = useMemo(
     () => buildWeeksForMonth(viewYear, viewMonth, availableDaily),
     [viewYear, viewMonth, availableDaily]
   );
 
-  const goPrev = () => {
-    if (viewMonth === 0) {
-      setViewYear(viewYear - 1);
-      setViewMonth(11);
-    } else {
-      setViewMonth(viewMonth - 1);
-    }
-  };
-  const goNext = () => {
-    if (viewMonth === 11) {
-      setViewYear(viewYear + 1);
-      setViewMonth(0);
-    } else {
-      setViewMonth(viewMonth + 1);
-    }
+  const navYear = (delta: number) => {
+    setDir(delta > 0 ? "up" : "down");
+    setViewYear((y) => y + delta);
   };
 
-  // Which week (Monday key) is the selected snapshot in?
+  const navMonth = (delta: number) => {
+    setDir(delta > 0 ? "up" : "down");
+    let nm = viewMonth + delta;
+    let ny = viewYear;
+    if (nm < 0) {
+      nm = 11;
+      ny -= 1;
+    } else if (nm > 11) {
+      nm = 0;
+      ny += 1;
+    }
+    setViewMonth(nm);
+    setViewYear(ny);
+  };
+
   const selectedDate = value ? parseKey(value) : null;
   const selectedMondayKey = selectedDate ? toKey(getMonday(selectedDate)) : null;
 
-  // Which week is "this week" (per todayKey)?
   const todayDate = todayKey ? parseKey(todayKey) : null;
   const thisWeekMondayKey = todayDate ? toKey(getMonday(todayDate)) : null;
 
   return (
     <div className="cal">
       <div className="cal-head">
-        <button className="cal-nav" onClick={goPrev} aria-label="이전 달">
-          ‹
-        </button>
-        <div className="cal-title mono">
-          {viewYear}년 {MONTH_NAMES[viewMonth]}
+        <div className="cal-nav-group">
+          <button className="cal-nav" onClick={() => navYear(-1)} aria-label="이전 년">‹</button>
+          <span className="cal-title mono">{viewYear}</span>
+          <button className="cal-nav" onClick={() => navYear(1)} aria-label="다음 년">›</button>
         </div>
-        <button className="cal-nav" onClick={goNext} aria-label="다음 달">
-          ›
-        </button>
+        <div className="cal-nav-group">
+          <button className="cal-nav" onClick={() => navMonth(-1)} aria-label="이전 달">‹</button>
+          <span className="cal-title mono">{MONTH_NAMES[viewMonth]}</span>
+          <button className="cal-nav" onClick={() => navMonth(1)} aria-label="다음 달">›</button>
+        </div>
       </div>
 
-      <div className="cal-weeks">
+      {/* key forces re-mount on nav → CSS animation retriggers */}
+      <div
+        key={`${viewYear}-${viewMonth}`}
+        className={cx("cal-weeks", `dir-${dir}`)}
+      >
         {weeks.map((w) => {
           const mKey = toKey(w.monday);
           const isSelected = selectedMondayKey === mKey;
