@@ -93,7 +93,7 @@ const JSON_ONLY_SUFFIX = `
 
 // ─── Prompts ──────────────────────────────────────────────────────────
 
-const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 오늘은 ${DATE}이고, Google Search를 적극 활용해 **실제 eBay에서 한국 셀러가 판매량/매출이 높은** 카테고리 TOP 20을 조사합니다.
+const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 오늘은 ${DATE}이고, Google Search를 적극 활용해 **실제 eBay에서 한국 셀러가 판매량/매출이 높은** 카테고리 TOP 30을 조사합니다.
 
 ⚠️ 편향 주의:
 - "K-감성 소비재"(뷰티/문구/굿즈)에만 치우치지 마세요. **실제 eBay 거래량 기준**으로 작성.
@@ -120,8 +120,8 @@ const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 
 }
 
 조건:
-- 정확히 20개
-- rank 1~5는 zone="red" (레드오션), rank 6~20은 zone="blue" (블루오션)
+- 정확히 30개
+- rank 1~5는 zone="red" (레드오션, 경쟁 치열), rank 6~30은 zone="blue" (블루오션, 진입 기회)
 - slug: lowercase hyphenated (예: "k-beauty", "k-stationery")
 - change: **지난 주 대비** 순위 변동 -10~+10 정수
 - comp: 경쟁강도 1(쉬움)~5(매우 치열)

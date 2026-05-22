@@ -56,7 +56,7 @@ export function Stage1Dashboard({ dateKey, setDateKey, manifest, nav }: Stage1Pr
           <p className="page-sub">
             매주 월요일 새벽 Gemini 리서치 결과를 기반으로 카테고리 → 브랜드 → 상품 → 소싱처를 한 흐름으로 보여줍니다.
             <span style={{ color: "var(--red)" }}> 레드존(1–5)</span>은 레드오션,{" "}
-            <span style={{ color: "var(--blue)" }}>블루존(6–20)</span>은 진입 기회.
+            <span style={{ color: "var(--blue)" }}>블루존(6–30)</span>은 진입 기회.
           </p>
         </div>
         <div style={{ flexShrink: 0, textAlign: "right" }}>

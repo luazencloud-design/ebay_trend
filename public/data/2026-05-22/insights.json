@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-22T01:48:06.889Z",
+  "source_model": "gemini-2.5-pro",
+  "daily": {
+    "headline": "이너뷰티 급부상, 홈 뷰티 디바이스 강세",
+    "body": "이너뷰티/건강보조식품(▲6), 홈 뷰티 디바이스(▲5)가 이번 주 가장 큰 순위 상승을 보였습니다. 특히 일본 시장을 중심으로 수요가 급증하는 추세이므로, 관련 제품 소싱 및 리스팅을 즉시 검토해야 할 시점입니다.",
+    "focus_categories": [
+      "inner-beauty-supplements",
+      "home-beauty-devices"
+    ]
+  },
+  "weekly": {
+    "headline": "K-뷰티, 스킨케어에서 디바이스·이너뷰티로 확장",
+    "body": "K-뷰티 스킨케어의 안정적인 수요를 바탕으로 헤어케어, 홈 뷰티 디바이스, 이너뷰티 카테고리가 동반 성장하고 있습니다. 이는 K-뷰티에 대한 신뢰가 세분화된 전문 영역으로 확산되고 있음을 의미합니다. 기존 스킨케어 셀러는 관련 카테고리로 상품 구색을 확장하여 교차 판매를 유도하는 전략이 유효합니다.",
+    "focus_categories": [
+      "k-beauty-skincare",
+      "home-beauty-devices",
+      "inner-beauty-supplements"
+    ]
+  },
+  "yearly": {
+    "headline": "K-컬처 팬덤 기반 상품과 고부가가치 전문 분야의 조화",
+    "body": "장기적으로 eBay 한국 셀러 시장은 K-POP, K-푸드 등 강력한 팬덤 기반의 소비재와 자동차 부품, 산업용품 등 전문 B2B/B2C 상품군으로 양분화될 전망입니다. K-POP 굿즈와 같은 대중적 카테고리는 안정적인 수익 기반이 되지만 경쟁이 치열합니다. 따라서 자동차 부품, 산업용품, 전통 공예품 등 특정 분야에 대한 전문성을 강화하여 높은 마진과 고객 충성도를 확보하는 포트폴리오 믹스가 장기적인 성장에 필수적입니다.",
+    "focus_categories": [
+      "k-pop-collectibles",
+      "automotive-parts",
+      "industrial-equipment",
+      "traditional-crafts"
+    ]
+  }
+}
