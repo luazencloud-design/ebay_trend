@@ -93,7 +93,13 @@ const JSON_ONLY_SUFFIX = `
 
 // ─── Prompts ──────────────────────────────────────────────────────────
 
-const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 오늘은 ${DATE}이고, eBay에서 한국 상품이 가장 잘 팔리는 카테고리 TOP 20을 조사합니다.
+const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 오늘은 ${DATE}이고, Google Search를 적극 활용해 **실제 eBay에서 한국 셀러가 판매량/매출이 높은** 카테고리 TOP 20을 조사합니다.
+
+⚠️ 편향 주의:
+- "K-감성 소비재"(뷰티/문구/굿즈)에만 치우치지 마세요. **실제 eBay 거래량 기준**으로 작성.
+- eBay Motors(자동차 부품)는 eBay 최대 카테고리 중 하나이고, 한국 순정부품(현대·기아) DIY 수요가 큽니다. **누락 금지.**
+- 검토 대상 대형 카테고리(이 안에서만 고르라는 게 아니라 반드시 후보로 검토): 자동차 부품/액세서리, K-뷰티/헬스, 패션/스포츠웨어/리셀, 수집품(K-POP 굿즈·포토카드), 전자제품/액세서리, 문구/다꾸, 식품, 생활용품, 전통공예, 헤어케어, 뷰티 디바이스.
+- Google Search로 "best selling korean products ebay", "ebay motors korean parts" 등 검색해서 근거 확보.
 
 반드시 다음 JSON 스키마로만 응답하세요 (다른 텍스트, 마크다운 펜스 금지):
 
@@ -121,7 +127,7 @@ const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 
 - comp: 경쟁강도 1(쉬움)~5(매우 치열)
 - margin: 예상 평균 마진율 15~70 정수
 - summary: 1~2문장, 셀러 의사결정에 도움되는 인사이트 (한국어)
-- 카테고리 다양성: 뷰티, 패션, 식품, 굿즈, 문구, 헬스, 키친웨어, 전통공예 등 골고루`;
+- 카테고리는 실제 eBay 판매 데이터 기준으로 다양하게 (자동차 부품·전자제품 등 비-소비재 대형 카테고리도 반드시 포함 검토)${JSON_ONLY_SUFFIX}`;
 
 function promptBrands(categories) {
   const catList = categories
@@ -351,11 +357,14 @@ ${catList}
 // ─── Pipeline ─────────────────────────────────────────────────────────
 
 async function step1Categories() {
-  console.log(`① Categories (${MODEL_CATS})…`);
+  // Categories now use grounding too — without it, the ranking is pure LLM
+  // imagination biased by prompt examples (which is why eBay Motors / auto
+  // parts never surfaced). Grounding anchors it to real trade data.
+  console.log(`① Categories (${MODEL_CATS} + grounding)…`);
   const res = await generateJson(PROMPT_CATEGORIES, {
     label: "categories",
     model: MODEL_CATS,
-    ...CAT_OPTS,
+    ...GROUNDED_OPTS,
   });
   if (!Array.isArray(res?.categories)) throw new Error("missing categories array");
   // ensure slugs are clean
