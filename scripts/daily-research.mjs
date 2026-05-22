@@ -25,7 +25,7 @@ import {
   usageByModel,
   estimateCostUSD,
 } from "./lib/gemini-client.mjs";
-import { toCsv } from "./lib/csv.mjs";
+import { toCsv, parseCsv } from "./lib/csv.mjs";
 import { buildManifest } from "./lib/manifest.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -80,6 +80,62 @@ const GROUNDED_OPTS = { enableSearch: true, maxOutputTokens: 65535, thinkingBudg
 async function writeText(filePath, text) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, text, "utf8");
+}
+
+// ─── Real rank-change computation (vs previous snapshot) ──────────────
+// Gemini must NOT invent `change` — we own the previous week's data, so we
+// compute it: change = prevRank - curRank (+ = moved up, - = moved down).
+let _prevDateCache;
+async function getPrevSnapshotDate() {
+  if (_prevDateCache !== undefined) return _prevDateCache;
+  let names = [];
+  try {
+    const entries = await fs.readdir(DATA_DIR, { withFileTypes: true });
+    names = entries
+      .filter(
+        (e) =>
+          e.isDirectory() &&
+          /^\d{4}-\d{2}-\d{2}$/.test(e.name) &&
+          e.name < DATE
+      )
+      .map((e) => e.name)
+      .sort();
+  } catch {}
+  _prevDateCache = names.length ? names[names.length - 1] : null;
+  return _prevDateCache;
+}
+
+// Build a Map<key, rank> from the previous snapshot's CSV.
+async function loadPrevRankMap(file, keyFn) {
+  const prevDate = await getPrevSnapshotDate();
+  if (!prevDate) return new Map();
+  try {
+    const text = await fs.readFile(path.join(DATA_DIR, prevDate, file), "utf8");
+    const rows = parseCsv(text, { numericCols: ["rank"] });
+    const map = new Map();
+    for (const r of rows) map.set(keyFn(r), r.rank);
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
+// Overwrite each row's `change` with the real delta vs previous snapshot.
+// Rows with no previous match (new this week) get change = 0.
+function applyRealChange(rows, prevMap, keyFn) {
+  let moved = 0;
+  let fresh = 0;
+  for (const r of rows) {
+    const prev = prevMap.get(keyFn(r));
+    if (prev == null) {
+      r.change = 0;
+      fresh++;
+    } else {
+      r.change = prev - r.rank;
+      if (r.change !== 0) moved++;
+    }
+  }
+  return { moved, fresh };
 }
 
 // Hard JSON-only suffix appended to every grounded prompt. Grounded calls
@@ -375,6 +431,13 @@ async function step1Categories() {
   for (const c of res.categories) {
     if (!c.slug) c.slug = c.name_en.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
+  // Compute real change vs previous snapshot (override Gemini's guess)
+  const prevDate = await getPrevSnapshotDate();
+  const prevMap = await loadPrevRankMap("categories.csv", (r) => r.slug);
+  const { moved, fresh } = applyRealChange(res.categories, prevMap, (r) => r.slug);
+  console.log(
+    `   ↕ change vs ${prevDate ?? "(없음)"}: ${moved}개 변동, ${fresh}개 신규(=0)`
+  );
   await writeText(
     path.join(OUT_DIR, "categories.csv"),
     toCsv(res.categories, ["rank", "slug", "name_kr", "name_en", "zone", "change", "comp", "margin", "summary"])
@@ -408,6 +471,10 @@ async function step2Brands(categories) {
     if (!Array.isArray(res?.brands)) throw new Error(`brands batch ${i + 1} missing array`);
     all.push(...res.brands);
   }
+
+  // Real change vs previous snapshot, matched by cat_slug + brand name.
+  const prevMap = await loadPrevRankMap("brands.csv", (r) => `${r.cat_slug}|${r.name}`);
+  applyRealChange(all, prevMap, (r) => `${r.cat_slug}|${r.name}`);
 
   await writeText(
     path.join(OUT_DIR, "brands.csv"),
@@ -507,6 +574,10 @@ async function step4Products(categories, brands, sourcing) {
       `   ⚙ repaired source_slugs: ${fixedSources} cleaned, ${backfilled} backfilled`
     );
   }
+
+  // Real change vs previous snapshot, matched by cat_slug + product name.
+  const prevMap = await loadPrevRankMap("products.csv", (r) => `${r.cat_slug}|${r.name}`);
+  applyRealChange(allProducts, prevMap, (r) => `${r.cat_slug}|${r.name}`);
 
   await writeText(
     path.join(OUT_DIR, "products.csv"),
