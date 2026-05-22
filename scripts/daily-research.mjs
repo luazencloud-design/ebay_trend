@@ -60,7 +60,11 @@ console.log(`   Brands/Sourcing/Products : ${MODEL_TABLES_LABEL}`);
 console.log(`   Concurrency      : ${CONCURRENCY}`);
 console.log("");
 
-const OUT_DIR = path.join(DATA_DIR, DATE);
+// Write to a temp dir first; swap into place only when ALL steps succeed.
+// Prevents a half-finished run from leaving categories.csv updated while
+// brands/products/sourcing stay stale (→ empty category pages).
+const FINAL_DIR = path.join(DATA_DIR, DATE);
+const OUT_DIR = path.join(DATA_DIR, `.${DATE}.tmp`);
 
 // Tuning — token budgets per call.
 // • Categories step uses Pro without grounding. Thinking left at default —
@@ -379,41 +383,64 @@ async function step1Categories() {
   return res.categories;
 }
 
+// Split a category array into chunks of `size`.
+function chunk(arr, size) {
+  const out = [];
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+  return out;
+}
+
 async function step2Brands(categories) {
-  // Brands always use Pro + grounding — invented brand names are easy to spot.
+  // Batched (10 cats/call) so each grounded call stays small enough to avoid
+  // header timeouts on 30-category runs. Pro + grounding throughout.
   const model = PRO;
-  console.log(`② Brands (${model} + grounding, thinking=128)…`);
-  const res = await generateJson(promptBrands(categories), {
-    label: "brands",
-    model,
-    ...GROUNDED_OPTS,
-  });
-  if (!Array.isArray(res?.brands)) throw new Error("missing brands array");
+  const batches = chunk(categories, 10);
+  console.log(`② Brands (${model} + grounding, ${batches.length} batches)…`);
+
+  const all = [];
+  for (let i = 0; i < batches.length; i++) {
+    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batches[i].length} cats)…\n`);
+    const res = await generateJson(promptBrands(batches[i]), {
+      label: `brands[${i + 1}]`,
+      model,
+      ...GROUNDED_OPTS,
+    });
+    if (!Array.isArray(res?.brands)) throw new Error(`brands batch ${i + 1} missing array`);
+    all.push(...res.brands);
+  }
+
   await writeText(
     path.join(OUT_DIR, "brands.csv"),
-    toCsv(res.brands, ["cat_slug", "rank", "name", "country", "change", "initials"])
+    toCsv(all, ["cat_slug", "rank", "name", "country", "change", "initials"])
   );
-  console.log(`   ✓ ${res.brands.length} brands saved (grounded)\n`);
-  return res.brands;
+  console.log(`   ✓ ${all.length} brands saved (grounded)\n`);
+  return all;
 }
 
 async function step3Sourcing(categories) {
-  // Sourcing always uses Pro + Google Search grounding because URLs are the
-  // single most hallucination-prone field and the value depends on them being real.
+  // Batched for the same reason. URLs are hallucination-prone so grounding stays on.
   const model = PRO;
-  console.log(`③ Sourcing sites (${model} + grounding, thinking=128)…`);
-  const res = await generateJson(promptSourcing(categories), {
-    label: "sourcing",
-    model,
-    ...GROUNDED_OPTS,
-  });
-  if (!Array.isArray(res?.sourcing)) throw new Error("missing sourcing array");
+  const batches = chunk(categories, 10);
+  console.log(`③ Sourcing sites (${model} + grounding, ${batches.length} batches)…`);
+
+  const all = [];
+  for (let i = 0; i < batches.length; i++) {
+    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batches[i].length} cats)…\n`);
+    const res = await generateJson(promptSourcing(batches[i]), {
+      label: `sourcing[${i + 1}]`,
+      model,
+      ...GROUNDED_OPTS,
+    });
+    if (!Array.isArray(res?.sourcing)) throw new Error(`sourcing batch ${i + 1} missing array`);
+    all.push(...res.sourcing);
+  }
+
   await writeText(
     path.join(OUT_DIR, "sourcing.csv"),
-    toCsv(res.sourcing, ["cat_slug", "rank", "name", "url", "rely", "fit", "slug", "initials"])
+    toCsv(all, ["cat_slug", "rank", "name", "url", "rely", "fit", "slug", "initials"])
   );
-  console.log(`   ✓ ${res.sourcing.length} sourcing sites saved (grounded)\n`);
-  return res.sourcing;
+  console.log(`   ✓ ${all.length} sourcing sites saved (grounded)\n`);
+  return all;
 }
 
 async function step4Products(categories, brands, sourcing) {
@@ -518,36 +545,42 @@ async function step4bInsights(categories) {
   return bundle;
 }
 
-async function step5MetaAndLatest() {
-  // Reflect actual models used per step. brands/sourcing/products all use
-  // Pro + Google Search grounding regardless of MODEL_TABLES (which only
-  // affects flags like --flash-only).
+async function step5Meta() {
+  // meta.json goes inside the temp snapshot dir (part of the atomic unit).
   await writeText(
     path.join(OUT_DIR, "meta.json"),
     JSON.stringify({
       date: DATE,
       generated_at: new Date().toISOString(),
       source_models: {
-        categories: MODEL_CATS,
+        categories: PRO + " + grounding",
         brands: PRO + " + grounding",
         sourcing: PRO + " + grounding",
         products: PRO + " + grounding",
       },
     }, null, 2) + "\n"
   );
+  console.log(`⑤ meta.json written\n`);
+}
+
+// Atomic commit: swap temp dir into the real date folder, then update the
+// global pointer + manifest. Only reached if every prior step succeeded.
+async function commitSnapshot() {
+  await fs.rm(FINAL_DIR, { recursive: true, force: true });
+  await fs.rename(OUT_DIR, FINAL_DIR);
   await writeText(
     path.join(DATA_DIR, "latest.json"),
     JSON.stringify({ date: DATE }, null, 2) + "\n"
   );
   const manifest = await buildManifest(DATA_DIR);
   console.log(
-    `⑤ meta.json + latest.json + index.json → ${DATE} ` +
-      `(${manifest.snapshots.length} snapshots indexed)\n`
+    `⑥ committed → ${DATE} · latest.json + index.json updated ` +
+      `(${manifest.snapshots.length} snapshots)\n`
   );
 }
 
-function step6Compact() {
-  console.log("⑥ Compacting old snapshots…");
+function step7Compact() {
+  console.log("⑦ Compacting old snapshots…");
   const res = spawnSync(
     process.execPath,
     [path.join(__dirname, "compact-snapshots.mjs")],
@@ -579,6 +612,8 @@ function printUsageSummary() {
 
 async function main() {
   const t0 = Date.now();
+  // Fresh temp dir
+  await fs.rm(OUT_DIR, { recursive: true, force: true });
   await fs.mkdir(OUT_DIR, { recursive: true });
 
   const categories = await step1Categories();
@@ -586,17 +621,21 @@ async function main() {
   const sourcing = await step3Sourcing(categories);
   await step4Products(categories, brands, sourcing);
   await step4bInsights(categories);
-  await step5MetaAndLatest();
-  step6Compact();
+  await step5Meta();
+  await commitSnapshot();   // ← atomic swap; only here is FINAL_DIR touched
+  step7Compact();
 
   const secs = ((Date.now() - t0) / 1000).toFixed(1);
   console.log(`✅ Done in ${secs}s\n`);
   printUsageSummary();
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error("\n❌ Pipeline failed:");
   console.error(err);
+  // Clean up the temp dir so a failed run leaves the previous snapshot intact.
+  await fs.rm(OUT_DIR, { recursive: true, force: true }).catch(() => {});
+  console.error("\n(이전 스냅샷은 그대로 유지됨 — 임시 폴더만 정리)");
   printUsageSummary();
   process.exit(1);
 });

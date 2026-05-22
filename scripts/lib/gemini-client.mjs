@@ -19,7 +19,12 @@ if (!apiKey) {
 export const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-pro";
 export const CONCURRENCY = Number(process.env.GEMINI_CONCURRENCY || 4);
 
-const ai = new GoogleGenAI({ apiKey });
+// 10-minute HTTP timeout — grounded Pro calls with large output can take
+// several minutes before the first byte arrives.
+const ai = new GoogleGenAI({
+  apiKey,
+  httpOptions: { timeout: 600_000 },
+});
 
 // Pricing per 1M tokens (USD). Update if Google revises pricing.
 // Source: https://ai.google.dev/pricing (as of 2025-12).
@@ -136,6 +141,15 @@ export async function generateJson(
       lastErr = err;
       const status = err?.status || err?.code;
       const msg = String(err?.message || "");
+      // undici (Node fetch) surfaces network/timeout failures as
+      // "fetch failed" with the real reason on err.cause.
+      const causeCode = String(err?.cause?.code || "");
+      const causeName = String(err?.cause?.name || "");
+      const isNetworkOrTimeout =
+        msg === "fetch failed" ||
+        /UND_ERR|TIMEOUT|ECONNRESET|ENOTFOUND|EAI_AGAIN/i.test(causeCode) ||
+        /timeout/i.test(causeName) ||
+        /timeout|temporar|rate|fetch failed/i.test(msg);
       // Non-JSON output (Gemini returned markdown/prose) is also retriable —
       // the next sample is probabilistic and often produces valid JSON.
       const isParseError = msg.startsWith("Gemini returned non-JSON output");
@@ -146,11 +160,11 @@ export async function generateJson(
         status === 503 ||
         status === 504 ||
         isParseError ||
-        /timeout|temporar|rate/i.test(msg);
+        isNetworkOrTimeout;
       if (!retriable || attempt === maxAttempts) break;
-      const wait = 800 * Math.pow(2, attempt - 1);
+      const wait = 1500 * Math.pow(2, attempt - 1);
       process.stdout.write(
-        `   ⚠ ${label || "call"} attempt ${attempt} failed (${status || "?"}), retrying in ${wait}ms…\n`
+        `   ⚠ ${label || "call"} attempt ${attempt} failed (${status || causeCode || "timeout"}), retrying in ${wait}ms…\n`
       );
       await sleep(wait);
     }
