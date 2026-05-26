@@ -152,62 +152,58 @@ const JSON_ONLY_SUFFIX = `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
 
 // ─── Canonical category taxonomy ───────────────────────────────────────
-// Fixed 30-category list. Gemini ranks them — it does NOT invent new ones
-// or rename existing ones. Stable slug + Korean/English name across all
-// weeks ensures rank-change tracking actually works.
-//
-// To evolve the taxonomy: edit this list. Renaming changes break tracking,
-// so prefer adding/removing rows over renaming.
-const CANONICAL_CATEGORIES = [
-  { slug: "kpop-goods",         name_kr: "K-POP 굿즈/포토카드",   name_en: "K-POP Goods & Photocards" },
-  { slug: "character-goods",    name_kr: "캐릭터 굿즈",            name_en: "Character Goods" },
-  { slug: "webtoon-goods",      name_kr: "웹툰 굿즈",              name_en: "Webtoon Goods" },
-  { slug: "kdrama-goods",       name_kr: "K-드라마 굿즈",          name_en: "K-Drama Goods" },
-  { slug: "k-beauty-skincare",  name_kr: "K-뷰티 (스킨케어)",      name_en: "K-Beauty Skincare" },
-  { slug: "k-beauty-makeup",    name_kr: "K-뷰티 (색조)",          name_en: "K-Beauty Makeup" },
-  { slug: "k-beauty-haircare",  name_kr: "K-뷰티 (헤어케어)",      name_en: "K-Beauty Haircare" },
-  { slug: "k-beauty-devices",   name_kr: "K-뷰티 디바이스",        name_en: "K-Beauty Devices" },
-  { slug: "inner-beauty",       name_kr: "이너뷰티/건강기능식품",  name_en: "Inner Beauty & Supplements" },
-  { slug: "k-fashion",          name_kr: "K-패션/리셀",            name_en: "K-Fashion & Resell" },
-  { slug: "mens-fashion",       name_kr: "남성 패션 잡화",         name_en: "Men's Fashion Accessories" },
-  { slug: "modern-hanbok",      name_kr: "한복 모던",              name_en: "Modern Hanbok" },
-  { slug: "auto-parts",         name_kr: "자동차 부품",            name_en: "Auto Parts" },
-  { slug: "auto-accessories",   name_kr: "자동차 액세서리",        name_en: "Auto Accessories" },
-  { slug: "drones",             name_kr: "드론/액세서리",          name_en: "Drones & Accessories" },
-  { slug: "smartphone-acc",     name_kr: "스마트폰 액세서리",      name_en: "Smartphone Accessories" },
-  { slug: "computer-parts",     name_kr: "컴퓨터 부품/주변기기",   name_en: "Computer Parts & Peripherals" },
-  { slug: "k-stationery",       name_kr: "K-문구/다꾸",            name_en: "K-Stationery & Diary Deco" },
-  { slug: "trading-cards",      name_kr: "수집용 트레이딩 카드",   name_en: "Trading Cards" },
-  { slug: "figures-collectibles", name_kr: "피규어/수집용 완구",   name_en: "Figures & Collectible Toys" },
-  { slug: "lego-blocks",        name_kr: "조립 완구/레고",         name_en: "LEGO & Building Blocks" },
-  { slug: "esports-merch",      name_kr: "e스포츠 굿즈",           name_en: "E-Sports Merch" },
-  { slug: "k-food",             name_kr: "K-푸드/스낵",            name_en: "K-Food & Snacks" },
-  { slug: "kitchen-ware",       name_kr: "K-주방용품",             name_en: "Korean Kitchenware" },
-  { slug: "home-decor",         name_kr: "K-홈데코",               name_en: "Korean Home Decor" },
-  { slug: "camping-gear",       name_kr: "캠핑/아웃도어",          name_en: "Camping & Outdoor" },
-  { slug: "golf-gear",          name_kr: "골프 용품",              name_en: "Golf Equipment" },
-  { slug: "fishing-gear",       name_kr: "낚시 용품",              name_en: "Fishing Equipment" },
-  { slug: "pet-supplies",       name_kr: "반려동물 용품",          name_en: "Pet Supplies" },
-  { slug: "traditional-craft",  name_kr: "전통 공예품",            name_en: "Traditional Craft" },
-];
-const CANONICAL_BY_SLUG = new Map(CANONICAL_CATEGORIES.map((c) => [c.slug, c]));
+// Lives in scripts/canonical-categories.json. Slugs + Korean/English names
+// are LOCKED once added — never rename (breaks rank-change tracking).
+// Gemini may propose up to N new categories per week; accepted ones get
+// appended to the JSON file and become permanently locked thereafter.
+const CANONICAL_FILE = path.join(__dirname, "canonical-categories.json");
+
+async function loadCanonical() {
+  try {
+    const data = JSON.parse(await fs.readFile(CANONICAL_FILE, "utf8"));
+    return {
+      maxNewPerWeek: data.max_new_per_week ?? 3,
+      categories: Array.isArray(data.categories) ? data.categories : [],
+    };
+  } catch (e) {
+    console.warn(`   ⚠ canonical file missing/invalid (${e.message}) — starting empty`);
+    return { maxNewPerWeek: 3, categories: [] };
+  }
+}
+
+async function saveCanonical(categories, maxNewPerWeek) {
+  const data = {
+    _comment:
+      "Canonical category taxonomy. Slugs and Korean/English names are LOCKED once added. Gemini adds new entries automatically (max N/week). For manual edits: only add or remove rows — never rename existing ones (breaks rank-change tracking).",
+    max_new_per_week: maxNewPerWeek,
+    updated_at: new Date().toISOString(),
+    categories,
+  };
+  await fs.writeFile(CANONICAL_FILE, JSON.stringify(data, null, 2) + "\n", "utf8");
+}
 
 // ─── Prompts ──────────────────────────────────────────────────────────
 
-function promptCategories() {
-  const list = CANONICAL_CATEGORIES
+function promptCategories(canonical, maxNew) {
+  const existing = canonical
     .map((c) => `  - "${c.slug}" → ${c.name_kr} (${c.name_en})`)
     .join("\n");
 
-  return `당신은 한국 상품 eBay 수출 트렌드 분석가입니다. 오늘은 ${DATE}이고, Google Search로 실제 eBay 판매 데이터를 참고해 아래 **고정 30개 카테고리**를 현재 판매량/매출 기준으로 **순위(1~30)** 매겨주세요.
+  return `당신은 한국 상품 eBay 수출 트렌드 분석가입니다. 오늘은 ${DATE}이고, Google Search로 실제 eBay 판매 데이터를 참고해 한국 상품 카테고리 TOP 30을 ranking 하세요.
+
+📋 기존 캐노니컬 카테고리 (${canonical.length}개) — 이름 변경 절대 금지:
+${existing}
 
 ⚠️ 절대 규칙:
-- 카테고리 **추가/삭제 금지**. 새 카테고리 만들지 마세요.
-- slug, name_kr, name_en은 아래 목록을 **정확히 그대로** 사용 (한 글자도 변형 금지).
-- 30개 모두 응답에 포함 (rank 1~30, 중복 없이).
-
-고정 카테고리 30개:
-${list}
+1. **기존 카테고리와 의미가 같으면** slug/name_kr/name_en을 **정확히 그대로** 사용. 한 글자라도 다르면 시스템 거부.
+2. 동일 카테고리의 다른 이름 버전을 "새 카테고리"로 제출 **금지**.
+   예: 위 목록에 "수집용 트레이딩 카드"(trading-cards)가 있는데 "트카", "포토카드 콜렉팅" 등으로 새로 추가 금지.
+3. 진짜로 새로운 트렌드 카테고리만 **최대 ${maxNew}개까지** 추가 가능. 신규 항목은:
+   - slug: lowercase, 단어 사이 하이픈 (예: "k-baking-tools")
+   - name_kr: 명확한 한국어 명칭
+   - name_en: 영문 명칭
+   - 한 번 추가되면 영원히 잠금됨 — 신중하게 작명할 것.
+4. 응답 총 30개. 기존 ${Math.min(canonical.length, 30)}개 중 트렌드 + 신규 0~${maxNew}개 = 30.
 
 응답은 다음 JSON 스키마로만 (마크다운 펜스 금지):
 
@@ -222,19 +218,18 @@ ${list}
       "change": 0,
       "comp": 5,
       "margin": 28,
-      "summary": "신인 그룹 컴백 시즌 트래픽 폭증. 라이트스틱/포카가 핵심 SKU."
+      "summary": "신인 그룹 컴백 시즌 트래픽 폭증."
     }
   ]
 }
 
 필드 규칙:
-- slug / name_kr / name_en: 위 목록 그대로 (한 글자라도 다르면 시스템 거부)
-- rank: 1부터 30까지 (Google Search로 확인한 현재 판매량 순)
-- zone: rank 1~5 = "red" (레드오션, 경쟁 치열), 6~30 = "blue" (블루오션, 진입 기회)
-- change: **0으로 두세요** — 시스템이 이전 주 스냅샷과 비교해 자동 계산합니다
-- comp: 경쟁강도 1(쉬움)~5(매우 치열)
+- rank: 1~30 (Google Search 기반 실제 판매량 순)
+- zone: rank 1~5 = "red", 6~30 = "blue"
+- change: **0으로 두세요** — 시스템이 자동 계산
+- comp: 1(쉬움)~5(매우 치열) 정수
 - margin: 예상 평균 마진율 15~70 정수
-- summary: 1~2문장, 셀러 의사결정에 도움되는 한국어 인사이트${JSON_ONLY_SUFFIX}`;
+- summary: 1~2문장 한국어 인사이트${JSON_ONLY_SUFFIX}`;
 }
 
 function promptBrands(categories) {
@@ -465,79 +460,99 @@ ${catList}
 // ─── Pipeline ─────────────────────────────────────────────────────────
 
 async function step1Categories() {
-  // Gemini ranks our 30 canonical categories — it can't invent or rename them.
-  // Stable slug + name across weeks = trustworthy rank-change tracking.
-  console.log(`① Categories (${MODEL_CATS} + grounding, fixed taxonomy)…`);
-  const res = await generateJson(promptCategories(), {
+  const { categories: canonical, maxNewPerWeek } = await loadCanonical();
+  const canonicalBySlug = new Map(canonical.map((c) => [c.slug, c]));
+
+  console.log(
+    `① Categories (${MODEL_CATS} + grounding) — ${canonical.length} canonical, +${maxNewPerWeek}/week max`
+  );
+  const res = await generateJson(promptCategories(canonical, maxNewPerWeek), {
     label: "categories",
     model: MODEL_CATS,
     ...GROUNDED_OPTS,
   });
   if (!Array.isArray(res?.categories)) throw new Error("missing categories array");
 
-  // ── Enforce canonical taxonomy ──
-  // 1. Drop anything Gemini invented (slug not in canonical list)
-  // 2. Dedupe by slug (keep first occurrence)
-  // 3. Overwrite name_kr/name_en with canonical values (Gemini may have shifted them)
-  // 4. Fill in any canonical category Gemini missed, with sensible defaults
-  // 5. Reassign rank 1~30 contiguously and zone (red 1~5, blue 6~30)
+  // ── Process Gemini's response ──
+  // - Existing canonical match: enforce stored name_kr/name_en (don't trust drift)
+  // - New entry (slug not in canonical): validate, accept up to maxNewPerWeek
+  // - Dedupe by slug
   const seen = new Set();
   const kept = [];
+  const newAdditions = [];
   let dropped = 0;
+
   for (const c of res.categories) {
-    const canon = CANONICAL_BY_SLUG.get(c.slug);
-    if (!canon) {
+    if (!c.slug || typeof c.slug !== "string") {
       dropped++;
       continue;
     }
     if (seen.has(c.slug)) continue;
     seen.add(c.slug);
-    c.name_kr = canon.name_kr;
-    c.name_en = canon.name_en;
-    kept.push(c);
-  }
-  let filled = 0;
-  for (const canon of CANONICAL_CATEGORIES) {
-    if (!seen.has(canon.slug)) {
-      kept.push({
-        rank: 99,
-        slug: canon.slug,
-        name_kr: canon.name_kr,
-        name_en: canon.name_en,
-        zone: "blue",
-        change: 0,
-        comp: 3,
-        margin: 35,
-        summary: "이번 주 데이터 부족 — 기본값",
-      });
-      filled++;
+
+    const canon = canonicalBySlug.get(c.slug);
+    if (canon) {
+      // existing — lock names to canonical
+      c.name_kr = canon.name_kr;
+      c.name_en = canon.name_en;
+      kept.push(c);
+    } else {
+      // new candidate — validate
+      if (newAdditions.length >= maxNewPerWeek) {
+        console.log(`   ⚠ skipped new "${c.slug}" — weekly cap of ${maxNewPerWeek} reached`);
+        continue;
+      }
+      if (!/^[a-z][a-z0-9-]{1,40}$/.test(c.slug)) {
+        console.log(`   ⚠ skipped malformed slug "${c.slug}"`);
+        continue;
+      }
+      if (!c.name_kr || !c.name_en) {
+        console.log(`   ⚠ skipped "${c.slug}" — missing name_kr/name_en`);
+        continue;
+      }
+      const entry = {
+        slug: c.slug,
+        name_kr: String(c.name_kr).trim(),
+        name_en: String(c.name_en).trim(),
+        added: DATE,
+      };
+      newAdditions.push(entry);
+      kept.push(c);
     }
   }
-  kept.sort((a, b) => a.rank - b.rank);
-  for (let i = 0; i < kept.length; i++) {
-    kept[i].rank = i + 1;
-    kept[i].zone = i < 5 ? "red" : "blue";
+
+  // Sort by rank, take top 30, renumber + recolor zones
+  kept.sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  const top30 = kept.slice(0, 30);
+  for (let i = 0; i < top30.length; i++) {
+    top30[i].rank = i + 1;
+    top30[i].zone = i < 5 ? "red" : "blue";
   }
 
-  if (dropped || filled) {
-    console.log(`   ⚙ taxonomy enforced: ${dropped} dropped, ${filled} filled`);
+  if (dropped) console.log(`   ⚙ dropped ${dropped} malformed entries`);
+  if (newAdditions.length > 0) {
+    console.log(
+      `   ✨ ${newAdditions.length} new canonical: ${newAdditions.map((n) => n.name_kr).join(", ")}`
+    );
+    // Persist updated canonical (append new entries)
+    await saveCanonical([...canonical, ...newAdditions], maxNewPerWeek);
   }
 
-  // Now compute real change vs previous snapshot — slug-based matching is
-  // bulletproof because slugs are canonical and stable.
+  // Real change vs previous snapshot — slug-based matching is now bulletproof
+  // because (a) existing slugs are locked, (b) new slugs are net-new so 0 is correct.
   const prevDate = await getPrevSnapshotDate();
   const prevMap = await loadPrevRankMap("categories.csv", (r) => r.slug);
-  const { moved, fresh } = applyRealChange(kept, prevMap, (r) => r.slug);
+  const { moved, fresh } = applyRealChange(top30, prevMap, (r) => r.slug);
   console.log(
     `   ↕ change vs ${prevDate ?? "(없음)"}: ${moved}개 변동, ${fresh}개 신규(=0)`
   );
 
   await writeText(
     path.join(OUT_DIR, "categories.csv"),
-    toCsv(kept, ["rank", "slug", "name_kr", "name_en", "zone", "change", "comp", "margin", "summary"])
+    toCsv(top30, ["rank", "slug", "name_kr", "name_en", "zone", "change", "comp", "margin", "summary"])
   );
-  console.log(`   ✓ ${kept.length} categories saved\n`);
-  return kept;
+  console.log(`   ✓ ${top30.length} categories saved\n`);
+  return top30;
 }
 
 // Split a category array into chunks of `size`.
