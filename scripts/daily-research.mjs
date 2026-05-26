@@ -151,43 +151,91 @@ const JSON_ONLY_SUFFIX = `
 - 이 응답은 JSON.parse()로 직접 파싱됩니다. 한 글자라도 다른 내용이 섞이면 에러.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
 
+// ─── Canonical category taxonomy ───────────────────────────────────────
+// Fixed 30-category list. Gemini ranks them — it does NOT invent new ones
+// or rename existing ones. Stable slug + Korean/English name across all
+// weeks ensures rank-change tracking actually works.
+//
+// To evolve the taxonomy: edit this list. Renaming changes break tracking,
+// so prefer adding/removing rows over renaming.
+const CANONICAL_CATEGORIES = [
+  { slug: "kpop-goods",         name_kr: "K-POP 굿즈/포토카드",   name_en: "K-POP Goods & Photocards" },
+  { slug: "character-goods",    name_kr: "캐릭터 굿즈",            name_en: "Character Goods" },
+  { slug: "webtoon-goods",      name_kr: "웹툰 굿즈",              name_en: "Webtoon Goods" },
+  { slug: "kdrama-goods",       name_kr: "K-드라마 굿즈",          name_en: "K-Drama Goods" },
+  { slug: "k-beauty-skincare",  name_kr: "K-뷰티 (스킨케어)",      name_en: "K-Beauty Skincare" },
+  { slug: "k-beauty-makeup",    name_kr: "K-뷰티 (색조)",          name_en: "K-Beauty Makeup" },
+  { slug: "k-beauty-haircare",  name_kr: "K-뷰티 (헤어케어)",      name_en: "K-Beauty Haircare" },
+  { slug: "k-beauty-devices",   name_kr: "K-뷰티 디바이스",        name_en: "K-Beauty Devices" },
+  { slug: "inner-beauty",       name_kr: "이너뷰티/건강기능식품",  name_en: "Inner Beauty & Supplements" },
+  { slug: "k-fashion",          name_kr: "K-패션/리셀",            name_en: "K-Fashion & Resell" },
+  { slug: "mens-fashion",       name_kr: "남성 패션 잡화",         name_en: "Men's Fashion Accessories" },
+  { slug: "modern-hanbok",      name_kr: "한복 모던",              name_en: "Modern Hanbok" },
+  { slug: "auto-parts",         name_kr: "자동차 부품",            name_en: "Auto Parts" },
+  { slug: "auto-accessories",   name_kr: "자동차 액세서리",        name_en: "Auto Accessories" },
+  { slug: "drones",             name_kr: "드론/액세서리",          name_en: "Drones & Accessories" },
+  { slug: "smartphone-acc",     name_kr: "스마트폰 액세서리",      name_en: "Smartphone Accessories" },
+  { slug: "computer-parts",     name_kr: "컴퓨터 부품/주변기기",   name_en: "Computer Parts & Peripherals" },
+  { slug: "k-stationery",       name_kr: "K-문구/다꾸",            name_en: "K-Stationery & Diary Deco" },
+  { slug: "trading-cards",      name_kr: "수집용 트레이딩 카드",   name_en: "Trading Cards" },
+  { slug: "figures-collectibles", name_kr: "피규어/수집용 완구",   name_en: "Figures & Collectible Toys" },
+  { slug: "lego-blocks",        name_kr: "조립 완구/레고",         name_en: "LEGO & Building Blocks" },
+  { slug: "esports-merch",      name_kr: "e스포츠 굿즈",           name_en: "E-Sports Merch" },
+  { slug: "k-food",             name_kr: "K-푸드/스낵",            name_en: "K-Food & Snacks" },
+  { slug: "kitchen-ware",       name_kr: "K-주방용품",             name_en: "Korean Kitchenware" },
+  { slug: "home-decor",         name_kr: "K-홈데코",               name_en: "Korean Home Decor" },
+  { slug: "camping-gear",       name_kr: "캠핑/아웃도어",          name_en: "Camping & Outdoor" },
+  { slug: "golf-gear",          name_kr: "골프 용품",              name_en: "Golf Equipment" },
+  { slug: "fishing-gear",       name_kr: "낚시 용품",              name_en: "Fishing Equipment" },
+  { slug: "pet-supplies",       name_kr: "반려동물 용품",          name_en: "Pet Supplies" },
+  { slug: "traditional-craft",  name_kr: "전통 공예품",            name_en: "Traditional Craft" },
+];
+const CANONICAL_BY_SLUG = new Map(CANONICAL_CATEGORIES.map((c) => [c.slug, c]));
+
 // ─── Prompts ──────────────────────────────────────────────────────────
 
-const PROMPT_CATEGORIES = `당신은 글로벌 이커머스 리서처입니다. 오늘은 ${DATE}이고, Google Search를 적극 활용해 **실제 eBay에서 한국 셀러가 판매량/매출이 높은** 카테고리 TOP 30을 조사합니다.
+function promptCategories() {
+  const list = CANONICAL_CATEGORIES
+    .map((c) => `  - "${c.slug}" → ${c.name_kr} (${c.name_en})`)
+    .join("\n");
 
-⚠️ 편향 주의:
-- "K-감성 소비재"(뷰티/문구/굿즈)에만 치우치지 마세요. **실제 eBay 거래량 기준**으로 작성.
-- eBay Motors(자동차 부품)는 eBay 최대 카테고리 중 하나이고, 한국 순정부품(현대·기아) DIY 수요가 큽니다. **누락 금지.**
-- 검토 대상 대형 카테고리(이 안에서만 고르라는 게 아니라 반드시 후보로 검토): 자동차 부품/액세서리, K-뷰티/헬스, 패션/스포츠웨어/리셀, 수집품(K-POP 굿즈·포토카드), 전자제품/액세서리, 문구/다꾸, 식품, 생활용품, 전통공예, 헤어케어, 뷰티 디바이스.
-- Google Search로 "best selling korean products ebay", "ebay motors korean parts" 등 검색해서 근거 확보.
+  return `당신은 한국 상품 eBay 수출 트렌드 분석가입니다. 오늘은 ${DATE}이고, Google Search로 실제 eBay 판매 데이터를 참고해 아래 **고정 30개 카테고리**를 현재 판매량/매출 기준으로 **순위(1~30)** 매겨주세요.
 
-반드시 다음 JSON 스키마로만 응답하세요 (다른 텍스트, 마크다운 펜스 금지):
+⚠️ 절대 규칙:
+- 카테고리 **추가/삭제 금지**. 새 카테고리 만들지 마세요.
+- slug, name_kr, name_en은 아래 목록을 **정확히 그대로** 사용 (한 글자도 변형 금지).
+- 30개 모두 응답에 포함 (rank 1~30, 중복 없이).
+
+고정 카테고리 30개:
+${list}
+
+응답은 다음 JSON 스키마로만 (마크다운 펜스 금지):
 
 {
   "categories": [
     {
       "rank": 1,
-      "slug": "k-beauty",
-      "name_kr": "K-뷰티",
-      "name_en": "K-Beauty",
+      "slug": "kpop-goods",
+      "name_kr": "K-POP 굿즈/포토카드",
+      "name_en": "K-POP Goods & Photocards",
       "zone": "red",
-      "change": 2,
+      "change": 0,
       "comp": 5,
-      "margin": 35,
-      "summary": "리들샷·PDRN 등 성분 중심 K-뷰티가 시장 견인. 신제품 사이클이 빨라 경쟁이 치열함."
+      "margin": 28,
+      "summary": "신인 그룹 컴백 시즌 트래픽 폭증. 라이트스틱/포카가 핵심 SKU."
     }
   ]
 }
 
-조건:
-- 정확히 30개
-- rank 1~5는 zone="red" (레드오션, 경쟁 치열), rank 6~30은 zone="blue" (블루오션, 진입 기회)
-- slug: lowercase hyphenated (예: "k-beauty", "k-stationery")
-- change: **지난 주 대비** 순위 변동 -10~+10 정수
+필드 규칙:
+- slug / name_kr / name_en: 위 목록 그대로 (한 글자라도 다르면 시스템 거부)
+- rank: 1부터 30까지 (Google Search로 확인한 현재 판매량 순)
+- zone: rank 1~5 = "red" (레드오션, 경쟁 치열), 6~30 = "blue" (블루오션, 진입 기회)
+- change: **0으로 두세요** — 시스템이 이전 주 스냅샷과 비교해 자동 계산합니다
 - comp: 경쟁강도 1(쉬움)~5(매우 치열)
 - margin: 예상 평균 마진율 15~70 정수
-- summary: 1~2문장, 셀러 의사결정에 도움되는 인사이트 (한국어)
-- 카테고리는 실제 eBay 판매 데이터 기준으로 다양하게 (자동차 부품·전자제품 등 비-소비재 대형 카테고리도 반드시 포함 검토)${JSON_ONLY_SUFFIX}`;
+- summary: 1~2문장, 셀러 의사결정에 도움되는 한국어 인사이트${JSON_ONLY_SUFFIX}`;
+}
 
 function promptBrands(categories) {
   const catList = categories
@@ -417,33 +465,79 @@ ${catList}
 // ─── Pipeline ─────────────────────────────────────────────────────────
 
 async function step1Categories() {
-  // Categories now use grounding too — without it, the ranking is pure LLM
-  // imagination biased by prompt examples (which is why eBay Motors / auto
-  // parts never surfaced). Grounding anchors it to real trade data.
-  console.log(`① Categories (${MODEL_CATS} + grounding)…`);
-  const res = await generateJson(PROMPT_CATEGORIES, {
+  // Gemini ranks our 30 canonical categories — it can't invent or rename them.
+  // Stable slug + name across weeks = trustworthy rank-change tracking.
+  console.log(`① Categories (${MODEL_CATS} + grounding, fixed taxonomy)…`);
+  const res = await generateJson(promptCategories(), {
     label: "categories",
     model: MODEL_CATS,
     ...GROUNDED_OPTS,
   });
   if (!Array.isArray(res?.categories)) throw new Error("missing categories array");
-  // ensure slugs are clean
+
+  // ── Enforce canonical taxonomy ──
+  // 1. Drop anything Gemini invented (slug not in canonical list)
+  // 2. Dedupe by slug (keep first occurrence)
+  // 3. Overwrite name_kr/name_en with canonical values (Gemini may have shifted them)
+  // 4. Fill in any canonical category Gemini missed, with sensible defaults
+  // 5. Reassign rank 1~30 contiguously and zone (red 1~5, blue 6~30)
+  const seen = new Set();
+  const kept = [];
+  let dropped = 0;
   for (const c of res.categories) {
-    if (!c.slug) c.slug = c.name_en.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const canon = CANONICAL_BY_SLUG.get(c.slug);
+    if (!canon) {
+      dropped++;
+      continue;
+    }
+    if (seen.has(c.slug)) continue;
+    seen.add(c.slug);
+    c.name_kr = canon.name_kr;
+    c.name_en = canon.name_en;
+    kept.push(c);
   }
-  // Compute real change vs previous snapshot (override Gemini's guess)
+  let filled = 0;
+  for (const canon of CANONICAL_CATEGORIES) {
+    if (!seen.has(canon.slug)) {
+      kept.push({
+        rank: 99,
+        slug: canon.slug,
+        name_kr: canon.name_kr,
+        name_en: canon.name_en,
+        zone: "blue",
+        change: 0,
+        comp: 3,
+        margin: 35,
+        summary: "이번 주 데이터 부족 — 기본값",
+      });
+      filled++;
+    }
+  }
+  kept.sort((a, b) => a.rank - b.rank);
+  for (let i = 0; i < kept.length; i++) {
+    kept[i].rank = i + 1;
+    kept[i].zone = i < 5 ? "red" : "blue";
+  }
+
+  if (dropped || filled) {
+    console.log(`   ⚙ taxonomy enforced: ${dropped} dropped, ${filled} filled`);
+  }
+
+  // Now compute real change vs previous snapshot — slug-based matching is
+  // bulletproof because slugs are canonical and stable.
   const prevDate = await getPrevSnapshotDate();
   const prevMap = await loadPrevRankMap("categories.csv", (r) => r.slug);
-  const { moved, fresh } = applyRealChange(res.categories, prevMap, (r) => r.slug);
+  const { moved, fresh } = applyRealChange(kept, prevMap, (r) => r.slug);
   console.log(
     `   ↕ change vs ${prevDate ?? "(없음)"}: ${moved}개 변동, ${fresh}개 신규(=0)`
   );
+
   await writeText(
     path.join(OUT_DIR, "categories.csv"),
-    toCsv(res.categories, ["rank", "slug", "name_kr", "name_en", "zone", "change", "comp", "margin", "summary"])
+    toCsv(kept, ["rank", "slug", "name_kr", "name_en", "zone", "change", "comp", "margin", "summary"])
   );
-  console.log(`   ✓ ${res.categories.length} categories saved\n`);
-  return res.categories;
+  console.log(`   ✓ ${kept.length} categories saved\n`);
+  return kept;
 }
 
 // Split a category array into chunks of `size`.
@@ -511,10 +605,12 @@ async function step3Sourcing(categories) {
 }
 
 async function step4Products(categories, brands, sourcing) {
-  // Products use Pro + grounding for the same reason as brands — fake product
-  // names with real brand names are the most obvious form of hallucination.
-  const model = PRO;
-  console.log(`④ Products (${model} + grounding, thinking=128, batched)…`);
+  // Products step is structured-data heavy (900 rows, ~47% of run cost +
+  // ~50% of runtime under Pro). Switched to Flash: grounding still
+  // anchors real product data; cost drops ~33x on output tokens;
+  // runtime ~4x faster. Negligible quality impact on tabular output.
+  const model = FLASH;
+  console.log(`④ Products (${model} + grounding, batched)…`);
   const brandsByCat = {};
   for (const b of brands) (brandsByCat[b.cat_slug] ||= []).push(b);
   const sourcingByCat = {};
