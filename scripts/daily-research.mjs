@@ -162,20 +162,20 @@ async function loadCanonical() {
   try {
     const data = JSON.parse(await fs.readFile(CANONICAL_FILE, "utf8"));
     return {
-      maxNewPerWeek: data.max_new_per_week ?? 3,
+      safetyCap: data.safety_cap_per_week ?? 10,
       categories: Array.isArray(data.categories) ? data.categories : [],
     };
   } catch (e) {
     console.warn(`   ⚠ canonical file missing/invalid (${e.message}) — starting empty`);
-    return { maxNewPerWeek: 3, categories: [] };
+    return { safetyCap: 10, categories: [] };
   }
 }
 
-async function saveCanonical(categories, maxNewPerWeek) {
+async function saveCanonical(categories, safetyCap) {
   const data = {
     _comment:
-      "Canonical category taxonomy. Slugs and Korean/English names are LOCKED once added. Gemini adds new entries automatically (max N/week). For manual edits: only add or remove rows — never rename existing ones (breaks rank-change tracking).",
-    max_new_per_week: maxNewPerWeek,
+      "Canonical category taxonomy. Slugs and Korean/English names are LOCKED once added. Gemini adds new entries when it actually finds new trends (no fixed quota — typically 0-2 per week, more during market shifts). `safety_cap_per_week` is just a runaway guard. Manual edits: only add or remove rows — never rename existing (breaks rank-change tracking).",
+    safety_cap_per_week: safetyCap,
     updated_at: new Date().toISOString(),
     categories,
   };
@@ -184,7 +184,7 @@ async function saveCanonical(categories, maxNewPerWeek) {
 
 // ─── Prompts ──────────────────────────────────────────────────────────
 
-function promptCategories(canonical, maxNew) {
+function promptCategories(canonical) {
   const existing = canonical
     .map((c) => `  - "${c.slug}" → ${c.name_kr} (${c.name_en})`)
     .join("\n");
@@ -198,12 +198,12 @@ ${existing}
 1. **기존 카테고리와 의미가 같으면** slug/name_kr/name_en을 **정확히 그대로** 사용. 한 글자라도 다르면 시스템 거부.
 2. 동일 카테고리의 다른 이름 버전을 "새 카테고리"로 제출 **금지**.
    예: 위 목록에 "수집용 트레이딩 카드"(trading-cards)가 있는데 "트카", "포토카드 콜렉팅" 등으로 새로 추가 금지.
-3. 진짜로 새로운 트렌드 카테고리만 **최대 ${maxNew}개까지** 추가 가능. 신규 항목은:
-   - slug: lowercase, 단어 사이 하이픈 (예: "k-baking-tools")
-   - name_kr: 명확한 한국어 명칭
-   - name_en: 영문 명칭
+3. 신규 카테고리는 **인위적 쿼터 없음** — 진짜로 새 트렌드를 발견했을 때만 추가하세요:
+   - **평소 주간엔 0개가 정상**. 시장이 안정적이면 기존 30개 안에서만 순위 매기는 게 맞습니다.
+   - **격변기**(새 카테고리 폭발, 신제품군 등장 등)엔 여러 개 추가 OK.
+   - 신규 항목 형식: slug (lowercase-hyphen) + name_kr + name_en.
    - 한 번 추가되면 영원히 잠금됨 — 신중하게 작명할 것.
-4. 응답 총 30개. 기존 ${Math.min(canonical.length, 30)}개 중 트렌드 + 신규 0~${maxNew}개 = 30.
+4. 응답은 항상 30개. 기존 트렌드 + 신규 = 30 채우기.
 
 응답은 다음 JSON 스키마로만 (마크다운 펜스 금지):
 
@@ -460,13 +460,13 @@ ${catList}
 // ─── Pipeline ─────────────────────────────────────────────────────────
 
 async function step1Categories() {
-  const { categories: canonical, maxNewPerWeek } = await loadCanonical();
+  const { categories: canonical, safetyCap } = await loadCanonical();
   const canonicalBySlug = new Map(canonical.map((c) => [c.slug, c]));
 
   console.log(
-    `① Categories (${MODEL_CATS} + grounding) — ${canonical.length} canonical, +${maxNewPerWeek}/week max`
+    `① Categories (${MODEL_CATS} + grounding) — ${canonical.length} canonical (safety cap: ${safetyCap}/week)`
   );
-  const res = await generateJson(promptCategories(canonical, maxNewPerWeek), {
+  const res = await generateJson(promptCategories(canonical), {
     label: "categories",
     model: MODEL_CATS,
     ...GROUNDED_OPTS,
@@ -497,9 +497,10 @@ async function step1Categories() {
       c.name_en = canon.name_en;
       kept.push(c);
     } else {
-      // new candidate — validate
-      if (newAdditions.length >= maxNewPerWeek) {
-        console.log(`   ⚠ skipped new "${c.slug}" — weekly cap of ${maxNewPerWeek} reached`);
+      // new candidate — validate. Safety cap is generous (10) to prevent
+      // runaway, not as a quota. Most weeks should have 0 new entries.
+      if (newAdditions.length >= safetyCap) {
+        console.log(`   ⚠ skipped new "${c.slug}" — safety cap of ${safetyCap}/week reached`);
         continue;
       }
       if (!/^[a-z][a-z0-9-]{1,40}$/.test(c.slug)) {
@@ -535,7 +536,7 @@ async function step1Categories() {
       `   ✨ ${newAdditions.length} new canonical: ${newAdditions.map((n) => n.name_kr).join(", ")}`
     );
     // Persist updated canonical (append new entries)
-    await saveCanonical([...canonical, ...newAdditions], maxNewPerWeek);
+    await saveCanonical([...canonical, ...newAdditions], safetyCap);
   }
 
   // Real change vs previous snapshot — slug-based matching is now bulletproof

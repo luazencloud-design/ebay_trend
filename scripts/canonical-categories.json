@@ -1,6 +1,6 @@
 {
-  "_comment": "Canonical category taxonomy. Slugs and Korean/English names are LOCKED once added. Gemini adds new entries automatically (max 3/week). For manual edits: only add or remove rows — never rename existing ones (breaks rank-change tracking).",
-  "max_new_per_week": 3,
+  "_comment": "Canonical category taxonomy. Slugs and Korean/English names are LOCKED once added. Gemini adds new entries when it actually finds new trends (no fixed quota — typically 0-2 per week, more during market shifts). `safety_cap_per_week` is just a runaway guard. Manual edits: only add or remove rows — never rename existing (breaks rank-change tracking).",
+  "safety_cap_per_week": 10,
   "updated_at": "2026-05-26T00:00:00.000Z",
   "categories": [
     { "slug": "kpop-goods",            "name_kr": "K-POP 굿즈/포토카드",   "name_en": "K-POP Goods & Photocards", "added": "2026-05-26" },
