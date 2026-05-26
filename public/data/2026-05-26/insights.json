@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-26T00:48:03.112Z",
+  "source_model": "gemini-2.5-pro",
+  "daily": {
+    "headline": "수집용 장난감·피규어 급상승",
+    "body": "수집용 장난감·피규어(▲5)가 K-POP 팬덤 효과로 TOP 5에 진입했습니다. 뷰티 디바이스(▼15)는 급락하며 변동성이 커졌으니, 이번 주는 티니핑, 핑크퐁 등 한국 캐릭터 상품 소싱에 집중하고 뷰티 디바이스 재고는 보수적으로 관리할 것을 권장합니다.",
+    "focus_categories": [
+      "collectible-toys-figures",
+      "beauty-devices"
+    ]
+  },
+  "weekly": {
+    "headline": "K-컬처 파생 상품, 안정적 성장세",
+    "body": "K-POP 포토카드, 앨범, 패션 잡지 등 팬덤 기반 상품이 꾸준히 상위권을 유지하며 안정적인 수요를 증명하고 있습니다. 특히 포토카드는 마진율(65%)이 매우 높아 핵심 수익원으로 자리 잡았습니다. 이번 달에는 기존 K-POP 상품 외에 웹툰 굿즈, 팬 제작 굿즈 등 새로운 파생 카테고리를 테스트하여 포트폴리오를 확장할 기회입니다.",
+    "focus_categories": [
+      "k-pop-photocards",
+      "k-pop-fashion-magazines",
+      "webtoon-goods"
+    ]
+  },
+  "yearly": {
+    "headline": "K-라이프스타일 전반으로 확장, 고부가가치 틈새 공략",
+    "body": "시장이 K-POP과 뷰티를 넘어 자동차 부품, 산업용 장비, 리빙·홈데코 등 K-라이프스타일 전반으로 확장되고 있습니다. K-POP과 K-뷰티는 경쟁이 심화되고 있으므로, 장기적으로는 이들 카테고리의 비중을 유지하면서도 경쟁 강도가 낮고 마진이 높은 'B2B 산업재'나 '전통 공예품' 같은 틈새 카테고리를 포트폴리오에 추가하는 전략이 유효합니다. 이는 안정적인 수익 구조를 만드는 데 기여할 것입니다.",
+    "focus_categories": [
+      "automotive-parts",
+      "industrial-equipment",
+      "traditional-crafts",
+      "home-living-decor"
+    ]
+  }
+}
