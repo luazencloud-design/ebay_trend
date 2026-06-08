@@ -25,8 +25,9 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
-    # 평균 20~25분, 안전 마진 포함
-    timeout-minutes: 45
+    # Pro+grounding calls are slow (~2-3min each) and retries stack up.
+    # 90min gives ample headroom; public-repo Actions minutes are free.
+    timeout-minutes: 90
 
     steps:
       - name: Checkout
