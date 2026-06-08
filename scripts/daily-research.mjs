@@ -595,10 +595,12 @@ async function step2Brands(categories) {
 }
 
 async function step3Sourcing(categories) {
-  // Batched for the same reason. URLs are hallucination-prone so grounding stays on.
-  const model = PRO;
+  // Grounding removed: URLs aren't shown in the UI anymore (replaced by a
+  // Google-search link), so verifying real domains added ~9min + cost for
+  // no user-facing value. Flash + no grounding is plenty for the name list.
+  const model = FLASH;
   const batches = chunk(categories, 10);
-  console.log(`③ Sourcing sites (${model} + grounding, ${batches.length} batches)…`);
+  console.log(`③ Sourcing sites (${model}, no grounding, ${batches.length} batches)…`);
 
   const all = [];
   for (let i = 0; i < batches.length; i++) {
@@ -606,7 +608,7 @@ async function step3Sourcing(categories) {
     const res = await generateJson(promptSourcing(batches[i]), {
       label: `sourcing[${i + 1}]`,
       model,
-      ...GROUNDED_OPTS,
+      ...FLASH_OPTS,
     });
     if (!Array.isArray(res?.sourcing)) throw new Error(`sourcing batch ${i + 1} missing array`);
     all.push(...res.sourcing);
@@ -616,7 +618,7 @@ async function step3Sourcing(categories) {
     path.join(OUT_DIR, "sourcing.csv"),
     toCsv(all, ["cat_slug", "rank", "name", "url", "rely", "fit", "slug", "initials"])
   );
-  console.log(`   ✓ ${all.length} sourcing sites saved (grounded)\n`);
+  console.log(`   ✓ ${all.length} sourcing sites saved\n`);
   return all;
 }
 
