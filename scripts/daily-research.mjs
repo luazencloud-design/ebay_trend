@@ -20,6 +20,7 @@ import { spawnSync } from "node:child_process";
 
 import {
   generateJson,
+  pMap,
   CONCURRENCY,
   usageTotals,
   usageByModel,
@@ -568,19 +569,21 @@ async function step2Brands(categories) {
   // header timeouts on 30-category runs. Pro + grounding throughout.
   const model = PRO;
   const batches = chunk(categories, 10);
-  console.log(`② Brands (${model} + grounding, ${batches.length} batches)…`);
+  console.log(`② Brands (${model} + grounding, ${batches.length} batches, parallel)…`);
 
-  const all = [];
-  for (let i = 0; i < batches.length; i++) {
-    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batches[i].length} cats)…\n`);
-    const res = await generateJson(promptBrands(batches[i]), {
+  // Run batches concurrently (capped by pMap's CONCURRENCY). Throws if any
+  // batch fails so the atomic-write guarantee holds.
+  const { results } = await pMap(batches, async (batch, i) => {
+    const res = await generateJson(promptBrands(batch), {
       label: `brands[${i + 1}]`,
       model,
       ...GROUNDED_OPTS,
     });
     if (!Array.isArray(res?.brands)) throw new Error(`brands batch ${i + 1} missing array`);
-    all.push(...res.brands);
-  }
+    process.stdout.write(`   ✓ batch ${i + 1}/${batches.length}\n`);
+    return res.brands;
+  });
+  const all = results.flat();
 
   // Real change vs previous snapshot, matched by cat_slug + brand name.
   const prevMap = await loadPrevRankMap("brands.csv", (r) => `${r.cat_slug}|${r.name}`);
@@ -600,19 +603,19 @@ async function step3Sourcing(categories) {
   // no user-facing value. Flash + no grounding is plenty for the name list.
   const model = FLASH;
   const batches = chunk(categories, 10);
-  console.log(`③ Sourcing sites (${model}, no grounding, ${batches.length} batches)…`);
+  console.log(`③ Sourcing sites (${model}, no grounding, ${batches.length} batches, parallel)…`);
 
-  const all = [];
-  for (let i = 0; i < batches.length; i++) {
-    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batches[i].length} cats)…\n`);
-    const res = await generateJson(promptSourcing(batches[i]), {
+  const { results } = await pMap(batches, async (batch, i) => {
+    const res = await generateJson(promptSourcing(batch), {
       label: `sourcing[${i + 1}]`,
       model,
       ...FLASH_OPTS,
     });
     if (!Array.isArray(res?.sourcing)) throw new Error(`sourcing batch ${i + 1} missing array`);
-    all.push(...res.sourcing);
-  }
+    process.stdout.write(`   ✓ batch ${i + 1}/${batches.length}\n`);
+    return res.sourcing;
+  });
+  const all = results.flat();
 
   await writeText(
     path.join(OUT_DIR, "sourcing.csv"),
@@ -628,7 +631,6 @@ async function step4Products(categories, brands, sourcing) {
   // anchors real product data; cost drops ~33x on output tokens;
   // runtime ~4x faster. Negligible quality impact on tabular output.
   const model = FLASH;
-  console.log(`④ Products (${model} + grounding, batched)…`);
   const brandsByCat = {};
   for (const b of brands) (brandsByCat[b.cat_slug] ||= []).push(b);
   const sourcingByCat = {};
@@ -639,11 +641,9 @@ async function step4Products(categories, brands, sourcing) {
   for (let i = 0; i < categories.length; i += batchSize) {
     batches.push(categories.slice(i, i + batchSize));
   }
+  console.log(`④ Products (${model} + grounding, ${batches.length} batches, parallel)…`);
 
-  const allProducts = [];
-  for (let i = 0; i < batches.length; i++) {
-    const batch = batches[i];
-    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batch.length} cats)…\n`);
+  const { results } = await pMap(batches, async (batch, i) => {
     const res = await generateJson(
       promptProducts(batch, brandsByCat, sourcingByCat),
       {
@@ -655,8 +655,10 @@ async function step4Products(categories, brands, sourcing) {
     if (!Array.isArray(res?.products)) {
       throw new Error(`products batch ${i + 1} missing products array`);
     }
-    allProducts.push(...res.products);
-  }
+    process.stdout.write(`   ✓ batch ${i + 1}/${batches.length}\n`);
+    return res.products;
+  });
+  const allProducts = results.flat();
 
   // ── Validate & repair source_slugs ──
   // Gemini sometimes invents slugs that don't exist in sourcing.csv. Filter
