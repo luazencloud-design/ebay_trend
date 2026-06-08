@@ -1,0 +1,10 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T01:33:51.576Z",
+  "source_models": {
+    "categories": "gemini-2.5-pro + grounding",
+    "brands": "gemini-2.5-pro + grounding",
+    "sourcing": "gemini-2.5-pro + grounding",
+    "products": "gemini-2.5-pro + grounding"
+  }
+}

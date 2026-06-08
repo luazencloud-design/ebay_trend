@@ -1,0 +1,301 @@
+cat_slug,rank,name,url,rely,fit,slug,initials
+kpop-goods,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+kpop-goods,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+kpop-goods,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+kpop-goods,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+kpop-goods,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+kpop-goods,6,도매매,domema.com,5,4,domema-com,DM
+kpop-goods,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+kpop-goods,8,위메프 특가클럽,special.wemakeprice.com,4,3,special-wemakeprice-com,WT
+kpop-goods,9,쿠팡 B2B,b2b.coupang.com,5,3,b2b-coupang-com,CB
+kpop-goods,10,펀픽,funpick.co.kr,3,4,funpick-co-kr,FP
+auto-parts,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+auto-parts,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+auto-parts,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+auto-parts,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+auto-parts,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+auto-parts,6,도매매,domema.com,5,4,domema-com,DM
+auto-parts,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+auto-parts,8,오토앤,auton.kr,4,5,auton-kr,AN
+auto-parts,9,카포스,carpos.co.kr,4,5,carpos-co-kr,CP
+auto-parts,10,모비스 부품몰,mobisparts.co.kr,5,5,mobisparts-co-kr,MB
+k-beauty-skincare,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+k-beauty-skincare,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+k-beauty-skincare,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+k-beauty-skincare,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+k-beauty-skincare,5,슈퍼캣,supercat.co.kr,4,4,supercat-co-kr,SC
+k-beauty-skincare,6,도매매,domema.com,5,5,domema-com,DM
+k-beauty-skincare,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+k-beauty-skincare,8,뷰티앤,beautyn.co.kr,3,5,beautyn-co-kr,BN
+k-beauty-skincare,9,코리아코스메틱,koreacosmetic.co.kr,3,5,koreacosmetic-co-kr,KC
+k-beauty-skincare,10,코스메틱도매,cosmeticdome.com,3,5,cosmeticdome-com,CD
+drones,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+drones,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+drones,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+drones,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+drones,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+drones,6,도매매,domema.com,5,4,domema-com,DM
+drones,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+drones,8,DJI 코리아,store.dji.com/kr,5,5,store-dji-com-kr,DK
+drones,9,드론월드,droneworld.co.kr,3,5,droneworld-co-kr,DW
+drones,10,알씨라이프,rclife.co.kr,3,4,rclife-co-kr,RL
+trading-cards,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+trading-cards,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+trading-cards,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+trading-cards,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+trading-cards,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+trading-cards,6,도매매,domema.com,5,4,domema-com,DM
+trading-cards,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+trading-cards,8,티씨지샵,tcgshop.co.kr,3,5,tcgshop-co-kr,TS
+trading-cards,9,카드캐슬,cardcastle.co.kr,3,5,cardcastle-co-kr,CC
+trading-cards,10,토이저러스,toysrus.lottemart.com,4,4,toysrus-lottemart-com,TR
+k-fashion,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+k-fashion,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+k-fashion,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+k-fashion,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+k-fashion,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+k-fashion,6,도매매,domema.com,5,4,domema-com,DM
+k-fashion,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+k-fashion,8,신상마켓,sinsangmarket.com,5,5,sinsangmarket-com,SM
+k-fashion,9,링크샵스,linkshops.com,4,5,linkshops-com,LS
+k-fashion,10,동대문 도매,gotomall.kr,4,5,gotomall-kr,GD
+mens-fashion,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+mens-fashion,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+mens-fashion,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+mens-fashion,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+mens-fashion,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+mens-fashion,6,도매매,domema.com,5,4,domema-com,DM
+mens-fashion,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+mens-fashion,8,신상마켓,sinsangmarket.com,5,4,sinsangmarket-com,SM
+mens-fashion,9,링크샵스,linkshops.com,4,4,linkshops-com,LS
+mens-fashion,10,동대문 도매,gotomall.kr,4,4,gotomall-kr,GD
+lego-blocks,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+lego-blocks,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+lego-blocks,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+lego-blocks,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+lego-blocks,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+lego-blocks,6,도매매,domema.com,5,4,domema-com,DM
+lego-blocks,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+lego-blocks,8,레고코리아,lego.com/ko-kr,5,5,lego-com-ko-kr,LK
+lego-blocks,9,토이저러스,toysrus.lottemart.com,4,5,toysrus-lottemart-com,TR
+lego-blocks,10,토이킹덤,toykingdom.co.kr,3,4,toykingdom-co-kr,TK
+character-goods,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+character-goods,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+character-goods,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+character-goods,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+character-goods,5,슈퍼캣,supercat.co.kr,4,3,supercat-co-kr,SC
+character-goods,6,도매매,domema.com,5,4,domema-com,DM
+character-goods,7,온채널,onchannel.co.kr,4,3,onchannel-co-kr,OC
+character-goods,8,카카오프렌즈샵,store.kakaofriends.com,5,5,store-kakaofriends-com,KF
+character-goods,9,라인프렌즈,store.linefriends.com,5,5,store-linefriends-com,LF
+character-goods,10,텐바이텐,10x10.co.kr,4,4,10x10-co-kr,TB
+k-beauty-makeup,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+k-beauty-makeup,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+k-beauty-makeup,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+k-beauty-makeup,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+k-beauty-makeup,5,슈퍼캣,supercat.co.kr,4,4,supercat-co-kr,SC
+k-beauty-makeup,6,도매매,domema.com,5,5,domema-com,DM
+k-beauty-makeup,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+k-beauty-makeup,8,뷰티앤,beautyn.co.kr,3,5,beautyn-co-kr,BN
+k-beauty-makeup,9,코리아코스메틱,koreacosmetic.co.kr,3,5,koreacosmetic-co-kr,KC
+k-beauty-makeup,10,코스메틱도매,cosmeticdome.com,3,5,cosmeticdome-com,CD
+smartphone-acc,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+smartphone-acc,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+smartphone-acc,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+smartphone-acc,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+smartphone-acc,5,도매매,domema.com,4,4,domema-com,DM
+smartphone-acc,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+smartphone-acc,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+smartphone-acc,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+smartphone-acc,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+smartphone-acc,10,펀픽,funpick.co.kr,3,4,funpick-co-kr,FP
+k-beauty-haircare,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+k-beauty-haircare,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+k-beauty-haircare,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+k-beauty-haircare,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+k-beauty-haircare,5,도매매,domema.com,4,4,domema-com,DM
+k-beauty-haircare,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+k-beauty-haircare,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+k-beauty-haircare,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+k-beauty-haircare,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+k-beauty-haircare,10,코리아코스메틱,koreacosmetic.co.kr,4,5,koreacosmetic-co-kr,KC
+computer-parts,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+computer-parts,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+computer-parts,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+computer-parts,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+computer-parts,5,도매매,domema.com,4,4,domema-com,DM
+computer-parts,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+computer-parts,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+computer-parts,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+computer-parts,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+computer-parts,10,컴퓨존,compuzone.co.kr,5,5,compuzone-co-kr,CZ
+inner-beauty,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+inner-beauty,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+inner-beauty,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+inner-beauty,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+inner-beauty,5,도매매,domema.com,4,4,domema-com,DM
+inner-beauty,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+inner-beauty,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+inner-beauty,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+inner-beauty,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+inner-beauty,10,건강기능식품 도매,hfood.co.kr,3,5,hfood-co-kr,HF
+figures-collectibles,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+figures-collectibles,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+figures-collectibles,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+figures-collectibles,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+figures-collectibles,5,도매매,domema.com,4,4,domema-com,DM
+figures-collectibles,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+figures-collectibles,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+figures-collectibles,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+figures-collectibles,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+figures-collectibles,10,피규어프렌즈,figurefriends.co.kr,3,5,figurefriends-co-kr,FF
+k-food,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+k-food,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+k-food,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+k-food,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+k-food,5,도매매,domema.com,4,4,domema-com,DM
+k-food,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+k-food,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+k-food,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+k-food,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+k-food,10,식자재왕,sijajaewang.com,4,5,sijajaewang-com,SJ
+golf-gear,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+golf-gear,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+golf-gear,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+golf-gear,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+golf-gear,5,도매매,domema.com,4,4,domema-com,DM
+golf-gear,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+golf-gear,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+golf-gear,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+golf-gear,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+golf-gear,10,골프존마켓,golfzonmarket.com,4,5,golfzonmarket-com,GM
+camping-gear,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+camping-gear,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+camping-gear,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+camping-gear,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+camping-gear,5,도매매,domema.com,4,4,domema-com,DM
+camping-gear,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+camping-gear,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+camping-gear,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+camping-gear,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+camping-gear,10,캠핑트리,camptree.co.kr,3,5,camptree-co-kr,CT
+fishing-gear,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+fishing-gear,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+fishing-gear,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+fishing-gear,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+fishing-gear,5,도매매,domema.com,4,4,domema-com,DM
+fishing-gear,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+fishing-gear,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+fishing-gear,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+fishing-gear,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+fishing-gear,10,낚시용품 도매,fishingmart.co.kr,3,5,fishingmart-co-kr,FM
+k-stationery,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+k-stationery,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+k-stationery,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+k-stationery,4,셀모아,sellmoa.com,4,4,sellmoa-com,SM
+k-stationery,5,도매매,domema.com,4,4,domema-com,DM
+k-stationery,6,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+k-stationery,7,온채널,onchannel.co.kr,4,4,onchannel-co-kr,OC
+k-stationery,8,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+k-stationery,9,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+k-stationery,10,천유닷컴,1000za.kr,4,5,1000za-kr,TY
+pet-supplies,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+pet-supplies,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+pet-supplies,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+pet-supplies,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+pet-supplies,5,슈퍼캣,supercat.co.kr,3,4,supercat-co-kr,SC
+pet-supplies,6,펫프렌즈 B2B,b2b.petfriends.co.kr,4,5,b2b-petfriends-co-kr,PF
+pet-supplies,7,펫마트 도매몰,petmart.co.kr/shop/list.php?ca_id=10,3,5,petmart-co-kr-shop-list-php-ca-id-10,PM
+pet-supplies,8,도매매,domema.com,4,4,domema-com,DM
+pet-supplies,9,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+pet-supplies,10,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+webtoon-goods,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+webtoon-goods,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+webtoon-goods,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+webtoon-goods,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+webtoon-goods,5,텐바이텐 B2B,b2b.10x10.co.kr,4,5,b2b-10x10-co-kr,TB
+webtoon-goods,6,카카오프렌즈 B2B,kakaofriends.com/b2b,5,5,kakaofriends-com-b2b,KF
+webtoon-goods,7,라인프렌즈 B2B,store.linefriends.com/b2b,5,5,store-linefriends-com-b2b,LF
+webtoon-goods,8,아트박스 B2B,artbox.co.kr/b2b,4,4,artbox-co-kr-b2b,AB
+webtoon-goods,9,도매매,domema.com,4,3,domema-com,DM
+webtoon-goods,10,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+kitchen-ware,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+kitchen-ware,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+kitchen-ware,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+kitchen-ware,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+kitchen-ware,5,키친몰,kitchenmall.co.kr,3,5,kitchenmall-co-kr,KM
+kitchen-ware,6,한샘B2B,hanssemb2b.com,5,4,hanssemb2b-com,HS
+kitchen-ware,7,리빙도매,livingdome.com,3,4,livingdome-com,LD
+kitchen-ware,8,도매매,domema.com,4,4,domema-com,DM
+kitchen-ware,9,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+kitchen-ware,10,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+kdrama-goods,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+kdrama-goods,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+kdrama-goods,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+kdrama-goods,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+kdrama-goods,5,K-굿즈 도매,k-goods.co.kr,3,5,k-goods-co-kr,KG
+kdrama-goods,6,SMTOWN &STORE B2B,smtownandstore.com/b2b,4,5,smtownandstore-com-b2b,SS
+kdrama-goods,7,YG SELECT B2B,ygselect.com/b2b,4,5,ygselect-com-b2b,YS
+kdrama-goods,8,위버스샵 B2B,weverseshop.io/b2b,5,5,weverseshop-io-b2b,WS
+kdrama-goods,9,도매매,domema.com,4,3,domema-com,DM
+kdrama-goods,10,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+auto-accessories,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+auto-accessories,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+auto-accessories,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+auto-accessories,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+auto-accessories,5,카렉스 도매몰,carex.co.kr/shop/list.php?ca_id=10,3,5,carex-co-kr-shop-list-php-ca-id-10,CX
+auto-accessories,6,불스원 B2B,bullsone.com/b2b,4,5,bullsone-com-b2b,BS
+auto-accessories,7,도매매,domema.com,4,4,domema-com,DM
+auto-accessories,8,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+auto-accessories,9,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+auto-accessories,10,슈퍼캣,supercat.co.kr,3,3,supercat-co-kr,SC
+esports-merch,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+esports-merch,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+esports-merch,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+esports-merch,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+esports-merch,5,라이엇 스토어 B2B,riotgames.com/ko/b2b,5,5,riotgames-com-ko-b2b,RS
+esports-merch,6,블리자드 기어 B2B,gear.blizzard.com/b2b,5,5,gear-blizzard-com-b2b,BG
+esports-merch,7,젠지 이스포츠 스토어 B2B,geng.gg/b2b,4,5,geng-gg-b2b,GS
+esports-merch,8,T1샵 B2B,shop.t1.gg/b2b,4,5,shop-t1-gg-b2b,T1
+esports-merch,9,도매매,domema.com,4,3,domema-com,DM
+esports-merch,10,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+k-beauty-devices,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+k-beauty-devices,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+k-beauty-devices,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+k-beauty-devices,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+k-beauty-devices,5,아모레퍼시픽 B2B,amorepacific.com/b2b,5,5,amorepacific-com-b2b,AP
+k-beauty-devices,6,LG생활건강 B2B,lgcare.com/b2b,5,5,lgcare-com-b2b,LG
+k-beauty-devices,7,메디큐브 B2B,medicube.co.kr/b2b,4,5,medicube-co-kr-b2b,MC
+k-beauty-devices,8,도매매,domema.com,4,4,domema-com,DM
+k-beauty-devices,9,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+k-beauty-devices,10,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+home-decor,1,도매꾹,domeggook.com,5,5,domeggook-com,DM
+home-decor,2,오너클랜,ownerclan.com,5,4,ownerclan-com,OC
+home-decor,3,도매토피아,dometopia.com,4,4,dometopia-com,DT
+home-decor,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+home-decor,5,오늘의집 B2B,ohou.se/b2b,5,5,ohou-se-b2b,OH
+home-decor,6,한샘B2B,hanssemb2b.com,5,5,hanssemb2b-com,HS
+home-decor,7,리빙도매,livingdome.com,3,4,livingdome-com,LD
+home-decor,8,도매매,domema.com,4,4,domema-com,DM
+home-decor,9,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+home-decor,10,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+modern-hanbok,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+modern-hanbok,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+modern-hanbok,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+modern-hanbok,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+modern-hanbok,5,고투몰,gotomall.kr,4,5,gotomall-kr,GM
+modern-hanbok,6,남대문 도매,ndm.kr,4,5,ndm-kr,ND
+modern-hanbok,7,동대문 도매,ddm-mall.com,4,5,ddm-mall-com,DM
+modern-hanbok,8,도매매,domema.com,4,3,domema-com,DM
+modern-hanbok,9,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+modern-hanbok,10,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
+traditional-craft,1,도매꾹,domeggook.com,5,4,domeggook-com,DM
+traditional-craft,2,오너클랜,ownerclan.com,5,3,ownerclan-com,OC
+traditional-craft,3,도매토피아,dometopia.com,4,3,dometopia-com,DT
+traditional-craft,4,셀모아,sellmoa.com,4,3,sellmoa-com,SM
+traditional-craft,5,한국문화재재단 온라인샵,koreancraft.or.kr/shop,5,5,koreancraft-or-kr-shop,KC
+traditional-craft,6,KCDF 온라인숍,kcdfshop.kr,5,5,kcdfshop-kr,KO
+traditional-craft,7,인사동 쌈지길,ssamziegil.com/shop,4,5,ssamziegil-com-shop,SS
+traditional-craft,8,도매매,domema.com,4,3,domema-com,DM
+traditional-craft,9,도매창고,domaechanggo.com,3,3,domaechanggo-com,DC
+traditional-craft,10,도매몰,domemall.co.kr,3,3,domemall-co-kr,DM
