@@ -20,6 +20,7 @@ import { spawnSync } from "node:child_process";
 
 import {
   generateJson,
+  pMap,
   CONCURRENCY,
   usageTotals,
   usageByModel,
@@ -391,12 +392,11 @@ function promptProducts(categories, brandsByCat, sourcingByCat) {
     })
     .join("\n");
 
-  return `당신은 eBay에서 잘 팔리는 한국 상품 큐레이터입니다. Google Search로 시장 정보를 참고하면서 각 카테고리에서 합리적인 상품 추천을 만들어주세요.
+  return `당신은 eBay에서 잘 팔리는 한국 상품 큐레이터입니다. 아래 제공된 (검증된) 브랜드 목록을 바탕으로 각 카테고리에서 합리적인 상품 추천을 만들어주세요.
 
-🎯 상품명 작성 가이드 (3단계 폴백):
-1. **베스트**: 검색으로 확인된 실제 SKU — 예: "조선미녀 맑은쌀 선크림 SPF50+", "메디큐브 에이지알 부스터프로"
-2. **OK**: 브랜드가 실제 만드는 제품 종류 (정확한 SKU 모를 때) — 예: "메디큐브 콜라겐 패드", "이니스프리 그린티 세럼"
-3. **OK**: 브랜드 없이 카테고리 대표 상품 종류 — 예: "센텔라 카밍 토너", "한방 콜라겐 젤리 스틱"
+🎯 상품명 작성 가이드 (2단계):
+1. **베스트**: 제공된 브랜드가 실제 만드는 제품 종류 — 예: "메디큐브 콜라겐 패드", "이니스프리 그린티 세럼"
+2. **OK**: 브랜드 없이 카테고리 대표 상품 종류 — 예: "센텔라 카밍 토너", "한방 콜라겐 젤리 스틱"
 
 🚫 금지:
 - ❌ 브랜드-카테고리 **불일치** (예: "조선미녀(K-뷰티) + 라이트스틱" → 조선미녀는 굿즈 안 만듦)
@@ -568,19 +568,19 @@ async function step2Brands(categories) {
   // header timeouts on 30-category runs. Pro + grounding throughout.
   const model = PRO;
   const batches = chunk(categories, 10);
-  console.log(`② Brands (${model} + grounding, ${batches.length} batches)…`);
+  console.log(`② Brands (${model} + grounding, ${batches.length} batches, parallel)…`);
 
-  const all = [];
-  for (let i = 0; i < batches.length; i++) {
-    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batches[i].length} cats)…\n`);
-    const res = await generateJson(promptBrands(batches[i]), {
+  const { results } = await pMap(batches, async (batch, i) => {
+    const res = await generateJson(promptBrands(batch), {
       label: `brands[${i + 1}]`,
       model,
       ...GROUNDED_OPTS,
     });
     if (!Array.isArray(res?.brands)) throw new Error(`brands batch ${i + 1} missing array`);
-    all.push(...res.brands);
-  }
+    process.stdout.write(`   ✓ batch ${i + 1}/${batches.length}\n`);
+    return res.brands;
+  });
+  const all = results.flat();
 
   // Real change vs previous snapshot, matched by cat_slug + brand name.
   const prevMap = await loadPrevRankMap("brands.csv", (r) => `${r.cat_slug}|${r.name}`);
@@ -600,19 +600,19 @@ async function step3Sourcing(categories) {
   // no user-facing value. Flash + no grounding is plenty for the name list.
   const model = FLASH;
   const batches = chunk(categories, 10);
-  console.log(`③ Sourcing sites (${model}, no grounding, ${batches.length} batches)…`);
+  console.log(`③ Sourcing sites (${model}, no grounding, ${batches.length} batches, parallel)…`);
 
-  const all = [];
-  for (let i = 0; i < batches.length; i++) {
-    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batches[i].length} cats)…\n`);
-    const res = await generateJson(promptSourcing(batches[i]), {
+  const { results } = await pMap(batches, async (batch, i) => {
+    const res = await generateJson(promptSourcing(batch), {
       label: `sourcing[${i + 1}]`,
       model,
       ...FLASH_OPTS,
     });
     if (!Array.isArray(res?.sourcing)) throw new Error(`sourcing batch ${i + 1} missing array`);
-    all.push(...res.sourcing);
-  }
+    process.stdout.write(`   ✓ batch ${i + 1}/${batches.length}\n`);
+    return res.sourcing;
+  });
+  const all = results.flat();
 
   await writeText(
     path.join(OUT_DIR, "sourcing.csv"),
@@ -628,35 +628,35 @@ async function step4Products(categories, brands, sourcing) {
   // anchors real product data; cost drops ~33x on output tokens;
   // runtime ~4x faster. Negligible quality impact on tabular output.
   const model = FLASH;
-  console.log(`④ Products (${model} + grounding, batched)…`);
   const brandsByCat = {};
   for (const b of brands) (brandsByCat[b.cat_slug] ||= []).push(b);
   const sourcingByCat = {};
   for (const s of sourcing) (sourcingByCat[s.cat_slug] ||= []).push(s);
 
-  const batchSize = 5;
-  const batches = [];
-  for (let i = 0; i < categories.length; i += batchSize) {
-    batches.push(categories.slice(i, i + batchSize));
-  }
+  const batches = chunk(categories, 5);
+  console.log(`④ Products (${model}, no grounding, ${batches.length} batches, parallel)…`);
 
-  const allProducts = [];
-  for (let i = 0; i < batches.length; i++) {
-    const batch = batches[i];
-    process.stdout.write(`   batch ${i + 1}/${batches.length} (${batch.length} cats)…\n`);
+  // No grounding here: categories are canonical-locked and brands were
+  // already grounding-verified upstream, so products only need "plausible
+  // SKU for this real brand" — Flash does that fine without search. Removing
+  // grounding eliminates the per-call search latency that caused the
+  // timeout/503 pile-ups, cutting this step from ~15min to ~3min.
+  const { results } = await pMap(batches, async (batch, i) => {
     const res = await generateJson(
       promptProducts(batch, brandsByCat, sourcingByCat),
       {
         label: `products[${i + 1}]`,
         model,
-        ...GROUNDED_OPTS,
+        ...FLASH_OPTS,
       }
     );
     if (!Array.isArray(res?.products)) {
       throw new Error(`products batch ${i + 1} missing products array`);
     }
-    allProducts.push(...res.products);
-  }
+    process.stdout.write(`   ✓ batch ${i + 1}/${batches.length}\n`);
+    return res.products;
+  });
+  const allProducts = results.flat();
 
   // ── Validate & repair source_slugs ──
   // Gemini sometimes invents slugs that don't exist in sourcing.csv. Filter
