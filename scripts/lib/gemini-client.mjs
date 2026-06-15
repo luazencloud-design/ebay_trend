@@ -114,7 +114,7 @@ export async function generateJson(
     config.tools = [{ googleSearch: {} }];
   }
 
-  const maxAttempts = 4;
+  const maxAttempts = 6;
   let lastErr;
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
@@ -162,9 +162,19 @@ export async function generateJson(
         isParseError ||
         isNetworkOrTimeout;
       if (!retriable || attempt === maxAttempts) break;
-      const wait = 1500 * Math.pow(2, attempt - 1);
+
+      // Server-overload (503 UNAVAILABLE / "high demand") clears on the order
+      // of tens of seconds, not milliseconds. Use a much longer backoff for
+      // those so retries actually land after the spike passes. Other retriable
+      // errors keep the quicker schedule.
+      const isOverload =
+        status === 503 || /high demand|unavailable|overload/i.test(msg);
+      const wait = isOverload
+        ? 20_000 * attempt + Math.floor(Math.random() * 5_000) // 20s,40s,60s,80s,100s (+jitter)
+        : 1_500 * Math.pow(2, attempt - 1); // 1.5s,3s,6s,12s,24s
       process.stdout.write(
-        `   ⚠ ${label || "call"} attempt ${attempt} failed (${status || causeCode || "timeout"}), retrying in ${wait}ms…\n`
+        `   ⚠ ${label || "call"} attempt ${attempt}/${maxAttempts} failed (${status || causeCode || "timeout"})` +
+          `${isOverload ? " [overload]" : ""}, retrying in ${Math.round(wait / 1000)}s…\n`
       );
       await sleep(wait);
     }
