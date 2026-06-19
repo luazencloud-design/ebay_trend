@@ -1,139 +1,53 @@
-# Gemini 일일 리서치 프롬프트 모음
+# Gemini 프롬프트 — 어디에 있고 어떻게 동작하나
 
-매일 1회 실행하여 `public/data/YYYY-MM-DD/` 폴더에 JSON 파일을 떨굽니다.
-스키마는 `src/types.ts`와 정확히 일치해야 합니다.
+> ⚠️ 실제 프롬프트는 이 문서가 아니라 **`scripts/daily-research.mjs` 코드 안**에 있습니다.
+> 프롬프트를 수정하려면 코드의 `prompt*()` 함수를 고치세요. 이 문서는 그 위치와 동작 원리만 안내합니다.
 
----
+## 프롬프트 함수 위치 (`scripts/daily-research.mjs`)
 
-## 프롬프트 ①: 카테고리 인덱스 (`categories.json`)
+| 함수 | 만드는 것 | 모델 | Grounding |
+|---|---|---|---|
+| `promptCategories(canonical)` | 카테고리 30개 순위 | Pro | ✅ |
+| `promptBrands(batch)` | 카테고리당 브랜드 20개 | Pro | ✅ |
+| `promptSourcing(batch)` | 카테고리당 소싱처 10개 | Flash | ❌ |
+| `promptProducts(batch, brands, sourcing)` | 카테고리당 상품 30개 | Flash | ❌ |
+| `promptInsights(categories)` | 주간/월간/연간 AI 인사이트 | Pro | ❌ |
 
-```
-당신은 글로벌 이커머스 리서처입니다.
-오늘 날짜는 {{YYYY-MM-DD}}이고, eBay에서 한국 상품이 가장 잘 팔리는 카테고리 TOP 20을 조사합니다.
+각 프롬프트 끝에는 `JSON_ONLY_SUFFIX`가 붙습니다 (grounding 호출은 JSON 강제 모드를
+못 써서, 마크다운으로 새는 걸 막는 안전장치).
 
-다음 JSON 스키마로 응답하세요. 다른 텍스트는 포함하지 마세요.
+## 출력 스키마
+프롬프트가 만드는 데이터의 정확한 컬럼은 다음 두 곳을 보세요:
+- **프론트 타입**: `src/types.ts` (Category, Brand, Product, SourcingSite, Insight…)
+- **CSV 컬럼 순서**: `daily-research.mjs`의 각 `toCsv(...)` 호출
 
-{
-  "date": "{{YYYY-MM-DD}}",
-  "generated_at": "{{ISO 8601 timestamp}}",
-  "source": "gemini-2.5-pro",
-  "categories": [
-    {
-      "rank": 1,
-      "zone": "red",            // "red" = 1~5위 레드오션, "blue" = 6~20위 블루오션
-      "name_kr": "K-뷰티",
-      "name_en": "K-Beauty",
-      "slug": "k-beauty",       // lowercase, hyphenated
-      "change": 2,              // 어제 대비 순위 변동. 양수=상승, 음수=하락, 0=유지
-      "comp": 5,                // 경쟁강도 1~5
-      "margin": 35,             // 예상 평균 마진율 %
-      "summary": "리들샷·PDRN 등 성분 중심 K-뷰티가 시장 견인. 신제품 사이클이 빨라 경쟁이 치열함."
-    }
-    // ... 총 20개
-  ]
-}
-
-조건:
-- rank 1~5: zone="red" (레드오션)
-- rank 6~20: zone="blue" (블루오션, 진입 기회)
-- change는 정수, -10~+10 범위
-- summary는 1~2 문장, 셀러 의사결정에 도움되는 인사이트
-```
-
----
-
-## 프롬프트 ②: 카테고리 상세 (`categories/{slug}.json`)
-
-각 카테고리마다 1회씩 실행 (총 20회):
+## 데이터 흐름 (요약)
 
 ```
-당신은 eBay 한국 상품 카테고리 "{{name_kr}}" ({{slug}})의 상세 데이터를 조사합니다.
-
-다음 JSON 스키마로 응답하세요:
-
-{
-  "category": { /* 위 categories[]에서 가져온 객체 그대로 */ },
-  "brands": [
-    {
-      "rank": 1,
-      "name": "메디큐브",
-      "country": "KR",          // "KR", "KR/US", "KR/JP" 등
-      "change": 2,              // 7일 전 대비 순위 변동
-      "initials": "메디"         // 2자 약어 (한글 또는 영문)
-    }
-    // ... 총 20개
-  ],
-  "products": [
-    {
-      "rank": 1,
-      "name": "콜라겐 글로우 토너",
-      "brand": "메디큐브",
-      "ebay_price_usd": 18.50,
-      "change": 3              // 7일 전 대비
-    }
-    // ... 총 30개
-  ],
-  "sourcing": [
-    {
-      "rank": 1,
-      "name": "스타일난다 도매",
-      "url": "wholesale.stylenanda.kr",
-      "rely": 5,               // 신뢰도 1~5
-      "fit": 5,                // 이 카테고리 적합도 1~5
-      "slug": "wholesale-stylenanda-kr",
-      "initials": "스타"
-    }
-    // ... 총 10개
-  ]
-}
+canonical-categories.json (고정 카테고리 30개)
+        ↓ promptCategories
+① categories.csv   ← 순위만 매김 (이름은 canonical에서 잠금)
+        ↓ promptBrands (categories 입력)
+② brands.csv
+        ↓ promptSourcing (categories 입력)
+③ sourcing.csv
+        ↓ promptProducts (categories + brands + sourcing 입력)
+④ products.csv     ← source_slugs 검증/백필
+        ↓ promptInsights (categories 입력)
+④b insights.json
+        ↓
+⑤ meta.json → ⑥ 원자적 커밋 → ⑦ 압축
 ```
 
----
+## 핵심 규칙 (코드가 강제하는 것 — 프롬프트만으론 안 됨)
+1. **카테고리 이름 잠금**: Gemini가 이름을 바꿔도 코드가 canonical 값으로 덮어씀.
+   새 카테고리만 허용 (안전상한 주 10개). → `step1Categories`
+2. **순위 변동 계산**: `change`는 Gemini 출력을 무시하고 이전 주 스냅샷과 비교해 계산.
+   → `applyRealChange`
+3. **소싱처 slug 검증**: 상품의 `source_slugs`가 실제 sourcing.csv에 있는지 확인 후 백필.
+   → `step4Products`
 
-## 프롬프트 ③: 소싱처 상품 리스트 (`sourcing/{cat_slug}__{src_slug}.json`)
-
-각 (카테고리 × 소싱처) 조합마다 실행 — 카테고리 1개당 10개 = 총 200회 (또는 캐시 활용):
-
-```
-당신은 도매 사이트 "{{src_name}}" ({{src_url}})에서 eBay "{{cat_name_kr}}" 카테고리로 판매하기 좋은
-한국 상품 50개를 추천합니다.
-
-다음 JSON 스키마로 응답하세요:
-
-{
-  "category_slug": "{{cat_slug}}",
-  "sourcing_slug": "{{src_slug}}",
-  "sourcing_site": { /* 위 sourcing[]에서 가져온 객체 그대로 */ },
-  "products": [
-    {
-      "id": "{{cat_slug}}-{{src_slug}}-1",
-      "name_kr": "아이코닉 두들 데일리 데코 스티커팩",
-      "name_en": "Iconic Doodle Daily Deco Sticker Pack",
-      "krw": 2500,             // 도매가 (원)
-      "usd": 9.99,             // 예상 eBay 판매가 (달러)
-      "margin": 45,            // 예상 마진율 %
-      "weight_g": 30,          // 포장 후 무게 (그램)
-      "ebay_cat_id": "11233",  // eBay 카테고리 ID
-      "seo": [
-        "korean stickers",
-        "kawaii planner",
-        "deco sticker"
-      ]
-    }
-    // ... 총 50개
-  ]
-}
-```
-
----
-
-## 실행 가이드
-
-1. **매일 새벽 4시 (KST)** GitHub Actions / Vercel Cron으로 트리거
-2. 날짜 폴더 생성: `public/data/{{오늘 날짜}}/`
-3. 위 3개 프롬프트를 순서대로 실행하고 결과를 해당 경로에 저장
-4. `public/data/latest.json` 갱신: `{"date": "{{오늘 날짜}}"}`
-5. `node scripts/compact-snapshots.mjs` 실행 (오래된 스냅샷 압축)
-6. git commit & push → Vercel 자동 배포
-
-**API 호출 비용 최적화 팁**: 카테고리 인덱스는 매일, 상세/소싱은 격일 또는 변동 있는 카테고리만 갱신.
+## 프롬프트를 수정할 때 주의
+- 카테고리 목록을 바꾸려면 프롬프트가 아니라 `canonical-categories.json`을 편집.
+- 분량(브랜드 20/상품 30 등)을 바꾸면 프롬프트 텍스트 + 검증 로직 양쪽 확인.
+- grounding 켜고 끄는 건 각 step의 `...GROUNDED_OPTS` / `...FLASH_OPTS`로 제어.

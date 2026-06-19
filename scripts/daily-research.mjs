@@ -1,17 +1,29 @@
-// Hybrid daily research pipeline.
+// Hybrid weekly research pipeline (run by GitHub Actions every Monday,
+// or manually via `npm run research`).
 //
-//   ① categories.csv      ← Pro    (1 call,  needs Korean ecommerce insight + summaries)
-//   ② brands.csv          ← Flash  (1 call,  400 rows tabular)
-//   ③ sourcing.csv        ← Flash  (1 call,  200 rows tabular)
-//   ④ products.csv        ← Flash  (1 or N calls — 600 rows is near Flash limit so split if needed)
-//   ⑤ meta.json + latest.json pointer
-//   ⑥ run compact-snapshots
+// Steps (each writes into a temp dir, swapped in atomically at the end):
+//   ① categories.csv  ← Pro   + grounding   rank the 30 canonical categories
+//   ② brands.csv      ← Pro   + grounding   20 brands/category   (parallel batches)
+//   ③ sourcing.csv    ← Flash, no grounding 10 sources/category  (parallel batches)
+//   ④ products.csv    ← Flash, no grounding 30 products/category (parallel batches)
+//   ④b insights.json  ← Pro                 weekly/monthly/yearly AI insights
+//   ⑤ meta.json       ← models used + timestamp
+//   ⑥ commit          ← atomic swap temp → real folder, update latest.json + index.json
+//   ⑦ compact         ← run compact-snapshots.mjs
+//
+// Key behaviors (see also: README §4):
+//   - Categories come from scripts/canonical-categories.json (names locked,
+//     new trends auto-appended). Gemini ranks; it doesn't invent names.
+//   - `change` (rank delta) is COMPUTED vs the previous snapshot, never
+//     guessed by the model (applyRealChange).
+//   - Grounding only where accuracy matters (categories, brands).
 //
 // Usage:
-//   node --env-file=.env scripts/daily-research.mjs
-//   node --env-file=.env scripts/daily-research.mjs --date 2026-05-13
-//   node --env-file=.env scripts/daily-research.mjs --pro-only       # use Pro for all (more expensive)
-//   node --env-file=.env scripts/daily-research.mjs --flash-only     # use Flash for everything
+//   node --env-file=.env scripts/daily-research.mjs              # hybrid (default)
+//   node --env-file=.env scripts/daily-research.mjs --date 2026-06-22
+//   --flash-only forces the categories step to Flash too (cheapest, lower
+//   insight quality). The other steps already pick their own model per the
+//   table above. Plain `npm run research` (hybrid) is what production uses.
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -45,20 +57,17 @@ function arg(name) {
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Seoul" });
 const DATE = arg("date") || today;
 
-// Model selection
+// Model selection. Per-step models are set inside each step function
+// (see README §4-3 for the table). These two flags only force a global
+// override for the whole run.
 const PRO = "gemini-2.5-pro";
 const FLASH = "gemini-2.5-flash";
-// Categories step uses Pro by default (needs Korean insight quality)
 const MODEL_CATS = flag("flash-only") ? FLASH : PRO;
-// Brands/sourcing/products always use Pro + Google Search grounding for
-// hallucination prevention, regardless of MODEL_TABLES.
-const MODEL_TABLES_LABEL = flag("flash-only") ? FLASH : PRO + " + grounding";
 
-console.log(`\n📅 K-Trend daily research (hybrid)`);
-console.log(`   Date (KST)       : ${DATE}`);
-console.log(`   Categories       : ${MODEL_CATS}`);
-console.log(`   Brands/Sourcing/Products : ${MODEL_TABLES_LABEL}`);
-console.log(`   Concurrency      : ${CONCURRENCY}`);
+console.log(`\n📅 K-Trend weekly research (hybrid)`);
+console.log(`   Date (KST)  : ${DATE}`);
+console.log(`   Mode        : ${flag("flash-only") ? "flash-only" : flag("pro-only") ? "pro-only" : "hybrid"}`);
+console.log(`   Concurrency : ${CONCURRENCY}`);
 console.log("");
 
 // Write to a temp dir first; swap into place only when ALL steps succeed.
