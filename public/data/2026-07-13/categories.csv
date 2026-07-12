@@ -1,0 +1,31 @@
+rank,slug,name_kr,name_en,zone,change,comp,margin,summary
+1,kpop-goods,K-POP 굿즈/포토카드,K-POP Goods & Photocards,red,0,5,35,"글로벌 아이돌 그룹의 신보 발매 및 월드투어 시즌이 맞물리며 관련 굿즈, 특히 국내 한정판 포토카드 수요가 폭발적으로 증가했습니다."
+2,k-beauty-skincare,K-뷰티 (스킨케어),K-Beauty Skincare,red,1,5,55,"K-뷰티의 명성은 여전히 견고하며, 특히 스킨케어 제품군은 브라질 등 남미에서도 높은 인기를 보이고 있습니다. 기능성, 저자극 제품의 꾸준한 수요가 이어지고 있습니다."
+3,auto-parts,자동차 부품,Auto Parts,red,-1,4,40,"DIY 문화 확산과 더불어 한국산 자동차의 글로벌 점유율이 높아지면서, 관련 부품 수요가 꾸준히 증가하고 있습니다. 특히 이커머스를 통한 부품 구매가 활발합니다."
+4,trading-cards,수집용 트레이딩 카드,Trading Cards,red,0,4,30,포켓몬 카드를 중심으로 한 한국어판 트레이딩 카드가 수집가들 사이에서 높은 인기를 구가하고 있습니다. 한정판 프로모션 카드는 특히 높은 가격에 거래됩니다.
+5,drones,드론/액세서리,Drones & Accessories,red,9,3,38,개인 영상 촬영 및 취미용 드론 시장의 확대로 한국 셀러들의 드론 관련 매출이 기록적인 성장을 보였습니다.
+6,k-fashion,K-패션/리셀,K-Fashion & Resell,blue,-1,4,45,기능성과 럭셔리를 결합한 '하이브리드 고프코어' 스타일이 2026년 K-패션 트렌드를 주도하고 있습니다. 국내 디자이너 브랜드의 인지도 상승도 판매를 견인하고 있습니다.
+7,k-beauty-devices,K-뷰티 디바이스,K-Beauty Devices,blue,3,3,60,"집에서 손쉽게 피부를 관리하는 홈뷰티 트렌드가 확산되며, 특히 일본 시장에서 K-뷰티 디바이스 매출이 급증했습니다."
+8,mens-fashion,남성 패션 잡화,Men's Fashion Accessories,blue,8,3,42,"스포츠웨어 브랜드의 신발, 지갑, 모자 등 남성 패션 잡화가 꾸준한 판매량을 기록하며 상위권을 유지하고 있습니다."
+9,character-goods,캐릭터 굿즈,Character Goods,blue,3,4,33,"K-POP 아이돌 캐릭터 상품뿐만 아니라, 국내 캐릭터 IP를 활용한 다양한 굿즈들이 해외 팬들에게 좋은 반응을 얻고 있습니다."
+10,smartphone-acc,스마트폰 액세서리,Smartphone Accessories,blue,-2,5,50,"스마트폰 액세서리는 전 세계적으로 꾸준한 수요를 보이는 카테고리로, 특히 맞춤형 디자인 케이스가 인기를 끌고 있습니다."
+11,k-food,K-푸드/스낵,K-Food & Snacks,blue,4,4,25,"온라인을 통한 K-푸드 구매가 증가하는 추세이며, 특히 할랄 인증을 받은 한국 식품의 도매 수요가 눈에 띕니다."
+12,inner-beauty,이너뷰티/건강기능식품,Inner Beauty & Supplements,blue,-3,3,65,"글로벌 웰니스 트렌드에 힘입어 콜라겐, 홍삼 등 한국산 건강기능식품 및 이너뷰티 제품에 대한 관심이 높아지고 있습니다."
+13,figures-collectibles,피규어/수집용 완구,Figures & Collectible Toys,blue,-2,4,32,키덜트 문화의 성장으로 피규어 및 수집용 완구 카테고리가 꾸준히 성장하고 있습니다. 특히 한정판 제품의 희소 가치가 판매를 견인합니다.
+14,computer-parts,컴퓨터 부품/주변기기,Computer Parts & Peripherals,blue,-7,4,28,"고성능 게임 및 작업에 대한 수요 증가로 한국산 메모리, SSD 등 컴퓨터 부품과 주변기기가 꾸준히 판매되고 있습니다."
+15,k-beauty-makeup,K-뷰티 (색조),K-Beauty Makeup,blue,-9,5,58,"틱톡 등 소셜 미디어를 통해 K-뷰티 메이크업 트렌드가 확산되면서, 혁신적인 색조 제품들이 주목받고 있습니다."
+16,camping-gear,캠핑/아웃도어,Camping & Outdoor,blue,4,3,40,아웃도어 활동 인구 증가로 기능성과 디자인을 겸비한 한국 캠핑용품에 대한 수요가 꾸준히 발생하고 있습니다.
+17,k-stationery,K-문구/다꾸,K-Stationery & Diary Deco,blue,1,4,48,"아기자기한 디자인과 높은 품질의 K-문구가 해외에서 인기를 끌고 있으며, 다이어리 꾸미기(다꾸) 용품의 인기가 높습니다."
+18,lego-blocks,조립 완구/레고,LEGO & Building Blocks,blue,4,3,25,수집가와 팬덤 소비의 확산으로 조립 완구 카테고리가 Q1에 높은 성장률을 기록했습니다.
+19,k-beauty-haircare,K-뷰티 (헤어케어),K-Beauty Haircare,blue,-2,4,52,"K-헤어케어 제품, 특히 기능성 두피 및 모발 관리 제품들이 주목받으며 꾸준한 성장세를 보이고 있습니다."
+20,home-decor,K-홈데코,Korean Home Decor,blue,7,3,45,미니멀하면서도 감성적인 디자인의 한국 홈데코 소품들이 해외 소비자들에게 좋은 반응을 얻고 있습니다.
+21,auto-accessories,자동차 액세서리,Auto Accessories,blue,-8,4,35,"차량용 편의용품 및 개인화 액세서리는 꾸준한 수요가 있는 품목으로, 여름철 관련 상품 판매가 활발합니다."
+22,pet-supplies,반려동물 용품,Pet Supplies,blue,3,3,40,"반려동물 시장의 성장에 따라 디자인과 기능성을 갖춘 한국산 펫 의류, 장난감, 미용용품 등이 인기를 끌고 있습니다."
+23,kitchen-ware,K-주방용품,Korean Kitchenware,blue,1,3,37,실용적이고 효율적인 한국 주방용품은 꾸준한 수요를 보이는 카테고리입니다. 특히 나무 도마와 같은 아이템이 인기가 있습니다.
+24,golf-gear,골프 용품,Golf Equipment,blue,-3,2,30,"한국 골프웨어의 세련된 디자인과 기능성이 알려지면서, 의류 및 액세서리를 중심으로 해외 수요가 발생하고 있습니다."
+25,webtoon-goods,웹툰 굿즈,Webtoon Goods,blue,-6,3,35,"글로벌 플랫폼을 통해 K-웹툰의 인기가 높아지면서, 인기 작품의 캐릭터 굿즈, 단행본 등의 판매가 증가하고 있습니다."
+26,fishing-gear,낚시 용품,Fishing Equipment,blue,2,2,28,"고품질의 한국산 낚싯대, 릴, 루어 등이 전문가 및 동호인들 사이에서 입소문을 타며 꾸준히 판매되고 있습니다."
+27,kdrama-goods,K-드라마 굿즈,K-Drama Goods,blue,-4,3,30,"OTT 서비스를 통해 K-드라마가 전 세계적인 인기를 끌면서, 드라마 관련 OST 앨범, 소품, 패션 아이템 등의 수요가 발생합니다."
+28,esports-merch,e스포츠 굿즈,E-Sports Merch,blue,-2,2,25,"한국 e스포츠 팀과 선수들의 국제적 위상이 높아짐에 따라, 유니폼, 게이밍 기어 등 관련 굿즈에 대한 해외 팬들의 수요가 증가하고 있습니다."
+29,modern-hanbok,한복 모던,Modern Hanbok,blue,0,2,45,전통 한복을 현대적으로 재해석한 생활 한복이 독특하고 편안한 디자인으로 해외에서 특별한 날을 위한 의상으로 주목받고 있습니다.
+30,traditional-craft,전통 공예품,Traditional Craft,blue,0,2,50,"나전칠기, 도자기 등 한국의 미가 담긴 전통 공예품이 고유한 디자인과 수작업의 가치를 인정받으며 소수 마니아층을 중심으로 거래되고 있습니다."
