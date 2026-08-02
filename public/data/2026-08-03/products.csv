@@ -1,0 +1,901 @@
+cat_slug,rank,name,name_en,brand,ebay_usd,krw,margin,weight_g,ebay_cat_id,seo_tags,change,source_slugs
+kpop-goods,1,방탄소년단 (BTS) 공식 포토카드 세트,BTS Official Photocard Set,Weverse Shop,35.99,15000,55,80,18460,kpop;bts;photocard,0,domeggook-com;ownerclan-com;dometopia-com
+kpop-goods,2,블랙핑크 (BLACKPINK) 공식 응원봉,BLACKPINK Official Light Stick,YG SELECT,65,28000,48,350,18460,blackpink;lightstick;kpop merch,0,domeggook-com;sellmoa-com;domemae-com
+kpop-goods,3,스트레이 키즈 (Stray Kids) 앨범 '5-STAR',Stray Kids Album '5-STAR',JYP Entertainment,28.99,12000,52,250,18460,stray kids;kpop album;5-star,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,4,뉴진스 (NewJeans) 공식 앨범 'Get Up',NewJeans Official Album 'Get Up',ADOR,32.5,14000,49,280,18460,newjeans;kpop;get up album,0,domeggook-com;dometopia-com;domemae-com
+kpop-goods,5,세븐틴 (SEVENTEEN) 캐럿봉 (응원봉),SEVENTEEN Carat Bong (Light Stick),Pledis Entertainment,60,26000,47,380,18460,seventeen;caratbong;kpop lightstick,0,ownerclan-com;sellmoa-com;domemall-co-kr
+kpop-goods,6,아이브 (IVE) 공식 앨범 'I've IVE',IVE Official Album 'I've IVE',Starship Entertainment,29.99,13000,50,260,18460,ive;kpop album;i've ive,0,domeggook-com;onchannel-co-kr;domewh-com
+kpop-goods,7,NCT 공식 응원봉,NCT Official Light Stick,SMTOWN &STORE,58,25000,48,370,18460,nct;lightstick;kpop merch,0,domeggook-com;ownerclan-com;domemae-com
+kpop-goods,8,투모로우바이투게더 (TXT) 공식 포토카드,TXT Official Photocard,Weverse Shop,15.99,6500,58,50,18460,txt;photocard;kpop,0,domeggook-com;dometopia-com;sellmoa-com
+kpop-goods,9,르세라핌 (LE SSERAFIM) 공식 앨범 'UNFORGIVEN',LE SSERAFIM Official Album 'UNFORGIVEN',Source Music,27.99,11500,53,240,18460,le sserafim;unforgiven;kpop album,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,10,에스파 (aespa) 공식 응원봉,aespa Official Light Stick,SMTOWN &STORE,55,24000,46,360,18460,aespa;lightstick;kpop merch,0,domeggook-com;domemae-com;domemall-co-kr
+kpop-goods,11,K-POP 아이돌 공식 슬로건,K-POP Idol Official Slogan,Weverse Shop,22,9000,59,150,18460,kpop slogan;idol merch;official goods,0,domeggook-com;ownerclan-com;dometopia-com
+kpop-goods,12,K-POP 아이돌 공식 키링,K-POP Idol Official Keyring,YG SELECT,18,7500,58,70,18460,kpop keyring;idol merch;official goods,0,domeggook-com;sellmoa-com;domemae-com
+kpop-goods,13,K-POP 아이돌 공식 배지,K-POP Idol Official Badge,SMTOWN &STORE,12,5000,58,30,18460,kpop badge;idol merch;official goods,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,14,K-POP 아이돌 공식 포스터,K-POP Idol Official Poster,Weverse Shop,19.99,8000,60,100,18460,kpop poster;idol merch;official goods,0,domeggook-com;dometopia-com;domemae-com
+kpop-goods,15,K-POP 아이돌 공식 엽서 세트,K-POP Idol Official Postcard Set,Ktown4u,14.5,6000,58,60,18460,kpop postcard;idol merch;official goods,0,domeggook-com;sellmoa-com;domemall-co-kr
+kpop-goods,16,K-POP 아이돌 공식 스티커 팩,K-POP Idol Official Sticker Pack,Music Korea,10.99,4500,59,40,18460,kpop sticker;idol merch;official goods,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,17,K-POP 아이돌 공식 미니 포토북,K-POP Idol Official Mini Photobook,Soundwave,25,10000,60,180,18460,kpop photobook;idol merch;official goods,0,domeggook-com;dometopia-com;domemae-com
+kpop-goods,18,K-POP 아이돌 공식 담요,K-POP Idol Official Blanket,Apple Music,45,19000,57,450,18460,kpop blanket;idol merch;official goods,0,domeggook-com;sellmoa-com;domemall-co-kr
+kpop-goods,19,K-POP 아이돌 공식 티셔츠,K-POP Idol Official T-shirt,Hottracks,38,16000,57,300,18460,kpop t-shirt;idol merch;official goods,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,20,K-POP 아이돌 공식 컵홀더,K-POP Idol Official Cupholder,Aladin,16,6800,57,90,18460,kpop cupholder;idol merch;official goods,0,domeggook-com;dometopia-com;domemae-com
+kpop-goods,21,K-POP 아이돌 공식 폰케이스,K-POP Idol Official Phone Case,YES24,29,12000,59,120,18460,kpop phone case;idol merch;official goods,0,domeggook-com;sellmoa-com;domemall-co-kr
+kpop-goods,22,K-POP 아이돌 공식 에코백,K-POP Idol Official Eco Bag,WITHMUU,28,11500,59,200,18460,kpop eco bag;idol merch;official goods,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,23,K-POP 아이돌 공식 인형,K-POP Idol Official Plush Doll,Everline,40,17000,57,300,18460,kpop doll;idol merch;official goods,0,domeggook-com;dometopia-com;domemae-com
+kpop-goods,24,K-POP 아이돌 공식 캘린더,K-POP Idol Official Calendar,Dear My Muse,30,12500,58,250,18460,kpop calendar;idol merch;official goods,0,domeggook-com;sellmoa-com;domemall-co-kr
+kpop-goods,25,K-POP 아이돌 공식 파우치,K-POP Idol Official Pouch,Makestar,20,8500,57,100,18460,kpop pouch;idol merch;official goods,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,26,K-POP 아이돌 공식 노트,K-POP Idol Official Notebook,YG SELECT,15,6000,60,150,18460,kpop notebook;idol merch;official goods,0,domeggook-com;dometopia-com;domemae-com
+kpop-goods,27,K-POP 아이돌 공식 볼펜,K-POP Idol Official Ballpoint Pen,SMTOWN &STORE,10,4000,60,50,18460,kpop pen;idol merch;official goods,0,domeggook-com;sellmoa-com;domemall-co-kr
+kpop-goods,28,K-POP 아이돌 공식 마스크 스트랩,K-POP Idol Official Mask Strap,Beatroad,8,3000,62,30,18460,kpop mask strap;idol merch;official goods,0,ownerclan-com;onchannel-co-kr;domewh-com
+kpop-goods,29,K-POP 아이돌 공식 헤어밴드,K-POP Idol Official Headband,Everysing,13,5500,58,60,18460,kpop headband;idol merch;official goods,0,domeggook-com;dometopia-com;domemae-com
+kpop-goods,30,K-POP 아이돌 공식 핀버튼 세트,K-POP Idol Official Pin Button Set,Weverse Shop,11,4500,59,40,18460,kpop pin button;idol merch;official goods,0,domeggook-com;sellmoa-com;domemall-co-kr
+trading-cards,1,포켓몬 카드 게임 한국판 부스터 박스,Pokémon TCG Korea Booster Box,Pokémon TCG Korea,75,32000,57,350,183454,pokemon tcg;korean cards;booster box,0,domeggook-com;ownerclan-com;dometopia-com
+trading-cards,2,유희왕 오피셜 카드 게임 한국판 스트럭처 덱,Yu-Gi-Oh! OCG Korea Structure Deck,Yu-Gi-Oh! OCG,25,10000,60,200,183454,yugioh;korean cards;structure deck,0,domeggook-com;sellmoa-com;domemae-com
+trading-cards,3,디지몬 카드 게임 한국판 스타터 덱,Digimon Card Game Korea Starter Deck,Digimon Card Game,20,8000,60,180,183454,digimon tcg;korean cards;starter deck,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,4,원피스 카드 게임 한국판 부스터 팩,One Piece Card Game Korea Booster Pack,One Piece Card Game,8,3000,62,50,183454,one piece tcg;korean cards;booster pack,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,5,뱅가드 카드 게임 한국판 트라이얼 덱,Cardfight!! Vanguard Korea Trial Deck,Cardfight!! Vanguard,18,7500,58,150,183454,vanguard tcg;korean cards;trial deck,0,domeggook-com;sellmoa-com;domemall-co-kr
+trading-cards,6,포켓몬 카드 게임 한국판 스페셜 세트,Pokémon TCG Korea Special Set,Pokémon TCG Korea,45,19000,57,300,183454,pokemon tcg;korean special set;collectible,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,7,유희왕 오피셜 카드 게임 한국판 컬렉션 팩,Yu-Gi-Oh! OCG Korea Collection Pack,Yu-Gi-Oh! OCG,30,12500,58,220,183454,yugioh;korean collection;rare cards,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,8,디지몬 카드 게임 한국판 테이머즈 세트,Digimon Card Game Korea Tamer's Set,Digimon Card Game,22,9000,59,190,183454,digimon tcg;korean tamer set;card game,0,domeggook-com;sellmoa-com;domemall-co-kr
+trading-cards,9,원피스 카드 게임 한국판 스타터 덱,One Piece Card Game Korea Starter Deck,One Piece Card Game,19,7800,59,170,183454,one piece tcg;korean starter;card game,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,10,뱅가드 카드 게임 한국판 부스터 박스,Cardfight!! Vanguard Korea Booster Box,Cardfight!! Vanguard,60,25000,58,320,183454,vanguard tcg;korean booster;card game,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,11,한국 보드게임 트레이딩 카드,Korean Boardgame Trading Cards,Korea Boardgames,15,6000,60,100,183454,korean boardgame;trading cards;collectible,0,domeggook-com;ownerclan-com;dometopia-com
+trading-cards,12,TCG Shop 한정판 프로모 카드,TCG Shop Limited Promo Card,TCG Shop,12,4800,60,30,183454,promo card;limited edition;tcg,0,domeggook-com;sellmoa-com;domemae-com
+trading-cards,13,카드 캐슬 프리미엄 슬리브,Card Castle Premium Sleeves,Card Castle,10,4000,60,80,183454,card sleeves;premium;tcg accessories,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,14,하비 게임 몰 카드 바인더,Hobby Game Mall Card Binder,Hobby Game Mall,20,8000,60,250,183454,card binder;storage;tcg accessories,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,15,레드 다이스 플레이 매트,Red Dice Playmat,Red Dice,28,11500,59,300,183454,playmat;tcg accessories;gaming,0,domeggook-com;sellmoa-com;domemall-co-kr
+trading-cards,16,TCG Korea 카드 케이스,TCG Korea Card Case,TCG Korea,9,3600,60,70,183454,card case;storage;tcg accessories,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,17,카드 앤 양 탑로더,Card N Yang Toploader,Card N Yang,7,2800,60,40,183454,toploader;card protection;tcg accessories,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,18,니벨 아레나 카드 디스플레이 스탠드,Nivel Arena Card Display Stand,Nivel Arena,14,5800,58,120,183454,card display;stand;tcg accessories,0,domeggook-com;sellmoa-com;domemall-co-kr
+trading-cards,19,듀얼 몰 카드 분할기,Duel Mall Card Dividers,Duel Mall,6,2400,60,30,183454,card dividers;storage;tcg accessories,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,20,대원 미디어 애니메이션 카드 팩,Daewon Media Anime Card Pack,Daewon Media,11,4500,59,60,183454,anime cards;korean cards;daewon media,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,21,한국판 트레이딩 카드 게임 부스터 팩,Korean TCG Booster Pack,Korea Boardgames,7.5,3000,60,50,183454,korean tcg;booster pack;collectible,0,domeggook-com;ownerclan-com;dometopia-com
+trading-cards,22,한국판 트레이딩 카드 게임 스타터 덱,Korean TCG Starter Deck,Daewon Media,17,7000,59,150,183454,korean tcg;starter deck;card game,0,domeggook-com;sellmoa-com;domemae-com
+trading-cards,23,한국판 트레이딩 카드 게임 플레이 매트,Korean TCG Playmat,Hobby Game Mall,25,10000,60,280,183454,korean tcg;playmat;gaming accessories,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,24,한국판 트레이딩 카드 게임 카드 슬리브,Korean TCG Card Sleeves,Card Castle,9.5,3800,60,70,183454,korean tcg;card sleeves;protection,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,25,한국판 트레이딩 카드 게임 카드 바인더,Korean TCG Card Binder,Red Dice,19,7800,59,220,183454,korean tcg;card binder;storage,0,domeggook-com;sellmoa-com;domemall-co-kr
+trading-cards,26,한국판 트레이딩 카드 게임 프로모션 카드,Korean TCG Promo Card,TCG Shop,13,5000,61,30,183454,korean tcg;promo card;collectible,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,27,한국판 트레이딩 카드 게임 컬렉션 박스,Korean TCG Collection Box,Korea Boardgames,35,14000,60,400,183454,korean tcg;collection box;rare cards,0,domeggook-com;dometopia-com;domemae-com
+trading-cards,28,한국판 트레이딩 카드 게임 프리미엄 팩,Korean TCG Premium Pack,Daewon Media,16,6500,59,80,183454,korean tcg;premium pack;collectible,0,domeggook-com;sellmoa-com;domemall-co-kr
+trading-cards,29,한국판 트레이딩 카드 게임 덱 박스,Korean TCG Deck Box,Card N Yang,10.5,4200,60,90,183454,korean tcg;deck box;storage,0,ownerclan-com;onchannel-co-kr;domewh-com
+trading-cards,30,한국판 트레이딩 카드 게임 홀로그램 카드,Korean TCG Holographic Card,Nivel Arena,22,9000,59,30,183454,korean tcg;holographic card;rare,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,1,코스알엑스 (COSRX) 퓨어핏 시카 세럼,COSRX Pure Fit Cica Serum,COSRX,22.99,9500,58,180,11233,cosrx;cica serum;kbeauty,0,domeggook-com;ownerclan-com;koreacospack-com
+k-beauty-skincare,2,라운드랩 (Round Lab) 1025 독도 토너,Round Lab 1025 Dokdo Toner,Round Lab,19.5,8000,59,250,11233,round lab;dokdo toner;korean skincare,0,domeggook-com;sellmoa-com;domemae-com
+k-beauty-skincare,3,닥터자르트 (Dr.Jart+) 시카페어 크림,Dr.Jart+ Cicapair Cream,Dr.Jart+,38,16000,57,150,11233,dr jart;cicapair;kbeauty cream,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-beauty-skincare,4,라네즈 (Laneige) 워터 슬리핑 마스크,Laneige Water Sleeping Mask,Laneige,27,11000,59,200,11233,laneige;sleeping mask;korean beauty,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,5,설화수 (Sulwhasoo) 윤조에센스,Sulwhasoo First Care Activating Serum,Sulwhasoo,75,30000,60,180,11233,sulwhasoo;first care serum;luxury kbeauty,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-beauty-skincare,6,이니스프리 (Innisfree) 그린티 씨드 세럼,Innisfree Green Tea Seed Serum,Innisfree,24,10000,58,170,11233,innisfree;green tea serum;korean skincare,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-beauty-skincare,7,조선미녀 (Beauty of Joseon) 맑은쌀 선크림,Beauty of Joseon Relief Sun Rice,Beauty of Joseon,18.5,7800,42,220,11233,korean sunscreen;kbeauty;rice extract,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,8,아누아 (Anua) 어성초 77 수딩 토너,Anua Heartleaf 77% Soothing Toner,Anua,21,8800,58,300,11233,anua;heartleaf toner;soothing skincare,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-beauty-skincare,9,에스트라 (Aestura) 아토베리어365 크림,Aestura Atobarrier 365 Cream,Aestura,35,14500,59,200,11233,aestura;atobarrier;sensitive skin,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-beauty-skincare,10,토리든 (Torriden) 다이브인 저분자 히알루론산 세럼,Torriden DIVE-IN Low Molecular Hyaluronic Acid Serum,Torriden,23.5,9800,58,180,11233,torriden;hyaluronic serum;hydration,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,11,마녀공장 (Manyo Factory) 퓨어 클렌징 오일,Manyo Factory Pure Cleansing Oil,Manyo Factory,25,10500,58,280,11233,manyo factory;cleansing oil;kbeauty cleanser,0,domeggook-com;ownerclan-com;koreacospack-com
+k-beauty-skincare,12,메디힐 (Mediheal) 티트리 케어 솔루션 에센셜 마스크,Mediheal Teatree Care Solution Essential Mask,Mediheal,15,6000,60,100,11233,mediheal;teatree mask;sheet mask,0,domeggook-com;sellmoa-com;domemae-com
+k-beauty-skincare,13,스킨1004 (SKIN1004) 마다가스카르 센텔라 앰플,SKIN1004 Madagascar Centella Ampoule,SKIN1004,20,8200,59,150,11233,skin1004;centella ampoule;calming serum,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-beauty-skincare,14,넘버즈인 (numbuzin) 3번 맑은 광채 피부결 세럼,numbuzin No.3 Skin Softening Serum,numbuzin,28,11500,59,180,11233,numbuzin;skin softening serum;kbeauty serum,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,15,아비브 (Abib) 어성초 스팟 패드 카밍 터치,Abib Heartleaf Spot Pad Calming Touch,Abib,22,9000,59,120,11233,abib;heartleaf pad;calming skincare,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-beauty-skincare,16,한국 비건 수분 크림,Korean Vegan Hydrating Cream,Anua,26,10800,58,180,11233,vegan kbeauty;hydrating cream;korean skincare,0,domeggook-com;ownerclan-com;koreacospack-com
+k-beauty-skincare,17,한국 저자극 클렌징 폼,Korean Hypoallergenic Cleansing Foam,Round Lab,17,7000,59,150,11233,hypoallergenic cleanser;korean foam;gentle skincare,0,domeggook-com;sellmoa-com;domemae-com
+k-beauty-skincare,18,한국 진정 시카 패드,Korean Calming Cica Pad,COSRX,21,8500,59,130,11233,cica pad;korean toner pad;calming skin,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-beauty-skincare,19,한국 미백 기능성 앰플,Korean Brightening Ampoule,Manyo Factory,30,12500,58,100,11233,brightening ampoule;korean whitening;radiant skin,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,20,한국 모공 케어 세럼,Korean Pore Care Serum,numbuzin,24,9800,59,120,11233,pore serum;korean skincare;tighten pores,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-beauty-skincare,21,한국 안티에이징 아이크림,Korean Anti-aging Eye Cream,Sulwhasoo,45,18000,60,80,11233,anti-aging eye cream;korean luxury;wrinkle care,0,domeggook-com;ownerclan-com;koreacospack-com
+k-beauty-skincare,22,한국 수분 진정 마스크팩,Korean Hydrating Soothing Mask Pack,Mediheal,18,7500,58,100,11233,hydrating mask;korean sheet mask;soothing,0,domeggook-com;sellmoa-com;domemae-com
+k-beauty-skincare,23,한국 비타민 C 세럼,Korean Vitamin C Serum,SKIN1004,29,12000,59,100,11233,vitamin c serum;korean brightening;antioxidant,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-beauty-skincare,24,한국 약산성 클렌징 젤,Korean Low pH Cleansing Gel,Abib,19,7800,59,170,11233,low ph cleanser;korean cleansing gel;gentle face wash,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,25,한국 각질 제거 토너,Korean Exfoliating Toner,Innisfree,20,8200,59,200,11233,exfoliating toner;korean skincare;aha bha,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-beauty-skincare,26,한국 톤업 선크림,Korean Tone-up Sunscreen,Dr.Jart+,25,10000,60,100,11233,tone up sunscreen;korean spf;brightening,0,domeggook-com;ownerclan-com;koreacospack-com
+k-beauty-skincare,27,한국 펩타이드 앰플,Korean Peptide Ampoule,Aestura,32,13000,59,100,11233,peptide ampoule;korean anti-aging;firming serum,0,domeggook-com;sellmoa-com;domemae-com
+k-beauty-skincare,28,한국 콜라겐 크림,Korean Collagen Cream,Laneige,38,15500,59,150,11233,collagen cream;korean firming;anti-wrinkle,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-beauty-skincare,29,한국 프로바이오틱스 세럼,Korean Probiotics Serum,Torriden,27,11000,59,100,11233,probiotics serum;korean skincare;skin barrier,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-skincare,30,한국 어성초 진정 팩,Korean Heartleaf Calming Pack,Beauty of Joseon,23,9500,59,180,11233,heartleaf pack;korean calming;soothing mask,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,1,현대 모비스 (Hyundai Mobis) 순정 브레이크 패드,Hyundai Mobis Genuine Brake Pads,Hyundai Mobis,75,30000,60,1500,33567,hyundai parts;brake pads;genuine oem,0,domeggook-com;ownerclan-com;autoand-co-kr
+auto-parts,2,한국타이어 (Hankook Tire) 벤투스 S1 에보3,Hankook Tire Ventus S1 evo3,Hankook Tire & Technology,180,75000,58,10000,33744,hankook tire;ventus s1;performance tire,0,domeggook-com;sellmoa-com;domemae-com
+auto-parts,3,HL 만도 (HL Mando) 순정 에어 필터,HL Mando Genuine Air Filter,HL Mando,25,10000,60,300,33567,mando parts;air filter;oem filter,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,4,금호타이어 (Kumho Tire) 솔루스 TA31,Kumho Tire Solus TA31,Kumho Tire,150,62000,58,9000,33744,kumho tire;solus ta31;all season tire,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,5,넥센타이어 (Nexen Tire) 엔프리즈 AH5,Nexen Tire N'Priz AH5,Nexen Tire,130,54000,58,8500,33744,nexen tire;n'priz ah5;passenger tire,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,6,현대 모비스 (Hyundai Mobis) 순정 오일 필터,Hyundai Mobis Genuine Oil Filter,Hyundai Mobis,18,7500,58,200,33567,hyundai parts;oil filter;oem filter,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,7,SL 코퍼레이션 (SL Corporation) 헤드램프 어셈블리,SL Corporation Headlamp Assembly,SL Corporation,120,50000,58,2500,33567,sl corporation;headlamp;car light,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,8,유라 코퍼레이션 (Yura Corporation) 점화 코일,Yura Corporation Ignition Coil,Yura Corporation,45,18000,60,400,33567,yura corporation;ignition coil;engine part,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,9,평화정공 (Pyeong Hwa Automotive) 도어 래치,Pyeong Hwa Automotive Door Latch,Pyeong Hwa Automotive (PHA),60,24000,60,500,33567,pha;door latch;car door part,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,10,화신 (Hwashin) 컨트롤 암,Hwashin Control Arm,Hwashin,85,35000,59,2000,33567,hwashin;control arm;suspension part,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,11,현대 케피코 (Hyundai Kefico) 연료 펌프,Hyundai Kefico Fuel Pump,Hyundai Kefico,95,38000,60,800,33567,kefico;fuel pump;engine part,0,domeggook-com;ownerclan-com;autoand-co-kr
+auto-parts,12,상신 브레이크 (Sangsin Brake) 하이큐 브레이크 디스크,Sangsin Brake Hi-Q Brake Disc,Sangsin Brake,65,26000,60,3000,33567,sangsin brake;brake disc;hi-q,0,domeggook-com;sellmoa-com;domemae-com
+auto-parts,13,경신 (Kyungshin) 와이어링 하네스,Kyungshin Wiring Harness,Kyungshin,55,22000,60,600,33567,kyungshin;wiring harness;electrical part,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,14,현대 트랜시스 (Hyundai Transys) 변속기 오일,Hyundai Transys Transmission Fluid,Hyundai Transys,30,12000,60,1000,33567,hyundai transys;transmission fluid;gear oil,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,15,현대 위아 (Hyundai Wia) 워터 펌프,Hyundai Wia Water Pump,Hyundai Wia,70,28000,60,1200,33567,hyundai wia;water pump;cooling system,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,16,한국 자동차 엔진 오일,Korean Car Engine Oil,Hyundai Mobis,40,16000,60,4000,33567,engine oil;korean car parts;synthetic oil,0,domeggook-com;ownerclan-com;autoand-co-kr
+auto-parts,17,한국 자동차 와이퍼 블레이드,Korean Car Wiper Blades,HL Mando,20,8000,60,300,33567,wiper blades;korean car parts;windshield wipers,0,domeggook-com;sellmoa-com;domemae-com
+auto-parts,18,한국 자동차 에어컨 필터,Korean Car AC Filter,Hanon Systems,28,11500,59,250,33567,ac filter;cabin filter;korean car parts,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,19,한국 자동차 스파크 플러그,Korean Car Spark Plugs,Hyundai Kefico,35,14000,60,150,33567,spark plugs;korean car parts;engine ignition,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,20,한국 자동차 배터리,Korean Car Battery,Hyundai Mobis,110,45000,59,15000,33567,car battery;korean car parts;automotive battery,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,21,한국 자동차 라디에이터,Korean Car Radiator,Hyundai Wia,140,58000,59,4000,33567,car radiator;korean car parts;cooling system,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,22,한국 자동차 서스펜션 쇼크 업소버,Korean Car Suspension Shock Absorber,HL Mando,90,36000,60,2000,33567,shock absorber;korean car parts;suspension,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,23,한국 자동차 연료 필터,Korean Car Fuel Filter,Hyundai Mobis,22,9000,59,180,33567,fuel filter;korean car parts;engine maintenance,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,24,한국 자동차 헤드라이트 전구,Korean Car Headlight Bulb,SL Corporation,15,6000,60,50,33567,headlight bulb;korean car parts;automotive lighting,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,25,한국 자동차 브레이크액,Korean Car Brake Fluid,Sangsin Brake,18,7500,58,500,33567,brake fluid;korean car parts;dot4,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,26,한국 자동차 타이밍 벨트,Korean Car Timing Belt,Hyundai Transys,50,20000,60,400,33567,timing belt;korean car parts;engine component,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,27,한국 자동차 휠 베어링,Korean Car Wheel Bearing,Hyundai Wia,48,19500,59,800,33567,wheel bearing;korean car parts;suspension,0,ownerclan-com;onchannel-co-kr;domewh-com
+auto-parts,28,한국 자동차 클러치 키트,Korean Car Clutch Kit,Pyeong Hwa Automotive (PHA),130,52000,60,5000,33567,clutch kit;korean car parts;transmission,0,domeggook-com;dometopia-com;domemae-com
+auto-parts,29,한국 자동차 드라이브 샤프트,Korean Car Drive Shaft,Hwashin,110,44000,60,6000,33567,drive shaft;korean car parts;drivetrain,0,domeggook-com;sellmoa-com;domemall-co-kr
+auto-parts,30,한국 자동차 파워 스티어링 펌프,Korean Car Power Steering Pump,Yura Corporation,90,36000,60,1500,33567,power steering pump;korean car parts;steering system,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,1,아더에러 (ADER Error) 테트리스 로고 티셔츠,ADER Error Tetris Logo T-shirt,ADER Error,120,50000,58,300,15724,ader error;korean streetwear;designer t-shirt,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+k-fashion,2,젠틀몬스터 (Gentle Monster) 선글라스,Gentle Monster Sunglasses,Gentle Monster,280,120000,57,200,15724,gentle monster;korean eyewear;designer sunglasses,0,domeggook-com;sellmoa-com;domemae-com
+k-fashion,3,디스이즈네버댓 (thisisneverthat) 로고 후드티,thisisneverthat Logo Hoodie,thisisneverthat,95,40000,58,600,15724,thisisneverthat;korean streetwear;hoodie,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,4,마르디 메크르디 (Mardi Mercredi) 플라워 스웨트셔츠,Mardi Mercredi Flower Sweatshirt,Mardi Mercredi,80,33000,59,450,15724,mardi mercredi;korean fashion;flower sweatshirt,0,domeggook-com;dometopia-com;domemae-com
+k-fashion,5,마틴킴 (Matin Kim) 버클 백,Matin Kim Buckle Bag,Matin Kim,150,65000,57,500,15724,matin kim;korean designer bag;buckle bag,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-fashion,6,커버낫 (Covernat) 아치 로고 맨투맨,Covernat Arch Logo Sweatshirt,Covernat,65,27000,58,400,15724,covernat;korean casual wear;logo sweatshirt,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,7,앤더슨벨 (Andersson Bell) 니트 스웨터,Andersson Bell Knit Sweater,Andersson Bell,180,75000,58,700,15724,andersson bell;korean designer knit;fashion sweater,0,domeggook-com;dometopia-com;domemae-com
+k-fashion,8,LMC (Lost Management Cities) 로고 캡,LMC Logo Cap,LMC,45,18000,60,150,15724,lmc;korean streetwear cap;logo hat,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-fashion,9,로우 클래식 (Low Classic) 미니멀 자켓,Low Classic Minimal Jacket,Low Classic,250,100000,60,800,15724,low classic;korean designer jacket;minimal fashion,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,10,오아이오아이 컬렉션 (OIOI Collection) 시그니처 로고 티셔츠,OIOI Collection Signature Logo T-shirt,OIOI Collection,55,22000,60,250,15724,oioi collection;korean casual;logo tee,0,domeggook-com;dometopia-com;domemae-com
+k-fashion,11,널디 (Nerdy) 트랙 세트,Nerdy Track Set,Nerdy,130,55000,58,900,15724,nerdy;korean sportswear;tracksuit,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+k-fashion,12,무신사 (Musinsa) 스탠다드 스웨트팬츠,Musinsa Standard Sweatpants,Musinsa,40,16000,60,400,15724,musinsa;korean casual;sweatpants,0,domeggook-com;sellmoa-com;domemae-com
+k-fashion,13,W 컨셉 (W Concept) 디자이너 블라우스,W Concept Designer Blouse,W Concept,90,38000,58,250,15724,w concept;korean designer;blouse,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,14,29CM (29CM) 셀렉트 데님 팬츠,29CM Select Denim Pants,29CM,70,29000,59,700,15724,29cm;korean denim;fashion jeans,0,domeggook-com;dometopia-com;domemae-com
+k-fashion,15,크림 (KREAM) 한정판 스니커즈,KREAM Limited Edition Sneakers,KREAM,200,85000,57,1000,15724,kream;limited sneakers;korean resale,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-fashion,16,한국 스트릿웨어 오버사이즈 티셔츠,Korean Streetwear Oversized T-shirt,thisisneverthat,50,20000,60,300,15724,korean streetwear;oversized tee;fashion,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+k-fashion,17,한국 디자이너 크롭탑,Korean Designer Cropped Top,Mardi Mercredi,60,24000,60,180,15724,korean designer;cropped top;fashion,0,domeggook-com;sellmoa-com;domemae-com
+k-fashion,18,한국 캐주얼 데님 자켓,Korean Casual Denim Jacket,Covernat,110,45000,59,800,15724,korean denim jacket;casual fashion;outerwear,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,19,한국 미니멀리즘 스커트,Korean Minimalism Skirt,Low Classic,85,35000,59,300,15724,korean minimalism;fashion skirt;designer,0,domeggook-com;dometopia-com;domemae-com
+k-fashion,20,한국 유니섹스 후드티,Korean Unisex Hoodie,LMC,75,30000,60,500,15724,korean unisex;hoodie;streetwear,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-fashion,21,한국 오버핏 스웨트셔츠,Korean Oversized Sweatshirt,Nerdy,68,28000,59,450,15724,korean oversized;sweatshirt;casual fashion,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+k-fashion,22,한국 롱 슬리브 티셔츠,Korean Long Sleeve T-shirt,OIOI Collection,48,19500,59,250,15724,korean long sleeve;fashion tee;basic wear,0,domeggook-com;sellmoa-com;domemae-com
+k-fashion,23,한국 플리츠 스커트,Korean Pleated Skirt,W Concept,70,28000,60,350,15724,korean pleated skirt;fashion skirt;elegant,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,24,한국 와이드 팬츠,Korean Wide Leg Pants,29CM,80,32000,60,500,15724,korean wide pants;fashion trousers;comfortable,0,domeggook-com;dometopia-com;domemae-com
+k-fashion,25,한국 니트 가디건,Korean Knit Cardigan,Andersson Bell,120,48000,60,600,15724,korean knit;cardigan;designer fashion,0,domeggook-com;sellmoa-com;domemall-co-kr
+k-fashion,26,한국 볼캡,Korean Ball Cap,ADER Error,60,24000,60,120,15724,korean ball cap;fashion hat;streetwear,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+k-fashion,27,한국 미니멀 백팩,Korean Minimal Backpack,Matin Kim,100,40000,60,700,15724,korean backpack;minimal design;fashion bag,0,domeggook-com;sellmoa-com;domemae-com
+k-fashion,28,한국 스니커즈,Korean Sneakers,KREAM,150,60000,60,900,15724,korean sneakers;fashion shoes;resale,0,ownerclan-com;onchannel-co-kr;domewh-com
+k-fashion,29,한국 린넨 셔츠,Korean Linen Shirt,Musinsa,55,22000,60,200,15724,korean linen shirt;summer fashion;casual,0,domeggook-com;dometopia-com;domemae-com
+k-fashion,30,한국 선글라스,Korean Sunglasses,Gentle Monster,220,90000,59,150,15724,korean sunglasses;eyewear;designer,0,domeggook-com;sellmoa-com;domemall-co-kr
+figures-collectibles,1,카카오프렌즈 라이언 피규어,Kakao Friends Ryan Figure,Kakao Friends,25.99,12000,55,150,22003,kakao friends;ryan;korean character,0,domeggook-com;ownerclan-com;figurefriends-co-kr
+figures-collectibles,2,라인프렌즈 브라운 인형,Line Friends Brown Plush Doll,Line Friends,32.5,15000,50,200,22003,line friends;brown;kpop merch,0,domeggook-com;dometopia-com;figurefriends-co-kr
+figures-collectibles,3,BT21 타타 피규어,BT21 TATA Figure,BT21,28,13000,53,180,22003,bt21;tata;kpop collectible,0,domeggook-com;ownerclan-com;sellmoa-com
+figures-collectibles,4,블리츠웨이 스태츄,Blitzway Statue,Blitzway,120,50000,58,800,22003,blitzway;high-end figure;korean statue,0,figurefriends-co-kr;dometopia-com
+figures-collectibles,5,스티키몬스터랩 피규어,Sticky Monster Lab Figure,Sticky Monster Lab,45,20000,55,250,22003,sticky monster lab;design toy;korean art toy,0,domeggook-com;ownerclan-com;figurefriends-co-kr
+figures-collectibles,6,쿨레인 피규어,Coolrain Figure,Coolrain,80,35000,56,400,22003,coolrain;designer toy;limited edition,0,figurefriends-co-kr;dometopia-com
+figures-collectibles,7,킨키로봇 아트토이,Kinkirobot Art Toy,Kinkirobot,60,28000,53,300,22003,kinkirobot;art toy;collectible figure,0,figurefriends-co-kr;domeggook-com
+figures-collectibles,8,팝마트 코리아 블라인드 박스,Pop Mart Korea Blind Box,Pop Mart Korea,15,7000,50,100,22003,pop mart;blind box;korean toy,0,domeggook-com;ownerclan-com;figurefriends-co-kr
+figures-collectibles,9,5PRO 스튜디오 로봇 피규어,5PRO Studio Robot Figure,5PRO Studio,95,40000,57,600,22003,5pro studio;robot figure;korean designer,0,figurefriends-co-kr;dometopia-com
+figures-collectibles,10,핫토이 코리아 한정판 피규어,Hot Toys Korea Limited Edition Figure,Hot Toys Korea,250,100000,60,1000,22003,hot toys;limited edition;collectible,0,figurefriends-co-kr;dometopia-com
+figures-collectibles,11,굿스마일 컴퍼니 넨도로이드,Good Smile Company Nendoroid,Good Smile Company Korea,55,25000,54,180,22003,nendoroid;anime figure;good smile,0,figurefriends-co-kr;domeggook-com
+figures-collectibles,12,토이리퍼블릭 아트 피규어,Toy Republic Art Figure,Toy Republic,70,30000,57,350,22003,toy republic;art figure;korean artist,0,figurefriends-co-kr;dometopia-com
+figures-collectibles,13,라쿤팩토리 캐릭터 인형,Raccoon Factory Character Plush,Raccoon Factory,20,9000,55,120,22003,raccoon factory;plush toy;korean character,0,domeggook-com;ownerclan-com
+figures-collectibles,14,영실업 또봇 변신 로봇,Young-toys Tobot Transforming Robot,Young-toys,40,18000,55,450,22003,young toys;tobot;korean robot toy,0,domeggook-com;ownerclan-com
+figures-collectibles,15,손오공 헬로카봇,Sonokong Hello Carbot,Sonokong,35,16000,54,400,22003,sonokong;hello carbot;korean toy,0,domeggook-com;ownerclan-com
+figures-collectibles,16,카카오프렌즈 무선 이어폰 케이스,Kakao Friends Wireless Earphone Case,Kakao Friends,18,8000,55,80,22003,kakao friends;earphone case;korean accessory,0,domeggook-com;ownerclan-com
+figures-collectibles,17,라인프렌즈 미니 피규어 세트,Line Friends Mini Figure Set,Line Friends,29.99,14000,53,150,22003,line friends;mini figures;kpop merch,0,domeggook-com;dometopia-com
+figures-collectibles,18,BT21 캐릭터 키링,BT21 Character Keyring,BT21,12,5000,58,50,22003,bt21;keyring;kpop accessory,0,domeggook-com;sellmoa-com
+figures-collectibles,19,스티키몬스터랩 컵,Sticky Monster Lab Cup,Sticky Monster Lab,22,10000,54,300,22003,sticky monster lab;character mug;korean design,0,domeggook-com;ownerclan-com
+figures-collectibles,20,팝마트 코리아 미니 피규어,Pop Mart Korea Mini Figure,Pop Mart Korea,16,7500,53,90,22003,pop mart;mini figure;korean collectible,0,domeggook-com;ownerclan-com
+figures-collectibles,21,한국 캐릭터 폰케이스,Korean Character Phone Case,Kakao Friends,15,6500,56,70,22003,korean character;phone case;kpop accessory,0,domeggook-com;ownerclan-com;domemae-com
+figures-collectibles,22,캐릭터 디자인 문구 세트,Character Design Stationery Set,Line Friends,19.99,9000,55,180,22003,korean stationery;character goods;kpop gift,0,domeggook-com;dometopia-com;sellmoa-com
+figures-collectibles,23,K-POP 아이돌 굿즈,K-POP Idol Official Goods,BT21,25,11000,56,150,22003,kpop goods;idol merch;korean pop,0,domeggook-com;ownerclan-com;onchannel-co-kr
+figures-collectibles,24,한국 애니메이션 캐릭터 피규어,Korean Animation Character Figure,Young-toys,30,13000,57,250,22003,korean animation;character figure;kids toy,0,domeggook-com;ownerclan-com;domemae-com
+figures-collectibles,25,디자이너 아트 토이,Designer Art Toy,Sticky Monster Lab,50,22000,56,300,22003,art toy;designer collectible;limited edition,0,figurefriends-co-kr;dometopia-com
+figures-collectibles,26,한국 전통 캐릭터 상품,Korean Traditional Character Goods,Raccoon Factory,18,8000,55,100,22003,korean traditional;character goods;souvenir,0,domeggook-com;ownerclan-com;domemae-com
+figures-collectibles,27,미니 블록 피규어,Mini Block Figure,Pop Mart Korea,10,4500,55,60,22003,mini blocks;building toy;korean toy,0,domeggook-com;sellmoa-com
+figures-collectibles,28,캐릭터 스티커 팩,Character Sticker Pack,Kakao Friends,8,3000,62,30,22003,korean stickers;character decals;kpop stationery,0,domeggook-com;ownerclan-com
+figures-collectibles,29,한국 웹툰 캐릭터 상품,Korean Webtoon Character Merchandise,Line Friends,20,9000,55,120,22003,korean webtoon;character merch;kpop gift,0,domeggook-com;dometopia-com;onchannel-co-kr
+figures-collectibles,30,한정판 콜렉터블 카드,Limited Edition Collectible Card,BT21,15,6000,60,40,22003,collectible cards;kpop cards;limited edition,0,domeggook-com;sellmoa-com;domemae-com
+mens-fashion,1,디스이즈네버댓 로고 티셔츠,thisisneverthat Logo T-shirt,thisisneverthat,55,25000,54,250,1059,thisisneverthat;korean streetwear;logo tee,0,sinsangmarket-kr;domeggook-com;ownerclan-com
+mens-fashion,2,커버낫 아치 로고 후드티,Covernat Arch Logo Hoodie,Covernat,75,35000,53,600,1059,covernat;korean fashion;hoodie,0,sinsangmarket-kr;domeggook-com;dometopia-com
+mens-fashion,3,아더에러 시그니처 맨투맨,ADER Error Signature Sweatshirt,ADER Error,150,65000,57,500,1059,ader error;korean designer;sweatshirt,0,sinsangmarket-kr;domemae-com
+mens-fashion,4,로우로우 캔버스 백팩,RAWROW Canvas Backpack,RAWROW,90,40000,56,800,177721,rawrow;korean bag;canvas backpack,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+mens-fashion,5,블랭코프 가죽 지갑,BLANKOF Leather Wallet,BLANKOF,80,35000,56,150,177721,blankof;leather wallet;korean brand,0,sinsangmarket-kr;dometopia-com
+mens-fashion,6,바잘 스터드 볼캡,VARZAR Stud Ball Cap,VARZAR,40,18000,55,100,177721,varzar;korean cap;ball cap,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+mens-fashion,7,엘엠씨 로고 반팔 티셔츠,LMC Logo Short Sleeve T-shirt,LMC,48,22000,54,200,1059,lmc;korean streetwear;graphic tee,0,sinsangmarket-kr;domeggook-com
+mens-fashion,8,발란사 그래픽 티셔츠,Balansa Graphic T-shirt,Balansa,50,23000,54,220,1059,balansa;korean vintage;graphic tee,0,sinsangmarket-kr;ownerclan-com
+mens-fashion,9,앤더슨벨 니트 스웨터,Andersson Bell Knit Sweater,Andersson Bell,130,55000,58,700,1059,andersson bell;korean designer;knitwear,-5,sinsangmarket-kr;domemae-com
+mens-fashion,10,포터 코리아 숄더백,Porter Korea Shoulder Bag,Porter Korea,180,80000,55,400,177721,porter bag;korean fashion;shoulder bag,0,sinsangmarket-kr;dometopia-com
+mens-fashion,11,이스트팩 코리아 백팩,Eastpak Korea Backpack,Eastpak Korea,70,30000,57,600,177721,eastpak;korean backpack;school bag,0,domeggook-com;ownerclan-com
+mens-fashion,12,샘소나이트 코리아 여행용 캐리어,Samsonite Korea Travel Luggage,Samsonite Korea,200,90000,55,2500,177721,samsonite;travel luggage;korean travel,0,dometopia-com;domewh-com
+mens-fashion,13,해칭룸 실버 반지,Hatchingroom Silver Ring,Hatchingroom,60,28000,53,50,177721,hatchingroom;silver ring;korean jewelry,0,sinsangmarket-kr;domeggook-com
+mens-fashion,14,투미 코리아 브리프케이스,TUMI Korea Briefcase,TUMI Korea,300,130000,57,1500,177721,tumi;briefcase;business bag,0,dometopia-com;domewh-com
+mens-fashion,15,만다리나덕 코리아 크로스백,Mandarina Duck Korea Crossbody Bag,Mandarina Duck Korea,120,50000,58,300,177721,mandarina duck;crossbody bag;korean fashion,0,sinsangmarket-kr;domeggook-com
+mens-fashion,16,한국 스트릿웨어 스냅백,Korean Streetwear Snapback,thisisneverthat,35,15000,57,120,177721,korean streetwear;snapback;hip hop fashion,0,sinsangmarket-kr;domeggook-com;ownerclan-com
+mens-fashion,17,남성용 한국 브랜드 양말,Men's Korean Brand Socks,Covernat,10,4000,60,50,177721,korean socks;men's fashion;crew socks,0,domeggook-com;ownerclan-com;sellmoa-com
+mens-fashion,18,한국 디자이너 브랜드 청바지,Korean Designer Brand Jeans,ADER Error,180,80000,55,700,1059,korean jeans;designer denim;men's fashion,0,sinsangmarket-kr;domemae-com
+mens-fashion,19,남성용 한국 패션 벨트,Men's Korean Fashion Belt,RAWROW,45,20000,55,200,177721,korean belt;men's accessory;leather belt,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+mens-fashion,20,한국 브랜드 선글라스,Korean Brand Sunglasses,BLANKOF,65,30000,53,100,177721,korean sunglasses;men's eyewear;fashion accessory,0,domeggook-com;dometopia-com
+mens-fashion,21,남성용 한국 스니커즈,Men's Korean Sneakers,LMC,90,40000,56,800,1059,korean sneakers;men's shoes;streetwear shoes,0,sinsangmarket-kr;domeggook-com;ownerclan-com
+mens-fashion,22,한국 패션 브랜드 모자,Korean Fashion Brand Hat,VARZAR,38,17000,55,100,177721,korean hat;fashion cap;men's accessory,0,domeggook-com;ownerclan-com;sinsangmarket-kr
+mens-fashion,23,남성용 한국 캐주얼 셔츠,Men's Korean Casual Shirt,Balansa,60,28000,53,300,1059,korean shirt;men's casual;fashion shirt,0,sinsangmarket-kr;domeggook-com
+mens-fashion,24,한국 디자이너 맨투맨,Korean Designer Sweatshirt,Andersson Bell,110,48000,56,550,1059,korean sweatshirt;designer fashion;men's top,0,sinsangmarket-kr;domemae-com
+mens-fashion,25,남성용 한국 브랜드 시계,Men's Korean Brand Watch,Hatchingroom,150,65000,57,200,177721,korean watch;men's watch;fashion timepiece,0,sinsangmarket-kr;dometopia-com
+mens-fashion,26,한국 남성용 스카프,Korean Men's Scarf,thisisneverthat,40,18000,55,150,177721,korean scarf;men's accessory;fashion scarf,0,sinsangmarket-kr;domeggook-com
+mens-fashion,27,남성용 한국 브랜드 장갑,Men's Korean Brand Gloves,Covernat,30,13000,57,100,177721,korean gloves;men's accessory;winter fashion,0,domeggook-com;ownerclan-com
+mens-fashion,28,한국 패션 브랜드 넥타이,Korean Fashion Brand Tie,ADER Error,70,30000,57,80,177721,korean tie;men's formal;fashion accessory,0,sinsangmarket-kr;domemae-com
+mens-fashion,29,남성용 한국 브랜드 팔찌,Men's Korean Brand Bracelet,Hatchingroom,50,22000,56,40,177721,korean bracelet;men's jewelry;fashion accessory,0,sinsangmarket-kr;domeggook-com
+mens-fashion,30,한국 스트릿웨어 반바지,Korean Streetwear Shorts,LMC,65,30000,53,350,1059,korean shorts;men's streetwear;casual shorts,0,sinsangmarket-kr;domeggook-com;ownerclan-com
+inner-beauty,1,정관장 홍삼정 에브리타임,CheongKwanJang Red Ginseng Extract Everytime,CheongKwanJang,80,35000,56,300,11776,red ginseng;korean ginseng;cheong kwan jang,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,2,종근당건강 락토핏 생유산균 골드,Chong Kun Dang Health Lacto-Fit Probiotics Gold,Chong Kun Dang Health,35,15000,57,150,11776,probiotics;lactofit;korean health,0,healthdomemall-com;domeggook-com;dometopia-com
+inner-beauty,3,바이탈뷰티 슈퍼콜라겐 에센스,VITALBEAUTIE Super Collagen Essence,VITALBEAUTIE,60,28000,53,250,11776,collagen;inner beauty;korean supplement,0,healthdomemall-com;domeggook-com;sellmoa-com
+inner-beauty,4,오쏘몰 이뮨 드링크,Orthomol Immune Drink,Orthomol,70,30000,57,500,11776,orthomol;immune support;multivitamin,3,healthdomemall-com;dometopia-com
+inner-beauty,5,BB LAB 저분자 콜라겐,BB LAB Low Molecular Collagen,BB LAB,45,20000,55,180,11776,collagen powder;bb lab;korean beauty supplement,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,6,grn+ 초록이 분홍이,grn+ Green & Pink Diet Pills,grn+,55,25000,54,120,11776,diet supplement;grn plus;korean diet,4,healthdomemall-com;domeggook-com;sellmoa-com
+inner-beauty,7,고려은단 비타민C 1000,Korea Eundan Vitamin C 1000,Korea Eundan,20,9000,55,100,11776,vitamin c;korea eundan;immune booster,1,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,8,덴프스 덴마크 유산균 이야기,Denps Denmark Probiotics Story,Denps,40,18000,55,150,11776,denps;probiotics;gut health,0,healthdomemall-com;dometopia-com
+inner-beauty,9,유한양행 삐콤씨,Yuhan Corporation Bicom C,Yuhan Corporation,28,12000,57,150,11776,multivitamin;yuhan;korean supplement,0,healthdomemall-com;domeggook-com
+inner-beauty,10,일동제약 아로나민 골드,Ildong Pharmaceutical Arona-min Gold,Ildong Pharmaceutical,32,14000,56,180,11776,vitamin b;ildong;fatigue relief,0,healthdomemall-com;ownerclan-com
+inner-beauty,11,대웅제약 우루사,Daewoong Pharmaceutical Ursa,Daewoong Pharmaceutical,48,22000,54,100,11776,liver health;ursa;korean medicine,0,healthdomemall-com;dometopia-com
+inner-beauty,12,에버콜라겐 인앤업 플러스,Evercollagen In & Up Plus,Evercollagen,65,30000,53,200,11776,evercollagen;skin collagen;anti-aging,-7,healthdomemall-com;domeggook-com;sellmoa-com
+inner-beauty,13,푸드올로지 콜레올로지 컷,Foodology Coleology Cut,Foodology,50,23000,54,150,11776,foodology;diet supplement;weight loss,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,14,뉴트리코어 유기농 비타민,NutriCore Organic Vitamin,NutriCore,42,19000,55,100,11776,organic vitamin;nutricore;natural supplement,0,healthdomemall-com;dometopia-com
+inner-beauty,15,GC녹십자 비타민D,GC Biopharma Vitamin D,GC Biopharma,25,11000,56,80,11776,vitamin d;gc biopharma;bone health,0,healthdomemall-com;domeggook-com
+inner-beauty,16,한국산 프로바이오틱스,Korean Probiotics Supplement,Chong Kun Dang Health,30,13000,57,120,11776,korean probiotics;gut health;digestive support,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,17,이너뷰티 콜라겐 젤리,Inner Beauty Collagen Jelly,VITALBEAUTIE,40,18000,55,200,11776,collagen jelly;korean inner beauty;skin elasticity,0,healthdomemall-com;domeggook-com;sellmoa-com
+inner-beauty,18,한국산 비타민B 컴플렉스,Korean Vitamin B Complex,Ildong Pharmaceutical,22,9500,57,100,11776,vitamin b complex;energy boost;korean supplement,0,healthdomemall-com;domeggook-com;dometopia-com
+inner-beauty,19,다이어트 보조제,Dietary Aid Supplement,grn+,48,22000,54,150,11776,diet pills;weight management;korean diet,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,20,면역력 강화 영양제,Immunity Boosting Supplement,Orthomol,60,28000,53,300,11776,immune support;multivitamin;health supplement,0,healthdomemall-com;dometopia-com
+inner-beauty,21,한국산 루테인 눈 영양제,Korean Lutein Eye Supplement,Korea Eundan,35,15000,57,100,11776,lutein;eye health;korean supplement,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,22,간 건강 보조제,Liver Health Supplement,Daewoong Pharmaceutical,55,25000,54,120,11776,liver detox;milk thistle;korean health,0,healthdomemall-com;dometopia-com
+inner-beauty,23,여성 건강 유산균,Women's Health Probiotics,Denps,42,19000,55,130,11776,women's probiotics;vaginal health;korean supplement,0,healthdomemall-com;domeggook-com;sellmoa-com
+inner-beauty,24,어린이 성장 영양제,Kids Growth Supplement,Yuhan Corporation,38,17000,55,150,11776,kids supplement;growth vitamins;children's health,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,25,프리미엄 홍삼 스틱,Premium Red Ginseng Stick,CheongKwanJang,90,40000,56,350,11776,red ginseng stick;korean superfood;energy boost,0,healthdomemall-com;domeggook-com;dometopia-com
+inner-beauty,26,한국산 오메가3,Korean Omega-3 Supplement,NutriCore,30,13000,57,100,11776,omega 3;fish oil;heart health,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,27,피부 건강 히알루론산,Skin Health Hyaluronic Acid,BB LAB,38,17000,55,100,11776,hyaluronic acid;skin hydration;korean beauty,0,healthdomemall-com;domeggook-com;sellmoa-com
+inner-beauty,28,관절 건강 글루코사민,Joint Health Glucosamine,GC Biopharma,45,20000,55,180,11776,glucosamine;joint support;bone health,1,healthdomemall-com;dometopia-com
+inner-beauty,29,스트레스 완화 테아닌,Stress Relief Theanine,Foodology,32,14000,56,80,11776,theanine;stress relief;calming supplement,0,healthdomemall-com;domeggook-com;ownerclan-com
+inner-beauty,30,수면 개선 멜라토닌,Sleep Improvement Melatonin,Yuhan Corporation,28,12000,57,70,11776,melatonin;sleep aid;restful sleep,0,healthdomemall-com;domeggook-com;dometopia-com
+drones,1,DJI 미니 드론,DJI Mini Drone,DJI Korea,400,180000,55,800,179696,dji drone;mini drone;camera drone,0,helsel-co-kr;domeggook-com;dometopia-com
+drones,2,두산모빌리티이노베이션 수소연료전지 드론,Doosan Mobility Innovation Hydrogen Fuel Cell Drone,Doosan Mobility Innovation,5000,2000000,60,5000,179696,hydrogen drone;industrial drone;doosan mobility,2,helsel-co-kr;domemae-com
+drones,3,파블로에어 드론 배송 시스템,PABLO AIR Drone Delivery System,PABLO AIR,3000,1200000,60,3000,179696,drone delivery;pablo air;logistics drone,0,helsel-co-kr;dometopia-com
+drones,4,유콘시스템 정찰용 드론,UCONSYSTEM Surveillance Drone,UCONSYSTEM,2500,1000000,60,2500,179696,surveillance drone;uconsystem;security drone,2,helsel-co-kr;domemae-com
+drones,5,니어스랩 자율비행 드론,Nearthlab Autonomous Drone,Nearthlab,4000,1600000,60,4000,179696,autonomous drone;nearthlab;inspection drone,0,helsel-co-kr;dometopia-com
+drones,6,헬셀 FPV 레이싱 드론,Helsel FPV Racing Drone,Helsel,350,150000,57,400,179696,fpv drone;racing drone;helsel,0,helsel-co-kr;domeggook-com;ownerclan-com
+drones,7,한빛드론 교육용 드론,Hanbit Drone Educational Drone,Hanbit Drone,150,65000,57,300,179696,educational drone;hanbit drone;beginner drone,0,domeggook-com;ownerclan-com;helsel-co-kr
+drones,8,네온테크 산업용 드론,Neontech Industrial Drone,Neontech,3500,1400000,60,3500,179696,industrial drone;neontech;heavy lift drone,2,helsel-co-kr;domemae-com
+drones,9,아스트로X 레이싱 드론 프레임,AstroX Racing Drone Frame,AstroX,80,35000,56,100,179696,drone frame;racing drone parts;astrox,0,helsel-co-kr;domeggook-com
+drones,10,JCHYUN Systems 드론 제어 시스템,JCHYUN Systems Drone Control System,JCHYUN Systems,1200,500000,58,1000,179696,drone control;jchyun systems;flight controller,0,helsel-co-kr;dometopia-com
+drones,11,바이로봇 드론 키트,BYROBOT Drone Kit,BYROBOT,100,45000,55,200,179696,drone kit;byrobot;diy drone,0,domeggook-com;ownerclan-com;helsel-co-kr
+drones,12,XDRONE 전문가용 드론,XDRONE Professional Drone,XDRONE,1800,750000,58,1800,179696,professional drone;xdrone;aerial photography,0,helsel-co-kr;domemae-com
+drones,13,PNUDRONE 농업용 드론,PNUDRONE Agricultural Drone,PNUDRONE,4500,1800000,60,4500,179696,agricultural drone;pnudrone;farming drone,0,helsel-co-kr;dometopia-com
+drones,14,DBRAIN 인공지능 드론,DBRAIN AI Drone,DBRAIN,3800,1500000,60,3800,179696,ai drone;dbrain;smart drone,0,helsel-co-kr;domemae-com
+drones,15,가이온 드론 부품,Gaion Drone Parts,Gaion,50,20000,60,80,179696,drone parts;gaion;drone accessories,0,domeggook-com;ownerclan-com;helsel-co-kr
+drones,16,드론 배터리,Drone Battery,DJI Korea,80,35000,56,200,179696,drone battery;lipo battery;drone power,0,helsel-co-kr;domeggook-com;ownerclan-com
+drones,17,드론 프로펠러,Drone Propeller,Helsel,20,8000,60,30,179696,drone propeller;quadcopter parts;replacement blades,0,helsel-co-kr;domeggook-com;sellmoa-com
+drones,18,드론 카메라,Drone Camera,DJI Korea,250,100000,60,150,179696,drone camera;gimbal camera;aerial photography,0,helsel-co-kr;dometopia-com
+drones,19,드론 조종기,Drone Remote Controller,DJI Korea,150,65000,57,300,179696,drone controller;remote control;fpv remote,0,helsel-co-kr;domeggook-com;ownerclan-com
+drones,20,드론 충전기,Drone Charger,Helsel,60,25000,58,250,179696,drone charger;battery charger;lipo charger,0,helsel-co-kr;domeggook-com;sellmoa-com
+drones,21,미니 드론,Mini Drone for Kids,Hanbit Drone,40,18000,55,100,179696,mini drone;kids drone;beginner drone,0,domeggook-com;ownerclan-com;helsel-co-kr
+drones,22,초보자용 드론,Beginner Drone with Camera,BYROBOT,70,30000,57,200,179696,beginner drone;camera drone;easy to fly,0,domeggook-com;ownerclan-com;helsel-co-kr
+drones,23,드론 랜딩 기어,Drone Landing Gear,Gaion,30,12000,60,50,179696,landing gear;drone parts;protection,0,domeggook-com;sellmoa-com;helsel-co-kr
+drones,24,드론 케이스,Drone Carrying Case,DJI Korea,90,40000,56,700,179696,drone case;hard case;travel case,0,helsel-co-kr;dometopia-com
+drones,25,FPV 고글,FPV Goggles,Helsel,200,85000,58,300,179696,fpv goggles;drone racing;first person view,0,helsel-co-kr;domeggook-com;ownerclan-com
+drones,26,드론 모터,Drone Motor,AstroX,45,18000,60,80,179696,drone motor;brushless motor;quadcopter motor,0,helsel-co-kr;domeggook-com;sellmoa-com
+drones,27,드론 GPS 모듈,Drone GPS Module,JCHYUN Systems,70,30000,57,40,179696,drone gps;gps module;flight controller,-2,helsel-co-kr;dometopia-com
+drones,28,드론 비행 컨트롤러,Drone Flight Controller,JCHYUN Systems,120,50000,58,60,179696,flight controller;drone fc;quadcopter fc,0,helsel-co-kr;domemae-com
+drones,29,드론 짐벌,Drone Gimbal,DJI Korea,300,120000,60,200,179696,drone gimbal;camera stabilizer;aerial video,0,helsel-co-kr;dometopia-com
+drones,30,드론 시뮬레이터 소프트웨어,Drone Simulator Software,Hanbit Drone,50,20000,60,50,179696,drone simulator;flight training;fpv simulator,0,domeggook-com;ownerclan-com;helsel-co-kr
+k-beauty-makeup,1,클리오 킬커버 파운웨어 쿠션,Clio Kill Cover Founwear Cushion,Clio,28,12000,57,100,11866,clio cushion;korean cushion;kill cover,1,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,2,롬앤 쥬시 래스팅 틴트,Rom&nd Juicy Lasting Tint,Rom&nd,15,6500,56,50,11866,romand tint;korean lip tint;juicy lasting,-1,koreacospack-com;domeggook-com;dometopia-com
+k-beauty-makeup,3,페리페라 잉크 더 에어리 벨벳,Peripera Ink The Airy Velvet,Peripera,12,5000,58,40,11866,peripera tint;korean velvet tint;ink airy velvet,0,koreacospack-com;domeggook-com;sellmoa-com
+k-beauty-makeup,4,3CE 벨벳 립 틴트,3CE Velvet Lip Tint,3CE,20,9000,55,50,11866,3ce tint;velvet lip;korean makeup,1,koreacospack-com;dometopia-com
+k-beauty-makeup,5,에뛰드하우스 플레이 컬러 아이즈,Etude House Play Color Eyes,Etude,25,11000,56,80,11866,etude eyeshadow;play color eyes;korean palette,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,6,헤라 블랙 쿠션,Hera Black Cushion,Hera,45,20000,55,120,11866,hera cushion;black cushion;korean luxury makeup,0,koreacospack-com;domemae-com
+k-beauty-makeup,7,데이지크 섀도우 팔레트,Dasique Shadow Palette,Dasique,30,13000,57,70,11866,dasique palette;korean eyeshadow;daily makeup,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,8,어뮤즈 듀 틴트,Amuse Dew Tint,Amuse,22,9500,57,50,11866,amuse tint;dewy lip tint;korean vegan makeup,0,koreacospack-com;dometopia-com
+k-beauty-makeup,9,힌스 무드 인핸서 마뜨 립스틱,Hince Mood Enhancer Matte Lipstick,Hince,26,11000,58,40,11866,hince lipstick;matte lipstick;korean indie beauty,0,koreacospack-com;domeggook-com
+k-beauty-makeup,10,웨이크메이크 소프트 블러링 아이팔레트,Wakemake Soft Blurring Eye Palette,Wakemake,29,12500,57,80,11866,wakemake palette;blurring eyeshadow;korean makeup,0,koreacospack-com;ownerclan-com
+k-beauty-makeup,11,정샘물 에센셜 스킨 누더 쿠션,Jung Saem Mool Essential Skin Nuder Cushion,Jung Saem Mool,40,18000,55,100,11866,jung saem mool;nuder cushion;korean base makeup,2,koreacospack-com;dometopia-com
+k-beauty-makeup,12,에스쁘아 프로 테일러 비 벨벳 쿠션,Espoir Pro Tailor Be Velvet Cushion,Espoir,32,14000,56,100,11866,espoir cushion;velvet cushion;korean foundation,-3,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,13,라카 스무스 매트 립스틱,Laka Smooth Matte Lipstick,Laka,24,10000,58,40,11866,laka lipstick;gender neutral makeup;korean matte lip,-1,koreacospack-com;domeggook-com;sellmoa-com
+k-beauty-makeup,14,투쿨포스쿨 아트클래스 바이 로댕 쉐이딩,Too Cool For School Artclass By Rodin Shading,Too Cool For School,18,8000,55,70,11866,too cool for school;shading palette;korean contour,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,15,릴리바이레드 무드 라이어 벨벳 틴트,Lilybyred Mood Liar Velvet Tint,Lilybyred,14,6000,57,40,11866,lilybyred tint;velvet lip tint;korean affordable makeup,0,koreacospack-com;domeggook-com;dometopia-com
+k-beauty-makeup,16,한국 롱래스팅 아이라이너,Korean Long Lasting Eyeliner,Clio,16,7000,56,30,11866,korean eyeliner;waterproof eyeliner;liquid eyeliner,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,17,K-뷰티 블러셔,K-Beauty Blush,Peripera,13,5500,58,50,11866,korean blush;powder blush;cheek color,0,koreacospack-com;domeggook-com;sellmoa-com
+k-beauty-makeup,18,한국 컨실러,Korean Concealer,The Saem,10,4000,60,30,11866,korean concealer;full coverage;blemish cover,0,koreacospack-com;domeggook-com;dometopia-com
+k-beauty-makeup,19,K-뷰티 마스카라,K-Beauty Mascara,Etude,17,7500,56,30,11866,korean mascara;volumizing mascara;lengthening mascara,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,20,한국 메이크업 픽서,Korean Makeup Fixer,Too Cool For School,19,8500,55,120,11866,makeup fixer;setting spray;korean beauty,0,koreacospack-com;domeggook-com;sellmoa-com
+k-beauty-makeup,21,K-뷰티 하이라이터,K-Beauty Highlighter,Dasique,22,9500,57,60,11866,korean highlighter;glow makeup;shimmer powder,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,22,한국 립글로스,Korean Lip Gloss,Rom&nd,14,6000,57,40,11866,korean lip gloss;plumping gloss;shiny lip,0,koreacospack-com;domeggook-com;dometopia-com
+k-beauty-makeup,23,K-뷰티 아이브로우 펜슬,K-Beauty Eyebrow Pencil,Etude,9,3500,61,20,11866,korean eyebrow;brow pencil;natural brows,0,koreacospack-com;domeggook-com;sellmoa-com
+k-beauty-makeup,24,한국 메이크업 브러쉬 세트,Korean Makeup Brush Set,Jung Saem Mool,35,15000,57,150,11866,makeup brush set;korean brushes;beauty tools,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,25,K-뷰티 파우더 팩트,K-Beauty Powder Pact,Hera,38,17000,55,90,11866,korean powder pact;setting powder;oil control,0,koreacospack-com;domemae-com
+k-beauty-makeup,26,한국 톤업 크림,Korean Tone Up Cream,Etude,20,8500,57,100,11866,tone up cream;korean base makeup;brightening cream,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,27,K-뷰티 립밤,K-Beauty Lip Balm,Amuse,15,6500,56,30,11866,korean lip balm;hydrating lip;tinted balm,0,koreacospack-com;domeggook-com;dometopia-com
+k-beauty-makeup,28,한국 메이크업 스펀지,Korean Makeup Sponge,Espoir,8,3000,62,20,11866,makeup sponge;beauty blender;korean beauty tool,0,koreacospack-com;domeggook-com;sellmoa-com
+k-beauty-makeup,29,K-뷰티 글리터 아이섀도우,K-Beauty Glitter Eyeshadow,Lilybyred,12,5000,58,30,11866,glitter eyeshadow;korean glitter;sparkle makeup,0,koreacospack-com;domeggook-com;ownerclan-com
+k-beauty-makeup,30,한국 메이크업 프라이머,Korean Makeup Primer,Clio,25,11000,56,80,11866,makeup primer;pore blurring;korean base makeup,0,koreacospack-com;domeggook-com;dometopia-com
+character-goods,1,카카오프렌즈 라이언 인형,Kakao Friends Ryan Plush Doll,카카오프렌즈,28.99,12000,58,350,18460,kakao friends;ryan doll;korean character,0,domeggook-com;ownerclan-com;supercat-co-kr
+character-goods,2,BT21 타타 쿠션,BT21 Tata Cushion,BT21,35.5,15000,57,400,18460,bt21;tata;kpop goods,1,domeggook-com;ownerclan-com;1000za-kr
+character-goods,3,라인프렌즈 브라운 피규어,Line Friends Brown Figure,라인프렌즈,22,9500,55,200,18460,line friends;brown figure;korean character,-1,domeggook-com;dometopia-com;domema-com
+character-goods,4,뽀로로 아기 칫솔 세트,Pororo Baby Toothbrush Set,뽀로로,15.99,6500,59,150,20436,pororo;kids toothbrush;korean animation,0,domeggook-com;sellmoa-com;onchannel-co-kr
+character-goods,5,핑크퐁 아기 상어 사운드북,Pinkfong Baby Shark Sound Book,핑크퐁,25,10500,58,300,17122,pinkfong;baby shark;sound book,0,domeggook-com;ownerclan-com;dometopia-com
+character-goods,6,신비아파트 고스트볼 장난감,Shinbi's House Ghost Ball Toy,신비아파트,39.99,17000,57,450,220,shinbi's house;ghost ball;korean toy,0,domeggook-com;sellmoa-com;supercat-co-kr
+character-goods,7,캐치! 티니핑 피규어 세트,Catch! Teenieping Figure Set,캐치! 티니핑,45,20000,55,280,18460,teenieping;korean animation;figure set,0,domeggook-com;ownerclan-com;1000za-kr
+character-goods,8,몰랑이 스티커 팩,Molang Sticker Pack,몰랑,8.5,3500,58,50,11700,molang;korean sticker;cute stationery,0,domeggook-com;dometopia-com;domema-com
+character-goods,9,에스더버니 에코백,Esther Bunny Eco Bag,에스더버니,19.99,8000,60,180,171965,esther bunny;korean fashion;eco bag,0,domeggook-com;ownerclan-com;onchannel-co-kr
+character-goods,10,오롤리데이 엽서 세트,"Oh, Lolly Day! Postcard Set",오롤리데이,12,5000,58,80,11700,oh lolly day;korean stationery;postcard,0,domeggook-com;sellmoa-com;dometopia-com
+character-goods,11,카카오프렌즈 무선 충전기,Kakao Friends Wireless Charger,카카오프렌즈,32,13500,58,250,15032,kakao friends;wireless charger;phone accessory,0,domeggook-com;ownerclan-com;domema-com
+character-goods,12,BT21 캐릭터 볼펜,BT21 Character Ballpoint Pen,BT21,9.99,4000,60,30,11700,bt21;kpop stationery;ballpoint pen,0,domeggook-com;supercat-co-kr;1000za-kr
+character-goods,13,라인프렌즈 샐리 머그컵,Line Friends Sally Mug Cup,라인프렌즈,18,7500,58,300,20625,line friends;sally mug;korean character,0,domeggook-com;dometopia-com;onchannel-co-kr
+character-goods,14,타요 버스 장난감,Tayo the Little Bus Toy,타요,29.99,12500,58,380,220,tayo bus;korean toy;kids car,0,domeggook-com;sellmoa-com;supercat-co-kr
+character-goods,15,로보카 폴리 변신 로봇,Robocar Poli Transforming Robot,로보카 폴리,38,16000,58,420,220,robocar poli;korean animation;transforming toy,0,domeggook-com;ownerclan-com;1000za-kr
+character-goods,16,브레드이발소 캐릭터 스티커,Bread Barbershop Character Stickers,브레드이발소,7.5,3000,60,40,11700,bread barbershop;korean animation;stickers,0,domeggook-com;dometopia-com;domema-com
+character-goods,17,미니특공대 피규어,Miniforce Figure,미니특공대,24.99,10000,60,150,18460,miniforce;korean toy;action figure,0,domeggook-com;sellmoa-com;supercat-co-kr
+character-goods,18,코코몽 도시락통,Cocomong Lunch Box,코코몽,16,6500,59,200,20625,cocomong;kids lunchbox;korean character,0,domeggook-com;ownerclan-com;onchannel-co-kr
+character-goods,19,카카오프렌즈 여권 케이스,Kakao Friends Passport Case,카카오프렌즈,14.5,6000,58,70,171965,kakao friends;passport holder;travel accessory,0,domeggook-com;dometopia-com;domema-com
+character-goods,20,BT21 에어팟 케이스,BT21 AirPods Case,BT21,17.99,7500,58,60,15032,bt21;airpods case;kpop accessory,0,domeggook-com;supercat-co-kr;1000za-kr
+character-goods,21,라인프렌즈 폰 스트랩,Line Friends Phone Strap,라인프렌즈,9,3800,58,20,15032,line friends;phone charm;korean character,0,domeggook-com;ownerclan-com;onchannel-co-kr
+character-goods,22,뽀로로 스티커북,Pororo Sticker Book,뽀로로,11.5,4800,58,100,17122,pororo;sticker book;kids activity,-18,domeggook-com;sellmoa-com;dometopia-com
+character-goods,23,핑크퐁 아기 상어 인형,Pinkfong Baby Shark Plush Toy,핑크퐁,27,11000,59,320,18460,pinkfong;baby shark;plush toy,0,domeggook-com;ownerclan-com;supercat-co-kr
+character-goods,24,신비아파트 학용품 세트,Shinbi's House Stationery Set,신비아파트,21,8500,59,200,11700,shinbi's house;korean stationery;kids school,0,domeggook-com;dometopia-com;domema-com
+character-goods,25,캐치! 티니핑 색칠놀이북,Catch! Teenieping Coloring Book,캐치! 티니핑,10,4000,60,120,17122,teenieping;coloring book;kids activity,0,domeggook-com;sellmoa-com;onchannel-co-kr
+character-goods,26,몰랑이 다이어리,Molang Diary Planner,몰랑,15,6000,60,180,11700,molang;korean planner;cute diary,-18,domeggook-com;ownerclan-com;1000za-kr
+character-goods,27,에스더버니 키링,Esther Bunny Keychain,에스더버니,11,4500,59,50,171965,esther bunny;korean keychain;cute accessory,-18,domeggook-com;dometopia-com;domema-com
+character-goods,28,오롤리데이 스티커,"Oh, Lolly Day! Stickers",오롤리데이,6.5,2500,61,30,11700,oh lolly day;korean sticker;cute stationery,0,domeggook-com;sellmoa-com;supercat-co-kr
+character-goods,29,카카오프렌즈 골프공,Kakao Friends Golf Balls,카카오프렌즈,25,10000,60,200,1513,kakao friends;golf balls;korean golf,0,domeggook-com;ownerclan-com;onchannel-co-kr
+character-goods,30,BT21 캐릭터 양말,BT21 Character Socks,BT21,10,4000,60,80,11571,bt21;kpop socks;korean fashion,0,domeggook-com;dometopia-com;1000za-kr
+k-food,1,농심 신라면 멀티팩,Nongshim Shin Ramyun Multi-pack,농심,19.99,8000,60,600,18494,korean ramen;shin ramyun;spicy noodles,0,domeggook-com;ownerclan-com;sjw-co-kr
+k-food,2,삼양 불닭볶음면 5개입,Samyang Buldak Ramen 5-pack,삼양식품,22.5,9500,58,650,18494,buldak ramen;spicy korean noodles;samyang,0,domeggook-com;dometopia-com;foodn-co-kr
+k-food,3,오리온 초코파이 정,Orion Choco Pie,오리온,15,6000,60,400,18494,choco pie;korean snack;orion,0,domeggook-com;sellmoa-com;hnbmall-co-kr
+k-food,4,CJ제일제당 비비고 만두,CJ CheilJedang Bibigo Mandu Dumplings,CJ제일제당,29.99,12000,60,800,18494,bibigo mandu;korean dumplings;cj food,1,domeggook-com;ownerclan-com;onchannel-co-kr
+k-food,5,오뚜기 진라면 매운맛,Ottogi Jin Ramen Spicy,오뚜기,18,7500,58,550,18494,jin ramen;korean instant noodles;ottogi,1,domeggook-com;supercat-co-kr;sjw-co-kr
+k-food,6,롯데웰푸드 빼빼로 아몬드,Lotte Wellfood Pepero Almond,롯데웰푸드,12,5000,58,200,18494,pepero;korean cookie stick;lotte,-2,domeggook-com;dometopia-com;foodn-co-kr
+k-food,7,동원F&B 양반김,Dongwon Yangban Roasted Seaweed,동원F&B,14.99,6000,60,150,18494,korean seaweed;yangban gim;dongwon,0,domeggook-com;sellmoa-com;hnbmall-co-kr
+k-food,8,풀무원 냉면,Pulmuone Naengmyeon Cold Noodles,풀무원,25,10000,60,700,18494,korean cold noodles;naengmyeon;pulmuone,15,domeggook-com;ownerclan-com;onchannel-co-kr
+k-food,9,빙그레 바나나맛우유,Binggrae Banana Milk,빙그레,20,8000,60,1000,18494,korean banana milk;binggrae;kpop drink,4,domeggook-com;supercat-co-kr;sjw-co-kr
+k-food,10,해태제과 홈런볼,Haitai Homerun Ball,해태제과,10.5,4200,60,180,18494,homerun ball;korean snack;haitai,-1,domeggook-com;dometopia-com;foodn-co-kr
+k-food,11,팔도 비빔면,Paldo Bibim Men,팔도,21,8800,58,600,18494,korean cold noodles;bibim men;paldo,0,domeggook-com;sellmoa-com;hnbmall-co-kr
+k-food,12,크라운제과 마이쮸,Crown Confectionery Mychew,크라운제과,9.99,4000,60,150,18494,mychew;korean candy;crown snack,-2,domeggook-com;ownerclan-com;onchannel-co-kr
+k-food,13,하림 즉석밥,Harim Instant Rice,하림,17.5,7000,60,700,18494,korean instant rice;harim;convenience food,0,domeggook-com;supercat-co-kr;sjw-co-kr
+k-food,14,청정원 미역국,Chungjungone Seaweed Soup,청정원,16,6500,59,300,18494,korean seaweed soup;chungjungone;instant soup,0,domeggook-com;dometopia-com;foodn-co-kr
+k-food,15,매일유업 상하목장 유기농 우유,Maeil Dairies Sangha Farm Organic Milk,매일유업,28,11500,59,1200,18494,korean organic milk;maeil dairies;sangha farm,0,domeggook-com;sellmoa-com;hnbmall-co-kr
+k-food,16,농심 새우깡,Nongshim Saewookkang Shrimp Crackers,농심,10,4000,60,150,18494,korean snack;shrimp crackers;nongshim,1,domeggook-com;ownerclan-com;sjw-co-kr
+k-food,17,삼양 까르보불닭볶음면,Samyang Carbo Buldak Ramen,삼양식품,23.99,10000,58,650,18494,carbo buldak;spicy creamy noodles;samyang,0,domeggook-com;dometopia-com;foodn-co-kr
+k-food,18,오리온 포카칩,Orion Pocachip Potato Chips,오리온,9,3800,58,120,18494,korean potato chips;pocachip;orion snack,1,domeggook-com;sellmoa-com;hnbmall-co-kr
+k-food,19,CJ제일제당 햇반,CJ CheilJedang Hetbahn Cooked Rice,CJ제일제당,24,9800,59,1000,18494,korean instant rice;hetbahn;cj food,-3,domeggook-com;ownerclan-com;onchannel-co-kr
+k-food,20,오뚜기 3분 카레,Ottogi 3-Minute Curry,오뚜기,15,6000,60,450,18494,korean curry;ottogi;instant meal,1,domeggook-com;supercat-co-kr;sjw-co-kr
+k-food,21,롯데웰푸드 자일리톨 껌,Lotte Wellfood Xylitol Gum,롯데웰푸드,8,3200,60,100,18494,korean gum;xylitol;lotte,-1,domeggook-com;dometopia-com;foodn-co-kr
+k-food,22,동원F&B 참치캔,Dongwon Tuna Can,동원F&B,19,7800,59,500,18494,korean tuna;dongwon;canned food,0,domeggook-com;sellmoa-com;hnbmall-co-kr
+k-food,23,풀무원 두부,Pulmuone Tofu,풀무원,12,4800,60,400,18494,korean tofu;pulmuone;soy food,0,domeggook-com;ownerclan-com;onchannel-co-kr
+k-food,24,빙그레 메로나 아이스크림,Binggrae Melona Ice Cream,빙그레,25,10000,60,1000,18494,korean ice cream;melona;binggrae,4,domeggook-com;supercat-co-kr;sjw-co-kr
+k-food,25,해태제과 맛동산,Haitai Matdongsan Snack,해태제과,11,4500,59,200,18494,korean snack;matdongsan;haitai,-1,domeggook-com;dometopia-com;foodn-co-kr
+k-food,26,팔도 뽀로로 음료,Paldo Pororo Drink,팔도,18,7500,58,1200,18494,pororo drink;korean kids drink;paldo,0,domeggook-com;sellmoa-com;hnbmall-co-kr
+k-food,27,크라운제과 죠리퐁,Crown Confectionery Jyoripong,크라운제과,9.5,3800,60,150,18494,korean cereal snack;jyoripong;crown snack,-2,domeggook-com;ownerclan-com;onchannel-co-kr
+k-food,28,하림 치킨 너겟,Harim Chicken Nuggets,하림,22,9000,59,600,18494,korean chicken nuggets;harim;frozen food,0,domeggook-com;supercat-co-kr;sjw-co-kr
+k-food,29,청정원 고추장,Chungjungone Gochujang (Korean Chili Paste),청정원,15.99,6500,59,500,18494,gochujang;korean chili paste;chungjungone,0,domeggook-com;dometopia-com;foodn-co-kr
+k-food,30,매일유업 아몬드 브리즈,Maeil Dairies Almond Breeze,매일유업,20,8000,60,1000,18494,almond milk;korean plant milk;maeil dairies,0,domeggook-com;sellmoa-com;hnbmall-co-kr
+computer-parts,1,삼성전자 980 PRO NVMe SSD 1TB,Samsung 980 PRO NVMe SSD 1TB,삼성전자,99.99,45000,55,50,179,samsung ssd;nvme 1tb;pc storage,0,domeggook-com;compuzone-co-kr;icoda-co-kr
+computer-parts,2,SK하이닉스 DDR4 16GB 램,SK Hynix DDR4 16GB RAM,SK하이닉스,65,28000,57,30,170083,sk hynix ram;ddr4 16gb;pc memory,0,domeggook-com;ownerclan-com;joyzen-co-kr
+computer-parts,3,LG전자 울트라기어 게이밍 모니터,LG UltraGear Gaming Monitor,LG전자,299,130000,56,4500,80053,lg gaming monitor;ultragear;korean display,0,domeggook-com;dometopia-com;pc4all-co-kr
+computer-parts,4,마이크로닉스 Classic II 700W 파워,Micronics Classic II 700W PSU,마이크로닉스,79.99,35000,56,1500,3729,micronics psu;700w power supply;pc component,0,domeggook-com;sellmoa-com;domema-com
+computer-parts,5,앱코 HACKER K660 기계식 키보드,ABKO HACKER K660 Mechanical Keyboard,앱코,59.99,25000,58,1000,18507,abko keyboard;mechanical gaming keyboard;korean peripheral,0,domeggook-com;supercat-co-kr;compuzone-co-kr
+computer-parts,6,잘만 CNPS10X OPTIMA II CPU 쿨러,Zalman CNPS10X OPTIMA II CPU Cooler,잘만,45,19000,58,800,163,zalman cpu cooler;air cooler;pc cooling,0,domeggook-com;icoda-co-kr;joyzen-co-kr
+computer-parts,7,3RSYS L700 RGB 케이스,3RSYS L700 RGB PC Case,3RSYS,85,36000,58,6000,70041,3rsys pc case;rgb gaming case;computer chassis,0,domeggook-com;pc4all-co-kr;domema-com
+computer-parts,8,한성컴퓨터 TFG ART 게이밍 마우스,Hansung Computer TFG ART Gaming Mouse,한성컴퓨터,35,14000,60,150,18507,hansung gaming mouse;rgb mouse;korean peripheral,0,domeggook-com;ownerclan-com;compuzone-co-kr
+computer-parts,9,알파스캔 AOC 27인치 모니터,AlphaScan AOC 27-inch Monitor,알파스캔,180,75000,58,3500,80053,alphascan monitor;aoc display;27 inch monitor,0,domeggook-com;dometopia-com;icoda-co-kr
+computer-parts,10,제닉스 TITAN 게이밍 의자,Xenics TITAN Gaming Chair,제닉스,250,110000,56,20000,11757,xenics gaming chair;titan chair;ergonomic chair,0,domeggook-com;sellmoa-com;joyzen-co-kr
+computer-parts,11,아이리버 블루투스 키보드,IRIVER Bluetooth Keyboard,아이리버,40,16000,60,300,18507,iriver keyboard;bluetooth keyboard;portable keyboard,0,domeggook-com;supercat-co-kr;pc4all-co-kr
+computer-parts,12,스카이디지탈 NKEY-R3 RGB 키보드,SKYDIGITAL NKEY-R3 RGB Keyboard,스카이디지탈,69,29000,58,900,18507,skydigital keyboard;rgb mechanical keyboard;gaming peripheral,0,domeggook-com;ownerclan-com;domema-com
+computer-parts,13,아이구주 HATCH 6 강화유리 케이스,iGuju HATCH 6 Tempered Glass PC Case,아이구주,75,31000,59,5500,70041,iguju pc case;tempered glass case;computer chassis,0,domeggook-com;compuzone-co-kr;icoda-co-kr
+computer-parts,14,맥스틸 TRON G10 마우스,MAXTILL TRON G10 Gaming Mouse,맥스틸,28,11000,61,120,18507,maxtill gaming mouse;tron g10;pc mouse,0,domeggook-com;dometopia-com;joyzen-co-kr
+computer-parts,15,래안텍 Edge 24인치 모니터,RAONTEK Edge 24-inch Monitor,래안텍,150,63000,58,3000,80053,raontek monitor;24 inch display;pc monitor,0,domeggook-com;sellmoa-com;pc4all-co-kr
+computer-parts,16,삼성전자 외장 SSD T7 500GB,Samsung Portable SSD T7 500GB,삼성전자,80,34000,57,80,179,samsung external ssd;portable ssd;t7 500gb,0,domeggook-com;ownerclan-com;compuzone-co-kr
+computer-parts,17,SK하이닉스 Gold P31 NVMe SSD 1TB,SK Hynix Gold P31 NVMe SSD 1TB,SK하이닉스,95,42000,56,50,179,sk hynix ssd;gold p31;nvme 1tb,-15,domeggook-com;dometopia-com;icoda-co-kr
+computer-parts,18,LG전자 gram 노트북,LG gram Laptop,LG전자,1200,550000,54,1500,177,lg gram;lightweight laptop;korean laptop,0,domeggook-com;sellmoa-com;joyzen-co-kr
+computer-parts,19,마이크로닉스 MANIC G40 게이밍 헤드셋,Micronics MANIC G40 Gaming Headset,마이크로닉스,49.99,20000,60,400,18507,micronics headset;gaming headset;pc audio,0,domeggook-com;supercat-co-kr;pc4all-co-kr
+computer-parts,20,앱코 SUITMASTER 320S 케이스,ABKO SUITMASTER 320S PC Case,앱코,69,28000,59,5000,70041,abko pc case;suitmaster;computer chassis,0,domeggook-com;ownerclan-com;domema-com
+computer-parts,21,잘만 MegaMax 600W 파워,Zalman MegaMax 600W PSU,잘만,60,25000,58,1200,3729,zalman psu;600w power supply;pc component,0,domeggook-com;compuzone-co-kr;icoda-co-kr
+computer-parts,22,3RSYS S700 에어 케이스,3RSYS S700 Air PC Case,3RSYS,70,29000,59,5800,70041,3rsys pc case;air flow case;gaming pc case,0,domeggook-com;dometopia-com;joyzen-co-kr
+computer-parts,23,한성컴퓨터 GK898B 무접점 키보드,Hansung Computer GK898B Non-contact Keyboard,한성컴퓨터,120,50000,58,1100,18507,hansung keyboard;non-contact keyboard;gaming keyboard,0,domeggook-com;sellmoa-com;pc4all-co-kr
+computer-parts,24,알파스캔 24인치 FHD 모니터,AlphaScan 24-inch FHD Monitor,알파스캔,160,68000,57,3200,80053,alphascan monitor;fhd display;24 inch monitor,0,domeggook-com;supercat-co-kr;domema-com
+computer-parts,25,제닉스 STORMX TITAN MARK VII 게이밍 마우스,Xenics STORMX TITAN MARK VII Gaming Mouse,제닉스,39.99,16000,60,130,18507,xenics gaming mouse;stormx titan;pc mouse,0,domeggook-com;ownerclan-com;compuzone-co-kr
+computer-parts,26,아이리버 유선 이어폰,IRIVER Wired Earphones,아이리버,15,6000,60,30,18507,iriver earphones;wired headphones;audio accessory,0,domeggook-com;dometopia-com;icoda-co-kr
+computer-parts,27,스카이디지탈 게이밍 마우스패드,SKYDIGITAL Gaming Mouse Pad,스카이디지탈,20,8000,60,200,18507,skydigital mousepad;gaming mousepad;pc accessory,0,domeggook-com;sellmoa-com;joyzen-co-kr
+computer-parts,28,아이구주 VENTI C100 CPU 쿨러,iGuju VENTI C100 CPU Cooler,아이구주,30,12000,60,500,163,iguju cpu cooler;air cooler;pc cooling,0,domeggook-com;supercat-co-kr;pc4all-co-kr
+computer-parts,29,맥스틸 TRON G2000 헤드셋,MAXTILL TRON G2000 Gaming Headset,맥스틸,40,16000,60,350,18507,maxtill headset;gaming headset;tron g2000,0,domeggook-com;ownerclan-com;domema-com
+computer-parts,30,래안텍 커브드 게이밍 모니터,RAONTEK Curved Gaming Monitor,래안텍,220,90000,59,4000,80053,raontek monitor;curved gaming display;pc monitor,0,domeggook-com;dometopia-com;compuzone-co-kr
+k-beauty-haircare,1,쿤달 네이처 샴푸 & 트리트먼트 세트,KUNDAL Nature Shampoo & Treatment Set,쿤달,35,15000,57,1000,183472,kundal shampoo;korean haircare;nature treatment,0,domeggook-com;ownerclan-com;koreacosmetic-co-kr
+k-beauty-haircare,2,닥터포헤어 폴리젠 샴푸,Dr.FORHAIR Folligen Shampoo,닥터포헤어,28,12000,57,600,183472,dr forhair;folligen shampoo;hair loss care,3,domeggook-com;dometopia-com;beautydomae-com
+k-beauty-haircare,3,려 자양윤모 탈모증상완화 샴푸,Ryo Jayangyunmo Hair Loss Care Shampoo,려,25,10500,58,550,183472,ryo shampoo;korean hair loss;jayangyunmo,1,domeggook-com;sellmoa-com;cosmeticdomae-com
+k-beauty-haircare,4,미쟝센 퍼펙트 세럼 오리지널,Mise en Scène Perfect Serum Original,미쟝센,18,7500,58,120,183472,mise en scene;hair serum;korean hair oil,-2,domeggook-com;supercat-co-kr;koreacosmetic-co-kr
+k-beauty-haircare,5,TS샴푸 올뉴플러스,TS Shampoo All New Plus,TS샴푸,39.99,17000,57,700,183472,ts shampoo;hair growth shampoo;korean anti-hair loss,0,domeggook-com;ownerclan-com;beautydomae-com
+k-beauty-haircare,6,케라시스 살롱케어 앰플,Kerasys Salon Care Ampoule,케라시스,22,9000,59,200,183472,kerasys;hair ampoule;korean hair treatment,-3,domeggook-com;dometopia-com;cosmeticdomae-com
+k-beauty-haircare,7,아모스프로페셔널 녹차실감 샴푸,AMOS Professional Green Tea Feel Shampoo,아모스프로페셔널,45,19000,58,800,183472,amos professional;green tea shampoo;scalp care,-6,domeggook-com;sellmoa-com;koreacosmetic-co-kr
+k-beauty-haircare,8,엘라스틴 퍼퓸 샴푸,Elastine Perfume Shampoo,엘라스틴,20,8000,60,600,183472,elastine shampoo;perfume hair;korean shampoo,0,domeggook-com;supercat-co-kr;beautydomae-com
+k-beauty-haircare,9,어노브 딥 데미지 트리트먼트,UNOVE Deep Damage Treatment,어노브,29,12000,59,350,183472,unove treatment;deep damage hair;korean hair mask,0,domeggook-com;ownerclan-com;cosmeticdomae-com
+k-beauty-haircare,10,다슈 데일리 단백질 헤어팩,DASHU Daily Protein Hair Pack,다슈,24,10000,58,250,183472,dashu hair pack;protein treatment;korean hair care,0,domeggook-com;dometopia-com;koreacosmetic-co-kr
+k-beauty-haircare,11,달리프 베러 퍼퓸 샴푸,DALEAF Better Perfume Shampoo,달리프,26,11000,58,500,183472,daleaf shampoo;perfume shampoo;korean haircare,4,domeggook-com;sellmoa-com;beautydomae-com
+k-beauty-haircare,12,아윤채 스칼프 앰플,AYUNCHE Scalp Ampoule,아윤채,32,13500,58,100,183472,ayunche;scalp ampoule;korean scalp care,0,domeggook-com;supercat-co-kr;cosmeticdomae-com
+k-beauty-haircare,13,그로우어스 두피 샴푸,GROWUS Scalp Shampoo,그로우어스,27,11000,59,500,183472,growus shampoo;scalp care;korean hair care,0,domeggook-com;ownerclan-com;koreacosmetic-co-kr
+k-beauty-haircare,14,보다나 글램웨이브 봉고데기,VODANA Glamwave Curling Iron,보다나,70,30000,57,400,183472,vodana curling iron;korean hair tool;glamwave,0,domeggook-com;dometopia-com;beautydomae-com
+k-beauty-haircare,15,제니하우스 헤어 에센스,Jennyhouse Hair Essence,제니하우스,30,12500,58,150,183472,jennyhouse;hair essence;korean salon care,0,domeggook-com;sellmoa-com;cosmeticdomae-com
+k-beauty-haircare,16,쿤달 헤어 세럼,KUNDAL Hair Serum,쿤달,19,7800,59,100,183472,kundal serum;korean hair oil;argan oil,0,domeggook-com;supercat-co-kr;koreacosmetic-co-kr
+k-beauty-haircare,17,닥터포헤어 씨솔트 스케일러,Dr.FORHAIR Sea Salt Scaler,닥터포헤어,26,10500,60,300,183472,dr forhair;sea salt scaler;scalp scrub,3,domeggook-com;ownerclan-com;beautydomae-com
+k-beauty-haircare,18,려 함빛 극손상 케어 샴푸,Ryo Hambit Extreme Damage Care Shampoo,려,23,9500,59,550,183472,ryo shampoo;damaged hair;korean hair care,1,domeggook-com;dometopia-com;cosmeticdomae-com
+k-beauty-haircare,19,미쟝센 살롱 플러스 클리닉 10 트리트먼트,Mise en Scène Salon Plus Clinic 10 Treatment,미쟝센,20,8000,60,200,183472,mise en scene;hair treatment;salon clinic,0,domeggook-com;sellmoa-com;koreacosmetic-co-kr
+k-beauty-haircare,20,TS샴푸 트리트먼트,TS Shampoo Treatment,TS샴푸,30,12500,58,400,183472,ts shampoo;hair treatment;anti-hair loss,0,domeggook-com;supercat-co-kr;beautydomae-com
+k-beauty-haircare,21,케라시스 데미지 클리닉 샴푸,Kerasys Damage Clinic Shampoo,케라시스,17,7000,59,600,183472,kerasys shampoo;damage care;korean shampoo,0,domeggook-com;ownerclan-com;cosmeticdomae-com
+k-beauty-haircare,22,아모스프로페셔널 컬링 에센스,AMOS Professional Curling Essence,아모스프로페셔널,38,16000,58,180,183472,amos professional;curling essence;hair styling,0,domeggook-com;dometopia-com;koreacosmetic-co-kr
+k-beauty-haircare,23,엘라스틴 실크리페어 헤어 마스크,Elastine Silk Repair Hair Mask,엘라스틴,19,7500,61,250,183472,elastine hair mask;silk repair;korean hair treatment,0,domeggook-com;sellmoa-com;beautydomae-com
+k-beauty-haircare,24,어노브 실크 오일 에센스,UNOVE Silk Oil Essence,어노브,25,10000,60,100,183472,unove oil essence;silk hair oil;korean hair care,0,domeggook-com;supercat-co-kr;cosmeticdomae-com
+k-beauty-haircare,25,다슈 포맨 헤어 왁스,DASHU For Men Hair Wax,다슈,15,6000,60,120,183472,dashu hair wax;men's hair styling;korean hair product,0,domeggook-com;ownerclan-com;koreacosmetic-co-kr
+k-beauty-haircare,26,달리프 글로우 헤어 미스트,DALEAF Glow Hair Mist,달리프,18,7500,58,150,183472,daleaf hair mist;glow hair;korean hair perfume,0,domeggook-com;dometopia-com;beautydomae-com
+k-beauty-haircare,27,아윤채 샴푸 브러쉬,AYUNCHE Shampoo Brush,아윤채,12,5000,58,80,183472,ayunche;shampoo brush;scalp massager,0,domeggook-com;sellmoa-com;cosmeticdomae-com
+k-beauty-haircare,28,그로우어스 헤어 토닉,GROWUS Hair Tonic,그로우어스,30,12000,60,150,183472,growus hair tonic;scalp treatment;korean hair growth,0,domeggook-com;supercat-co-kr;koreacosmetic-co-kr
+k-beauty-haircare,29,보다나 소프트바 판고데기,VODANA Softbar Flat Iron,보다나,65,27000,58,350,183472,vodana flat iron;korean hair straightener;softbar,0,domeggook-com;ownerclan-com;beautydomae-com
+k-beauty-haircare,30,제니하우스 헤어 컬러 트리트먼트,Jennyhouse Hair Color Treatment,제니하우스,22,9000,59,200,183472,jennyhouse;hair color treatment;korean hair dye,0,domeggook-com;dometopia-com;cosmeticdomae-com
+smartphone-acc,1,슈피겐 아이폰 케이스,Spigen iPhone Case,슈피겐,25,10000,60,80,9394,spigen case;iphone cover;korean phone accessory,0,domeggook-com;ownerclan-com;phonecasewholesale-co-kr
+smartphone-acc,2,링케 갤럭시 워치 스트랩,Ringke Galaxy Watch Strap,링케,18,7500,58,50,178224,ringke watch strap;galaxy watch band;korean accessory,0,domeggook-com;dometopia-com;mobiledomae-com
+smartphone-acc,3,신지모루 맥세이프 카드지갑,Sinjimoru MagSafe Wallet,신지모루,22,9000,59,60,9394,sinjimoru magsafe;card wallet;iphone accessory,0,domeggook-com;sellmoa-com;domaechanggo-com
+smartphone-acc,4,화이트스톤 돔글라스 강화유리,Whitestone Dome Glass Screen Protector,화이트스톤,35,14000,60,100,9394,whitestone dome glass;screen protector;galaxy s23,0,domeggook-com;supercat-co-kr;phonecasewholesale-co-kr
+smartphone-acc,5,엘라고 에어팟 케이스,elago AirPods Case,엘라고,15,6000,60,40,9394,elago airpods;airpods cover;korean accessory,0,domeggook-com;ownerclan-com;mobiledomae-com
+smartphone-acc,6,빅쏘 아이폰 강화유리,Bixxo iPhone Tempered Glass,빅쏘,12,5000,58,50,9394,bixxo screen protector;iphone tempered glass;phone protection,0,domeggook-com;dometopia-com;domaechanggo-com
+smartphone-acc,7,베루스 갤럭시 케이스,VRS Design Galaxy Case,베루스,20,8000,60,90,9394,vrs design;galaxy case;korean phone cover,0,domeggook-com;sellmoa-com;phonecasewholesale-co-kr
+smartphone-acc,8,아라리 아이폰 맥세이프 케이스,Araree iPhone MagSafe Case,아라리,28,11500,59,85,9394,araree case;magsafe iphone;korean phone accessory,0,domeggook-com;supercat-co-kr;mobiledomae-com
+smartphone-acc,9,디자인스킨 갤럭시 플립 케이스,Designskin Galaxy Flip Case,디자인스킨,30,12000,60,70,9394,designskin;galaxy flip case;korean phone cover,0,domeggook-com;ownerclan-com;domaechanggo-com
+smartphone-acc,10,팝소켓 코리아 팝그립,PopSockets Korea PopGrip,팝소켓 코리아,10,4000,60,30,9394,popsockets;popgrip;phone grip,0,domeggook-com;dometopia-com;phonecasewholesale-co-kr
+smartphone-acc,11,머큐리코퍼레이션 젤리 케이스,Mercury Corporation Jelly Case,머큐리코퍼레이션,9,3500,61,40,9394,mercury case;jelly phone case;korean phone accessory,0,domeggook-com;sellmoa-com;mobiledomae-com
+smartphone-acc,12,만앤휴멜 차량용 무선 충전 거치대,Mann+Hummel Car Wireless Charging Mount,만앤휴멜,40,16000,60,200,9394,mann hummel;car charger;wireless charging,0,domeggook-com;supercat-co-kr;domaechanggo-com
+smartphone-acc,13,기키 스마트폰 링 홀더,Giki Smartphone Ring Holder,기키,8,3000,62,20,9394,giki ring holder;phone grip;smartphone stand,0,domeggook-com;ownerclan-com;phonecasewholesale-co-kr
+smartphone-acc,14,슬래시비 맥세이프 그립톡,Slash B MagSafe Grip Tok,슬래시비,16,6500,59,40,9394,slash b;magsafe griptok;phone holder,0,domeggook-com;dometopia-com;mobiledomae-com
+smartphone-acc,15,제이로드 고속 충전 케이블,J-Road Fast Charging Cable,제이로드,13,5000,61,60,9394,j-road cable;fast charger;usb c cable,0,domeggook-com;sellmoa-com;domaechanggo-com
+smartphone-acc,16,슈피겐 갤럭시 케이스,Spigen Galaxy Case,슈피겐,24,9500,60,80,9394,spigen case;galaxy cover;korean phone accessory,0,domeggook-com;supercat-co-kr;phonecasewholesale-co-kr
+smartphone-acc,17,링케 아이폰 강화유리,Ringke iPhone Tempered Glass,링케,15,6000,60,50,9394,ringke screen protector;iphone tempered glass;phone protection,0,domeggook-com;ownerclan-com;mobiledomae-com
+smartphone-acc,18,신지모루 차량용 스마트폰 거치대,Sinjimoru Car Phone Mount,신지모루,20,8000,60,150,9394,sinjimoru car mount;phone holder;car accessory,0,domeggook-com;dometopia-com;domaechanggo-com
+smartphone-acc,19,화이트스톤 갤럭시 플립 강화유리,Whitestone Dome Glass Galaxy Flip Screen Protector,화이트스톤,40,16000,60,120,9394,whitestone dome glass;galaxy flip screen;foldable phone protector,0,domeggook-com;sellmoa-com;phonecasewholesale-co-kr
+smartphone-acc,20,엘라고 애플워치 스탠드,elago Apple Watch Stand,엘라고,16,6500,59,100,178224,elago apple watch;watch stand;apple accessory,0,domeggook-com;supercat-co-kr;mobiledomae-com
+smartphone-acc,21,빅쏘 갤럭시 강화유리,Bixxo Galaxy Tempered Glass,빅쏘,11,4500,59,50,9394,bixxo screen protector;galaxy tempered glass;phone protection,0,domeggook-com;ownerclan-com;domaechanggo-com
+smartphone-acc,22,베루스 아이폰 카드 수납 케이스,VRS Design iPhone Card Slot Case,베루스,23,9000,61,95,9394,vrs design;iphone card case;korean phone cover,-11,domeggook-com;dometopia-com;phonecasewholesale-co-kr
+smartphone-acc,23,아라리 갤럭시 버즈 케이스,Araree Galaxy Buds Case,아라리,19,7500,61,40,9394,araree case;galaxy buds cover;korean earbud accessory,0,domeggook-com;sellmoa-com;mobiledomae-com
+smartphone-acc,24,디자인스킨 아이폰 가죽 케이스,Designskin iPhone Leather Case,디자인스킨,35,14000,60,80,9394,designskin;iphone leather case;korean phone cover,0,domeggook-com;supercat-co-kr;domaechanggo-com
+smartphone-acc,25,팝소켓 코리아 팝월렛,PopSockets Korea PopWallet,팝소켓 코리아,15,6000,60,50,9394,popsockets;popwallet;phone wallet,0,domeggook-com;ownerclan-com;phonecasewholesale-co-kr
+smartphone-acc,26,머큐리코퍼레이션 범퍼 케이스,Mercury Corporation Bumper Case,머큐리코퍼레이션,10,4000,60,50,9394,mercury case;bumper phone case;korean phone accessory,0,domeggook-com;dometopia-com;mobiledomae-com
+smartphone-acc,27,만앤휴멜 차량용 송풍구 거치대,Mann+Hummel Car Air Vent Mount,만앤휴멜,25,10000,60,100,9394,mann hummel;car mount;air vent holder,0,domeggook-com;sellmoa-com;domaechanggo-com
+smartphone-acc,28,기키 스마트폰 삼각대,Giki Smartphone Tripod,기키,14,5500,61,120,9394,giki tripod;phone stand;smartphone holder,0,domeggook-com;supercat-co-kr;phonecasewholesale-co-kr
+smartphone-acc,29,슬래시비 스마트폰 스트랩,Slash B Smartphone Strap,슬래시비,12,4800,60,30,9394,slash b;phone strap;korean phone accessory,0,domeggook-com;ownerclan-com;mobiledomae-com
+smartphone-acc,30,제이로드 무선 충전기,J-Road Wireless Charger,제이로드,28,11000,61,150,9394,j-road charger;wireless charging pad;fast charger,0,domeggook-com;dometopia-com;domaechanggo-com
+golf-gear,1,타이틀리스트 어패럴 골프 모자,Titleist Apparel Golf Cap,타이틀리스트 어패럴,45,18000,50,150,18310,titleist;golf hat;korean golf,0,domeggook-com;golfzonmarket-com;ownerclan-com
+golf-gear,2,파리게이츠 여성 골프 티셔츠,Parsley Gates Women's Golf T-shirt,파리게이츠,95,38000,45,250,18310,pearly gates;golf apparel;korean fashion,0,domeggook-com;golfzonmarket-com;dometopia-com
+golf-gear,3,마스터바니에디션 골프 장갑,Master Bunny Edition Golf Glove,마스터바니에디션,38,15000,48,80,18310,master bunny;golf glove;premium golf,0,ownerclan-com;golfzonmarket-com;domema-com
+golf-gear,4,와이드앵글 남성 골프 바지,Wide Angle Men's Golf Pants,와이드앵글,80,32000,40,400,18310,wide angle;golf pants;korean golf wear,0,domeggook-com;golfshop-co-kr;sellmoa-com
+golf-gear,5,볼빅 비비드 골프공 12개,Volvik Vivid Golf Balls 12-Pack,볼빅,35,14000,55,600,18310,volvik golf;vivid golf balls;korean golf,0,domeggook-com;golfzonmarket-com;ownerclan-com
+golf-gear,6,데상트골프 남성 골프웨어,Descente Golf Men's Golf Wear,데상트골프,110,45000,40,300,18310,descente golf;golf apparel;korean fashion,0,domeggook-com;golfzonmarket-com;supercat-co-kr
+golf-gear,7,캘러웨이 어패럴 여성 골프 스커트,Callaway Apparel Women's Golf Skirt,캘러웨이 어패럴,75,30000,42,200,18310,callaway golf;golf skirt;korean golf wear,0,ownerclan-com;golfzonmarket-com;domema-com
+golf-gear,8,빈폴골프 남성 골프 니트,Beanpole Golf Men's Golf Knit,빈폴골프,120,48000,40,450,18310,beanpole golf;golf knitwear;korean fashion,0,domeggook-com;golfshop-co-kr;sellmoa-com
+golf-gear,9,헤지스골프 여성 골프 조끼,Hazzys Golf Women's Golf Vest,헤지스골프,85,34000,43,280,18310,hazzys golf;golf vest;korean golf wear,0,ownerclan-com;golfzonmarket-com;dometopia-com
+golf-gear,10,르꼬끄골프 남성 골프화,Le Coq Sportif Golf Men's Golf Shoes,르꼬끄골프,130,50000,38,800,18310,le coq golf;golf shoes;korean golf,0,domeggook-com;golfzonmarket-com;supercat-co-kr
+golf-gear,11,닥스골프 여성 골프 원피스,Daks Golf Women's Golf Dress,닥스골프,140,55000,35,350,18310,daks golf;golf dress;korean fashion,0,ownerclan-com;golfshop-co-kr;domema-com
+golf-gear,12,팬텀 스포츠 골프 바람막이,Phantom Sports Golf Windbreaker,팬텀 스포츠,90,36000,40,300,18310,phantom golf;golf jacket;korean golf wear,0,domeggook-com;golfzonmarket-com;sellmoa-com
+golf-gear,13,엘르골프 여성 골프 선캡,Elle Golf Women's Sun Visor,엘르골프,30,12000,50,100,18310,elle golf;golf visor;korean golf,0,ownerclan-com;golfshop-co-kr;dometopia-com
+golf-gear,14,먼싱웨어 남성 골프 셔츠,Munsingwear Men's Golf Shirt,먼싱웨어,70,28000,45,220,18310,munsingwear;golf polo;korean golf wear,0,domeggook-com;golfzonmarket-com;supercat-co-kr
+golf-gear,15,까스텔바작 여성 골프 파우치,Castelbajac Women's Golf Pouch,까스텔바작,55,22000,40,180,18310,castelbajac golf;golf pouch;korean fashion,0,ownerclan-com;golfshop-co-kr;domema-com
+golf-gear,16,골프 거리 측정기,Golf Rangefinder,볼빅,150,60000,38,250,18310,golf rangefinder;laser distance;korean golf,0,domeggook-com;golfzonmarket-com;onchannel-co-kr
+golf-gear,17,골프 연습 스윙 매트,Golf Practice Swing Mat,와이드앵글,60,24000,45,1500,18310,golf mat;swing trainer;home golf,0,ownerclan-com;dometopia-com;sellmoa-com
+golf-gear,18,골프 우산,Golf Umbrella,타이틀리스트 어패럴,40,16000,50,500,18310,golf umbrella;large umbrella;rain gear,0,domeggook-com;supercat-co-kr;domema-com
+golf-gear,19,골프 티 세트,Golf Tee Set,볼빅,15,6000,60,50,18310,golf tees;wooden tees;golf accessories,0,ownerclan-com;golfzonmarket-com;dometopia-com
+golf-gear,20,골프 타월,Golf Towel,캘러웨이 어패럴,25,10000,50,120,18310,golf towel;microfiber towel;golf cleaning,0,domeggook-com;golfshop-co-kr;sellmoa-com
+golf-gear,21,골프 볼 마커,Golf Ball Marker,마스터바니에디션,20,8000,50,30,18310,ball marker;golf accessories;magnetic marker,0,ownerclan-com;golfzonmarket-com;domema-com
+golf-gear,22,골프 스윙 연습기,Golf Swing Trainer,와이드앵글,70,28000,45,700,18310,swing trainer;golf practice;indoor golf,0,domeggook-com;dometopia-com;onchannel-co-kr
+golf-gear,23,골프 클럽 헤드 커버,Golf Club Head Cover,파리게이츠,40,16000,48,150,18310,head cover;golf club protector;driver cover,0,ownerclan-com;golfshop-co-kr;supercat-co-kr
+golf-gear,24,골프화 가방,Golf Shoe Bag,르꼬끄골프,35,14000,40,200,18310,shoe bag;golf accessories;travel bag,0,domeggook-com;golfzonmarket-com;sellmoa-com
+golf-gear,25,골프 볼 라이너,Golf Ball Liner Marker,볼빅,12,5000,60,40,18310,ball liner;golf marker;putting aid,0,ownerclan-com;dometopia-com;domema-com
+golf-gear,26,골프 스코어 카드 홀더,Golf Scorecard Holder,헤지스골프,28,11000,45,80,18310,scorecard holder;golf accessories;leather holder,0,domeggook-com;golfshop-co-kr;supercat-co-kr
+golf-gear,27,골프 퍼팅 연습기,Golf Putting Trainer,와이드앵글,50,20000,40,800,18310,putting mat;golf practice;indoor putting,0,ownerclan-com;golfzonmarket-com;onchannel-co-kr
+golf-gear,28,골프 클럽 브러쉬,Golf Club Brush Cleaner,타이틀리스트 어패럴,18,7000,55,60,18310,club brush;golf cleaner;groove cleaner,0,domeggook-com;dometopia-com;sellmoa-com
+golf-gear,29,골프 장갑 보관함,Golf Glove Holder,마스터바니에디션,22,9000,48,100,18310,glove holder;golf accessories;glove dryer,0,ownerclan-com;golfshop-co-kr;domema-com
+golf-gear,30,골프 스윙 분석 앱 연동 센서,Golf Swing Analysis Sensor,볼빅,100,40000,40,150,18310,swing analyzer;golf sensor;practice tool,0,domeggook-com;golfzonmarket-com;onchannel-co-kr
+fishing-gear,1,바낙스 카이저 낚싯대,Banax Kaizer Fishing Rod,바낙스,120,48000,40,300,17997,banax rod;korean fishing;fishing pole,0,domeggook-com;fishingnpeople-co-kr;ownerclan-com
+fishing-gear,2,NS Black Hole 허리케인 릴,NS Black Hole Hurricane Fishing Reel,NS Black Hole,90,36000,45,250,17997,ns black hole;fishing reel;korean gear,0,domeggook-com;fishingkorea-com;dometopia-com
+fishing-gear,3,JS컴퍼니 빅쏘드 낚싯줄,JS Company Bixod Fishing Line,JS컴퍼니,30,12000,50,100,17997,js company;fishing line;braided line,0,ownerclan-com;fishingdomae-com;domema-com
+fishing-gear,4,HDF 해동조구사 낚시 미끼,HDF Haedong Fishing Lure,HDF (해동조구사),15,6000,55,50,17997,hdf lure;fishing bait;korean lure,0,domeggook-com;fishingnpeople-co-kr;sellmoa-com
+fishing-gear,5,용성 은성실스타 낚시 의자,Yongsung Eunsung Silstar Fishing Chair,용성,70,28000,40,2000,17997,fishing chair;portable chair;korean fishing,0,domeggook-com;fishingkorea-com;ownerclan-com
+fishing-gear,6,은성실스타 낚시 태클 박스,Eunsung Silstar Fishing Tackle Box,은성실스타,45,18000,48,800,17997,tackle box;fishing storage;korean gear,0,domeggook-com;fishingdomae-com;dometopia-com
+fishing-gear,7,천류 낚시찌 세트,Chunryu Fishing Float Set,천류,25,10000,50,80,17997,fishing float;bobber set;korean fishing,0,ownerclan-com;fishingnpeople-co-kr;domema-com
+fishing-gear,8,아피스 낚시복,Apis Fishing Apparel,아피스,80,32000,40,600,17997,fishing jacket;waterproof gear;korean apparel,0,domeggook-com;fishingkorea-com;sellmoa-com
+fishing-gear,9,기간이즘 낚시 가방,Gigantism Fishing Bag,기간이즘,60,24000,42,1000,17997,fishing bag;rod bag;korean gear,0,ownerclan-com;fishingdomae-com;dometopia-com
+fishing-gear,10,도요피싱 낚시 바늘 세트,Doyo Fishing Hook Set,도요피싱,18,7000,55,30,17997,fishing hooks;hook set;korean fishing,0,domeggook-com;fishingnpeople-co-kr;supercat-co-kr
+fishing-gear,11,씨호크 낚시 구명조끼,Seahawk Fishing Life Vest,씨호크,55,22000,40,700,17997,life vest;fishing safety;korean gear,0,ownerclan-com;fishingkorea-com;domema-com
+fishing-gear,12,머모피 낚시 모자,Momopi Fishing Hat,머모피,20,8000,50,100,17997,fishing hat;sun hat;korean fishing,0,domeggook-com;fishingdomae-com;sellmoa-com
+fishing-gear,13,슈어캐치 낚시 랜딩 넷,Surecatch Fishing Landing Net,슈어캐치,40,16000,45,500,17997,landing net;fishing net;korean gear,0,ownerclan-com;fishingnpeople-co-kr;dometopia-com
+fishing-gear,14,금호조침 낚시 바늘,Kumho Jochim Fishing Hooks,금호조침,10,4000,60,20,17997,fishing hooks;barbed hooks;korean fishing,0,domeggook-com;fishingkorea-com;supercat-co-kr
+fishing-gear,15,유정피싱 낚시 장갑,Yujeong Fishing Gloves,유정피싱,22,9000,48,80,17997,fishing gloves;protective gloves;korean gear,0,ownerclan-com;fishingdomae-com;domema-com
+fishing-gear,16,낚시 루어 세트,Fishing Lure Set,HDF (해동조구사),35,14000,45,200,17997,fishing lures;lure kit;artificial bait,0,domeggook-com;fishingnpeople-co-kr;onchannel-co-kr
+fishing-gear,17,낚시 뜰채,Fishing Landing Net,슈어캐치,40,16000,40,500,17997,landing net;fish net;telescopic net,0,ownerclan-com;fishingkorea-com;sellmoa-com
+fishing-gear,18,낚시 웨이더,Fishing Waders,아피스,110,44000,38,1500,17997,fishing waders;waterproof waders;chest waders,0,domeggook-com;fishingdomae-com;supercat-co-kr
+fishing-gear,19,낚시 플라이어,Fishing Pliers,바낙스,20,8000,50,150,17997,fishing pliers;hook remover;braid cutter,0,ownerclan-com;fishingnpeople-co-kr;dometopia-com
+fishing-gear,20,낚시 헤드램프,Fishing Headlamp,기간이즘,28,11000,45,120,17997,headlamp;fishing light;led headlamp,0,domeggook-com;fishingkorea-com;domema-com
+fishing-gear,21,낚시 로드 거치대,Fishing Rod Holder,용성,30,12000,48,300,17997,rod holder;fishing stand;boat rod holder,0,ownerclan-com;fishingdomae-com;sellmoa-com
+fishing-gear,22,낚시 아이스박스,Fishing Cooler Box,은성실스타,85,34000,40,3000,17997,cooler box;fishing cooler;ice chest,0,domeggook-com;fishingnpeople-co-kr;supercat-co-kr
+fishing-gear,23,낚시 전자 저울,Fishing Digital Scale,JS컴퍼니,25,10000,50,100,17997,digital scale;fish scale;hanging scale,0,ownerclan-com;fishingkorea-com;dometopia-com
+fishing-gear,24,낚시 선글라스,Fishing Sunglasses,머모피,30,12000,45,50,17997,polarized sunglasses;fishing eyewear;uv protection,0,domeggook-com;fishingdomae-com;domema-com
+fishing-gear,25,낚시 칼 세트,Fishing Knife Set,HDF (해동조구사),22,9000,48,180,17997,fishing knife;fillet knife;knife set,0,ownerclan-com;fishingnpeople-co-kr;sellmoa-com
+fishing-gear,26,낚시 태클 가방,Fishing Tackle Bag,기간이즘,50,20000,40,700,17997,tackle bag;fishing storage;gear bag,0,domeggook-com;fishingkorea-com;onchannel-co-kr
+fishing-gear,27,낚시 라인 커터,Fishing Line Cutter,도요피싱,12,5000,60,30,17997,line cutter;fishing tool;braid cutter,0,ownerclan-com;fishingdomae-com;supercat-co-kr
+fishing-gear,28,낚시 릴 오일,Fishing Reel Oil & Grease,NS Black Hole,15,6000,55,80,17997,reel oil;fishing maintenance;reel grease,0,domeggook-com;fishingnpeople-co-kr;dometopia-com
+fishing-gear,29,낚시 바늘 제거기,Fishing Hook Remover,금호조침,18,7000,50,60,17997,hook remover;fish unhooker;fishing tool,0,ownerclan-com;fishingkorea-com;domema-com
+fishing-gear,30,낚시 전자 알람,Fishing Bite Alarm,바낙스,28,11000,45,100,17997,bite alarm;fishing alarm;electronic bite,0,domeggook-com;fishingdomae-com;onchannel-co-kr
+k-stationery,1,모나미 153 볼펜 세트,Monami 153 Ballpoint Pen Set,모나미,15,6000,55,100,18349,monami pen;korean stationery;ballpoint pen,1,domeggook-com;1000za-kr;ownerclan-com
+k-stationery,2,모닝글로리 다이어리,Morning Glory Diary Planner,모닝글로리,20,8000,50,300,18349,morning glory;korean planner;diary book,0,domeggook-com;moongooland-com;dometopia-com
+k-stationery,3,아트박스 캐릭터 스티커,Artbox Character Stickers,아트박스,10,4000,60,30,18349,artbox;korean stickers;deco stickers,0,ownerclan-com;alpha-co-kr;domema-com
+k-stationery,4,핫트랙스 디자인 노트,Hottracks Design Notebook,핫트랙스,18,7000,55,200,18349,hottracks;korean notebook;design journal,0,domeggook-com;officedepot-co-kr;sellmoa-com
+k-stationery,5,알파문구 컬러 색연필 세트,Alpha Stationery Color Pencil Set,알파문구,25,10000,50,250,18349,alpha stationery;color pencils;art supplies,0,domeggook-com;alpha-co-kr;ownerclan-com
+k-stationery,6,드림디포 파일 폴더,Dream Depot File Folder,드림디포,12,5000,50,150,18349,dream depot;file folder;office supplies,0,domeggook-com;moongooland-com;dometopia-com
+k-stationery,7,아이코닉 플래너,Iconic Planner,아이코닉,22,9000,48,350,18349,iconic;korean planner;daily planner,5,ownerclan-com;1000za-kr;domema-com
+k-stationery,8,7321디자인 스티커북,7321 Design Sticker Book,7321디자인,16,6500,55,120,18349,7321 design;sticker book;korean stationery,0,domeggook-com;officedepot-co-kr;sellmoa-com
+k-stationery,9,루카랩 다꾸 스티커,Lucalab Deco Stickers,루카랩,8,3000,65,20,18349,lucalab;deco stickers;korean planner,5,ownerclan-com;alpha-co-kr;dometopia-com
+k-stationery,10,인디고 일러스트 노트,Indigo Illustration Notebook,인디고,14,5500,50,180,18349,indigo;korean notebook;illustration art,0,domeggook-com;moongooland-com;domema-com
+k-stationery,11,라이브워크 펜 케이스,Livework Pen Case,라이브워크,18,7000,45,100,18349,livework;pen pouch;korean stationery,0,ownerclan-com;1000za-kr;sellmoa-com
+k-stationery,12,페이퍼리안 마스킹 테이프,Paperian Masking Tape Set,페이퍼리안,10,4000,60,50,18349,paperian;masking tape;washi tape,0,domeggook-com;officedepot-co-kr;dometopia-com
+k-stationery,13,데일리라이크 떡메모지,Dailylike Sticky Memo Pad,데일리라이크,9,3500,60,80,18349,dailylike;memo pad;korean stationery,-2,ownerclan-com;alpha-co-kr;domema-com
+k-stationery,14,리훈 스터디 플래너,Rihoon Study Planner,리훈,20,8000,50,300,18349,rihoon;study planner;korean planner,0,domeggook-com;moongooland-com;sellmoa-com
+k-stationery,15,오롤리데이 엽서 세트,Oh Lolly Day Postcard Set,오롤리데이,12,5000,55,70,18349,oh lolly day;postcard set;korean art,0,ownerclan-com;1000za-kr;dometopia-com
+k-stationery,16,한국 캐릭터 볼펜,Korean Character Ballpoint Pen,모나미,8,3000,60,40,18349,character pen;korean pen;cute stationery,0,domeggook-com;moongooland-com
+k-stationery,17,감성 다꾸 스티커 팩,Aesthetic Deco Sticker Pack,아트박스,10,4000,55,50,18349,deco stickers;korean journal;aesthetic stickers,0,ownerclan-com;alpha-co-kr;supercat-co-kr
+k-stationery,18,한국 전통 문양 노트,Korean Traditional Pattern Notebook,핫트랙스,15,6000,50,200,18349,korean notebook;traditional pattern;hanbok design,0,domeggook-com;officedepot-co-kr;domema-com
+k-stationery,19,귀여운 동물 캐릭터 지우개,Cute Animal Character Eraser,모닝글로리,5,2000,60,30,18349,animal eraser;korean stationery;cute school supplies,0,ownerclan-com;moongooland-com;sellmoa-com
+k-stationery,20,한국 디자인 마스킹 테이프,Korean Design Masking Tape,페이퍼리안,7,2800,60,40,18349,washi tape;korean design;decorative tape,0,domeggook-com;1000za-kr;dometopia-com
+k-stationery,21,한국어 학습 노트,Korean Language Learning Notebook,알파문구,13,5200,50,250,18349,korean notebook;language learning;hangul practice,0,ownerclan-com;officedepot-co-kr;domema-com
+k-stationery,22,다이어리 꾸미기 세트,Diary Decoration Set,루카랩,25,10000,45,180,18349,diary deco;planner stickers;journal kit,0,domeggook-com;alpha-co-kr
+k-stationery,23,한국 디자인 젤펜,Korean Design Gel Pen,모나미,6,2500,60,30,18349,gel pen;korean pen;smooth writing,0,ownerclan-com;moongooland-com;supercat-co-kr
+k-stationery,24,캐릭터 북마크,Character Bookmark,아이코닉,7,2800,55,20,18349,bookmark;korean character;cute bookmark,0,domeggook-com;1000za-kr;sellmoa-com
+k-stationery,25,한국 전통 색상 잉크 세트,Korean Traditional Color Ink Set,알파문구,30,12000,40,150,18349,korean ink;traditional colors;calligraphy ink,0,ownerclan-com;officedepot-co-kr;dometopia-com
+k-stationery,26,미니 포켓 다이어리,Mini Pocket Diary,모닝글로리,10,4000,50,100,18349,pocket diary;mini planner;korean stationery,0,domeggook-com;moongooland-com;domema-com
+k-stationery,27,데스크 오거나이저,Desk Organizer,드림디포,28,11000,45,400,18349,desk organizer;stationery storage;korean office,0,ownerclan-com;alpha-co-kr
+k-stationery,28,한국 전통 스티커,Korean Traditional Stickers,7321디자인,9,3500,55,30,18349,traditional stickers;hanbok stickers;korean culture,0,domeggook-com;1000za-kr;supercat-co-kr
+k-stationery,29,컬러 형광펜 세트,Color Highlighter Set,모나미,12,5000,50,80,18349,highlighter set;pastel highlighters;korean stationery,0,ownerclan-com;officedepot-co-kr;sellmoa-com
+k-stationery,30,DIY 다이어리 키트,DIY Diary Kit,루카랩,35,14000,40,300,18349,diy journal;planner kit;korean stationery,0,domeggook-com;moongooland-com;dometopia-com
+webtoon-goods,1,나 혼자만 레벨업 아크릴 스탠드,Solo Leveling Acrylic Stand,나 혼자만 레벨업 (굿즈),30,12000,50,150,13768,solo leveling;webtoon goods;acrylic stand,0,domeggook-com;10x10-co-kr;ownerclan-com
+webtoon-goods,2,전지적 독자 시점 렌티큘러 카드,Omniscient Reader's Viewpoint Lenticular Card,스타 스트림 스토어 (전독시),25,10000,55,50,13768,omniscient reader;webtoon card;korean webtoon,0,domeggook-com;store-kakaofriends-com;dometopia-com
+webtoon-goods,3,데뷔 못 하면 죽는 병 걸림 키링,Debut or Die Keychain,KW북스 (데못죽),20,8000,60,40,13768,debut or die;webtoon keychain;kpop webtoon,0,ownerclan-com;store-linefriends-com;domema-com
+webtoon-goods,4,유미의 세포들 봉제 인형,Yumi's Cells Plush Doll,유미의 세포들 (굿즈),40,16000,45,250,13768,yumis cells;webtoon plush;korean animation,0,domeggook-com;10x10-co-kr;sellmoa-com
+webtoon-goods,5,마루는 강쥐 인형,Maru the Puppy Plush,마루는 강쥐 (팝업),35,14000,48,200,13768,maru the puppy;webtoon plush;cute character,0,domeggook-com;store-kakaofriends-com;ownerclan-com
+webtoon-goods,6,가비지타임 아크릴 키링,Garbage Time Acrylic Keychain,가비지타임 (팝업),18,7000,55,30,13768,garbage time;webtoon keychain;sports webtoon,0,domeggook-com;store-linefriends-com;dometopia-com
+webtoon-goods,7,웹툰프렌즈 캐릭터 머그컵,Webtoon Friends Character Mug,웹툰프렌즈,22,9000,48,300,13768,webtoon mug;korean character;coffee mug,0,ownerclan-com;10x10-co-kr;domema-com
+webtoon-goods,8,카카오프렌즈 라이언 인형,Kakao Friends Ryan Plush Doll,카카오프렌즈,38,15000,40,280,13768,kakao friends;ryan plush;korean character,0,domeggook-com;store-kakaofriends-com;sellmoa-com
+webtoon-goods,9,애니플러스샵 웹툰 포스터,Aniplus Shop Webtoon Poster,애니플러스샵,15,6000,50,100,13768,webtoon poster;korean anime;art print,0,ownerclan-com;store-linefriends-com;dometopia-com
+webtoon-goods,10,코핀코 웹툰 뱃지 세트,Copinko Webtoon Badge Set,코핀코,12,5000,55,60,13768,webtoon badge;enamel pin;korean goods,0,domeggook-com;10x10-co-kr;domema-com
+webtoon-goods,11,모펀 웹툰 폰케이스,Mofun Webtoon Phone Case,모펀,28,11000,45,80,13768,webtoon phone case;korean phone accessory;character case,0,ownerclan-com;store-kakaofriends-com;sellmoa-com
+webtoon-goods,12,굿즈모먼트 웹툰 담요,Goods Moment Webtoon Blanket,굿즈모먼트,50,20000,40,600,13768,webtoon blanket;korean goods;character blanket,0,domeggook-com;store-linefriends-com;dometopia-com
+webtoon-goods,13,라프텔 스토어 웹툰 OST 앨범,Laftel Store Webtoon OST Album,라프텔 스토어,45,18000,42,300,13768,webtoon ost;korean soundtrack;anime ost,0,ownerclan-com;10x10-co-kr;domema-com
+webtoon-goods,14,팝플리 웹툰 아크릴 키링,Popply Webtoon Acrylic Keychain,팝플리,18,7000,55,30,13768,webtoon keychain;korean character;acrylic charm,0,domeggook-com;store-kakaofriends-com;sellmoa-com
+webtoon-goods,15,웹툰샵 캐릭터 엽서 세트,Webtoon Shop Character Postcard Set,웹툰샵,10,4000,60,50,13768,webtoon postcard;korean art;character art,0,ownerclan-com;store-linefriends-com;dometopia-com
+webtoon-goods,16,웹툰 캐릭터 스티커 팩,Webtoon Character Sticker Pack,웹툰프렌즈,8,3000,60,20,13768,webtoon stickers;korean stickers;character deco,0,domeggook-com;10x10-co-kr;onchannel-co-kr
+webtoon-goods,17,웹툰 일러스트 텀블러,Webtoon Illustration Tumbler,카카오프렌즈,25,10000,50,250,13768,webtoon tumbler;korean merchandise;character cup,0,ownerclan-com;store-kakaofriends-com;supercat-co-kr
+webtoon-goods,18,웹툰 캐릭터 마우스패드,Webtoon Character Mouse Pad,애니플러스샵,15,6000,55,100,13768,webtoon mousepad;korean gaming;character deskmat,0,domeggook-com;store-linefriends-com;domema-com
+webtoon-goods,19,웹툰 캐릭터 에코백,Webtoon Character Eco Bag,유미의 세포들 (굿즈),22,9000,48,180,13768,webtoon eco bag;korean fashion;canvas bag,0,ownerclan-com;10x10-co-kr;sellmoa-com
+webtoon-goods,20,웹툰 캐릭터 폰 그립톡,Webtoon Character Phone Grip Tok,나 혼자만 레벨업 (굿즈),12,5000,50,30,13768,phone grip;webtoon accessory;pop socket,0,domeggook-com;store-kakaofriends-com;dometopia-com
+webtoon-goods,21,웹툰 캐릭터 젤리 케이스,Webtoon Character Jelly Case,모펀,20,8000,45,60,13768,jelly case;webtoon phone;soft phone case,0,ownerclan-com;store-linefriends-com;domema-com
+webtoon-goods,22,웹툰 캐릭터 뱃지,Webtoon Character Badge,코핀코,8,3000,60,20,13768,character badge;webtoon pin;korean goods,0,domeggook-com;10x10-co-kr;onchannel-co-kr
+webtoon-goods,23,웹툰 캐릭터 포토카드,Webtoon Character Photocard,전지적 독자 시점 (굿즈),10,4000,55,10,13768,photocard;webtoon collectible;kpop photocard,0,ownerclan-com;store-kakaofriends-com;supercat-co-kr
+webtoon-goods,24,웹툰 캐릭터 스티커,Webtoon Character Sticker,마루는 강쥐 (팝업),5,2000,65,10,13768,webtoon sticker;cute sticker;korean character,0,domeggook-com;store-linefriends-com;sellmoa-com
+webtoon-goods,25,웹툰 캐릭터 미니 피규어,Webtoon Character Mini Figure,가비지타임 (팝업),15,6000,50,50,13768,mini figure;webtoon collectible;character toy,0,ownerclan-com;10x10-co-kr;dometopia-com
+webtoon-goods,26,웹툰 캐릭터 스마트톡,Webtoon Character Smart Tok,유미의 세포들 (굿즈),12,5000,50,30,13768,smart tok;webtoon phone;phone stand,0,domeggook-com;store-kakaofriends-com;domema-com
+webtoon-goods,27,웹툰 캐릭터 포스터 카드,Webtoon Character Poster Card,데뷔 못 하면 죽는 병 걸림 (굿즈),9,3500,55,20,13768,poster card;webtoon art;collectible card,0,ownerclan-com;store-linefriends-com;onchannel-co-kr
+webtoon-goods,28,웹툰 캐릭터 노트,Webtoon Character Notebook,웹툰프렌즈,10,4000,50,150,13768,webtoon notebook;korean stationery;character journal,0,domeggook-com;10x10-co-kr;supercat-co-kr
+webtoon-goods,29,웹툰 캐릭터 젤펜,Webtoon Character Gel Pen,카카오프렌즈,7,2800,60,30,13768,webtoon pen;gel pen;korean character,0,ownerclan-com;store-kakaofriends-com;sellmoa-com
+webtoon-goods,30,웹툰 캐릭터 마그넷 세트,Webtoon Character Magnet Set,애니플러스샵,12,5000,55,80,13768,webtoon magnet;fridge magnet;korean goods,0,domeggook-com;store-linefriends-com;dometopia-com
+camping-gear,1,코오롱스포츠 캠핑 텐트,Kolon Sport Camping Tent,코오롱스포츠,250,100000,38,4000,16036,kolon sport;camping tent;outdoor gear,0,domeggook-com;campingtrunk-com;ownerclan-com
+camping-gear,2,코베아 구이바다 캠핑 버너,Kovea GUiBADA Camping Stove,코베아,120,48000,40,1500,16036,kovea stove;camping burner;korean camping,0,domeggook-com;campinggo-co-kr;dometopia-com
+camping-gear,3,헬리녹스 체어원 캠핑 의자,Helinox Chair One Camping Chair,헬리녹스,100,40000,45,900,16036,helinox chair;lightweight chair;outdoor chair,0,ownerclan-com;campingon-co-kr;domema-com
+camping-gear,4,블랙야크 등산 배낭,Blackyak Hiking Backpack,블랙야크,80,32000,40,1200,16036,blackyak backpack;hiking bag;outdoor backpack,0,domeggook-com;campingtrunk-com;sellmoa-com
+camping-gear,5,K2 등산화,K2 Hiking Boots,K2,130,50000,35,1000,16036,k2 hiking;trekking shoes;outdoor boots,0,domeggook-com;campinggo-co-kr;ownerclan-com
+camping-gear,6,스노우라인 캠핑 테이블,Snowline Camping Table,스노우라인,70,28000,45,2000,16036,snowline table;folding table;camping furniture,0,domeggook-com;campingon-co-kr;dometopia-com
+camping-gear,7,미니멀웍스 캠핑 침낭,Minimal Works Camping Sleeping Bag,미니멀웍스,90,36000,42,1000,16036,minimal works;sleeping bag;ultralight camping,0,ownerclan-com;campingtrunk-com;domema-com
+camping-gear,8,네파 아웃도어 자켓,Nepa Outdoor Jacket,네파,110,44000,38,500,16036,nepa jacket;waterproof jacket;hiking apparel,0,domeggook-com;campinggo-co-kr;sellmoa-com
+camping-gear,9,카즈미 캠핑 랜턴,Kazmi Camping Lantern,카즈미,40,16000,50,300,16036,kazmi lantern;led lantern;camping light,0,ownerclan-com;campingon-co-kr;dometopia-com
+camping-gear,10,아이더 등산 스틱,Eider Hiking Poles,아이더,50,20000,45,400,16036,eider hiking;trekking poles;outdoor gear,0,domeggook-com;campingtrunk-com;domema-com
+camping-gear,11,제드코리아 캠핑 매트,Jed Korea Camping Mat,제드코리아,60,24000,40,800,16036,jed korea;camping mat;sleeping pad,0,ownerclan-com;campinggo-co-kr;sellmoa-com
+camping-gear,12,크레모아 캠핑 선풍기,Claymore Camping Fan,크레모아,75,30000,42,600,16036,claymore fan;portable fan;camping accessory,0,domeggook-com;campingon-co-kr;dometopia-com
+camping-gear,13,노스피크 캠핑 해먹,Northpeak Camping Hammock,노스피크,45,18000,48,500,16036,northpeak;camping hammock;portable hammock,0,ownerclan-com;campingtrunk-com;domema-com
+camping-gear,14,마운트리버 캠핑 침대,Mount River Camping Cot,마운트리버,110,44000,38,2500,16036,mount river;camping cot;folding bed,0,domeggook-com;campinggo-co-kr;sellmoa-com
+camping-gear,15,위오 캠핑 타프,Weo Camping Tarp,위오,85,34000,40,1800,16036,weo tarp;camping shelter;sun shade,0,ownerclan-com;campingon-co-kr;dometopia-com
+camping-gear,16,캠핑용 휴대용 정수기,Portable Camping Water Purifier,코베아,40,16000,45,150,16036,water filter;camping purifier;survival gear,0,domeggook-com;campingtrunk-com;onchannel-co-kr
+camping-gear,17,캠핑용 접이식 삽,Folding Camping Shovel,블랙야크,25,10000,50,300,16036,camping shovel;entrenching tool;survival shovel,0,ownerclan-com;campinggo-co-kr;supercat-co-kr
+camping-gear,18,캠핑용 휴대용 커피 메이커,Portable Camping Coffee Maker,코베아,35,14000,48,200,16036,camping coffee;portable espresso;travel coffee,0,domeggook-com;campingon-co-kr;domema-com
+camping-gear,19,캠핑용 식기 세트,Camping Cookware Set,스노우라인,50,20000,40,800,16036,camping cookset;outdoor cookware;portable kitchen,8,ownerclan-com;campingtrunk-com;sellmoa-com
+camping-gear,20,캠핑용 접이식 물통,Folding Camping Water Container,미니멀웍스,20,8000,50,100,16036,water bag;collapsible water;camping hydration,0,domeggook-com;campinggo-co-kr;dometopia-com
+camping-gear,21,캠핑용 휴대용 샤워,Portable Camping Shower,제드코리아,45,18000,42,700,16036,camping shower;portable shower;outdoor hygiene,0,ownerclan-com;campingon-co-kr;domema-com
+camping-gear,22,캠핑용 휴대용 화장실,Portable Camping Toilet,노스피크,60,24000,40,1500,16036,camping toilet;portable potty;outdoor bathroom,0,domeggook-com;campingtrunk-com;sellmoa-com
+camping-gear,23,캠핑용 접이식 테이블,Folding Camping Table,스노우라인,70,28000,45,2000,16036,camping table;portable table;outdoor dining,-3,ownerclan-com;campinggo-co-kr;dometopia-com
+camping-gear,24,캠핑용 휴대용 발전기,Portable Camping Generator,크레모아,150,60000,38,3000,16036,portable generator;camping power;solar generator,0,domeggook-com;campingon-co-kr;onchannel-co-kr
+camping-gear,25,캠핑용 해충 퇴치기,Camping Insect Repellent,카즈미,30,12000,50,100,16036,insect repellent;mosquito repellent;camping pest control,0,ownerclan-com;campingtrunk-com;supercat-co-kr
+camping-gear,26,캠핑용 휴대용 냉장고,Portable Camping Refrigerator,코베아,200,80000,35,5000,16036,portable fridge;camping cooler;car fridge,0,domeggook-com;campinggo-co-kr;domema-com
+camping-gear,27,캠핑용 접이식 의자,Folding Camping Chair,헬리녹스,60,24000,40,800,16036,camping chair;portable chair;outdoor seating,-11,ownerclan-com;campingon-co-kr;sellmoa-com
+camping-gear,28,캠핑용 휴대용 난로,Portable Camping Heater,코베아,90,36000,42,1200,16036,camping heater;portable stove;outdoor heating,0,domeggook-com;campingtrunk-com;dometopia-com
+camping-gear,29,캠핑용 휴대용 램프,Portable Camping Lamp,크레모아,35,14000,48,200,16036,camping lamp;led light;outdoor lighting,0,ownerclan-com;campinggo-co-kr;onchannel-co-kr
+camping-gear,30,캠핑용 접이식 침대,Folding Camping Bed,마운트리버,100,40000,40,2500,16036,camping bed;portable cot;outdoor sleeping,0,domeggook-com;campingon-co-kr;supercat-co-kr
+pet-supplies,1,하림펫푸드 더리얼 그레인프리 사료,Harim Pet Food The Real Grain Free Dry Food,하림펫푸드,35.99,15000,58,1200,177703,korean pet food;grain free;dog food,0,domeggook-com;ownerclan-com;b2b-petfriends-co-kr
+pet-supplies,2,페스룸 릴렉스 샴푸,FESROOM Relax Shampoo,페스룸,22.5,9500,57,350,177708,pet shampoo;korean pet care;dog shampoo,0,domeggook-com;ownerclan-com;petbox-kr-shop-main-index-php
+pet-supplies,3,바잇미 강아지 수제 간식,Biteme Handmade Dog Treats,바잇미,15,6000,60,150,177703,dog treats;korean pet snack;healthy dog,0,domeggook-com;dometopia-com;b2b-petfriends-co-kr
+pet-supplies,4,아르르 꿀잠 방석,Arrr Honey Sleep Pet Bed,아르르,45,19000,58,800,177706,pet bed;korean pet supplies;dog cushion,0,domeggook-com;ownerclan-com;domemae-com
+pet-supplies,5,마이베프 영양제,Myvef Pet Supplement,마이베프,28,11000,61,200,177703,pet supplement;korean pet health;dog vitamins,0,domeggook-com;dometopia-com;b2b-petfriends-co-kr
+pet-supplies,6,우리와 웰츠 습식사료,Wooriwa Welts Wet Food,우리와,18,7500,58,400,177703,wet dog food;korean pet food;premium pet food,0,domeggook-com;ownerclan-com;domemae-com
+pet-supplies,7,네츄럴코어 유기농 사료,Natural Core Organic Pet Food,네츄럴코어,40,17000,57,1500,177703,organic pet food;korean pet food;natural dog food,-3,domeggook-com;dometopia-com;b2b-petfriends-co-kr
+pet-supplies,8,리카리카 강아지 옷,RicaRica Dog Clothes,리카리카,25,10000,60,180,177707,dog apparel;korean pet fashion;pet clothes,0,domeggook-com;ownerclan-com;domemae-com
+pet-supplies,9,하이포닉 저자극 샴푸,Hypoallergenic Pet Shampoo,하이포닉,20,8500,57,300,177708,hypoallergenic shampoo;korean pet care;sensitive skin,0,domeggook-com;dometopia-com;petbox-kr-shop-main-index-php
+pet-supplies,10,더비랩 강아지 치약,The Be Lab Dog Toothpaste,더비랩,12,5000,58,100,177708,dog toothpaste;korean pet oral care;dental hygiene,0,domeggook-com;ownerclan-com;b2b-petfriends-co-kr
+pet-supplies,11,브리지테일 펫 유모차,Bridgetail Pet Stroller,브리지테일,99,40000,59,5000,177706,pet stroller;korean pet gear;dog buggy,0,domeggook-com;domemae-com;supercat-co-kr
+pet-supplies,12,붐펫 드라이룸,Boompet Pet Dry Room,붐펫,150,60000,60,8000,177706,pet dryer;korean pet appliance;dog grooming,0,domeggook-com;dometopia-com;supercat-co-kr
+pet-supplies,13,넬로 펫 자동 급식기,Nello Pet Automatic Feeder,넬로,65,28000,57,1500,177706,automatic pet feeder;korean pet tech;smart pet,0,domeggook-com;ownerclan-com;domemae-com
+pet-supplies,14,펫띵 강아지 장난감,Petthing Dog Toy,펫띵,10,4000,60,100,177709,dog toy;korean pet toy;interactive toy,0,domeggook-com;dometopia-com;b2b-petfriends-co-kr
+pet-supplies,15,두카메디 강아지 영양제,Ducamedi Dog Supplement,두카메디,30,12000,60,250,177703,dog health;korean pet supplement;joint care,0,domeggook-com;ownerclan-com;petbox-kr-shop-main-index-php
+pet-supplies,16,하림펫푸드 고양이 사료,Harim Pet Food Cat Food,하림펫푸드,30,12500,58,1000,177703,cat food;korean cat food;premium cat food,0,domeggook-com;ownerclan-com;b2b-petfriends-co-kr
+pet-supplies,17,페스룸 고양이 모래,FESROOM Cat Litter,페스룸,25,10000,60,5000,177705,cat litter;korean cat supplies;odor control,-15,domeggook-com;dometopia-com;domemae-com
+pet-supplies,18,바잇미 고양이 간식,Biteme Cat Treats,바잇미,13,5500,57,120,177703,cat treats;korean cat snack;healthy cat,0,domeggook-com;ownerclan-com;petbox-kr-shop-main-index-php
+pet-supplies,19,아르르 고양이 스크래쳐,Arrr Cat Scratcher,아르르,20,8000,60,700,177709,cat scratcher;korean cat toy;furniture protector,0,domeggook-com;dometopia-com;b2b-petfriends-co-kr
+pet-supplies,20,마이베프 고양이 영양제,Myvef Cat Supplement,마이베프,27,10500,61,180,177703,cat supplement;korean cat health;feline vitamins,0,domeggook-com;ownerclan-com;domemae-com
+pet-supplies,21,우리와 고양이 습식사료,Wooriwa Cat Wet Food,우리와,17,7000,59,350,177703,wet cat food;korean cat food;gourmet cat food,0,domeggook-com;dometopia-com;petbox-kr-shop-main-index-php
+pet-supplies,22,네츄럴코어 고양이 유기농 사료,Natural Core Organic Cat Food,네츄럴코어,38,16000,58,1300,177703,organic cat food;korean cat food;natural cat food,0,domeggook-com;ownerclan-com;b2b-petfriends-co-kr
+pet-supplies,23,리카리카 고양이 하네스,RicaRica Cat Harness,리카리카,18,7500,58,100,177707,cat harness;korean pet gear;walking cat,0,domeggook-com;dometopia-com;domemae-com
+pet-supplies,24,하이포닉 고양이 샴푸,Hypoallergenic Cat Shampoo,하이포닉,19,8000,58,280,177708,cat shampoo;korean pet care;feline grooming,0,domeggook-com;ownerclan-com;petbox-kr-shop-main-index-php
+pet-supplies,25,더비랩 고양이 치약,The Be Lab Cat Toothpaste,더비랩,11,4500,59,90,177708,cat toothpaste;korean pet oral care;feline dental,0,domeggook-com;dometopia-com;b2b-petfriends-co-kr
+pet-supplies,26,브리지테일 고양이 이동장,Bridgetail Cat Carrier,브리지테일,55,23000,58,1800,177706,cat carrier;korean pet travel;pet transport,0,domeggook-com;ownerclan-com;supercat-co-kr
+pet-supplies,27,붐펫 고양이 자동 화장실,Boompet Cat Automatic Litter Box,붐펫,120,50000,58,7000,177705,automatic litter box;korean pet tech;smart cat,0,domeggook-com;dometopia-com;domemae-com
+pet-supplies,28,넬로 펫 드라이어,Nello Pet Dryer,넬로,80,33000,59,2500,177706,pet dryer;korean pet grooming;dog blower,0,domeggook-com;ownerclan-com;supercat-co-kr
+pet-supplies,29,펫띵 고양이 장난감 세트,Petthing Cat Toy Set,펫띵,15,6000,60,150,177709,cat toy set;korean cat toy;interactive cat,0,domeggook-com;dometopia-com;b2b-petfriends-co-kr
+pet-supplies,30,두카메디 고양이 유산균,Ducamedi Cat Probiotics,두카메디,28,11500,59,200,177703,cat probiotics;korean pet health;feline gut health,0,domeggook-com;ownerclan-com;petbox-kr-shop-main-index-php
+kdrama-goods,1,스튜디오드래곤 드라마 OST 앨범,Studio Dragon Drama OST Album,스튜디오드래곤,35,15000,57,300,176984,k-drama ost;korean drama;soundtrack,0,domeggook-com;sellmoa-com;ndm-kr
+kdrama-goods,2,tvN SHOP 드라마 굿즈 머그컵,tvN SHOP Drama Goods Mug Cup,tvN SHOP,20,8000,60,400,16173,k-drama mug;korean souvenir;tvn drama,0,domeggook-com;dometopia-com;domemall-co-kr
+kdrama-goods,3,SBS 공식 굿즈 스토어 드라마 포토카드 세트,SBS Official Goods Store Drama Photocard Set,SBS 공식 굿즈 스토어,18,7500,58,80,184084,k-drama photocard;korean idol;sbs drama,0,domeggook-com;ownerclan-com;sellmoa-com
+kdrama-goods,4,위드뮤 드라마 대본집,Withmu Drama Script Book,위드뮤,40,17000,57,600,2228,k-drama script;korean book;drama collector,0,domeggook-com;domemae-com
+kdrama-goods,5,메이크스타 드라마 포스터,Makestar Drama Poster,메이크스타,25,10000,60,150,184084,k-drama poster;korean art;collectible poster,0,domeggook-com;dometopia-com;domemall-co-kr
+kdrama-goods,6,케이타운포유 드라마 캐릭터 인형,Ktown4u Drama Character Doll,케이타운포유,30,12000,60,250,184084,k-drama doll;korean character;plush toy,0,domeggook-com;ownerclan-com;sellmoa-com
+kdrama-goods,7,코코다이브 드라마 굿즈 키링,Kocodive Drama Goods Keyring,코코다이브,15,6000,60,50,184084,k-drama keyring;korean souvenir;character keychain,0,domeggook-com;dometopia-com;domemae-com
+kdrama-goods,8,JTBC 스토어 드라마 OST LP,JTBC Store Drama OST LP,JTBC 스토어,50,20000,60,800,176984,k-drama lp;korean vinyl;jtbc drama,0,domeggook-com;ownerclan-com;ndm-kr
+kdrama-goods,9,KBS 캐릭터 드라마 굿즈 폰케이스,KBS Character Drama Goods Phone Case,KBS 캐릭터,22,9000,59,100,184084,k-drama phone case;korean accessory;kbs drama,0,domeggook-com;dometopia-com;domemall-co-kr
+kdrama-goods,10,카카오프렌즈 드라마 콜라보 인형,Kakao Friends Drama Collaboration Doll,카카오프렌즈,38,16000,58,300,184084,kakao friends;k-drama plush;korean character,0,domeggook-com;ownerclan-com;iconix-co-kr-b2b
+kdrama-goods,11,라인프렌즈 드라마 콜라보 텀블러,Line Friends Drama Collaboration Tumbler,라인프렌즈,28,11000,61,350,184084,line friends;k-drama tumbler;korean souvenir,0,domeggook-com;dometopia-com;domemae-com
+kdrama-goods,12,마플샵 드라마 굿즈 티셔츠,Marpple Shop Drama Goods T-shirt,마플샵,30,12000,60,200,15687,k-drama t-shirt;korean fashion;fan merchandise,0,domeggook-com;ownerclan-com;sellmoa-com
+kdrama-goods,13,텐바이텐 드라마 굿즈 다이어리,10x10 Drama Goods Diary,텐바이텐,20,8000,60,250,184084,k-drama diary;korean stationery;fan journal,0,domeggook-com;dometopia-com;domemall-co-kr
+kdrama-goods,14,YES24 드라마 OST CD,YES24 Drama OST CD,YES24,25,10000,60,150,176984,k-drama cd;korean music;original soundtrack,0,domeggook-com;domemae-com
+kdrama-goods,15,알라딘 드라마 소설,Aladdin Drama Novel,알라딘,22,9000,59,400,2228,k-drama novel;korean book;drama adaptation,0,domeggook-com;ownerclan-com
+kdrama-goods,16,스튜디오드래곤 드라마 대본집,Studio Dragon Drama Script Book,스튜디오드래곤,42,17500,58,650,2228,k-drama script;korean drama book;collector's item,0,domeggook-com;sellmoa-com;ndm-kr
+kdrama-goods,17,tvN SHOP 드라마 굿즈 에코백,tvN SHOP Drama Goods Eco Bag,tvN SHOP,25,10000,60,180,16173,k-drama eco bag;korean fashion;tvn merchandise,0,domeggook-com;dometopia-com;domemall-co-kr
+kdrama-goods,18,SBS 공식 굿즈 스토어 드라마 엽서 세트,SBS Official Goods Store Drama Postcard Set,SBS 공식 굿즈 스토어,12,5000,58,70,184084,k-drama postcard;korean stationery;sbs merchandise,0,domeggook-com;ownerclan-com;sellmoa-com
+kdrama-goods,19,위드뮤 드라마 OST LP,Withmu Drama OST LP,위드뮤,55,22000,60,900,176984,k-drama lp;korean vinyl;collector's lp,0,domeggook-com;domemae-com;ndm-kr
+kdrama-goods,20,메이크스타 드라마 포토북,Makestar Drama Photobook,메이크스타,35,14000,60,500,184084,k-drama photobook;korean celebrity;fan album,0,domeggook-com;dometopia-com;domemall-co-kr
+kdrama-goods,21,케이타운포유 드라마 뱃지 세트,Ktown4u Drama Badge Set,케이타운포유,10,4000,60,40,184084,k-drama badge;korean pin;fan accessory,0,domeggook-com;ownerclan-com;sellmoa-com
+kdrama-goods,22,코코다이브 드라마 굿즈 마우스패드,Kocodive Drama Goods Mousepad,코코다이브,17,7000,59,120,184084,k-drama mousepad;korean office supplies;fan gift,0,domeggook-com;dometopia-com;domemae-com
+kdrama-goods,23,JTBC 스토어 드라마 굿즈 담요,JTBC Store Drama Goods Blanket,JTBC 스토어,40,16000,60,700,184084,k-drama blanket;korean home decor;jtbc merchandise,0,domeggook-com;ownerclan-com;domemall-co-kr
+kdrama-goods,24,KBS 캐릭터 드라마 굿즈 볼펜,KBS Character Drama Goods Ballpoint Pen,KBS 캐릭터,8,3000,62,30,184084,k-drama pen;korean stationery;kbs merchandise,0,domeggook-com;dometopia-com;sellmoa-com
+kdrama-goods,25,카카오프렌즈 드라마 콜라보 파우치,Kakao Friends Drama Collaboration Pouch,카카오프렌즈,20,8000,60,100,184084,kakao friends pouch;k-drama accessory;korean character,0,domeggook-com;ownerclan-com;iconix-co-kr-b2b
+kdrama-goods,26,라인프렌즈 드라마 콜라보 노트,Line Friends Drama Collaboration Notebook,라인프렌즈,15,6000,60,150,184084,line friends notebook;k-drama stationery;korean souvenir,0,domeggook-com;dometopia-com;domemae-com
+kdrama-goods,27,마플샵 드라마 굿즈 후드티,Marpple Shop Drama Goods Hoodie,마플샵,45,18000,60,400,15687,k-drama hoodie;korean fashion;fan apparel,0,domeggook-com;ownerclan-com;sellmoa-com
+kdrama-goods,28,텐바이텐 드라마 굿즈 포토카드 앨범,10x10 Drama Goods Photocard Album,텐바이텐,22,9000,59,180,184084,k-drama photocard album;korean collector;fan storage,0,domeggook-com;dometopia-com;domemall-co-kr
+kdrama-goods,29,YES24 드라마 OST 스페셜 에디션,YES24 Drama OST Special Edition,YES24,40,16000,60,500,176984,k-drama ost special;korean music album;limited edition,0,domeggook-com;domemae-com
+kdrama-goods,30,알라딘 드라마 에세이,Aladdin Drama Essay,알라딘,25,10000,60,300,2228,k-drama essay;korean book;drama analysis,0,domeggook-com;ownerclan-com
+auto-accessories,1,현대모비스 순정 와이퍼 블레이드,Hyundai Mobis Genuine Wiper Blade,현대모비스,28,11000,61,300,33677,hyundai wiper;korean auto parts;genuine parts,15,domeggook-com;ownerclan-com;carandpeople-co-kr-shop-main-index-php
+auto-accessories,2,불스원샷 연료첨가제,Bullsone Shot Fuel Additive,불스원,22,9000,59,500,50451,fuel additive;korean car care;engine cleaner,0,domeggook-com;dometopia-com;car-domae-com
+auto-accessories,3,아이나비 블랙박스 QXD7000,Thinkware Dash Cam QXD7000,아이나비,250,100000,60,800,174301,dash cam;korean dashcam;car camera,0,domeggook-com;ownerclan-com;auton-co-kr
+auto-accessories,4,메이튼 차량용 무선 충전 거치대,Mayton Car Wireless Charger Mount,메이튼,35,14000,60,200,174300,car charger;wireless mount;korean auto accessory,4,domeggook-com;dometopia-com;domemae-com
+auto-accessories,5,더클래스 차량용 방향제,The Class Car Air Freshener,더클래스,15,6000,60,80,174300,car air freshener;korean car scent;premium car fragrance,0,domeggook-com;ownerclan-com;sellmoa-com
+auto-accessories,6,파인뷰 블랙박스 LXQ5000,FineVu Dash Cam LXQ5000,파인뷰,180,72000,60,700,174301,dash cam;korean dashcam;finevu,0,domeggook-com;dometopia-com;auton-co-kr
+auto-accessories,7,카템 차량용 목쿠션,Cartem Car Neck Pillow,카템,20,8000,60,250,174300,car neck pillow;korean car interior;comfortable driving,4,domeggook-com;ownerclan-com;domemae-com
+auto-accessories,8,아이로드 블랙박스 X10,IROAD Dash Cam X10,아이로드,200,80000,60,750,174301,dash cam;korean dashcam;iroad,0,domeggook-com;dometopia-com;auton-co-kr
+auto-accessories,9,만도 에어컨 필터,Mando Air Conditioner Filter,만도,25,10000,60,150,33677,car air filter;korean auto parts;cabin filter,0,domeggook-com;ownerclan-com;car-domae-com
+auto-accessories,10,기아 순정 액세서리 트렁크 매트,Kia Genuine Accessory Trunk Mat,기아 순정 액세서리,40,16000,60,1000,174300,kia trunk mat;korean auto accessory;genuine kia,0,domeggook-com;dometopia-com;carandpeople-co-kr-shop-main-index-php
+auto-accessories,11,신지모루 차량용 스마트폰 거치대,Sinjimoru Car Smartphone Mount,신지모루,18,7500,58,120,174300,car phone holder;korean car accessory;smartphone mount,0,domeggook-com;ownerclan-com;domemae-com
+auto-accessories,12,오토모빌코리아 차량용 청소기,Automobile Korea Car Vacuum Cleaner,오토모빌코리아,50,20000,60,1500,174300,car vacuum;korean car cleaning;portable vacuum,0,domeggook-com;dometopia-com;supercat-co-kr
+auto-accessories,13,카카오프렌즈 차량용 방향제,Kakao Friends Car Air Freshener,카카오프렌즈,12,5000,58,60,174300,kakao friends;car scent;korean character,0,domeggook-com;ownerclan-com;domemall-co-kr
+auto-accessories,14,제네시스 순정몰 차량용 키케이스,Genesis Genuine Mall Car Key Case,제네시스 순정몰,30,12000,60,50,174300,genesis key case;korean auto accessory;genuine genesis,0,domeggook-com;dometopia-com;carandpeople-co-kr-shop-main-index-php
+auto-accessories,15,르노코리아 순정용품 차량용 컵홀더,Renault Korea Genuine Car Cup Holder,르노코리아 순정용품,20,8000,60,100,174300,renault cup holder;korean auto accessory;genuine renault,0,domeggook-com;ownerclan-com;car-domae-com
+auto-accessories,16,현대모비스 순정 엔진오일 필터,Hyundai Mobis Genuine Engine Oil Filter,현대모비스,18,7500,58,150,33677,hyundai oil filter;korean auto parts;engine maintenance,0,domeggook-com;ownerclan-com;carandpeople-co-kr-shop-main-index-php
+auto-accessories,17,불스원 김서림 방지제,Bullsone Anti-Fog Spray,불스원,10,4000,60,120,50451,anti-fog spray;korean car care;windshield cleaner,12,domeggook-com;dometopia-com;car-domae-com
+auto-accessories,18,아이나비 내비게이션,Thinkware Navigation System,아이나비,150,60000,60,1000,174301,car navigation;korean gps;thinkware navi,0,domeggook-com;ownerclan-com;auton-co-kr
+auto-accessories,19,메이튼 차량용 햇빛 가리개,Mayton Car Sun Shade,메이튼,20,8000,60,300,174300,car sun shade;korean auto accessory;uv protection,3,domeggook-com;dometopia-com;domemae-com
+auto-accessories,20,더클래스 차량용 세차 타월,The Class Car Wash Towel,더클래스,12,5000,58,100,50451,car wash towel;korean car care;microfiber towel,0,domeggook-com;ownerclan-com;sellmoa-com
+auto-accessories,21,파인뷰 하이패스 단말기,FineVu Hi-Pass Device,파인뷰,70,28000,60,200,174301,hi-pass device;korean toll system;finevu,0,domeggook-com;dometopia-com;auton-co-kr
+auto-accessories,22,카템 차량용 컵홀더 확장기,Cartem Car Cup Holder Expander,카템,18,7500,58,150,174300,car cup holder;korean auto accessory;cup holder expander,0,domeggook-com;ownerclan-com;domemae-com
+auto-accessories,23,아이로드 차량용 공기청정기,IROAD Car Air Purifier,아이로드,60,24000,60,400,174300,car air purifier;korean car accessory;air quality,0,domeggook-com;dometopia-com;auton-co-kr
+auto-accessories,24,만도 브레이크 패드,Mando Brake Pads,만도,55,22000,60,1500,33677,brake pads;korean auto parts;car safety,0,domeggook-com;ownerclan-com;car-domae-com
+auto-accessories,25,기아 순정 액세서리 차량용 충전기,Kia Genuine Accessory Car Charger,기아 순정 액세서리,25,10000,60,80,174300,kia car charger;korean auto accessory;genuine kia,0,domeggook-com;dometopia-com;carandpeople-co-kr-shop-main-index-php
+auto-accessories,26,신지모루 차량용 논슬립 패드,Sinjimoru Car Non-Slip Pad,신지모루,10,4000,60,50,174300,car non-slip pad;korean auto accessory;dashboard mat,0,domeggook-com;ownerclan-com;domemae-com
+auto-accessories,27,오토모빌코리아 차량용 쓰레기통,Automobile Korea Car Trash Can,오토모빌코리아,15,6000,60,180,174300,car trash can;korean car interior;auto organizer,0,domeggook-com;dometopia-com;supercat-co-kr
+auto-accessories,28,카카오프렌즈 차량용 안전벨트 커버,Kakao Friends Car Seatbelt Cover,카카오프렌즈,18,7500,58,100,174300,kakao friends;car seatbelt;korean character,0,domeggook-com;ownerclan-com;domemall-co-kr
+auto-accessories,29,제네시스 순정몰 차량용 코일매트,Genesis Genuine Mall Car Coil Mat,제네시스 순정몰,70,28000,60,3000,174300,genesis floor mat;korean auto accessory;genuine genesis,0,domeggook-com;dometopia-com;carandpeople-co-kr-shop-main-index-php
+auto-accessories,30,르노코리아 순정용품 차량용 퓨즈,Renault Korea Genuine Car Fuse,르노코리아 순정용품,8,3000,62,30,33677,car fuse;korean auto parts;genuine renault,0,domeggook-com;ownerclan-com;car-domae-com
+kitchen-ware,1,락앤락 밀폐용기 세트,LocknLock Airtight Container Set,락앤락,40,16000,60,800,20625,locknlock container;korean kitchenware;food storage,0,domeggook-com;ownerclan-com;hanssemb2b-com
+kitchen-ware,2,해피콜 다이아몬드 프라이팬,Happycall Diamond Frying Pan,해피콜,55,22000,60,1200,20625,happycall pan;korean cookware;non-stick pan,0,domeggook-com;dometopia-com;livingnkitchen-com
+kitchen-ware,3,네오플램 피카 냄비 세트,Neoflam Fika Pot Set,네오플램,80,32000,60,2500,20625,neoflam pot;korean kitchenware;ceramic cookware,0,domeggook-com;ownerclan-com;kitchenart-co-kr-shop-main-index-php
+kitchen-ware,4,글라스락 유리 밀폐용기,Glasslock Glass Food Container,글라스락,30,12000,60,600,20625,glasslock container;korean glass container;food prep,0,domeggook-com;dometopia-com;domemae-com
+kitchen-ware,5,PN풍년 압력밥솥,PN Poongnyun Pressure Cooker,PN풍년,70,28000,60,3000,20625,pressure cooker;korean rice cooker;pn poongnyun,0,domeggook-com;ownerclan-com;supercat-co-kr
+kitchen-ware,6,쿠쿠 전기밥솥,Cuckoo Electric Rice Cooker,쿠쿠,120,48000,60,4000,20625,cuckoo rice cooker;korean appliance;electric cooker,0,domeggook-com;dometopia-com;domemall-co-kr
+kitchen-ware,7,쿠첸 전기밥솥,Cuchen Electric Rice Cooker,쿠첸,110,44000,60,3800,20625,cuchen rice cooker;korean appliance;smart rice cooker,0,domeggook-com;ownerclan-com;hanssemb2b-com
+kitchen-ware,8,키친아트 통3중 스텐 냄비,Kitchen Art Stainless Steel Pot,키친아트,45,18000,60,1500,20625,kitchenart pot;korean stainless steel;cookware,0,domeggook-com;dometopia-com;kitchenart-co-kr-shop-main-index-php
+kitchen-ware,9,한국도자기 홈세트,Hankook Chinaware Dinnerware Set,한국도자기,90,36000,60,4000,20625,korean dinnerware;hankook chinaware;tableware set,0,domeggook-com;ownerclan-com;livingnkitchen-com
+kitchen-ware,10,코멕스 김치통,Komax Kimchi Container,코멕스,25,10000,60,700,20625,kimchi container;korean food storage;komax,0,domeggook-com;dometopia-com;domemae-com
+kitchen-ware,11,도루코 마이셰프 식칼 세트,Dorco My Chef Knife Set,도루코 마이셰프,60,24000,60,1000,20625,korean knife set;dorco knife;chef knife,0,domeggook-com;ownerclan-com;supercat-co-kr
+kitchen-ware,12,실리만 실리콘 조리도구 세트,Sililman Silicone Cooking Utensil Set,실리만,35,14000,60,400,20625,silicone utensils;korean kitchen tools;cooking set,0,domeggook-com;dometopia-com;domemall-co-kr
+kitchen-ware,13,퀸센스 스텐 믹싱볼 세트,Queensense Stainless Steel Mixing Bowl Set,퀸센스,28,11000,61,700,20625,mixing bowl;korean kitchenware;stainless steel bowl,0,domeggook-com;ownerclan-com;hanssemb2b-com
+kitchen-ware,14,젠한국 도자기 그릇 세트,Zen Hankook Ceramic Dish Set,젠한국,75,30000,60,3500,20625,korean ceramic;zen hankook;dish set,0,domeggook-com;dometopia-com;livingnkitchen-com
+kitchen-ware,15,행남자기 커피잔 세트,Haengnam Chinaware Coffee Cup Set,행남자기,50,20000,60,1500,20625,korean coffee cup;haengnam chinaware;tea set,0,domeggook-com;ownerclan-com;kitchenart-co-kr-shop-main-index-php
+kitchen-ware,16,락앤락 텀블러,LocknLock Tumbler,락앤락,20,8000,60,300,20625,locknlock tumbler;korean water bottle;insulated mug,0,domeggook-com;ownerclan-com;hanssemb2b-com
+kitchen-ware,17,해피콜 양면팬,Happycall Double Sided Pan,해피콜,65,26000,60,1800,20625,happycall pan;korean cookware;grill pan,0,domeggook-com;dometopia-com;livingnkitchen-com
+kitchen-ware,18,네오플램 인덕션 냄비,Neoflam Induction Pot,네오플램,50,20000,60,1500,20625,neoflam pot;korean induction;cookware,0,domeggook-com;ownerclan-com;kitchenart-co-kr-shop-main-index-php
+kitchen-ware,19,글라스락 베이킹웨어,Glasslock Bakeware,글라스락,35,14000,60,900,20625,glasslock bakeware;korean baking;glass ovenware,0,domeggook-com;dometopia-com;domemae-com
+kitchen-ware,20,PN풍년 에어프라이어,PN Poongnyun Air Fryer,PN풍년,90,36000,60,4000,20625,air fryer;korean appliance;pn poongnyun,0,domeggook-com;ownerclan-com;supercat-co-kr
+kitchen-ware,21,쿠쿠 정수기,Cuckoo Water Purifier,쿠쿠,150,60000,60,5000,20625,cuckoo water purifier;korean appliance;water filter,0,domeggook-com;dometopia-com;domemall-co-kr
+kitchen-ware,22,쿠첸 인덕션 레인지,Cuchen Induction Range,쿠첸,130,52000,60,4500,20625,cuchen induction;korean appliance;electric stove,0,domeggook-com;ownerclan-com;hanssemb2b-com
+kitchen-ware,23,키친아트 도마 세트,Kitchen Art Cutting Board Set,키친아트,25,10000,60,800,20625,korean cutting board;kitchenart;chopping board,0,domeggook-com;dometopia-com;kitchenart-co-kr-shop-main-index-php
+kitchen-ware,24,한국도자기 머그컵,Hankook Chinaware Mug Cup,한국도자기,18,7500,58,350,20625,korean mug;hankook chinaware;ceramic mug,0,domeggook-com;ownerclan-com;livingnkitchen-com
+kitchen-ware,25,코멕스 냉장고 정리용기,Komax Refrigerator Storage Container,코멕스,30,12000,60,500,20625,refrigerator organizer;korean food storage;komax,0,domeggook-com;dometopia-com;domemae-com
+kitchen-ware,26,도루코 마이셰프 가위,Dorco My Chef Kitchen Scissors,도루코 마이셰프,15,6000,60,100,20625,korean kitchen scissors;dorco;food scissors,0,domeggook-com;ownerclan-com;supercat-co-kr
+kitchen-ware,27,실리만 실리콘 찜기,Sililman Silicone Steamer,실리만,22,9000,59,200,20625,silicone steamer;korean kitchen tools;food steamer,0,domeggook-com;dometopia-com;domemall-co-kr
+kitchen-ware,28,퀸센스 스텐 채반 세트,Queensense Stainless Steel Colander Set,퀸센스,20,8000,60,400,20625,colander set;korean kitchenware;stainless steel strainer,0,domeggook-com;ownerclan-com;hanssemb2b-com
+kitchen-ware,29,젠한국 도자기 밥그릇 국그릇,Zen Hankook Ceramic Rice and Soup Bowl,젠한국,40,16000,60,1000,20625,korean ceramic bowl;zen hankook;rice bowl,0,domeggook-com;dometopia-com;livingnkitchen-com
+kitchen-ware,30,행남자기 접시 세트,Haengnam Chinaware Plate Set,행남자기,60,24000,60,2000,20625,korean plate set;haengnam chinaware;dinner plates,0,domeggook-com;ownerclan-com;kitchenart-co-kr-shop-main-index-php
+k-beauty-devices,1,메디큐브 에이지알 EMS 샷,Medicube Age-R EMS Shot,메디큐브 에이지알,250,100000,60,500,184084,medicube age-r;k-beauty device;ems facial,0,domeggook-com;ownerclan-com;themedicube-co-kr-b2b
+k-beauty-devices,2,LG 프라엘 더마 LED 마스크,LG Pra.L Derma LED Mask,LG 프라엘,500,200000,60,1000,184084,lg pra.l;k-beauty mask;led therapy,0,domeggook-com;dometopia-com;lge-co-kr-b2b
+k-beauty-devices,3,셀리턴 LED 마스크 프리미엄,Cellreturn LED Mask Premium,셀리턴,600,240000,60,1200,184084,cellreturn mask;k-beauty led;skin rejuvenation,0,domeggook-com;ownerclan-com;beautyand-co-kr
+k-beauty-devices,4,듀얼소닉 페이스 리프팅 디바이스,Dualsonic Face Lifting Device,듀얼소닉,350,140000,60,700,184084,dualsonic;k-beauty lifting;anti-aging device,0,domeggook-com;dometopia-com;sellmoa-com
+k-beauty-devices,5,바나브 UP6 멀티 디바이스,Vanav UP6 Multi Device,바나브,200,80000,60,400,184084,vanav up6;k-beauty multi device;skin care tool,-1,domeggook-com;ownerclan-com;domemae-com
+k-beauty-devices,6,아띠베뷰티 홈케어 디바이스,Attibeauty Home Care Device,아띠베뷰티,180,72000,60,350,184084,attibeauty;k-beauty homecare;facial massager,3,domeggook-com;dometopia-com;supercat-co-kr
+k-beauty-devices,7,DPC 스킨샷 LED 마스크,DPC Skin Shot LED Mask,DPC,300,120000,60,800,184084,dpc led mask;k-beauty device;skin therapy,-2,domeggook-com;ownerclan-com;domemall-co-kr
+k-beauty-devices,8,홈쎄라 초음파 리프팅 기기,Homsera Ultrasonic Lifting Device,홈쎄라,400,160000,60,600,184084,homsera;k-beauty lifting;ultrasonic facial,0,domeggook-com;dometopia-com;beautyand-co-kr
+k-beauty-devices,9,뉴스킨 갈바닉 스파,Nu Skin Galvanic Spa,뉴스킨,150,60000,60,300,184084,nu skin galvanic;k-beauty spa;anti-aging tool,0,domeggook-com;ownerclan-com;sellmoa-com
+k-beauty-devices,10,엘리닉 LED 마스크,Ellynic LED Mask,엘리닉,450,180000,60,900,184084,ellynic led mask;k-beauty led;skin care mask,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-devices,11,이오시카 IPL 제모기,Iosika IPL Hair Removal Device,이오시카,280,110000,61,600,184084,iosika ipl;k-beauty hair removal;at-home laser,0,domeggook-com;ownerclan-com;supercat-co-kr
+k-beauty-devices,12,트리아 스킨 리쥬브네이팅 레이저,Tria Skin Rejuvenating Laser,트리아,380,150000,61,500,184084,tria laser;k-beauty anti-aging;skin resurfacing,0,domeggook-com;dometopia-com;domemall-co-kr
+k-beauty-devices,13,오아 진동 클렌저,OA Vibration Cleanser,오아,40,16000,60,150,184084,oa cleanser;k-beauty cleansing;facial brush,14,domeggook-com;ownerclan-com;beautyand-co-kr
+k-beauty-devices,14,리클레어 갈바닉 이온 마사지기,Reclaire Galvanic Ion Massager,리클레어,70,28000,60,200,184084,reclaire massager;k-beauty galvanic;ion therapy,0,domeggook-com;dometopia-com;themedicube-co-kr-b2b
+k-beauty-devices,15,지온메디텍 플라즈마 샤워,Zion Meditech Plasma Shower,지온메디텍,650,260000,60,1500,184084,zion meditech;k-beauty plasma;skin treatment,0,domeggook-com;ownerclan-com;lge-co-kr-b2b
+k-beauty-devices,16,메디큐브 에이지알 더마샷,Medicube Age-R Derma Shot,메디큐브 에이지알,230,92000,60,450,184084,medicube derma;k-beauty device;skin elasticity,-15,domeggook-com;ownerclan-com;themedicube-co-kr-b2b
+k-beauty-devices,17,LG 프라엘 아이케어,LG Pra.L Eye Care,LG 프라엘,180,72000,60,250,184084,lg pra.l eye;k-beauty eye care;anti-wrinkle,0,domeggook-com;dometopia-com;lge-co-kr-b2b
+k-beauty-devices,18,셀리턴 넥클레이,Cellreturn Necklay,셀리턴,300,120000,60,400,184084,cellreturn neck;k-beauty neck care;wrinkle reduction,0,domeggook-com;ownerclan-com;beautyand-co-kr
+k-beauty-devices,19,듀얼소닉 갈바닉 마사지기,Dualsonic Galvanic Massager,듀얼소닉,150,60000,60,300,184084,dualsonic galvanic;k-beauty massager;skin absorption,0,domeggook-com;dometopia-com;sellmoa-com
+k-beauty-devices,20,바나브 핫앤쿨 스킨핏,Vanav Hot & Cool Skin Fit,바나브,120,48000,60,280,184084,vanav hot cool;k-beauty skinfit;temperature therapy,-1,domeggook-com;ownerclan-com;domemae-com
+k-beauty-devices,21,아띠베뷰티 갈바닉 이온 부스터,Attibeauty Galvanic Ion Booster,아띠베뷰티,90,36000,60,200,184084,attibeauty booster;k-beauty galvanic;skin booster,0,domeggook-com;dometopia-com;supercat-co-kr
+k-beauty-devices,22,DPC 스킨샷 LED 넥 마스크,DPC Skin Shot LED Neck Mask,DPC,280,110000,61,700,184084,dpc neck mask;k-beauty led;neck wrinkle,0,domeggook-com;ownerclan-com;domemall-co-kr
+k-beauty-devices,23,홈쎄라 고주파 마사지기,Homsera RF Massager,홈쎄라,320,128000,60,500,184084,homsera rf;k-beauty high frequency;skin tightening,0,domeggook-com;dometopia-com;beautyand-co-kr
+k-beauty-devices,24,뉴스킨 루미스파,Nu Skin LumiSpa,뉴스킨,200,80000,60,400,184084,nu skin lumispa;k-beauty cleansing;facial cleanser,6,domeggook-com;ownerclan-com;sellmoa-com
+k-beauty-devices,25,엘리닉 LED 넥 마스크,Ellynic LED Neck Mask,엘리닉,380,150000,61,800,184084,ellynic neck mask;k-beauty led;neck care,0,domeggook-com;dometopia-com;domemae-com
+k-beauty-devices,26,이오시카 갈바닉 마사지기,Iosika Galvanic Massager,이오시카,100,40000,60,250,184084,iosika galvanic;k-beauty massager;skin firming,0,domeggook-com;ownerclan-com;supercat-co-kr
+k-beauty-devices,27,트리아 포지티브 스킨 퍼펙팅 세럼,Tria Positive Skin Perfecting Serum,트리아,60,24000,60,100,184084,tria serum;k-beauty serum;skin perfecting,0,domeggook-com;dometopia-com;domemall-co-kr
+k-beauty-devices,28,오아 LED 마스크,OA LED Mask,오아,150,60000,60,500,184084,oa led mask;k-beauty mask;skin therapy,0,domeggook-com;ownerclan-com;beautyand-co-kr
+k-beauty-devices,29,리클레어 초음파 필링기,Reclaire Ultrasonic Peeling Device,리클레어,80,32000,60,180,184084,reclaire peeling;k-beauty exfoliation;ultrasonic scrubber,0,domeggook-com;dometopia-com;themedicube-co-kr-b2b
+k-beauty-devices,30,지온메디텍 LED 테라피 기기,Zion Meditech LED Therapy Device,지온메디텍,400,160000,60,1000,184084,zion meditech led;k-beauty therapy;skin light therapy,0,domeggook-com;ownerclan-com;lge-co-kr-b2b
+esports-merch,1,T1 Faker 유니폼,T1 Faker Official Jersey,T1 Shop,79.99,35000,55,250,18464,t1 esports;faker jersey;korean esports,0,shop-t1-gg;domeggook-com;supercat-co-kr
+esports-merch,2,리그 오브 레전드 아칼리 피규어,League of Legends Akali Figure,라이엇 스토어,59.99,28000,48,300,18464,lol figure;akali merch;riot games,0,leagueoflegends-com-ko-kr-merch;domeggook-com;ownerclan-com
+esports-merch,3,Gen.G 로고 후드티,Gen.G Logo Hoodie,Gen.G Shop,69.99,32000,52,450,18464,gen g merch;esports hoodie;korean teamwear,0,shop-gen-g;domeggook-com;dometopia-com
+esports-merch,4,DRX 데프트 마우스패드,DRX Deft Mouse Pad,DRX Shop,24.99,10000,60,150,18464,drx merch;deft esports;gaming mousepad,-1,domeggook-com;ownerclan-com;sellmoa-com
+esports-merch,5,LCK 공식 스냅백,LCK Official Snapback,LCK Shop,34.99,15000,57,120,18464,lck merch;korean league;esports hat,0,domeggook-com;supercat-co-kr;domemae-com
+esports-merch,6,PUBG Esports 챔피언 티셔츠,PUBG Esports Champion T-shirt,PUBG Esports Store,29.99,13000,56,200,18464,pubg merch;esports apparel;battle royale,0,domeggook-com;ownerclan-com;dometopia-com
+esports-merch,7,오버워치 리그 서울 다이너스티 스킨 코드,Overwatch League Seoul Dynasty Skin Code,오버워치 리그 샵 (한국),19.99,8000,60,30,18464,overwatch league;seoul dynasty;game skin,0,domeggook-com;sellmoa-com;domemae-com
+esports-merch,8,KT Rolster 응원 타월,KT Rolster Cheering Towel,KT Rolster Shop,14.99,6000,60,100,18464,kt rolster;esports fan;korean team,0,domeggook-com;ownerclan-com;supercat-co-kr
+esports-merch,9,한화생명e스포츠 키링,Hanwha Life Esports Keychain,한화생명e스포츠,9.99,4000,60,50,18464,hlesports;esports accessory;korean keychain,0,domeggook-com;dometopia-com;sellmoa-com
+esports-merch,10,농심 레드포스 머그컵,Nongshim RedForce Mug Cup,농심 레드포스,19.99,8000,60,300,18464,nongshim esports;redforce merch;gaming mug,0,domeggook-com;ownerclan-com;domemae-com
+esports-merch,11,리브 샌드박스 폰케이스,Liiv Sandbox Phone Case,리브 샌드박스,22.99,9000,60,80,18464,liiv sandbox;esports phone;korean team,0,domeggook-com;supercat-co-kr;dometopia-com
+esports-merch,12,Dplus KIA 담원 기아 슬로건,Dplus KIA Damwon Kia Slogan,Dplus KIA Shop,17.99,7000,61,70,18464,dplus kia;damwon kia;esports slogan,0,domeggook-com;ownerclan-com;sellmoa-com
+esports-merch,13,피어엑스 응원봉,FearX Light Stick,피어엑스,29.99,12000,60,150,18464,fearx esports;korean lightstick;fan merch,0,domeggook-com;domemae-com;supercat-co-kr
+esports-merch,14,OK저축은행 브리온 유니폼,OK Savings Bank Brion Jersey,OK저축은행 브리온,69.99,30000,57,250,18464,brion esports;korean jersey;team uniform,0,domeggook-com;ownerclan-com;dometopia-com
+esports-merch,15,T1 로고 티셔츠,T1 Logo T-shirt,T1 Shop,39.99,18000,55,200,18464,t1 apparel;esports tee;kpop esports,0,shop-t1-gg;domeggook-com;supercat-co-kr
+esports-merch,16,리그 오브 레전드 챔피언 키캡,League of Legends Champion Keycap,라이엇 스토어,29.99,12000,60,50,18464,lol keycap;gaming keyboard;riot games,0,leagueoflegends-com-ko-kr-merch;domeggook-com;ownerclan-com
+esports-merch,17,Gen.G 게이밍 장갑,Gen.G Gaming Gloves,Gen.G Shop,24.99,10000,60,80,18464,gen g gear;esports gloves;pro gaming,0,shop-gen-g;domeggook-com;dometopia-com
+esports-merch,18,DRX 팀 로고 스티커 팩,DRX Team Logo Sticker Pack,DRX Shop,9.99,4000,60,30,18464,drx stickers;esports decal;korean team,0,domeggook-com;ownerclan-com;sellmoa-com
+esports-merch,19,LCK 팀 로고 배지 세트,LCK Team Logo Badge Set,LCK Shop,16.99,7000,59,60,18464,lck badge;esports pin;korean league,0,domeggook-com;supercat-co-kr;domemae-com
+esports-merch,20,PUBG Esports 배틀그라운드 피규어,PUBG Esports Battlegrounds Figure,PUBG Esports Store,49.99,22000,56,280,18464,pubg figure;battle royale;gaming collectible,0,domeggook-com;ownerclan-com;dometopia-com
+esports-merch,21,오버워치 리그 팀 로고 마우스패드,Overwatch League Team Logo Mousepad,오버워치 리그 샵 (한국),19.99,8000,60,150,18464,overwatch mousepad;esports gear;gaming mat,0,domeggook-com;sellmoa-com;domemae-com
+esports-merch,22,KT Rolster 텀블러,KT Rolster Tumbler,KT Rolster Shop,24.99,10000,60,200,18464,kt rolster;esports drinkware;korean team,0,domeggook-com;ownerclan-com;supercat-co-kr
+esports-merch,23,한화생명e스포츠 응원 머플러,Hanwha Life Esports Scarf,한화생명e스포츠,19.99,8000,60,120,18464,hlesports;esports scarf;fan apparel,0,domeggook-com;dometopia-com;sellmoa-com
+esports-merch,24,농심 레드포스 에코백,Nongshim RedForce Eco Bag,농심 레드포스,16.99,7000,59,100,18464,nongshim esports;redforce bag;korean tote,0,domeggook-com;ownerclan-com;domemae-com
+esports-merch,25,리브 샌드박스 포토카드 세트,Liiv Sandbox Photo Card Set,리브 샌드박스,12.99,5000,61,40,18464,liiv sandbox;esports photocards;kpop esports,0,domeggook-com;supercat-co-kr;dometopia-com
+esports-merch,26,Dplus KIA 담원 기아 핀버튼,Dplus KIA Damwon Kia Pin Button,Dplus KIA Shop,7.99,3000,62,20,18464,dplus kia;damwon kia;esports pin,0,domeggook-com;ownerclan-com;sellmoa-com
+esports-merch,27,피어엑스 로고 모자,FearX Logo Cap,피어엑스,29.99,12000,60,100,18464,fearx esports;korean cap;fanwear,0,domeggook-com;domemae-com;supercat-co-kr
+esports-merch,28,OK저축은행 브리온 응원 플래그,OK Savings Bank Brion Flag,OK저축은행 브리온,14.99,6000,60,80,18464,brion esports;korean flag;team banner,0,domeggook-com;ownerclan-com;dometopia-com
+esports-merch,29,e스포츠 팀 로고 스티커,Esports Team Logo Sticker,슈퍼플레이,6.99,2500,64,20,18464,esports sticker;gaming decal;korean team,0,domeggook-com;sellmoa-com;domemae-com
+esports-merch,30,e스포츠 선수 포스터,Esports Player Poster,슈퍼플레이,12.99,5000,61,50,18464,esports poster;gaming art;korean gamer,0,domeggook-com;ownerclan-com;supercat-co-kr
+lego-blocks,1,옥스포드 블록 한국 전통 가옥,Oxford Blocks Korean Traditional House,옥스포드,49.99,22000,56,450,17201,oxford blocks;korean building;lego compatible,1,domeggook-com;ownerclan-com;toysrus-lottemart-com-category-categoryList-do-categoryId-C0010020010000
+lego-blocks,2,맥포머스 브레인 에볼루션 세트,Magformers Brain Evolution Set,맥포머스,129.99,55000,58,500,17201,magformers;magnetic blocks;educational toys,0,domeggook-com;dometopia-com;iqbox-co-kr
+lego-blocks,3,몰펀 어드밴스드 세트,Morphun Advanced Set,몰펀,79.99,35000,55,400,17201,morphun blocks;creative building;kids construction,0,domeggook-com;sellmoa-com;domemall-co-kr
+lego-blocks,4,아이링고 베이직 세트,Iringo Basic Set,아이링고,59.99,26000,56,350,17201,iringo blocks;interlocking toys;korean educational,3,domeggook-com;ownerclan-com;supercat-co-kr
+lego-blocks,5,플레이팩토 창의 블록,Playfacto Creative Blocks,플레이팩토,39.99,17000,57,250,17201,playfacto;learning blocks;korean toys,0,domeggook-com;dometopia-com;domemae-com
+lego-blocks,6,짐보리 맥포머스 호환 블록,Gymboree Magformers Compatible Blocks,짐보리,69.99,30000,57,400,17201,gymboree blocks;magnetic construction;kids learning,0,domeggook-com;sellmoa-com;ownerclan-com
+lego-blocks,7,코비블록 밀리터리 시리즈,Cobi Blocks Military Series,코비블록,89.99,38000,58,480,17201,cobi blocks;military models;building sets,0,domeggook-com;supercat-co-kr;toysrus-lottemart-com-category-categoryList-do-categoryId-C0010020010000
+lego-blocks,8,카카오프렌즈 라이언 블록 피규어,Kakao Friends Ryan Block Figure,카카오프렌즈 블록,29.99,12000,60,150,17201,kakao ryan;block figure;korean character,0,domeggook-com;ownerclan-com;dometopia-com
+lego-blocks,9,라인프렌즈 브라운 블록 세트,Line Friends Brown Block Set,라인프렌즈 블록,24.99,10000,60,120,17201,line brown;building blocks;korean character,0,domeggook-com;sellmoa-com;domemae-com
+lego-blocks,10,로보카폴리 구조대 블록,Robocar Poli Rescue Blocks,로보카폴리 블록,34.99,14000,60,200,17201,robocar poli;kids blocks;korean animation,0,domeggook-com;supercat-co-kr;ownerclan-com
+lego-blocks,11,클릭스 베이직 챌린지 세트,Clics Basic Challenge Set,클릭스,44.99,19000,58,300,17201,clics blocks;interlocking toys;creative play,0,domeggook-com;dometopia-com;domemall-co-kr
+lego-blocks,12,톡톡블럭 미니 피규어 세트,Toktok Blocks Mini Figure Set,톡톡블럭,19.99,8000,60,100,17201,toktok blocks;pixel art;korean craft,0,domeggook-com;sellmoa-com;ownerclan-com
+lego-blocks,13,에듀뽀로로 한글 블록,Edu Pororo Korean Alphabet Blocks,에듀뽀로로 블록,39.99,16000,60,250,17201,pororo blocks;korean alphabet;educational toy,0,domeggook-com;supercat-co-kr;dometopia-com
+lego-blocks,14,타요 버스 차고지 블록,Tayo Bus Garage Blocks,타요 블록,34.99,14000,60,220,17201,tayo bus;building blocks;korean animation,0,domeggook-com;ownerclan-com;domemae-com
+lego-blocks,15,코코몽 냉장고 나라 블록,Cocomong Refrigerator Land Blocks,코코몽 블록,29.99,12000,60,180,17201,cocomong blocks;korean cartoon;kids construction,0,domeggook-com;sellmoa-com;supercat-co-kr
+lego-blocks,16,옥스포드 블록 소방서,Oxford Blocks Fire Station,옥스포드,59.99,26000,56,400,17201,oxford building;fire station;lego compatible,14,domeggook-com;ownerclan-com;toysrus-lottemart-com-category-categoryList-do-categoryId-C0010020010000
+lego-blocks,17,맥포머스 다이내믹 휠 세트,Magformers Dynamic Wheel Set,맥포머스,89.99,38000,58,420,17201,magformers wheels;magnetic toys;stem learning,0,domeggook-com;dometopia-com;iqbox-co-kr
+lego-blocks,18,몰펀 주니어 세트,Morphun Junior Set,몰펀,49.99,21000,58,300,17201,morphun junior;early learning;construction toys,0,domeggook-com;sellmoa-com;domemall-co-kr
+lego-blocks,19,아이링고 동물 만들기 세트,Iringo Animal Creation Set,아이링고,39.99,17000,57,280,17201,iringo animals;creative building;korean toys,0,domeggook-com;ownerclan-com;supercat-co-kr
+lego-blocks,20,플레이팩토 도형 블록,Playfacto Geometric Blocks,플레이팩토,29.99,12000,60,200,17201,playfacto shapes;math blocks;educational,0,domeggook-com;dometopia-com;domemae-com
+lego-blocks,21,짐보리 소프트 블록,Gymboree Soft Blocks,짐보리,34.99,14000,60,300,17201,gymboree soft;toddler blocks;safe play,0,domeggook-com;sellmoa-com;ownerclan-com
+lego-blocks,22,코비블록 탱크 모델,Cobi Blocks Tank Model,코비블록,79.99,34000,57,470,17201,cobi tank;military building;model kit,0,domeggook-com;supercat-co-kr;toysrus-lottemart-com-category-categoryList-do-categoryId-C0010020010000
+lego-blocks,23,카카오프렌즈 어피치 블록,Kakao Friends Apeach Blocks,카카오프렌즈 블록,27.99,11000,61,130,17201,kakao apeach;character blocks;korean gift,0,domeggook-com;ownerclan-com;dometopia-com
+lego-blocks,24,라인프렌즈 샐리 블록,Line Friends Sally Blocks,라인프렌즈 블록,22.99,9000,61,110,17201,line sally;building toy;korean character,0,domeggook-com;sellmoa-com;domemae-com
+lego-blocks,25,로보카폴리 변신 로봇 블록,Robocar Poli Transforming Robot Blocks,로보카폴리 블록,42.99,18000,58,280,17201,robocar poli;robot blocks;korean kids,0,domeggook-com;supercat-co-kr;ownerclan-com
+lego-blocks,26,클릭스 건설 세트,Clics Construction Set,클릭스,54.99,23000,58,380,17201,clics construction;building toy;creative play,0,domeggook-com;dometopia-com;domemall-co-kr
+lego-blocks,27,톡톡블럭 픽셀 아트 키트,Toktok Blocks Pixel Art Kit,톡톡블럭,17.99,7000,61,90,17201,toktok pixel;diy art;korean craft,0,domeggook-com;sellmoa-com;ownerclan-com
+lego-blocks,28,에듀뽀로로 숫자 블록,Edu Pororo Number Blocks,에듀뽀로로 블록,32.99,13000,61,200,17201,pororo numbers;math learning;educational blocks,0,domeggook-com;supercat-co-kr;dometopia-com
+lego-blocks,29,타요 버스 미니 블록,Tayo Bus Mini Blocks,타요 블록,19.99,8000,60,100,17201,tayo mini;korean bus;kids blocks,0,domeggook-com;ownerclan-com;domemae-com
+lego-blocks,30,코코몽 캐릭터 블록,Cocomong Character Blocks,코코몽 블록,24.99,10000,60,150,17201,cocomong character;korean animation;building toy,0,domeggook-com;sellmoa-com;supercat-co-kr
+home-decor,1,오늘의집 감성 무드등,Ohou-se Aesthetic Mood Lamp,오늘의집,34.99,14000,60,250,20500,korean mood lamp;aesthetic lighting;home decor,0,ohou-se-b2b;domeggook-com;ownerclan-com
+home-decor,2,한샘 모던 거실 테이블,Hanssem Modern Living Room Table,한샘,149.99,60000,60,500,20500,hanssem furniture;korean modern table;living room decor,0,domeggook-com;dometopia-com;ikea-com-kr-ko-business
+home-decor,3,모던하우스 북유럽풍 액자,Modern House Nordic Style Photo Frame,모던하우스,24.99,10000,60,150,20500,modernhouse decor;nordic frame;korean home accent,0,domeggook-com;sellmoa-com;domemall-co-kr
+home-decor,4,까사미아 디자인 벽시계,Casamia Designer Wall Clock,까사미아,59.99,25000,58,300,20500,casamia clock;korean wall decor;modern clock,0,casamia-com-b2b;domeggook-com;ownerclan-com
+home-decor,5,자주 (JAJU) 미니멀리스트 화병,JAJU Minimalist Vase,자주 (JAJU),29.99,12000,60,200,20500,jaju decor;minimalist vase;korean design,0,domeggook-com;supercat-co-kr;dometopia-com
+home-decor,6,일룸 스마트 수납장,Illoom Smart Storage Cabinet,일룸,199.99,80000,60,500,20500,iloom furniture;korean storage;smart home,0,domeggook-com;sellmoa-com;domemae-com
+home-decor,7,데코뷰 플라워 패턴 커튼,Decoview Flower Pattern Curtains,데코뷰,79.99,32000,60,400,20500,decoview curtains;korean floral;window decor,0,domeggook-com;ownerclan-com;supercat-co-kr
+home-decor,8,마켓비 인더스트리얼 선반,Market B Industrial Shelf,마켓비,89.99,36000,60,480,20500,market b shelf;industrial decor;korean furniture,0,domeggook-com;dometopia-com;domemall-co-kr
+home-decor,9,버터 (BUTTER) 캐릭터 쿠션,BUTTER Character Cushion,버터 (BUTTER),22.99,9000,61,200,20500,butter decor;korean cushion;character pillow,0,domeggook-com;sellmoa-com;ownerclan-com
+home-decor,10,현대리바트 스마트 오피스 의자,Hyundai Livart Smart Office Chair,현대리바트,249.99,100000,60,500,20500,livart chair;korean office;ergonomic chair,0,domeggook-com;supercat-co-kr;dometopia-com
+home-decor,11,텐바이텐 (10x10) 디자인 포스터,10x10 Design Poster,텐바이텐 (10x10),19.99,8000,60,80,20500,10x10 poster;korean art print;wall decor,0,domeggook-com;ownerclan-com;domemae-com
+home-decor,12,두닷 모듈형 책상,Dodot Modular Desk,두닷,179.99,72000,60,500,20500,dodot desk;korean modular;office furniture,0,domeggook-com;sellmoa-com;supercat-co-kr
+home-decor,13,카카오프렌즈 홈 무드등,Kakao Friends Home Mood Lamp,카카오프렌즈 홈,39.99,16000,60,280,20500,kakao lamp;korean character;night light,0,domeggook-com;dometopia-com;ownerclan-com
+home-decor,14,마틸라 극세사 이불 세트,Matilda Microfiber Duvet Set,마틸라,99.99,40000,60,500,20500,matilda bedding;korean duvet;microfiber set,0,domeggook-com;domemae-com;sellmoa-com
+home-decor,15,쁘리엘르 아동용 러그,Prielle Kids Rug,쁘리엘르,69.99,28000,60,450,20500,prielle rug;kids room decor;korean carpet,0,domeggook-com;supercat-co-kr;ownerclan-com
+home-decor,16,오늘의집 디자인 거울,Ohou-se Design Mirror,오늘의집,49.99,20000,60,350,20500,korean mirror;aesthetic decor;wall mirror,0,ohou-se-b2b;domeggook-com;ownerclan-com
+home-decor,17,한샘 수납형 침대 프레임,Hanssem Storage Bed Frame,한샘,299.99,120000,60,500,20500,hanssem bed;korean bedroom;storage furniture,0,domeggook-com;dometopia-com;ikea-com-kr-ko-business
+home-decor,18,모던하우스 디퓨저 세트,Modern House Diffuser Set,모던하우스,19.99,8000,60,180,20500,modernhouse diffuser;korean fragrance;home scent,0,domeggook-com;sellmoa-com;domemall-co-kr
+home-decor,19,까사미아 세라믹 식기 세트,Casamia Ceramic Dinnerware Set,까사미아,89.99,36000,60,480,20500,casamia dinnerware;korean ceramic;tableware set,0,casamia-com-b2b;domeggook-com;ownerclan-com
+home-decor,20,자주 (JAJU) 우드 트레이,JAJU Wood Tray,자주 (JAJU),24.99,10000,60,220,20500,jaju tray;korean wood decor;serving tray,0,domeggook-com;supercat-co-kr;dometopia-com
+home-decor,21,일룸 학생용 책상,Illoom Student Desk,일룸,159.99,64000,60,500,20500,iloom desk;korean student;study furniture,0,domeggook-com;sellmoa-com;domemae-com
+home-decor,22,데코뷰 패브릭 포스터,Decoview Fabric Poster,데코뷰,29.99,12000,60,100,20500,decoview poster;korean fabric art;wall hanging,0,domeggook-com;ownerclan-com;supercat-co-kr
+home-decor,23,마켓비 철제 수납함,Market B Metal Storage Box,마켓비,39.99,16000,60,300,20500,market b storage;korean metal box;industrial storage,0,domeggook-com;dometopia-com;domemall-co-kr
+home-decor,24,버터 (BUTTER) 미니 테이블,BUTTER Mini Table,버터 (BUTTER),44.99,18000,60,400,20500,butter table;korean mini furniture;side table,0,domeggook-com;sellmoa-com;ownerclan-com
+home-decor,25,현대리바트 거실장,Hyundai Livart Living Room Cabinet,현대리바트,229.99,92000,60,500,20500,livart cabinet;korean living room;tv stand,0,domeggook-com;supercat-co-kr;dometopia-com
+home-decor,26,텐바이텐 (10x10) 다이어리 데코 스티커,10x10 Diary Deco Sticker,텐바이텐 (10x10),9.99,4000,60,30,20500,10x10 stickers;korean stationery;diary decor,0,domeggook-com;ownerclan-com;domemae-com
+home-decor,27,두닷 모던 서랍장,Dodot Modern Chest of Drawers,두닷,189.99,76000,60,500,20500,dodot drawers;korean chest;bedroom furniture,0,domeggook-com;sellmoa-com;supercat-co-kr
+home-decor,28,카카오프렌즈 홈 러그,Kakao Friends Home Rug,카카오프렌즈 홈,59.99,24000,60,400,20500,kakao rug;korean character;kids room,0,domeggook-com;dometopia-com;ownerclan-com
+home-decor,29,마틸라 호텔식 수건 세트,Matilda Hotel Style Towel Set,마틸라,34.99,14000,60,300,20500,matilda towels;korean bath;hotel linen,0,domeggook-com;domemae-com;sellmoa-com
+home-decor,30,쁘리엘르 유아용 이불,Prielle Baby Duvet,쁘리엘르,49.99,20000,60,350,20500,prielle baby;korean nursery;baby bedding,0,domeggook-com;supercat-co-kr;ownerclan-com
+modern-hanbok,1,리슬 생활 한복 원피스,Leesle Modern Hanbok Dress,리슬,129.99,55000,58,350,18503,leesle hanbok;modern korean dress;korean fashion,0,leesle-com;domeggook-com;ownerclan-com
+modern-hanbok,2,차이킴 철릭 원피스,Tchaikim Cheollik Dress,차이킴,199.99,85000,57,400,18503,tchaikim dress;korean modern hanbok;designer hanbok,0,tchaikim-co-kr;domeggook-com;dometopia-com
+modern-hanbok,3,단하 데일리 한복 저고리,Danha Daily Hanbok Jeogori,단하,89.99,38000,58,250,18503,danha hanbok;korean top;casual hanbok,0,domeggook-com;sellmoa-com;domemall-co-kr
+modern-hanbok,4,꼬레아노 모던 한복 치마,Coreano Modern Hanbok Skirt,꼬레아노,99.99,42000,58,300,18503,coreano hanbok;korean skirt;fusion hanbok,0,domeggook-com;ownerclan-com;supercat-co-kr
+modern-hanbok,5,하플리 캐주얼 한복 블라우스,Happly Casual Hanbok Blouse,하플리,79.99,33000,59,200,18503,happly hanbok;korean blouse;daily hanbok,0,domeggook-com;dometopia-com;domemae-com
+modern-hanbok,6,때때롯살롱 개량 한복 코트,Ttettettotsalon Modified Hanbok Coat,때때롯살롱,159.99,68000,57,450,18503,ttettettotsalon;korean coat;modern hanbok jacket,0,domeggook-com;sellmoa-com;ownerclan-com
+modern-hanbok,7,서리나래 한복 정장 세트,Seorinarrae Hanbok Suit Set,서리나래,249.99,105000,58,500,18503,seorinarrae hanbok;korean suit;formal hanbok,0,domeggook-com;supercat-co-kr;dometopia-com
+modern-hanbok,8,다래원 아동 한복 드레스,Daraewon Kids Hanbok Dress,다래원,69.99,29000,59,250,18503,daraewon hanbok;kids korean dress;children hanbok,0,domeggook-com;ownerclan-com;domemae-com
+modern-hanbok,9,치마저고리 생활 한복 바지,Chima Jeogori Daily Hanbok Pants,치마저고리,74.99,31000,59,280,18503,chima jeogori;korean pants;casual hanbok,0,domeggook-com;sellmoa-com;supercat-co-kr
+modern-hanbok,10,혜온 퓨전 한복 저고리,Hyeon Fusion Hanbok Jeogori,혜온,94.99,40000,58,270,18503,hyeon hanbok;fusion korean top;modern jeogori,0,domeggook-com;dometopia-com;ownerclan-com
+modern-hanbok,11,한복린 웨딩 한복 드레스,Hanboklin Wedding Hanbok Dress,한복린,499.99,200000,60,500,18503,hanboklin wedding;korean bridal;luxury hanbok,0,hanboknara-com;domeggook-com;domemae-com
+modern-hanbok,12,기로에 모던 한복 조끼,Giroe Modern Hanbok Vest,기로에,84.99,35000,59,220,18503,giroe hanbok;korean vest;modern traditional,0,domeggook-com;sellmoa-com;supercat-co-kr
+modern-hanbok,13,무릇 생활 한복 세트,Mureut Daily Hanbok Set,무릇,149.99,63000,58,400,18503,mureut hanbok;korean daily wear;hanbok set,0,domeggook-com;ownerclan-com;dometopia-com
+modern-hanbok,14,이노주단 전통 한복 치마,Inojudan Traditional Hanbok Skirt,이노주단,179.99,75000,58,420,18503,inojudan hanbok;korean traditional skirt;hanbok chima,0,hanboknara-com;domeggook-com;domemae-com
+modern-hanbok,15,사임당 by 이혜미 고급 한복,Saimdang by Lee Hyemi Luxury Hanbok,사임당 by 이혜미,399.99,160000,60,500,18503,saimdang hanbok;korean luxury;designer hanbok,0,hanboknara-com;domeggook-com;ownerclan-com
+modern-hanbok,16,리슬 생활 한복 저고리,Leesle Daily Hanbok Jeogori,리슬,99.99,42000,58,280,18503,leesle jeogori;modern korean top;korean fashion,0,leesle-com;domeggook-com;ownerclan-com
+modern-hanbok,17,차이킴 모던 두루마기,Tchaikim Modern Durumagi,차이킴,249.99,105000,58,480,18503,tchaikim durumagi;korean coat;designer hanbok,0,tchaikim-co-kr;domeggook-com;dometopia-com
+modern-hanbok,18,단하 생활 한복 치마,Danha Daily Hanbok Skirt,단하,84.99,35000,59,270,18503,danha skirt;korean modern skirt;casual hanbok,0,domeggook-com;sellmoa-com;domemall-co-kr
+modern-hanbok,19,꼬레아노 퓨전 한복 원피스,Coreano Fusion Hanbok Dress,꼬레아노,139.99,58000,58,380,18503,coreano dress;korean fusion dress;modern hanbok,0,domeggook-com;ownerclan-com;supercat-co-kr
+modern-hanbok,20,하플리 한복 액세서리,Happly Hanbok Accessories,하플리,39.99,16000,60,100,18503,happly accessories;korean fashion;hanbok jewelry,0,domeggook-com;dometopia-com;domemae-com
+modern-hanbok,21,때때롯살롱 생활 한복 블라우스,Ttettettotsalon Daily Hanbok Blouse,때때롯살롱,79.99,33000,59,200,18503,ttettettotsalon;korean blouse;casual hanbok,0,domeggook-com;sellmoa-com;ownerclan-com
+modern-hanbok,22,서리나래 한복 원피스,Seorinarrae Hanbok Dress,서리나래,169.99,70000,59,400,18503,seorinarrae dress;korean modern dress;hanbok fashion,0,domeggook-com;supercat-co-kr;dometopia-com
+modern-hanbok,23,다래원 유아 한복,Daraewon Baby Hanbok,다래원,59.99,25000,58,200,18503,daraewon baby;korean baby clothes;infant hanbok,0,domeggook-com;ownerclan-com;domemae-com
+modern-hanbok,24,치마저고리 모던 한복 저고리,Chima Jeogori Modern Hanbok Jeogori,치마저고리,89.99,37000,59,250,18503,chima jeogori;korean modern top;hanbok jeogori,0,domeggook-com;sellmoa-com;supercat-co-kr
+modern-hanbok,25,혜온 퓨전 한복 치마,Hyeon Fusion Hanbok Skirt,혜온,99.99,41000,59,300,18503,hyeon hanbok;fusion korean skirt;modern chima,0,domeggook-com;dometopia-com;ownerclan-com
+modern-hanbok,26,한복린 아동 한복,Hanboklin Kids Hanbok,한복린,129.99,55000,58,300,18503,hanboklin kids;korean children;formal hanbok,0,hanboknara-com;domeggook-com;domemae-com
+modern-hanbok,27,기로에 생활 한복 바지,Giroe Daily Hanbok Pants,기로에,79.99,33000,59,280,18503,giroe hanbok;korean pants;casual hanbok,0,domeggook-com;sellmoa-com;supercat-co-kr
+modern-hanbok,28,무릇 모던 한복 원피스,Mureut Modern Hanbok Dress,무릇,139.99,58000,58,350,18503,mureut dress;korean modern dress;hanbok fashion,0,domeggook-com;ownerclan-com;dometopia-com
+modern-hanbok,29,이노주단 고급 한복 노리개,Inojudan Luxury Hanbok Norigae,이노주단,69.99,28000,60,80,18503,inojudan norigae;korean accessory;hanbok jewelry,0,hanboknara-com;domeggook-com;domemae-com
+modern-hanbok,30,사임당 by 이혜미 전통 한복,Saimdang by Lee Hyemi Traditional Hanbok,사임당 by 이혜미,450,180000,60,500,18503,saimdang hanbok;korean traditional;high-end hanbok,0,hanboknara-com;domeggook-com;ownerclan-com
+traditional-craft,1,광주요 백자 달항아리,Kwangjuyo White Porcelain Moon Jar,광주요,249.99,100000,60,500,1602,kwangjuyo;korean moon jar;white porcelain,0,koreancraft-org;domeggook-com;ownerclan-com
+traditional-craft,2,놋담 유기 수저 세트,Noddam Yugi Spoon & Chopstick Set,놋담,89.99,38000,58,300,1602,noddam yugi;korean brassware;traditional cutlery,0,koreacraft-co-kr;domeggook-com;dometopia-com
+traditional-craft,3,이도 도자기 청화백자 머그컵,Yido Ceramics Blue & White Mug,이도 도자기,49.99,21000,58,250,1602,yido ceramics;korean mug;blue white porcelain,0,domeggook-com;sellmoa-com;insadong-com
+traditional-craft,4,한국도자기 전통 문양 접시,Hankook Chinaware Traditional Pattern Plate,한국도자기,39.99,17000,57,350,1602,hankook chinaware;korean plate;traditional design,0,domeggook-com;ownerclan-com;supercat-co-kr
+traditional-craft,5,안성맞춤유기 방짜유기 밥그릇,Anseong Yugi Bangjja Yugi Rice Bowl,안성맞춤유기,79.99,33000,59,400,1602,anseong yugi;korean brass bowl;bangjja yugi,0,koreacraft-co-kr;domeggook-com;dometopia-com
+traditional-craft,6,국립박물관 문화상품 나전칠기 보석함,National Museum Mother-of-Pearl Jewelry Box,국립박물관 문화상품,129.99,55000,58,300,1602,korean museum;mother of pearl;jewelry box,0,koreancraft-org;domeggook-com;sellmoa-com
+traditional-craft,7,오이뮤 향로 세트,OIMU Incense Burner Set,오이뮤,69.99,29000,59,200,1602,oimu incense;korean fragrance;traditional craft,0,domeggook-com;ownerclan-com;domemall-co-kr
+traditional-craft,8,한국공예디자인문화진흥원 (KCDF) 전통 부채,KCDF Traditional Korean Fan,한국공예디자인문화진흥원 (KCDF),34.99,14000,60,80,1602,kcdf craft;korean fan;traditional art,0,koreancraft-org;domeggook-com;supercat-co-kr
+traditional-craft,9,행남자기 화조도 커피잔 세트,Haengnam Chinaware Flower & Bird Coffee Set,행남자기,99.99,42000,58,450,1602,haengnam chinaware;korean coffee set;traditional ceramics,0,domeggook-com;dometopia-com;domemae-com
+traditional-craft,10,젠한국 백자 다기 세트,Zen Hankook White Porcelain Tea Set,젠한국,149.99,63000,58,500,1602,zen hankook;korean tea set;white porcelain,0,domeggook-com;sellmoa-com;ownerclan-com
+traditional-craft,11,청송백자 백자 주병 세트,Cheongsong Baekja White Porcelain Sake Set,청송백자,119.99,50000,58,400,1602,cheongsong baekja;korean sake set;white porcelain,0,koreancraft-org;domeggook-com;supercat-co-kr
+traditional-craft,12,강진청자 청자 잔 세트,Gangjin Celadon Celadon Cup Set,강진청자,89.99,38000,58,300,1602,gangjin celadon;korean celadon cup;traditional pottery,0,koreacraft-co-kr;domeggook-com;dometopia-com
+traditional-craft,13,이형근 유기 유기 젓가락,Lee Hyung-geun Yugi Brass Chopsticks,이형근 유기,39.99,16000,60,100,1602,lee hyung-geun;korean brass chopsticks;yugi cutlery,0,koreacraft-co-kr;domeggook-com;sellmoa-com
+traditional-craft,14,미미달 전통 자수 손거울,Mimmidal Traditional Embroidery Hand Mirror,미미달,29.99,12000,60,50,1602,mimmidal craft;korean embroidery;hand mirror,0,domeggook-com;ownerclan-com;domemall-co-kr
+traditional-craft,15,나전칠기 명장 (김용겸) 자개함,Mother-of-Pearl Master Kim Yong-gyeom Lacquer Box,"나전칠기 명장 (김용겸, 이형만 등)",349.99,140000,60,400,1602,mother of pearl box;korean lacquerware;master craftsman,0,koreancraft-org;domeggook-com;insadong-com
+traditional-craft,16,광주요 백자 소주잔 세트,Kwangjuyo White Porcelain Soju Cup Set,광주요,59.99,25000,58,200,1602,kwangjuyo soju;korean soju cup;white porcelain,0,koreancraft-org;domeggook-com;ownerclan-com
+traditional-craft,17,놋담 유기 컵받침,Noddam Yugi Coaster,놋담,29.99,12000,60,150,1602,noddam coaster;korean brassware;yugi decor,0,koreacraft-co-kr;domeggook-com;dometopia-com
+traditional-craft,18,이도 도자기 핸드메이드 그릇,Yido Ceramics Handmade Bowl,이도 도자기,69.99,29000,59,380,1602,yido ceramics;korean handmade;pottery bowl,0,domeggook-com;sellmoa-com;insadong-com
+traditional-craft,19,한국도자기 전통 문양 찻잔,Hankook Chinaware Traditional Pattern Teacup,한국도자기,34.99,14000,60,180,1602,hankook chinaware;korean teacup;traditional design,0,domeggook-com;ownerclan-com;supercat-co-kr
+traditional-craft,20,안성맞춤유기 방짜유기 숟가락,Anseong Yugi Bangjja Yugi Spoon,안성맞춤유기,39.99,16000,60,120,1602,anseong yugi;korean brass spoon;bangjja yugi,0,koreacraft-co-kr;domeggook-com;dometopia-com
+traditional-craft,21,국립박물관 문화상품 전통 문양 책갈피,National Museum Traditional Pattern Bookmark,국립박물관 문화상품,14.99,6000,60,30,1602,korean museum;traditional bookmark;cultural goods,0,koreancraft-org;domeggook-com;sellmoa-com
+traditional-craft,22,오이뮤 성냥 세트,OIMU Match Set,오이뮤,19.99,8000,60,50,1602,oimu matches;korean design;incense accessory,0,domeggook-com;ownerclan-com;domemall-co-kr
+traditional-craft,23,한국공예디자인문화진흥원 (KCDF) 전통 매듭 팔찌,KCDF Traditional Knot Bracelet,한국공예디자인문화진흥원 (KCDF),24.99,10000,60,40,1602,kcdf craft;korean knot;traditional bracelet,0,koreancraft-org;domeggook-com;supercat-co-kr
+traditional-craft,24,행남자기 전통 문양 밥그릇,Haengnam Chinaware Traditional Pattern Rice Bowl,행남자기,29.99,12000,60,250,1602,haengnam chinaware;korean rice bowl;traditional ceramics,0,domeggook-com;dometopia-com;domemae-com
+traditional-craft,25,젠한국 백자 소스볼,Zen Hankook White Porcelain Sauce Bowl,젠한국,19.99,8000,60,150,1602,zen hankook;korean sauce bowl;white porcelain,0,domeggook-com;sellmoa-com;ownerclan-com
+traditional-craft,26,청송백자 백자 술잔,Cheongsong Baekja White Porcelain Soju Cup,청송백자,24.99,10000,60,100,1602,cheongsong baekja;korean soju cup;white porcelain,0,koreancraft-org;domeggook-com;supercat-co-kr
+traditional-craft,27,강진청자 청자 화병,Gangjin Celadon Celadon Vase,강진청자,119.99,50000,58,450,1602,gangjin celadon;korean celadon vase;traditional pottery,0,koreacraft-co-kr;domeggook-com;dometopia-com
+traditional-craft,28,이형근 유기 유기 종지,Lee Hyung-geun Yugi Brass Sauce Dish,이형근 유기,29.99,12000,60,100,1602,lee hyung-geun;korean brass dish;yugi tableware,0,koreacraft-co-kr;domeggook-com;sellmoa-com
+traditional-craft,29,미미달 전통 문양 파우치,Mimmidal Traditional Pattern Pouch,미미달,22.99,9000,61,70,1602,mimmidal craft;korean pouch;traditional textile,0,domeggook-com;ownerclan-com;domemall-co-kr
+traditional-craft,30,나전칠기 명장 (이형만) 자개 트레이,Mother-of-Pearl Master Lee Hyung-man Lacquer Tray,"나전칠기 명장 (김용겸, 이형만 등)",199.99,80000,60,350,1602,mother of pearl tray;korean lacquerware;master craftsman,0,koreancraft-org;domeggook-com;insadong-com
