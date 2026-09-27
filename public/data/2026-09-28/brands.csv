@@ -1,0 +1,601 @@
+cat_slug,rank,name,country,change,initials
+kpop-goods,1,위버스샵,KR,0,위버스
+kpop-goods,2,SMTOWN &STORE,KR,0,SM
+kpop-goods,3,YG SELECT,KR,0,YG
+kpop-goods,4,케이타운포유,KR,0,케이
+kpop-goods,5,메이크스타,KR,0,메이
+kpop-goods,6,사운드웨이브,KR,0,사운
+kpop-goods,7,뮤직코리아,KR,0,뮤직
+kpop-goods,8,애플뮤직,KR,0,애플
+kpop-goods,9,위드드라마,KR,0,위드
+kpop-goods,10,에버라인,KR,0,에버
+kpop-goods,11,비트로드,KR,0,비트
+kpop-goods,12,디어마이뮤즈,KR,0,디어
+kpop-goods,13,조은뮤직,KR,0,조은
+kpop-goods,14,후즈팬,KR,0,후즈
+kpop-goods,15,마이뮤직테이스트,KR,0,마뮤
+kpop-goods,16,점프업이엔티,KR,0,점프
+kpop-goods,17,뮤직플랜트,KR,0,뮤플
+kpop-goods,18,굿앤디,KR,0,굿앤
+kpop-goods,19,코팬글로벌,KR,0,코팬
+kpop-goods,20,올라트,KR,0,올라
+auto-parts,1,현대모비스,KR,0,현모
+auto-parts,2,현대위아,KR,2,현위
+auto-parts,3,한온시스템,KR,0,한온
+auto-parts,4,만도,KR,0,만도
+auto-parts,5,현대트랜시스,KR,0,현트
+auto-parts,6,한국타이어앤테크놀로지,KR,0,한타
+auto-parts,7,금호타이어,KR,0,금호
+auto-parts,8,넥센타이어,KR,0,넥센
+auto-parts,9,에스엘,KR,2,에스
+auto-parts,10,세방전지,KR,2,세방
+auto-parts,11,평화정공,KR,0,평화
+auto-parts,12,보쉬 코리아,KR/DE,0,보쉬
+auto-parts,13,유라코퍼레이션,KR,6,유라
+auto-parts,14,경신,KR,0,경신
+auto-parts,15,성우하이텍,KR,-2,성우
+auto-parts,16,화신,KR,-2,화신
+auto-parts,17,서연이화,KR,-2,서연
+auto-parts,18,로케트배터리,KR,0,로케
+auto-parts,19,덴소 코리아,KR/JP,0,덴소
+auto-parts,20,델코,KR/US,0,델코
+drones,1,DJI 코리아,KR/CN,0,DJ
+drones,2,두산모빌리티이노베이션,KR,0,두산
+drones,3,파블로항공,KR,0,파블
+drones,4,유콘시스템,KR,0,유콘
+drones,5,네온테크,KR,0,네온
+drones,6,한화시스템,KR,0,한화
+drones,7,LIG넥스원,KR,0,LI
+drones,8,한국항공우주산업(KAI),KR,0,KA
+drones,9,프리뉴,KR,0,프리
+drones,10,숨비,KR,0,숨비
+drones,11,니어스랩,KR,0,니어
+drones,12,유비파이,KR,0,유비
+drones,13,엑스드론,KR,0,엑스
+drones,14,드로젠,KR,0,드로
+drones,15,그리폰다이나믹스,KR,0,그리
+drones,16,바이로봇,KR,0,바이
+drones,17,볼트라인,KR,0,볼트
+drones,18,에이엠피,KR,0,에이
+drones,19,나르마,KR,0,나르
+drones,20,휴인스,KR,0,휴인
+lego-blocks,1,옥스포드,KR,0,옥스
+lego-blocks,2,맥포머스,KR,0,맥포
+lego-blocks,3,카카오프렌즈 브릭,KR,0,카카
+lego-blocks,4,몰펀,KR,0,몰펀
+lego-blocks,5,아이링고,KR,0,아이
+lego-blocks,6,클릭스,KR,0,클릭
+lego-blocks,7,라인프렌즈 브릭,KR,0,라인
+lego-blocks,8,코블록,KR,0,코블
+lego-blocks,9,톡톡블럭,KR,0,톡톡
+lego-blocks,10,스콜라스,KR,0,스코
+lego-blocks,11,짐보리,KR/US,0,짐보
+lego-blocks,12,지니맥,KR,0,지니
+lego-blocks,13,코코블록,KR,0,코코
+lego-blocks,14,블럭엔조이,KR,0,블럭
+lego-blocks,15,블럭팡,KR,0,블럭
+lego-blocks,16,브릭캠퍼스,KR,0,브릭
+lego-blocks,17,큐블로,KR,0,큐블
+lego-blocks,18,맥킨더,KR,0,맥킨
+lego-blocks,19,플레이팩토,KR,0,플레
+lego-blocks,20,매직큐브,KR,0,매직
+k-beauty-skincare,1,이니스프리,KR,0,이니스
+k-beauty-skincare,2,설화수,KR,0,설화
+k-beauty-skincare,3,라네즈,KR,0,라네
+k-beauty-skincare,4,닥터자르트,KR,0,닥자
+k-beauty-skincare,5,메디힐,KR,0,메디
+k-beauty-skincare,6,코스알엑스,KR,0,코스
+k-beauty-skincare,7,아누아,KR,0,아누
+k-beauty-skincare,8,토리든,KR,0,토리
+k-beauty-skincare,9,에스트라,KR,0,에스
+k-beauty-skincare,10,라운드랩,KR,0,라운
+k-beauty-skincare,11,아이소이,KR,0,아이
+k-beauty-skincare,12,마녀공장,KR,0,마녀
+k-beauty-skincare,13,아비브,KR,0,아비
+k-beauty-skincare,14,넘버즈인,KR,0,넘버
+k-beauty-skincare,15,스킨푸드,KR,0,스킨
+k-beauty-skincare,16,한율,KR,0,한율
+k-beauty-skincare,17,구달,KR,0,구달
+k-beauty-skincare,18,비플레인,KR,0,비플
+k-beauty-skincare,19,이자녹스,KR,0,이자
+k-beauty-skincare,20,수려한,KR,0,수려
+k-fashion,1,무신사 스탠다드,KR,0,무탠
+k-fashion,2,아더에러,KR,0,아더
+k-fashion,3,앤더슨벨,KR,0,앤더
+k-fashion,4,젠틀몬스터,KR,0,젠몬
+k-fashion,5,커버낫,KR,0,커버
+k-fashion,6,디스이즈네버댓,KR,0,디네
+k-fashion,7,LMC,KR,0,LM
+k-fashion,8,마르디 메크르디,KR,0,마르
+k-fashion,9,미스치프,KR,0,미스
+k-fashion,10,oioi,KR,0,오이
+k-fashion,11,널디,KR,0,널디
+k-fashion,12,키르시,KR,0,키르
+k-fashion,13,아크메드라비,KR,0,아크
+k-fashion,14,스타일난다,KR,0,스타
+k-fashion,15,임블리,KR,0,임블
+k-fashion,16,육육걸즈,KR,0,육육
+k-fashion,17,크림(KREAM),KR,0,크림
+k-fashion,18,솔드아웃(SoldOut),KR,0,솔드
+k-fashion,19,로우클래식,KR,0,로우
+k-fashion,20,87MM,KR,0,87
+mens-fashion,1,시스템옴므,KR,0,시옴
+mens-fashion,2,솔리드옴므,KR,0,솔옴
+mens-fashion,3,우영미,KR,0,우영
+mens-fashion,4,준지,KR,0,준지
+mens-fashion,5,송지오 옴므,KR,0,송지
+mens-fashion,6,커스텀멜로우,KR,0,커멜
+mens-fashion,7,티아이포맨,KR,0,티아
+mens-fashion,8,지오지아,KR,0,지오
+mens-fashion,9,앤드지,KR,0,앤드
+mens-fashion,10,본(BON),KR,0,본
+mens-fashion,11,지이크,KR,0,지이
+mens-fashion,12,닥스 액세서리,KR/UK,0,닥스
+mens-fashion,13,헤지스 액세서리,KR,0,헤지
+mens-fashion,14,루이까또즈,KR/FR,0,루이
+mens-fashion,15,MCM,KR/DE,0,MC
+mens-fashion,16,쌤소나이트 레드,KR/US,0,쌤소
+mens-fashion,17,만다리나덕,KR/IT,0,만다
+mens-fashion,18,비슬로우,KR,-12,비슬
+mens-fashion,19,에피그램,KR,0,에피
+mens-fashion,20,쿠어,KR,-13,쿠어
+trading-cards,1,포켓몬 카드 게임,KR/JP,0,포켓
+trading-cards,2,유희왕 오피셜 카드게임,KR/JP,0,유희
+trading-cards,3,코리아보드게임즈,KR,0,코보
+trading-cards,4,대원미디어,KR,0,대원
+trading-cards,5,카드캐슬,KR,0,카캐
+trading-cards,6,카드킹덤,KR,0,카킹
+trading-cards,7,보드엠,KR,0,보드
+trading-cards,8,다이브다이스,KR,0,다다
+trading-cards,9,하비게임몰,KR,0,하비
+trading-cards,10,레드 다이스,KR,0,레다
+trading-cards,11,아카데미과학,KR,0,아카
+trading-cards,12,미카코리아,KR,0,미카
+trading-cards,13,카드플래닛,KR,0,카플
+trading-cards,14,매직더게더링 코리아,KR/US,0,매더
+trading-cards,15,건담 트라이 에이지,KR/JP,0,건트
+trading-cards,16,슈퍼 드래곤볼 히어로즈,KR/JP,0,슈드
+trading-cards,17,TCG샵,KR,0,TC
+trading-cards,18,TCG 코리아,KR,0,TC
+trading-cards,19,별의 커비 트레이딩 카드,KR/JP,0,별커
+trading-cards,20,리프트바운드,KR,0,리바
+k-food,1,농심,KR,0,농심
+k-food,2,오뚜기,KR,7,오뚜
+k-food,3,삼양식품,KR,2,삼양
+k-food,4,CJ제일제당,KR,0,CJ
+k-food,5,롯데웰푸드,KR,-2,롯데
+k-food,6,오리온,KR,-4,오리
+k-food,7,해태제과,KR,-3,해태
+k-food,8,크라운제과,KR,-2,크라
+k-food,9,동서식품,KR,0,동서
+k-food,10,팔도,KR,-2,팔도
+k-food,11,빙그레,KR,-4,빙그
+k-food,12,청정원,KR,0,청정
+k-food,13,샘표,KR,0,샘표
+k-food,14,동원F&B,KR,0,동원
+k-food,15,하림,KR,0,하림
+k-food,16,사조대림,KR,0,사조
+k-food,17,풀무원,KR,0,풀무
+k-food,18,매일유업,KR,0,매일
+k-food,19,남양유업,KR,0,남양
+k-food,20,서울우유,KR,0,서울
+figures-collectibles,1,카카오프렌즈,KR,0,카카
+figures-collectibles,2,라인프렌즈,KR,0,라인
+figures-collectibles,3,블리츠웨이,KR,1,블리
+figures-collectibles,4,스티키몬스터랩,KR,10,스티
+figures-collectibles,5,팝마트 코리아,KR/CN,0,팝마
+figures-collectibles,6,킨키로봇,KR,0,킨키
+figures-collectibles,7,쿨레인,KR,6,쿨레
+figures-collectibles,8,하비팩토리,KR,0,하비
+figures-collectibles,9,JND 스튜디오,KR,0,JN
+figures-collectibles,10,5PROSTUDIO,KR,0,5P
+figures-collectibles,11,토이저러스 코리아,KR/US,0,토이
+figures-collectibles,12,피규어뮤지엄W,KR,0,피뮤
+figures-collectibles,13,가이아 코퍼레이션,KR,0,가이
+figures-collectibles,14,오프로 스튜디오,KR,2,오프
+figures-collectibles,15,시드게임즈,KR,0,시드
+figures-collectibles,16,아트토이 컬처,KR,0,아토
+figures-collectibles,17,토인즈,KR,2,토인
+figures-collectibles,18,델리토이즈,KR,2,델리
+figures-collectibles,19,초코사이다,KR,-4,초코
+figures-collectibles,20,핸즈인팩토리,KR,0,핸즈
+character-goods,1,카카오프렌즈,KR,0,카카
+character-goods,2,라인프렌즈,KR/JP,0,라프
+character-goods,3,BT21,KR,0,BT
+character-goods,4,뽀로로,KR,0,뽀로
+character-goods,5,아트박스,KR,0,아박
+character-goods,6,산리오캐릭터즈,KR/JP,0,산리
+character-goods,7,꼬마버스 타요,KR,0,타요
+character-goods,8,넷마블프렌즈,KR,0,넷마
+character-goods,9,오버액션토끼,KR,0,오버
+character-goods,10,몰랑이,KR,0,몰랑
+character-goods,11,에비츄,KR,0,에비
+character-goods,12,포코리프렌즈,KR,0,포코
+character-goods,13,좀비고등학교,KR,0,좀비
+character-goods,14,유미의 세포들,KR,0,유미
+character-goods,15,핑크퐁,KR,0,핑퐁
+character-goods,16,옴팡이,KR,0,옴팡
+character-goods,17,오늘의 짤,KR,0,오짤
+character-goods,18,타타,KR,0,타타
+character-goods,19,니니즈,KR,0,니니
+character-goods,20,펭수,KR,0,펭수
+webtoon-goods,1,네이버웹툰,KR,0,네웹
+webtoon-goods,2,카카오웹툰,KR,0,카웹
+webtoon-goods,3,레진코믹스,KR,0,레진
+webtoon-goods,4,탑툰,KR,0,탑툰
+webtoon-goods,5,투믹스,KR,0,투믹
+webtoon-goods,6,미스터블루,KR,0,미블
+webtoon-goods,7,봄툰,KR,0,봄툰
+webtoon-goods,8,코미코,KR/JP,0,코미
+webtoon-goods,9,버프툰,KR,0,버프
+webtoon-goods,10,피너툰,KR,0,피너
+webtoon-goods,11,나 혼자만 레벨업,KR,0,나혼
+webtoon-goods,12,유미의 세포들,KR,-7,유세
+webtoon-goods,13,신의 탑,KR,0,신탑
+webtoon-goods,14,외모지상주의,KR,0,외모
+webtoon-goods,15,연애혁명,KR,0,연혁
+webtoon-goods,16,이태원 클라쓰,KR,0,이태
+webtoon-goods,17,기기괴괴,KR,0,기괴
+webtoon-goods,18,마음의 소리,KR,0,마소
+webtoon-goods,19,치즈인더트랩,KR,0,치인
+webtoon-goods,20,고수,KR,0,고수
+esports-merch,1,T1,KR,0,T1
+esports-merch,2,Gen.G,KR/US,0,젠지
+esports-merch,3,DRX,KR,0,DR
+esports-merch,4,담원 기아,KR,0,담원
+esports-merch,5,한화생명e스포츠,KR,4,한생
+esports-merch,6,KT 롤스터,KR,2,KT
+esports-merch,7,농심 레드포스,KR,0,농심
+esports-merch,8,리브 샌드박스,KR,2,리브
+esports-merch,9,광동 프릭스,KR,3,광동
+esports-merch,10,프레딧 브리온,KR,1,프레
+esports-merch,11,LCK,KR,-5,LC
+esports-merch,12,오버워치 리그 서울 다이너스티,KR,0,서울
+esports-merch,13,PUBG: BATTLEGROUNDS,KR,0,배그
+esports-merch,14,카트라이더: 드리프트,KR,0,카트
+esports-merch,15,스타크래프트,KR/US,0,스타
+esports-merch,16,아프리카 프릭스,KR,1,아프
+esports-merch,17,리그 오브 레전드,KR/US,0,롤
+esports-merch,18,발로란트,KR/US,0,발로
+esports-merch,19,피파 온라인 4,KR,0,피파
+esports-merch,20,크레이지레이싱 카트라이더,KR,0,크카
+k-beauty-haircare,1,아모스프로페셔널,KR,0,아모
+k-beauty-haircare,2,미쟝센,KR,1,미쟝
+k-beauty-haircare,3,려,KR,1,려
+k-beauty-haircare,4,케라시스,KR,1,케라
+k-beauty-haircare,5,TS샴푸,KR,1,TS
+k-beauty-haircare,6,닥터포헤어,KR,-4,닥포
+k-beauty-haircare,7,쿤달,KR,0,쿤달
+k-beauty-haircare,8,아윤채,KR,0,아윤
+k-beauty-haircare,9,이브로쉐,KR,11,이브
+k-beauty-haircare,10,엘라스틴,KR,1,엘라
+k-beauty-haircare,11,라우쉬,KR,5,라우
+k-beauty-haircare,12,제니하우스,KR,0,제니
+k-beauty-haircare,13,아로마티카,KR,-3,아로
+k-beauty-haircare,14,헤드앤숄더,KR/US,0,헤앤
+k-beauty-haircare,15,다슈,KR,0,다슈
+k-beauty-haircare,16,모레모,KR,-3,모레
+k-beauty-haircare,17,로레알파리,KR/FR,0,로레
+k-beauty-haircare,18,비욘드,KR,0,비욘
+k-beauty-haircare,19,실크테라피,KR,0,실크
+k-beauty-haircare,20,어노브,KR,-5,어노
+smartphone-acc,1,슈피겐,KR/US,0,슈피
+smartphone-acc,2,삼성,KR,0,삼성
+smartphone-acc,3,링케,KR,-1,링케
+smartphone-acc,4,아트뮤,KR,0,아트
+smartphone-acc,5,베이스어스,KR/CN,0,베이
+smartphone-acc,6,UAG,KR/US,0,UA
+smartphone-acc,7,신지모루,KR,-3,신지
+smartphone-acc,8,케이스티파이,KR/HK,-2,케티
+smartphone-acc,9,엘라고,KR/US,-2,엘라
+smartphone-acc,10,빅쏘,KR,-5,빅쏘
+smartphone-acc,11,구스페리,KR,5,구스
+smartphone-acc,12, ESR,KR/CN,0,ES
+smartphone-acc,13,아이페이스,KR,-5,아이
+smartphone-acc,14,주파집,KR,4,주파
+smartphone-acc,15,만렙,KR,0,만렙
+smartphone-acc,16,베루스,KR,1,베루
+smartphone-acc,17,아라리,KR,-14,아라
+smartphone-acc,18,힐링쉴드,KR,0,힐링
+smartphone-acc,19,팝소켓,KR/US,-5,팝소
+smartphone-acc,20,스키니딥,KR/UK,-1,스키
+k-beauty-devices,1,메디큐브,KR,0,메디
+k-beauty-devices,2,LG 프라엘,KR,0,프라
+k-beauty-devices,3,셀리턴,KR,0,셀리
+k-beauty-devices,4,바나브,KR,0,바나
+k-beauty-devices,5,DPC,KR,0,DP
+k-beauty-devices,6,누페이스,KR/US,0,누페
+k-beauty-devices,7,포레오,KR/SE,0,포레
+k-beauty-devices,8,아띠베뷰티,KR,0,아띠
+k-beauty-devices,9,에끌레어,KR,0,에끌
+k-beauty-devices,10,실큰,KR/US,0,실큰
+k-beauty-devices,11,메이크온,KR,0,메온
+k-beauty-devices,12,오아,KR,0,오아
+k-beauty-devices,13,듀얼소닉,KR,0,듀얼
+k-beauty-devices,14,엘리닉,KR,0,엘리
+k-beauty-devices,15,뉴스킨,KR/US,0,뉴스
+k-beauty-devices,16,리파,KR/JP,0,리파
+k-beauty-devices,17,파나소닉 뷰티,KR/JP,0,파나
+k-beauty-devices,18,지온메디텍,KR,0,지온
+k-beauty-devices,19,벨로큐어,KR,0,벨로
+k-beauty-devices,20,이오시카,KR,0,이오
+k-beauty-makeup,1,클리오,KR,0,클리
+k-beauty-makeup,2,에뛰드,KR,2,에뛰
+k-beauty-makeup,3,이니스프리,KR,0,이니스
+k-beauty-makeup,4,페리페라,KR,-1,페리
+k-beauty-makeup,5,롬앤,KR,-3,롬앤
+k-beauty-makeup,6,3CE,KR,-1,3C
+k-beauty-makeup,7,미샤,KR,0,미샤
+k-beauty-makeup,8,헤라,KR,0,헤라
+k-beauty-makeup,9,정샘물,KR,0,정샘
+k-beauty-makeup,10,어뮤즈,KR,-1,어뮤
+k-beauty-makeup,11,데이지크,KR,-3,데이
+k-beauty-makeup,12,홀리카홀리카,KR,-6,홀리
+k-beauty-makeup,13,에스쁘아,KR,0,에스
+k-beauty-makeup,14,네이처리퍼블릭,KR,0,네이
+k-beauty-makeup,15,투쿨포스쿨,KR,-3,투쿨
+k-beauty-makeup,16,더페이스샵,KR,0,더페
+k-beauty-makeup,17,릴리바이레드,KR,-3,릴바
+k-beauty-makeup,18,웨이크메이크,KR,-3,웨메
+k-beauty-makeup,19,힌스,KR,-8,힌스
+k-beauty-makeup,20,삐아,KR,-4,삐아
+inner-beauty,1,정관장,KR,3,정관
+inner-beauty,2,뉴트리코어,KR,0,뉴트
+inner-beauty,3,세노비스,KR/AU,3,세노
+inner-beauty,4,고려은단,KR,0,고려
+inner-beauty,5,종근당건강,KR,2,종근
+inner-beauty,6,솔가,KR/US,0,솔가
+inner-beauty,7,덴프스,KR,2,덴프
+inner-beauty,8,바이탈뷰티,KR,-7,바이
+inner-beauty,9,에버콜라겐,KR,-6,에버
+inner-beauty,10,GNM자연의품격,KR,0,GN
+inner-beauty,11,비비랩,KR,-9,비비
+inner-beauty,12,함소아,KR,0,함소
+inner-beauty,13,닥터린,KR,0,닥터
+inner-beauty,14,바디닥터스,KR,0,바디
+inner-beauty,15,뉴오리진,KR,0,뉴오
+inner-beauty,16,grn+,KR,0,gr
+inner-beauty,17,칼로바이,KR,-5,칼로
+inner-beauty,18,네츄럴라이즈,KR,0,네츄
+inner-beauty,19,더작,KR,0,더작
+inner-beauty,20,마이카인드,KR/US,0,마이
+computer-parts,1,삼성전자,KR,0,삼성
+computer-parts,2,SK하이닉스,KR,0,SK
+computer-parts,3,LG전자,KR,0,LG
+computer-parts,4,잘만,KR,0,잘만
+computer-parts,5,앱코,KR,0,앱코
+computer-parts,6,마이크로닉스,KR,0,마닉
+computer-parts,7,3RSYS,KR,0,3R
+computer-parts,8,아이구주,KR,0,아이
+computer-parts,9,COX,KR,0,CO
+computer-parts,10,한성컴퓨터,KR,0,한성
+computer-parts,11,이엠텍,KR,0,이엠
+computer-parts,12,제닉스,KR,0,제닉
+computer-parts,13,로지텍,KR/CH,0,로지
+computer-parts,14,커세어,KR/US,0,커세
+computer-parts,15,기가바이트,KR/TW,0,기가
+computer-parts,16,ASUS,KR/TW,0,AS
+computer-parts,17,MSI,KR/TW,0,MS
+computer-parts,18,DEEPCOOL,KR/CN,0,DE
+computer-parts,19,FSP,KR/TW,0,FS
+computer-parts,20,시소닉,KR/TW,0,시소
+auto-accessories,1,불스원,KR,0,불스
+auto-accessories,2,현대모비스,KR,1,현모
+auto-accessories,3,카카오프렌즈,KR,1,카프
+auto-accessories,4,더클래스,KR,2,더클
+auto-accessories,5,메이튼,KR,3,메이
+auto-accessories,6,아이로드,KR,0,아이
+auto-accessories,7,아이나비,KR,-5,아나
+auto-accessories,8,코일매트,KR,-3,코일
+auto-accessories,9,차량용방향제,KR,0,차방
+auto-accessories,10,훠링,KR,-3,훠링
+auto-accessories,11,오토반,KR,0,오토
+auto-accessories,12,카템,KR,0,카템
+auto-accessories,13,리버캠,KR,0,리버
+auto-accessories,14,카렉스,KR,-4,카렉
+auto-accessories,15,디프로젝트,KR,0,디프
+auto-accessories,16,카카오내비,KR,0,카내
+auto-accessories,17,오아,KR,0,오아
+auto-accessories,18,기온쿼츠,KR,0,기온
+auto-accessories,19,소낙스,KR/DE,0,소낙
+auto-accessories,20,카테크,KR,0,카테
+k-stationery,1,모닝글로리,KR,0,모닝
+k-stationery,2,모나미,KR,2,모나
+k-stationery,3,카카오프렌즈,KR,-1,카카
+k-stationery,4,라인프렌즈,KR,-1,라이
+k-stationery,5,핫트랙스,KR,2,핫트
+k-stationery,6,텐바이텐,KR,0,텐바
+k-stationery,7,아이코닉,KR,8,아이
+k-stationery,8,7321디자인,KR,6,73
+k-stationery,9,루카랩,KR,4,루카
+k-stationery,10,라이브워크,KR,1,라이
+k-stationery,11,인디고,KR,-2,인디
+k-stationery,12,비온뒤,KR,0,비온
+k-stationery,13,젤리크루,KR,0,젤리
+k-stationery,14,슈아뜰리에,KR,0,슈아
+k-stationery,15,밤토리상점,KR,0,밤토
+k-stationery,16,어프어프,KR,0,어프
+k-stationery,17,포인트오브뷰,KR,0,포인
+k-stationery,18,데일리라이크,KR,-8,데이
+k-stationery,19,다이노탱,KR,0,다이
+k-stationery,20,리훈,KR,-1,리훈
+camping-gear,1,코베아,KR,0,코베
+camping-gear,2,헬리녹스,KR/US,0,헬리
+camping-gear,3,스노우라인,KR,0,스노
+camping-gear,4,미니멀웍스,KR,1,미니
+camping-gear,5,카즈미,KR,-1,카즈
+camping-gear,6,코오롱스포츠,KR,8,코오
+camping-gear,7,노스피크,KR,8,노스
+camping-gear,8,제드,KR,0,제드
+camping-gear,9,크레모아,KR,2,크레
+camping-gear,10,하이브로우,KR,-1,하이
+camping-gear,11,버팔로,KR,1,버팔
+camping-gear,12,위오,KR,4,위오
+camping-gear,13,800도씨,KR,4,80
+camping-gear,14,마운트리버,KR,-4,마운
+camping-gear,15,아이두젠,KR,-8,아이
+camping-gear,16,제로그램,KR,0,제로
+camping-gear,17,아베나키,KR,1,아베
+camping-gear,18,카고컨테이너,KR,0,카고
+camping-gear,19,내셔널지오그래픽,KR,0,내셔
+camping-gear,20,지프,KR,-7,지프
+golf-gear,1,볼빅,KR/US,0,볼빅
+golf-gear,2,왁,KR,0,왁
+golf-gear,3,어뉴골프,KR,0,어뉴
+golf-gear,4,와이드앵글,KR,3,와이
+golf-gear,5,파리게이츠,KR/JP,0,파리
+golf-gear,6,팬텀,KR,0,팬텀
+golf-gear,7,헤지스골프,KR,3,헤지
+golf-gear,8,빈폴골프,KR,3,빈폴
+golf-gear,9,사우스케이프,KR,6,사우
+golf-gear,10,엘로드,KR,0,엘로
+golf-gear,11,마스터바니에디션,KR/JP,0,마스
+golf-gear,12,까스텔바작,KR,-6,까스
+golf-gear,13,클리브랜드 골프웨어,KR,0,클리
+golf-gear,14,핑 어패럴,KR,-10,핑
+golf-gear,15,벤제프,KR,0,벤제
+golf-gear,16,레노마골프,KR,0,레노
+golf-gear,17,깔롱골프,KR,0,깔롱
+golf-gear,18,페어라이어,KR,-2,페어
+golf-gear,19,어메이징크리,KR,-7,어메
+golf-gear,20,김영주골프,KR,0,김영
+kitchen-ware,1,락앤락,KR,0,락앤
+kitchen-ware,2,해피콜,KR,0,해피
+kitchen-ware,3,네오플램,KR,0,네오
+kitchen-ware,4,PN풍년,KR,0,PN
+kitchen-ware,5,글라스락,KR,2,글라
+kitchen-ware,6,한국도자기,KR,8,한국
+kitchen-ware,7,키친아트,KR,2,키친
+kitchen-ware,8,도루코,KR,2,도루
+kitchen-ware,9,자주,KR,0,자주
+kitchen-ware,10,모던하우스,KR,9,모던
+kitchen-ware,11,오덴세,KR,2,오덴
+kitchen-ware,12,퀸센스,KR,-1,퀸센
+kitchen-ware,13,실리만,KR,-1,실리
+kitchen-ware,14,한일스텐레스,KR,0,한일
+kitchen-ware,15,쓰임,KR,0,쓰임
+kitchen-ware,16,코멕스,KR,-8,코멕
+kitchen-ware,17,쉐프윈,KR,0,쉐프
+kitchen-ware,18,무쎄,KR,0,무쎄
+kitchen-ware,19,시רי우스 윌,KR,0,시리
+kitchen-ware,20,젠한국,KR,0,젠
+pet-supplies,1,하림펫푸드,KR,0,하림
+pet-supplies,2,아르르,KR,11,아르
+pet-supplies,3,바잇미,KR,3,바이
+pet-supplies,4,펫프렌즈,KR,10,펫프
+pet-supplies,5,어바웃펫,KR,0,어바
+pet-supplies,6,도그랑,KR,0,도그
+pet-supplies,7,캐츠랑,KR,0,캐츠
+pet-supplies,8,핏펫,KR,0,핏펫
+pet-supplies,9,닥터독,KR,0,닥터
+pet-supplies,10,바우와우,KR,0,바우
+pet-supplies,11,웰츠,KR,0,웰츠
+pet-supplies,12,이글벳,KR,0,이글
+pet-supplies,13,마이펫닥터,KR,0,마이
+pet-supplies,14,도란도란,KR,0,도란
+pet-supplies,15,두잇,KR,0,두잇
+pet-supplies,16,강아지대통령,KR,0,강아
+pet-supplies,17,고양이대통령,KR,0,고양
+pet-supplies,18,스몰스터프,KR,0,스몰
+pet-supplies,19,베니즈,KR,0,베니
+pet-supplies,20,페스룸,KR,-15,페스
+kdrama-goods,1,스튜디오드래곤,KR,0,스튜
+kdrama-goods,2,tvN,KR,0,tv
+kdrama-goods,3,CJ ENM,KR,0,CJ
+kdrama-goods,4,SBS,KR,0,SB
+kdrama-goods,5,JTBC,KR,0,JT
+kdrama-goods,6,KBS,KR,0,KB
+kdrama-goods,7,마플샵,KR,0,마플
+kdrama-goods,8,메이크스타,KR,-6,메이
+kdrama-goods,9,위드뮤,KR,0,위드
+kdrama-goods,10,카카오메이커스,KR,0,카카
+kdrama-goods,11,스튜디오S,KR,1,스튜
+kdrama-goods,12,에이스토리,KR,7,에이
+kdrama-goods,13,코핀 커뮤니케이션즈,KR,0,코핀
+kdrama-goods,14,콘텐츠지음,KR,0,콘텐
+kdrama-goods,15,위버스샵,KR,0,위버
+kdrama-goods,16,케이타운포유,KR,-10,케이
+kdrama-goods,17,아이코닉스,KR,0,아이
+kdrama-goods,18,뮤직앤드라마,KR,0,뮤직
+kdrama-goods,19,글앤그림미디어,KR,0,글앤
+kdrama-goods,20,스튜디오 룰루랄라,KR,0,스튜
+fishing-gear,1,바낙스,KR,1,바낙
+fishing-gear,2,NS (엔에스),KR,0,NS
+fishing-gear,3,은성,KR,0,은성
+fishing-gear,4,아피스,KR,1,아피
+fishing-gear,5,JS컴퍼니,KR,-2,JS
+fishing-gear,6,도요,KR,0,도요
+fishing-gear,7,유정낚시,KR,0,유정
+fishing-gear,8,해동조구사 (HDF),KR,0,해동
+fishing-gear,9,강원산업,KR,-3,강원
+fishing-gear,10,천류,KR,3,천류
+fishing-gear,11,용성,KR,-3,용성
+fishing-gear,12,기간산업,KR,0,기간
+fishing-gear,13,금호조침,KR,4,금호
+fishing-gear,14,백경조침,KR,0,백경
+fishing-gear,15,영규산업,KR,0,영규
+fishing-gear,16,동일레포츠 (DIF),KR,0,동일
+fishing-gear,17,머털낚시,KR,0,머털
+fishing-gear,18,아미고,KR,0,아미
+fishing-gear,19,세주코리아,KR,0,세주
+fishing-gear,20,금양,KR,0,금양
+modern-hanbok,1,리슬,KR,0,리슬
+modern-hanbok,2,단하,KR,14,단하
+modern-hanbok,3,차이킴,KR,-1,차이
+modern-hanbok,4,하플리,KR,3,하플
+modern-hanbok,5,서리나래,KR,6,서리
+modern-hanbok,6,다래원,KR,-2,다래
+modern-hanbok,7,웨이유,KR,11,웨이
+modern-hanbok,8,더고은,KR,-3,더고
+modern-hanbok,9,기로에,KR,8,기로
+modern-hanbok,10,신서울,KR,0,신서
+modern-hanbok,11,한땀한땀,KR,0,한땀
+modern-hanbok,12,소단,KR,0,소단
+modern-hanbok,13,지장사,KR,0,지장
+modern-hanbok,14,때때롯살롱,KR,0,때때
+modern-hanbok,15,혜온,KR,0,혜온
+modern-hanbok,16,서담화,KR,0,서담
+modern-hanbok,17,무릇,KR,0,무릇
+modern-hanbok,18,아시하,KR,0,아시
+modern-hanbok,19,선데이한복,KR,0,선데
+modern-hanbok,20,데일리한,KR,0,데이
+home-decor,1,자주,KR,0,자주
+home-decor,2,모던하우스,KR,1,모던
+home-decor,3,한샘,KR,5,한샘
+home-decor,4,까사미아,KR,1,까사
+home-decor,5,데코뷰,KR,-1,데코
+home-decor,6,오늘의집,KR,-5,오늘
+home-decor,7,버터,KR,0,버터
+home-decor,8,마틸라,KR,0,마틸
+home-decor,9,웜그레이테일,KR,5,웜그
+home-decor,10,비아인키노,KR,0,비아
+home-decor,11,레어로우,KR,0,레어
+home-decor,12,이소품,KR,0,이소
+home-decor,13,이스턴에디션,KR,0,이스
+home-decor,14,잭슨카멜레온,KR,0,잭슨
+home-decor,15,오이뮤,KR,0,오이
+home-decor,16,마켓비,KR,-10,마켓
+home-decor,17,두닷,KR,0,두닷
+home-decor,18,라이브엣지,KR,0,라이
+home-decor,19,코코로박스,KR,0,코코
+home-decor,20,챕터원,KR,0,챕터
+traditional-craft,1,한국문화재재단 (K-Heritage),KR,0,한국
+traditional-craft,2,국립박물관문화재단 (뮷즈),KR,0,국립
+traditional-craft,3,광주요,KR,0,광주
+traditional-craft,4,채율,KR,10,채율
+traditional-craft,5,한국민속촌,KR,0,한국
+traditional-craft,6,박씨상방,KR,-5,박씨
+traditional-craft,7,여울누리 (안성유기),KR,0,여울
+traditional-craft,8,놋담,KR,4,놋담
+traditional-craft,9,금박연,KR,0,금박
+traditional-craft,10,장이,KR,0,장이
+traditional-craft,11,서울번드,KR,0,서울
+traditional-craft,12,샵오브코리아,KR,0,샵오
+traditional-craft,13,새라온,KR,0,새라
+traditional-craft,14,고려아트샵,KR,0,고려
+traditional-craft,15,인사동 중앙공예관,KR,0,인사
+traditional-craft,16,조선놋방,KR,0,조선
+traditional-craft,17,오이뮤,KR,0,오이
+traditional-craft,18,해달자개,KR,-11,해달
+traditional-craft,19,이도 (yido),KR,0,이도
+traditional-craft,20,공예정원,KR,0,공예
